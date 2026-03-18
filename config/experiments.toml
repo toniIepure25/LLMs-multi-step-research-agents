@@ -1,0 +1,15 @@
+# Default experiment settings
+
+[defaults]
+seed = 42
+output_dir = "experiments/runs"
+log_level = "debug"
+cache_llm_responses = true
+
+[benchmarks]
+data_dir = "experiments/data"
+default_tier = 1
+
+[evaluation]
+human_eval_enabled = false
+automated_metrics = ["accuracy", "completeness", "groundedness"]

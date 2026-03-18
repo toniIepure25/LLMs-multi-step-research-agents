@@ -1,0 +1,42 @@
+# Model and provider configuration
+# Override with environment variables: ASAR_MODEL_PROVIDER, ASAR_MODEL_MODEL, etc.
+# For the current live v0 demo path, set ASAR_MODEL_PROVIDER=openai and
+# ASAR_MODEL_MODEL=<supported OpenAI model> to switch all active LLM routes together.
+
+[default]
+provider = "anthropic"
+model = "claude-sonnet-4-6"
+temperature = 0.0
+max_tokens = 4096
+
+[planning]
+# Planning may benefit from a more capable model
+provider = "anthropic"
+model = "claude-sonnet-4-6"
+temperature = 0.0
+max_tokens = 4096
+
+[execution]
+# Execution tasks are typically simpler
+provider = "anthropic"
+model = "claude-sonnet-4-6"
+temperature = 0.0
+max_tokens = 2048
+
+[deliberation]
+# Deliberation benefits from diverse reasoning — slightly higher temperature
+provider = "anthropic"
+model = "claude-sonnet-4-6"
+temperature = 0.3
+max_tokens = 4096
+
+[verification]
+# Verification should be deterministic
+provider = "anthropic"
+model = "claude-sonnet-4-6"
+temperature = 0.0
+max_tokens = 2048
+
+# TODO: Add model routing logic (e.g., use cheaper models for simple tasks)
+# TODO: Add cost tracking configuration
+# TODO: Add rate limiting settings

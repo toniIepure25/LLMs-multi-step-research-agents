@@ -1,0 +1,26 @@
+# Pipeline feature toggles
+# Use these to enable/disable layers during development and experiments
+
+[layers]
+planning = true
+execution = true
+memory = true
+grounding = false      # Phase 2
+deliberation = true    # v0: single-pass synthesis
+verification = true    # v0: deterministic evidence checks
+evaluation = true      # Always on for logging
+
+[execution]
+parallel = false       # Phase 3: enable parallel executor dispatch
+max_parallel_tasks = 4
+timeout_seconds = 120
+
+[memory]
+working_memory_max_items = 50
+compression_enabled = false  # Phase 2
+long_term_storage = false    # Phase 3
+
+[logging]
+level = "info"  # debug | info | warning | error
+log_all_llm_calls = true
+log_schemas = true

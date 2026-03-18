@@ -1,0 +1,8 @@
+[project]
+name = "asar"
+version = "0.1.0"
+description = "Agentic Structured Autonomous Researcher"
+phase = "0-bootstrap"
+
+[project.authors]
+# Add contributors here
