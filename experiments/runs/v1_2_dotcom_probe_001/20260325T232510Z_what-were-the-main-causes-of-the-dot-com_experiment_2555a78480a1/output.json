@@ -1,0 +1,735 @@
+{
+  "created_at": "2026-03-25T23:25:10.880036Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_f0faa3c02952",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Speculation fueled bubble growth.",
+        "supporting_evidence_ids": [
+          "evidence_f4675f9d0ee5"
+        ],
+        "text": "Dot-com speculation contributed to the dot-com bubble."
+      },
+      {
+        "claim_id": "claim_163998dfa33c",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Overvaluation led to sharp stock price drops.",
+        "supporting_evidence_ids": [
+          "evidence_b4ffaf697f3b"
+        ],
+        "text": "Tech overvaluation caused a rapid decline in the value of tech stocks."
+      },
+      {
+        "claim_id": "claim_272548ee7605",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "low_confidence",
+        "reasoning_trace": "Low interest rates fueled speculation.",
+        "supporting_evidence_ids": [
+          "evidence_51b4ccdd096e"
+        ],
+        "text": "Monetary policy and low interest rates contributed to the dot-com bubble."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-25T23:25:10.879162Z",
+    "decision_id": "decision_2c9cd28a9a42",
+    "information_gaps": [
+      "Specific mechanisms of bank failures and banking panics",
+      "Direct impact of monetary policy on the dot-com crash"
+    ],
+    "plan_id": "plan_7181d8bfba13",
+    "synthesis": "Excessive speculation and tech overvaluation led to the dot-com crash."
+  },
+  "evidence": [
+    {
+      "confidence": 0.99990237,
+      "content": "The Dot-com bubble refers to a significant economic phenomenon that occurred in the late 1990s and early 2000s, characterized by the rapid rise and subsequent fall of internet-based companies' stock prices. Interest Rates;NASDAQ Dive Prompts Dot-Com Crash;September 11 terrorist attacks' impact on business;Dot-coms;Amazon (company). Interest Rates;NASDAQ Dive Prompts Dot-Com Crash;September 11 terrorist attacks' impact on business;Dot-coms;Amazon (company). In what has been dubbed the dot-com bubble, the stock prices of Internet companies soared during this time as investors forecasted the vast potential of the **World Wide Web**. When many of the dot-com companies failed to thrive, investors lost millions of dollars.*. Spurred by low interest rates and rising stock prices, investors provided a glut of venture capital to countless Internet companies. Even though many considered the possibility of another dot-com bubble, most experts agreed that the surge in stock prices was significantly different from the increases seen in the early 2000s. \u201cThe Dot-Com Bubble Bursts.\u201d *New York Times*.",
+      "created_at": "2026-03-25T23:22:54.791903Z",
+      "evidence_id": "evidence_51b4ccdd096e",
+      "relevance": 0.99990237,
+      "source": {
+        "access_date": "2026-03-25T23:22:54.791890Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Research the economic factors leading to the crash about What were the main causes of the dot-com crash?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The Dot-com bubble refers to a significant economic phenomenon that occurred in the late 1990s and early 2000s, characterized by the rapid rise and subsequent fall of internet-based companies' stock prices. Interest Rates;NASDAQ Dive Prompts Dot-Com Crash;September 11 terrorist attacks' impact on business;Dot-coms;Amazon (company). Interest Rates;NASDAQ Dive Prompts Dot-Com Crash;September 11 terrorist attacks' impact on business;Dot-coms;Amazon (company). In what has been dubbed the dot-com bubble, the stock prices of Internet companies soared during this time as investors forecasted the vast potential of the **World Wide Web**. When many of the dot-com companies failed to thrive, investors lost millions of dollars.*. Spurred by low interest rates and rising stock prices, investors provided a glut of venture capital to countless Internet companies. Even though many considered the possibility of another dot-com bubble, most experts agreed that the surge in stock prices was significantly different from the increases seen in the early 2000s. \u201cThe Dot-Com Bubble Bursts.\u201d *New York Times*.",
+            "raw_content": null,
+            "score": 0.99990237,
+            "title": "Dot-com bubble | Economics | Research Starters",
+            "url": "https://www.ebsco.com/research-starters/economics/dot-com-bubble"
+          },
+          "source_name": "ebsco.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_15a84fe8c63f",
+          "task_action": "search",
+          "task_id": "task_a6202f88435f"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Dot-com bubble refers to a significant economic phenomenon that occurred in the late 1990s and early 2000s, characterized by the rapid rise and subsequent fall of internet-based companies' stock prices. Interest Rates;NASDAQ Dive Prompts Dot-Com Crash;September 11 terrorist attacks' impact on business;Dot-coms;Amazon (company). Interest Rates;NASDAQ Dive Prompts Dot-Com Crash;September 11 terrorist attacks' impact on business;Dot-coms;Amazon (company). In what has been dubbed the dot-com bubble, the stock prices of Internet companies soared during this time as investors forecasted the vast potential of the **World Wide Web**. When many of the dot-com companies failed to thrive, investors lost millions of dollars.*. Spurred by low interest rates and rising stock prices, investors provided a glut of venture capital to countless Internet companies. Even though many considered the possibility of another dot-com bubble, most experts agreed that the surge in stock prices was significantly different from the increases seen in the early 2000s. \u201cThe Dot-Com Bubble Bursts.\u201d *New York Times*.",
+        "source_type": "web_search",
+        "title": "Dot-com bubble | Economics | Research Starters",
+        "url": "https://www.ebsco.com/research-starters/economics/dot-com-bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_15a84fe8c63f",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_a6202f88435f"
+    },
+    {
+      "confidence": 0.997981,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-25T23:22:54.791943Z",
+      "evidence_id": "evidence_d5a26bd03955",
+      "relevance": 0.997981,
+      "source": {
+        "access_date": "2026-03-25T23:22:54.791931Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Research the economic factors leading to the crash about What were the main causes of the dot-com crash?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.997981,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_15a84fe8c63f",
+          "task_action": "search",
+          "task_id": "task_a6202f88435f"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_15a84fe8c63f",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_a6202f88435f"
+    },
+    {
+      "confidence": 0.9974491,
+      "content": "This decline in the market value of tech stocks led to a downward spiral, with investors selling off their tech holdings in droves. This caused a rapid decline",
+      "created_at": "2026-03-25T23:22:54.791922Z",
+      "evidence_id": "evidence_bf4e3d8c7a38",
+      "relevance": 0.9974491,
+      "source": {
+        "access_date": "2026-03-25T23:22:54.791917Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Research the economic factors leading to the crash about What were the main causes of the dot-com crash?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "This decline in the market value of tech stocks led to a downward spiral, with investors selling off their tech holdings in droves. This caused a rapid decline",
+            "raw_content": null,
+            "score": 0.9974491,
+            "title": "The Dot Com Crash: Causes and Consequences",
+            "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+          },
+          "source_name": "eccuity.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_15a84fe8c63f",
+          "task_action": "search",
+          "task_id": "task_a6202f88435f"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This decline in the market value of tech stocks led to a downward spiral, with investors selling off their tech holdings in droves. This caused a rapid decline",
+        "source_type": "web_search",
+        "title": "The Dot Com Crash: Causes and Consequences",
+        "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_15a84fe8c63f",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_a6202f88435f"
+    },
+    {
+      "confidence": 0.50168514,
+      "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+      "created_at": "2026-03-25T23:22:52.543706Z",
+      "evidence_id": "evidence_e28a1be702d0",
+      "relevance": 0.50168514,
+      "source": {
+        "access_date": "2026-03-25T23:22:52.543702Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+            "raw_content": null,
+            "score": 0.50168514,
+            "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+            "url": "https://www.britannica.com/money/dot-com-bubble"
+          },
+          "source_name": "britannica.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_73c4e4ded7cf",
+          "task_action": "search",
+          "task_id": "task_f9c1ff6d6756"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+        "source_type": "web_search",
+        "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+        "url": "https://www.britannica.com/money/dot-com-bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_73c4e4ded7cf",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_f9c1ff6d6756"
+    },
+    {
+      "confidence": 0.49699774,
+      "content": "The crash was caused by a number of factors, including overvaluation of tech ... This caused a rapid decline in the value of tech stocks, leading to significant",
+      "created_at": "2026-03-25T23:22:56.886174Z",
+      "evidence_id": "evidence_b4ffaf697f3b",
+      "relevance": 0.49699774,
+      "source": {
+        "access_date": "2026-03-25T23:22:56.886169Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Analyze the role of technological over-saturation in the crash about What were the main causes of the dot-com crash?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The crash was caused by a number of factors, including overvaluation of tech ... This caused a rapid decline in the value of tech stocks, leading to significant",
+            "raw_content": null,
+            "score": 0.49699774,
+            "title": "The Dot Com Crash: Causes and Consequences - Eccuity",
+            "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+          },
+          "source_name": "eccuity.com",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_e3c25e01a8eb",
+          "task_action": "search",
+          "task_id": "task_d80e8f787bca"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The crash was caused by a number of factors, including overvaluation of tech ... This caused a rapid decline in the value of tech stocks, leading to significant",
+        "source_type": "web_search",
+        "title": "The Dot Com Crash: Causes and Consequences - Eccuity",
+        "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e3c25e01a8eb",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_d80e8f787bca"
+    },
+    {
+      "confidence": 0.4403014,
+      "content": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+      "created_at": "2026-03-25T23:22:52.543671Z",
+      "evidence_id": "evidence_d55802e45e67",
+      "relevance": 0.4403014,
+      "source": {
+        "access_date": "2026-03-25T23:22:52.543656Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+            "raw_content": null,
+            "score": 0.4403014,
+            "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+            "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_73c4e4ded7cf",
+          "task_action": "search",
+          "task_id": "task_f9c1ff6d6756"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+        "source_type": "web_search",
+        "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+        "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_73c4e4ded7cf",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_f9c1ff6d6756"
+    },
+    {
+      "confidence": 0.4013364,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-25T23:22:52.543693Z",
+      "evidence_id": "evidence_e11dcec17511",
+      "relevance": 0.4013364,
+      "source": {
+        "access_date": "2026-03-25T23:22:52.543685Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.4013364,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_73c4e4ded7cf",
+          "task_action": "search",
+          "task_id": "task_f9c1ff6d6756"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_73c4e4ded7cf",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_f9c1ff6d6756"
+    },
+    {
+      "confidence": 0.37216341,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-25T23:22:56.886189Z",
+      "evidence_id": "evidence_297481915c08",
+      "relevance": 0.37216341,
+      "source": {
+        "access_date": "2026-03-25T23:22:56.886185Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Analyze the role of technological over-saturation in the crash about What were the main causes of the dot-com crash?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.37216341,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_e3c25e01a8eb",
+          "task_action": "search",
+          "task_id": "task_d80e8f787bca"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e3c25e01a8eb",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_d80e8f787bca"
+    },
+    {
+      "confidence": 0.34528238,
+      "content": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+      "created_at": "2026-03-25T23:22:59.865548Z",
+      "evidence_id": "evidence_2c614d02849e",
+      "relevance": 0.34528238,
+      "source": {
+        "access_date": "2026-03-25T23:22:59.865535Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Examine the impact of regulatory failures on the crash about What were the main causes of the dot-com crash?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+            "raw_content": null,
+            "score": 0.34528238,
+            "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+            "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_5c2da333c55e",
+          "task_action": "search",
+          "task_id": "task_83322cf44db2"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+        "source_type": "web_search",
+        "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+        "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_5c2da333c55e",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_83322cf44db2"
+    },
+    {
+      "confidence": 0.3340466,
+      "content": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+      "created_at": "2026-03-25T23:22:56.886151Z",
+      "evidence_id": "evidence_f4675f9d0ee5",
+      "relevance": 0.3340466,
+      "source": {
+        "access_date": "2026-03-25T23:22:56.886135Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Analyze the role of technological over-saturation in the crash about What were the main causes of the dot-com crash?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+            "raw_content": null,
+            "score": 0.3340466,
+            "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+            "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_e3c25e01a8eb",
+          "task_action": "search",
+          "task_id": "task_d80e8f787bca"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "[Skip to content](https://www.investopedia.com/terms/d/dotcom-bubble.asp#main). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [Newsletters](https://www.investopedia.com/terms/d/dotcom-bubble.asp#). *   [The Bottom Line](https://www.investopedia.com/terms/d/dotcom-bubble.asp#toc-the-bottom-line). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of [speculative](https://www.investopedia.com/terms/s/speculation.asp) or fad-based investing, the abundance of [venture capital](https://www.investopedia.com/terms/v/venturecapital.asp) funding for [start-ups](https://www.investopedia.com/terms/s/startup.asp), and the failure of dotcoms to turn a profit. Dotcom companies that reached [market capitalizations](https://www.investopedia.com/terms/m/marketcapitalization.asp) in the hundreds of millions of dollars became worthless within a matter of months. [![Image 7: Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/thmb/O7QQlweBVqHgYh7Mn1gvx4BxEQk=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Term-Definitions_Dutch-tulip-bulb-market-bubble-65b7664ea4bd427d9ae808431c5fa0b4.jpg) Tulipmania: About the Dutch Tulip Bulb Market Bubble](https://www.investopedia.com/terms/d/dutch_tulip_bulb_market_bubble.asp)[![Image 9: Coins and Line Graph](https://www.investopedia.com/thmb/pE_DgFjrvvyYjrfN31UNv69t5TM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-6034-000797-38dfc99517fa46fcae80718888454e3b.jpg) Understanding Inflation and Deflation: Economic Impacts and Differences](https://www.investopedia.com/ask/answers/111414/what-difference-between-inflation-and-deflation.asp)[![Image 11](https://www.investopedia.com/thmb/3iADB9ahnEeLXhHQnUhm_DgtUyM=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/wall_street_179681980-5bfc2b9746e0fb0083c07d29.jpg) Currency Wars: Causes, Impact on Global Trade, and Economic Strategies](https://www.investopedia.com/articles/forex/042015/what-currency-war-how-does-it-work.asp)[![Image 13: Business Planning](https://www.investopedia.com/thmb/8JZmT3psTNgQnVFwlW8ypJ1MBuE=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-175599141-00d0c51730894e728b738bc9b322b984.jpg) Understanding Inflation: Stagflation, Hyperinflation, and Deflation](https://www.investopedia.com/articles/personal-finance/073015/understand-different-types-inflation.asp)[![Image 15: Modern skyscrapers in business district](https://www.investopedia.com/thmb/nzJlSwR0wot_CWAwNdwC2tRLqFY=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/modern-skyscrapers-in-business-district-1137991385-d1d5d64ab23946e1b163c1a8915b9ffd.jpg) Asymmetric Information: Impact on Market Efficiency Explained](https://www.investopedia.com/ask/answers/042415/what-theory-asymmetric-information-economics.asp)[![Image 17: Cityscape with facade of a modern residential building.](https://www.investopedia.com/thmb/JZ2CrM1Ftcd9AIqB0KWww-r0PTg=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1150016488-75332073241242ffbbe7e24a8ccc301b.jpg) Great Recession's Impact on the Housing Market: A Closer Look](https://www.investopedia.com/investing/great-recessions-impact-housing-market/)[![Image 19: Crowded streets of NYC to represent growing popualtion](https://www.investopedia.com/thmb/NOsIlR2d268J1B3lcU3KHbyLX6g=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-130904259-5898ca543df78caebca1ff2e.jpg) Understanding GDP: Key Economic Indicator for Growth](https://www.investopedia.com/ask/answers/what-is-gdp-why-its-important-to-economists-investors/)[![Image 21: A globe with focus on the United States (USA) and Central America contrasted against a blurred background of a bulk cargo ship](https://www.investopedia.com/thmb/IKIfV4qjwB15DixAA668b0vld9s=/282x188/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-157191695-3960f54e95c74d108d13c9baf6c70abd.jpg) Candle Makers' Petition: Understanding the Satirical Economic Critique](https://www.investopedia.com/ask/answers/08/candle-makers-petition.asp). [Newsletter Sign Up](https://www.investopedia.com/terms/d/dotcom-bubble.asp#).",
+        "source_type": "web_search",
+        "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+        "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e3c25e01a8eb",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_d80e8f787bca"
+    },
+    {
+      "confidence": 0.21762875,
+      "content": "The bubble burst in 2000, leading to a sharp drop in stock prices and the failure of many dot-com companies. This had a profound impact on the US economy.",
+      "created_at": "2026-03-25T23:22:59.865564Z",
+      "evidence_id": "evidence_3e14fc582cf3",
+      "relevance": 0.21762875,
+      "source": {
+        "access_date": "2026-03-25T23:22:59.865560Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Examine the impact of regulatory failures on the crash about What were the main causes of the dot-com crash?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The bubble burst in 2000, leading to a sharp drop in stock prices and the failure of many dot-com companies. This had a profound impact on the US economy.",
+            "raw_content": null,
+            "score": 0.21762875,
+            "title": "What was the impact of the Dot-com bubble on the US economy?",
+            "url": "https://www.tutorchase.com/answers/ib/history/what-was-the-impact-of-the-dot-com-bubble-on-the-us-economy"
+          },
+          "source_name": "tutorchase.com",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_5c2da333c55e",
+          "task_action": "search",
+          "task_id": "task_83322cf44db2"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The bubble burst in 2000, leading to a sharp drop in stock prices and the failure of many dot-com companies. This had a profound impact on the US economy.",
+        "source_type": "web_search",
+        "title": "What was the impact of the Dot-com bubble on the US economy?",
+        "url": "https://www.tutorchase.com/answers/ib/history/what-was-the-impact-of-the-dot-com-bubble-on-the-us-economy"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_5c2da333c55e",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_83322cf44db2"
+    },
+    {
+      "confidence": 0.14281696,
+      "content": "Pets.com is considered one of the biggest dot-com failures. Of all the dot-com companies that went bust, pets.com might be the most famous",
+      "created_at": "2026-03-25T23:22:59.865578Z",
+      "evidence_id": "evidence_f44ed6c75344",
+      "relevance": 0.14281696,
+      "source": {
+        "access_date": "2026-03-25T23:22:59.865574Z",
+        "additional": {
+          "plan_id": "plan_7181d8bfba13",
+          "query": "Examine the impact of regulatory failures on the crash about What were the main causes of the dot-com crash?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Pets.com is considered one of the biggest dot-com failures. Of all the dot-com companies that went bust, pets.com might be the most famous",
+            "raw_content": null,
+            "score": 0.14281696,
+            "title": "The Dot-Com Companies That Went Bust\u2014and the Few That Survived",
+            "url": "https://247wallst.com/companies-and-brands-health-and-healthcare/2025/03/07/the-dot-com-companies-that-went-bust-and-the-few-that-survived/"
+          },
+          "source_name": "247wallst.com",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_5c2da333c55e",
+          "task_action": "search",
+          "task_id": "task_83322cf44db2"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Pets.com is considered one of the biggest dot-com failures. Of all the dot-com companies that went bust, pets.com might be the most famous",
+        "source_type": "web_search",
+        "title": "The Dot-Com Companies That Went Bust\u2014and the Few That Survived",
+        "url": "https://247wallst.com/companies-and-brands-health-and-healthcare/2025/03/07/the-dot-com-companies-that-went-bust-and-the-few-that-survived/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_5c2da333c55e",
+        "plan_7181d8bfba13"
+      ],
+      "task_id": "task_83322cf44db2"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_2_dotcom_probe_001/20260325T232510Z_what-were-the-main-causes-of-the-dot-com_experiment_2555a78480a1/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_2_dotcom_probe_001/20260325T232510Z_what-were-the-main-causes-of-the-dot-com_experiment_2555a78480a1/experiment.json"
+    ],
+    "completed_at": "2026-03-25T23:25:10.879579Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_2555a78480a1",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.25,
+      "groundedness": 1.0,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 12.0,
+      "number_of_supported_claims": 3.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-dot-com",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-25T23:22:51.034645Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the dot-com crash?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-25T23:22:51.034645Z",
+    "goal": "What were the main causes of the dot-com crash?",
+    "parent_plan_id": null,
+    "plan_id": "plan_7181d8bfba13",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Define the scope and timeline of the dot-com crash",
+        "expected_output": "A clear understanding of the time period and key events surrounding the crash",
+        "priority": 1,
+        "step_id": "step_73c4e4ded7cf",
+        "success_criteria": "Identify relevant historical dates and major players",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_73c4e4ded7cf"
+        ],
+        "description": "Research the economic factors leading to the crash",
+        "expected_output": "A list of key economic indicators and trends that contributed to the crash",
+        "priority": 2,
+        "step_id": "step_15a84fe8c63f",
+        "success_criteria": "Find at least 3 significant economic factors",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_15a84fe8c63f"
+        ],
+        "description": "Analyze the role of technological over-saturation in the crash",
+        "expected_output": "Insights into how the rapid growth of internet companies led to market saturation and subsequent collapse",
+        "priority": 3,
+        "step_id": "step_e3c25e01a8eb",
+        "success_criteria": "Identify at least 2 specific examples of companies that contributed to the over-saturation",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_e3c25e01a8eb"
+        ],
+        "description": "Examine the impact of regulatory failures on the crash",
+        "expected_output": "A summary of how inadequate regulation allowed for reckless business practices and ultimately contributed to the crash",
+        "priority": 4,
+        "step_id": "step_5c2da333c55e",
+        "success_criteria": "Find at least 1 significant example of regulatory failure",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_f0faa3c02952",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (bubble, com, speculation).",
+        "supporting_ids_checked": [
+          "evidence_f4675f9d0ee5"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_163998dfa33c",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (caused, decline, overvaluation, rapid, stocks, tech, value).",
+        "supporting_ids_checked": [
+          "evidence_b4ffaf697f3b"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_272548ee7605",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (bubble, com, dot, interest, low, rates).",
+        "supporting_ids_checked": [
+          "evidence_51b4ccdd096e"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-25T23:25:10.879579Z",
+    "decision_id": "decision_2c9cd28a9a42",
+    "summary": "supported=3, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

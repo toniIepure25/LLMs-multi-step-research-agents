@@ -1,7 +1,11 @@
 # Model and provider configuration
 # Override with environment variables: ASAR_MODEL_PROVIDER, ASAR_MODEL_MODEL, etc.
 # For the current live v0 demo path, set ASAR_MODEL_PROVIDER=openai and
-# ASAR_MODEL_MODEL=<supported OpenAI model> to switch all active LLM routes together.
+# ASAR_MODEL_MODEL=llama3.3:70b plus
+# ASAR_OPENAI_BASE_URL=https://inference.ccrolabs.com/v1 to switch all active
+# LLM routes together through the OpenAI-compatible remote endpoint.
+# Optional live-provider override:
+# ASAR_OPENAI_TIMEOUT_SECONDS=<seconds> to increase the OpenAI-compatible request timeout.
 
 [default]
 provider = "anthropic"

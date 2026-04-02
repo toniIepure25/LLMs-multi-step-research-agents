@@ -1,0 +1,116 @@
+{
+  "artifacts": [
+    "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_tier1_eval_set_005/dot_com_crash/20260318T233153Z_what-were-the-main-causes-of-the-dot-com_experiment_f15fb7fe110e/output.json",
+    "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_tier1_eval_set_005/dot_com_crash/20260318T233153Z_what-were-the-main-causes-of-the-dot-com_experiment_f15fb7fe110e/experiment.json"
+  ],
+  "completed_at": "2026-03-18T23:31:53.148750Z",
+  "config_snapshot": {
+    "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+    "experiments": {
+      "benchmarks": {
+        "data_dir": "experiments/data",
+        "default_tier": 1
+      },
+      "defaults": {
+        "cache_llm_responses": true,
+        "log_level": "debug",
+        "output_dir": "experiments/runs",
+        "seed": 42
+      },
+      "evaluation": {
+        "automated_metrics": [
+          "accuracy",
+          "completeness",
+          "groundedness"
+        ],
+        "human_eval_enabled": false
+      }
+    },
+    "models": {
+      "default": {
+        "max_tokens": 512,
+        "model": "llama3.1:8b",
+        "provider": "openai",
+        "temperature": 0.0
+      },
+      "deliberation": {
+        "max_tokens": 512,
+        "model": "llama3.1:8b",
+        "provider": "openai",
+        "temperature": 0.3
+      },
+      "execution": {
+        "max_tokens": 512,
+        "model": "llama3.1:8b",
+        "provider": "openai",
+        "temperature": 0.0
+      },
+      "planning": {
+        "max_tokens": 512,
+        "model": "llama3.1:8b",
+        "provider": "openai",
+        "temperature": 0.0
+      },
+      "verification": {
+        "max_tokens": 512,
+        "model": "llama3.1:8b",
+        "provider": "openai",
+        "temperature": 0.0
+      }
+    },
+    "pipeline": {
+      "execution": {
+        "max_parallel_tasks": 4,
+        "parallel": false,
+        "timeout_seconds": 120
+      },
+      "layers": {
+        "deliberation": true,
+        "evaluation": true,
+        "execution": true,
+        "grounding": false,
+        "memory": true,
+        "planning": true,
+        "verification": true
+      },
+      "logging": {
+        "level": "info",
+        "log_all_llm_calls": true,
+        "log_schemas": true
+      },
+      "memory": {
+        "compression_enabled": false,
+        "long_term_storage": false,
+        "working_memory_max_items": 50
+      }
+    },
+    "project": {
+      "authors": {},
+      "description": "Agentic Structured Autonomous Researcher",
+      "name": "asar",
+      "phase": "0-bootstrap",
+      "version": "0.1.0"
+    }
+  },
+  "dependency_versions": {
+    "pydantic": "2.12.5"
+  },
+  "error": null,
+  "experiment_id": "experiment_f15fb7fe110e",
+  "git_commit": null,
+  "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+  "metrics": {
+    "evidence_utilization": 0.25,
+    "groundedness": 1.0,
+    "number_of_claims": 3.0,
+    "number_of_evidence_items": 12.0,
+    "number_of_supported_claims": 3.0,
+    "plan_coverage": 1.0
+  },
+  "name": "asar-v0-what-were-the-main-causes-of-the-dot-com",
+  "notes": null,
+  "python_version": "3.11.14",
+  "seed": 42,
+  "started_at": "2026-03-18T23:31:39.745596Z",
+  "status": "completed"
+}

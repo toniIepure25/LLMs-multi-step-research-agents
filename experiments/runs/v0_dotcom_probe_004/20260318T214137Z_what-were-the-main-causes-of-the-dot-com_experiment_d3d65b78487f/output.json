@@ -1,0 +1,698 @@
+{
+  "created_at": "2026-03-18T21:41:37.946271Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_c99e5d10669e",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The evidence shows that regulatory failures led to the 2007-2008 financial crisis, and similar shortcomings likely contributed to the dot-com crash.",
+        "supporting_evidence_ids": [
+          "evidence_05823dae1f29",
+          "evidence_07da6e3c9c05"
+        ],
+        "text": "Regulatory shortcomings contributed to the crisis."
+      },
+      {
+        "claim_id": "claim_c2564969dacf",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The evidence indicates that speculation in dot-com businesses led to a stock market bubble, which ultimately burst.",
+        "supporting_evidence_ids": [
+          "evidence_92d621da9de3",
+          "evidence_d18875cf987c"
+        ],
+        "text": "Speculation in dot-com businesses caused a stock market bubble."
+      },
+      {
+        "claim_id": "claim_6778c42e7e13",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The evidence suggests that artificially low interest rates contributed to the dot-com crash by distorting market signals and leading to an unsustainable boom.",
+        "supporting_evidence_ids": [
+          "evidence_63e9db708080"
+        ],
+        "text": "Artificially low interest rates distorted market signals and led to an unsustainable boom."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-18T21:41:37.945411Z",
+    "decision_id": "decision_634d37d6a566",
+    "information_gaps": [
+      "Specific mechanisms behind regulatory failures"
+    ],
+    "plan_id": "plan_daae02ae4e80",
+    "synthesis": "Regulatory failures and speculation in dot-com businesses led to the dot-com crash."
+  },
+  "evidence": [
+    {
+      "confidence": 0.99985456,
+      "content": "This dissertation investigates how regulatory failures contributed to the 2007\u20132008 global financial crisis, focusing on structural",
+      "created_at": "2026-03-18T21:41:32.357320Z",
+      "evidence_id": "evidence_05823dae1f29",
+      "relevance": 0.99985456,
+      "source": {
+        "access_date": "2026-03-18T21:41:32.357315Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Examine the impact of regulatory failures on the crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "This dissertation investigates how regulatory failures contributed to the 2007\u20132008 global financial crisis, focusing on structural",
+            "raw_content": null,
+            "score": 0.99985456,
+            "title": "(PDF) How Regulatory Failures Led to the 2007- 2008 Financial Crisis",
+            "url": "https://www.researchgate.net/publication/398417304_How_Regulatory_Failures_Led_to_the_2007-_2008_Financial_Crisis_-_Assessing_Post-_Crisis_reforms_and_the_Lessons_Learned_on_Systemic_Risk_Management"
+          },
+          "source_name": "researchgate.net",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_fceaab6be969",
+          "task_action": "search",
+          "task_id": "task_069243521b4b"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This dissertation investigates how regulatory failures contributed to the 2007\u20132008 global financial crisis, focusing on structural",
+        "source_type": "web_search",
+        "title": "(PDF) How Regulatory Failures Led to the 2007- 2008 Financial Crisis",
+        "url": "https://www.researchgate.net/publication/398417304_How_Regulatory_Failures_Led_to_the_2007-_2008_Financial_Crisis_-_Assessing_Post-_Crisis_reforms_and_the_Lessons_Learned_on_Systemic_Risk_Management"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_fceaab6be969",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_069243521b4b"
+    },
+    {
+      "confidence": 0.9992505,
+      "content": "One of the many regulatory shortcomings that the crisis exposed was the lack of tools that supervisors had to manage the financial system. All they could do",
+      "created_at": "2026-03-18T21:41:32.357333Z",
+      "evidence_id": "evidence_07da6e3c9c05",
+      "relevance": 0.9992505,
+      "source": {
+        "access_date": "2026-03-18T21:41:32.357329Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Examine the impact of regulatory failures on the crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "One of the many regulatory shortcomings that the crisis exposed was the lack of tools that supervisors had to manage the financial system. All they could do",
+            "raw_content": null,
+            "score": 0.9992505,
+            "title": "Regulatory Failure - Examples - Understanding Regulation",
+            "url": "https://www.regulation.org.uk/ob-regulatory_failure-examples.html"
+          },
+          "source_name": "regulation.org.uk",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_fceaab6be969",
+          "task_action": "search",
+          "task_id": "task_069243521b4b"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "One of the many regulatory shortcomings that the crisis exposed was the lack of tools that supervisors had to manage the financial system. All they could do",
+        "source_type": "web_search",
+        "title": "Regulatory Failure - Examples - Understanding Regulation",
+        "url": "https://www.regulation.org.uk/ob-regulatory_failure-examples.html"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_fceaab6be969",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_069243521b4b"
+    },
+    {
+      "confidence": 0.9987056,
+      "content": "We must first understand how interest rates coordinate resource allocation decisions (production, investment, and consumption) between the present and future. When a central bank artificially lowers interest rates, it distorts market signals and leads to an unsustainable boom followed by an inevitable market crash. Interest rates help entrepreneurs and investors determine whether consumers are saving or spending: in other words, how they are allocating their purchases between the present and future. When businesses observe falling interest rates, they know they need to concentrate resources on future production to meet future demand. The entrepreneur does not need to observe a falling interest rate and think, \u201coh look, this means consumers are deferring consumption\u200a\u2014\u200aI had better invest in a new factory so I can meet all the future demand!\u201d. If the interest rate does not reflect true consumption preferences, economic participants cannot properly allocate resources between the present and future. If interest rates are artificially low, businesses, consumers, and governments will borrow too much money.",
+      "created_at": "2026-03-18T21:41:31.296062Z",
+      "evidence_id": "evidence_63e9db708080",
+      "relevance": 0.9987056,
+      "source": {
+        "access_date": "2026-03-18T21:41:31.296043Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Research the economic factors leading to the crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "We must first understand how interest rates coordinate resource allocation decisions (production, investment, and consumption) between the present and future. When a central bank artificially lowers interest rates, it distorts market signals and leads to an unsustainable boom followed by an inevitable market crash. Interest rates help entrepreneurs and investors determine whether consumers are saving or spending: in other words, how they are allocating their purchases between the present and future. When businesses observe falling interest rates, they know they need to concentrate resources on future production to meet future demand. The entrepreneur does not need to observe a falling interest rate and think, \u201coh look, this means consumers are deferring consumption\u200a\u2014\u200aI had better invest in a new factory so I can meet all the future demand!\u201d. If the interest rate does not reflect true consumption preferences, economic participants cannot properly allocate resources between the present and future. If interest rates are artificially low, businesses, consumers, and governments will borrow too much money.",
+            "raw_content": null,
+            "score": 0.9987056,
+            "title": "What Causes the Economy to Crash? - Vaulted",
+            "url": "https://vaulted.com/nuggets/what-causes-the-economy-to-crash/"
+          },
+          "source_name": "vaulted.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_1eca43da42bc",
+          "task_action": "search",
+          "task_id": "task_d8175bc21747"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "We must first understand how interest rates coordinate resource allocation decisions (production, investment, and consumption) between the present and future. When a central bank artificially lowers interest rates, it distorts market signals and leads to an unsustainable boom followed by an inevitable market crash. Interest rates help entrepreneurs and investors determine whether consumers are saving or spending: in other words, how they are allocating their purchases between the present and future. When businesses observe falling interest rates, they know they need to concentrate resources on future production to meet future demand. The entrepreneur does not need to observe a falling interest rate and think, \u201coh look, this means consumers are deferring consumption\u200a\u2014\u200aI had better invest in a new factory so I can meet all the future demand!\u201d. If the interest rate does not reflect true consumption preferences, economic participants cannot properly allocate resources between the present and future. If interest rates are artificially low, businesses, consumers, and governments will borrow too much money.",
+        "source_type": "web_search",
+        "title": "What Causes the Economy to Crash? - Vaulted",
+        "url": "https://vaulted.com/nuggets/what-causes-the-economy-to-crash/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1eca43da42bc",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_d8175bc21747"
+    },
+    {
+      "confidence": 0.9982039,
+      "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+      "created_at": "2026-03-18T21:41:30.819855Z",
+      "evidence_id": "evidence_92d621da9de3",
+      "relevance": 0.9982039,
+      "source": {
+        "access_date": "2026-03-18T21:41:30.819849Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+            "raw_content": null,
+            "score": 0.9982039,
+            "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+            "url": "https://www.britannica.com/money/dot-com-bubble"
+          },
+          "source_name": "britannica.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_1284c27cb31c",
+          "task_action": "search",
+          "task_id": "task_90d24144d0a3"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+        "source_type": "web_search",
+        "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+        "url": "https://www.britannica.com/money/dot-com-bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1284c27cb31c",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_90d24144d0a3"
+    },
+    {
+      "confidence": 0.9951703,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-18T21:41:30.819833Z",
+      "evidence_id": "evidence_d18875cf987c",
+      "relevance": 0.9951703,
+      "source": {
+        "access_date": "2026-03-18T21:41:30.819819Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.9951703,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_1284c27cb31c",
+          "task_action": "search",
+          "task_id": "task_90d24144d0a3"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1284c27cb31c",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_90d24144d0a3"
+    },
+    {
+      "confidence": 0.99108386,
+      "content": "The dot-com bubble (or dot-com boom) was a stock market bubble that developed during the late 1990s and peaked on Friday, March 10, 2000.",
+      "created_at": "2026-03-18T21:41:30.819873Z",
+      "evidence_id": "evidence_7d50b5425ef1",
+      "relevance": 0.99108386,
+      "source": {
+        "access_date": "2026-03-18T21:41:30.819866Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The dot-com bubble (or dot-com boom) was a stock market bubble that developed during the late 1990s and peaked on Friday, March 10, 2000.",
+            "raw_content": null,
+            "score": 0.99108386,
+            "title": "Dot-com bubble - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_1284c27cb31c",
+          "task_action": "search",
+          "task_id": "task_90d24144d0a3"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot-com bubble (or dot-com boom) was a stock market bubble that developed during the late 1990s and peaked on Friday, March 10, 2000.",
+        "source_type": "web_search",
+        "title": "Dot-com bubble - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1284c27cb31c",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_90d24144d0a3"
+    },
+    {
+      "confidence": 0.9874721,
+      "content": "Outside market-makers, by contrast, are well informed traders who profit by trading when price differs from fundamental value. The magnitude of transaction-induced volatility depends on the number of inside and outside market-makers, their willingness to take positions, the likelihood that major order imbalances will be due to uninformed trade, and, in the long-run, the costs of being well informed. To the greatest extent possible, market structures that minimize transaction-induced volatility and hence transaction costs, while still allowing fundamental price changes, should be sought. II VOLATILITY, LIQUIDITY, AND THE CAUSES OF THE OCTOBER 1987 CRASH Before examining the economics of trading activity limits, it is useful to consider whether current market conditions warrant their imposition. Transaction-induced volatility may also decrease if a halt allows outside market-makers time to enter the market to provide liquidity when price is rapidly changing in response to an uninformed order flow. Consider now two scenarios under which trading halts and price limits increase transaction-induced volatility.",
+      "created_at": "2026-03-18T21:41:32.357301Z",
+      "evidence_id": "evidence_bb79edbc829b",
+      "relevance": 0.9874721,
+      "source": {
+        "access_date": "2026-03-18T21:41:32.357287Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Examine the impact of regulatory failures on the crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Outside market-makers, by contrast, are well informed traders who profit by trading when price differs from fundamental value. The magnitude of transaction-induced volatility depends on the number of inside and outside market-makers, their willingness to take positions, the likelihood that major order imbalances will be due to uninformed trade, and, in the long-run, the costs of being well informed. To the greatest extent possible, market structures that minimize transaction-induced volatility and hence transaction costs, while still allowing fundamental price changes, should be sought. II VOLATILITY, LIQUIDITY, AND THE CAUSES OF THE OCTOBER 1987 CRASH Before examining the economics of trading activity limits, it is useful to consider whether current market conditions warrant their imposition. Transaction-induced volatility may also decrease if a halt allows outside market-makers time to enter the market to provide liquidity when price is rapidly changing in response to an uninformed order flow. Consider now two scenarios under which trading halts and price limits increase transaction-induced volatility.",
+            "raw_content": null,
+            "score": 0.9874721,
+            "title": "[PDF] Dangers of Regulatory Overreaction to the October 1987 Crash",
+            "url": "https://scholarship.law.cornell.edu/cgi/viewcontent.cgi?article=3426&context=clr"
+          },
+          "source_name": "scholarship.law.cornell.edu",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_fceaab6be969",
+          "task_action": "search",
+          "task_id": "task_069243521b4b"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Outside market-makers, by contrast, are well informed traders who profit by trading when price differs from fundamental value. The magnitude of transaction-induced volatility depends on the number of inside and outside market-makers, their willingness to take positions, the likelihood that major order imbalances will be due to uninformed trade, and, in the long-run, the costs of being well informed. To the greatest extent possible, market structures that minimize transaction-induced volatility and hence transaction costs, while still allowing fundamental price changes, should be sought. II VOLATILITY, LIQUIDITY, AND THE CAUSES OF THE OCTOBER 1987 CRASH Before examining the economics of trading activity limits, it is useful to consider whether current market conditions warrant their imposition. Transaction-induced volatility may also decrease if a halt allows outside market-makers time to enter the market to provide liquidity when price is rapidly changing in response to an uninformed order flow. Consider now two scenarios under which trading halts and price limits increase transaction-induced volatility.",
+        "source_type": "web_search",
+        "title": "[PDF] Dangers of Regulatory Overreaction to the October 1987 Crash",
+        "url": "https://scholarship.law.cornell.edu/cgi/viewcontent.cgi?article=3426&context=clr"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_fceaab6be969",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_069243521b4b"
+    },
+    {
+      "confidence": 0.97903574,
+      "content": "\u201cThis exacerbated the short-term negative impact on the economy and triggered the failure of many savings and loan institutions,\u201d says Annette Hellmer, an advisor at Johnson Financial Group in Madison, Wisconsin. After about two years of corrective action from the central bank, the economy turned around and \u201cinvestors enjoyed one of the greatest bull markets in equities and fixed income for decades,\u201d says Olanow of Weiss Multi-Strategy Advisers. \u201cThe accompanying recession, triggered in part by the household wealth that dropped during the market crash and in larger part by businesses curtailing capex spending in technology, was then punctuated by the 9/11 attacks,\u201d says Gene Balas, investment strategist at Signature Estate and Investment Advisors in Irving, Texas. \u201cOur current economic situation differs from [those of the past],\u201d says Hellmer, the advisor at Johnson Financial Group. \u201cAdvisors should remind their clients that anytime there is uncertainty on a global scale, it\u2019s reflected in volatility in the stock market,\u201d says Rafia Hasan, chief investment officer at Wipfli Financial Advisors in Chicago.",
+      "created_at": "2026-03-18T21:41:31.296096Z",
+      "evidence_id": "evidence_5474d7e57840",
+      "relevance": 0.97903574,
+      "source": {
+        "access_date": "2026-03-18T21:41:31.296088Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Research the economic factors leading to the crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "\u201cThis exacerbated the short-term negative impact on the economy and triggered the failure of many savings and loan institutions,\u201d says Annette Hellmer, an advisor at Johnson Financial Group in Madison, Wisconsin. After about two years of corrective action from the central bank, the economy turned around and \u201cinvestors enjoyed one of the greatest bull markets in equities and fixed income for decades,\u201d says Olanow of Weiss Multi-Strategy Advisers. \u201cThe accompanying recession, triggered in part by the household wealth that dropped during the market crash and in larger part by businesses curtailing capex spending in technology, was then punctuated by the 9/11 attacks,\u201d says Gene Balas, investment strategist at Signature Estate and Investment Advisors in Irving, Texas. \u201cOur current economic situation differs from [those of the past],\u201d says Hellmer, the advisor at Johnson Financial Group. \u201cAdvisors should remind their clients that anytime there is uncertainty on a global scale, it\u2019s reflected in volatility in the stock market,\u201d says Rafia Hasan, chief investment officer at Wipfli Financial Advisors in Chicago.",
+            "raw_content": null,
+            "score": 0.97903574,
+            "title": "A Brief History of Economic Crises, Crashes and Recoveries",
+            "url": "https://www.johnsonfinancialgroup.com/about-us/newsroom/a-brief-history-of-economic-crisis-crashes-and-recoveries/"
+          },
+          "source_name": "johnsonfinancialgroup.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_1eca43da42bc",
+          "task_action": "search",
+          "task_id": "task_d8175bc21747"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "\u201cThis exacerbated the short-term negative impact on the economy and triggered the failure of many savings and loan institutions,\u201d says Annette Hellmer, an advisor at Johnson Financial Group in Madison, Wisconsin. After about two years of corrective action from the central bank, the economy turned around and \u201cinvestors enjoyed one of the greatest bull markets in equities and fixed income for decades,\u201d says Olanow of Weiss Multi-Strategy Advisers. \u201cThe accompanying recession, triggered in part by the household wealth that dropped during the market crash and in larger part by businesses curtailing capex spending in technology, was then punctuated by the 9/11 attacks,\u201d says Gene Balas, investment strategist at Signature Estate and Investment Advisors in Irving, Texas. \u201cOur current economic situation differs from [those of the past],\u201d says Hellmer, the advisor at Johnson Financial Group. \u201cAdvisors should remind their clients that anytime there is uncertainty on a global scale, it\u2019s reflected in volatility in the stock market,\u201d says Rafia Hasan, chief investment officer at Wipfli Financial Advisors in Chicago.",
+        "source_type": "web_search",
+        "title": "A Brief History of Economic Crises, Crashes and Recoveries",
+        "url": "https://www.johnsonfinancialgroup.com/about-us/newsroom/a-brief-history-of-economic-crisis-crashes-and-recoveries/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1eca43da42bc",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_d8175bc21747"
+    },
+    {
+      "confidence": 0.91367656,
+      "content": "2 Many economists have blamed the economic collapse that began in the 1920s on a lack of government involvement in the economy and financial markets. Fast Fact.",
+      "created_at": "2026-03-18T21:41:31.296121Z",
+      "evidence_id": "evidence_2543845ef7d2",
+      "relevance": 0.91367656,
+      "source": {
+        "access_date": "2026-03-18T21:41:31.296114Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Research the economic factors leading to the crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "2 Many economists have blamed the economic collapse that began in the 1920s on a lack of government involvement in the economy and financial markets. Fast Fact.",
+            "raw_content": null,
+            "score": 0.91367656,
+            "title": "What Is Economic Collapse? Definition and How It Can Occur",
+            "url": "https://www.investopedia.com/terms/e/economic-collapse.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_1eca43da42bc",
+          "task_action": "search",
+          "task_id": "task_d8175bc21747"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "2 Many economists have blamed the economic collapse that began in the 1920s on a lack of government involvement in the economy and financial markets. Fast Fact.",
+        "source_type": "web_search",
+        "title": "What Is Economic Collapse? Definition and How It Can Occur",
+        "url": "https://www.investopedia.com/terms/e/economic-collapse.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1eca43da42bc",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_d8175bc21747"
+    },
+    {
+      "confidence": 0.4843801,
+      "content": "VSI Labs believes the long-term solutions to better safety will rely on recent and emerging technologies such as advanced driver assistance systems (ADAS), autonomous vehicles, cellular vehicle to everything (C-V2X) and cooperative driving automation / cooperative intelligent transportation systems (CDA/C-ITS). C-V2X technologies and their use in ITS are emerging and will make important safety contributions over the next decade as automotive OEMs add C-V2X capabilities to their new models. Table 2 looks at the technologies\u2019 likely safety impact for the most common crash-statistics categories. C-V2X has no impact on crash rates currently and will require a mandate to meet the long-term safety improvements shown in the table. Road departure crashes and single-vehicle crashes may also see lower levels of safety improvements from C-V2X and V2I deployments than some other crash categories. C-V2X will make an impact starting in the late 2020s, based on the deployment of a mandate for all vehicles and funding to upgrade traffic infrastructure for V2I and other V2X use cases.",
+      "created_at": "2026-03-18T21:41:31.877324Z",
+      "evidence_id": "evidence_2af218e82ed9",
+      "relevance": 0.4843801,
+      "source": {
+        "access_date": "2026-03-18T21:41:31.877305Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Analyze the role of technological over-saturation in the crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "VSI Labs believes the long-term solutions to better safety will rely on recent and emerging technologies such as advanced driver assistance systems (ADAS), autonomous vehicles, cellular vehicle to everything (C-V2X) and cooperative driving automation / cooperative intelligent transportation systems (CDA/C-ITS). C-V2X technologies and their use in ITS are emerging and will make important safety contributions over the next decade as automotive OEMs add C-V2X capabilities to their new models. Table 2 looks at the technologies\u2019 likely safety impact for the most common crash-statistics categories. C-V2X has no impact on crash rates currently and will require a mandate to meet the long-term safety improvements shown in the table. Road departure crashes and single-vehicle crashes may also see lower levels of safety improvements from C-V2X and V2I deployments than some other crash categories. C-V2X will make an impact starting in the late 2020s, based on the deployment of a mandate for all vehicles and funding to upgrade traffic infrastructure for V2I and other V2X use cases.",
+            "raw_content": null,
+            "score": 0.4843801,
+            "title": "Emerging Technologies Pose Solutions as Car Crash Fatalities Rise",
+            "url": "https://www.eetimes.com/emerging-technologies-pose-solutions-as-car-crash-fatalities-rise/"
+          },
+          "source_name": "eetimes.com",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_d2c44c84fddf",
+          "task_action": "search",
+          "task_id": "task_432ce80c71ad"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "VSI Labs believes the long-term solutions to better safety will rely on recent and emerging technologies such as advanced driver assistance systems (ADAS), autonomous vehicles, cellular vehicle to everything (C-V2X) and cooperative driving automation / cooperative intelligent transportation systems (CDA/C-ITS). C-V2X technologies and their use in ITS are emerging and will make important safety contributions over the next decade as automotive OEMs add C-V2X capabilities to their new models. Table 2 looks at the technologies\u2019 likely safety impact for the most common crash-statistics categories. C-V2X has no impact on crash rates currently and will require a mandate to meet the long-term safety improvements shown in the table. Road departure crashes and single-vehicle crashes may also see lower levels of safety improvements from C-V2X and V2I deployments than some other crash categories. C-V2X will make an impact starting in the late 2020s, based on the deployment of a mandate for all vehicles and funding to upgrade traffic infrastructure for V2I and other V2X use cases.",
+        "source_type": "web_search",
+        "title": "Emerging Technologies Pose Solutions as Car Crash Fatalities Rise",
+        "url": "https://www.eetimes.com/emerging-technologies-pose-solutions-as-car-crash-fatalities-rise/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d2c44c84fddf",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_432ce80c71ad"
+    },
+    {
+      "confidence": 0.37937838,
+      "content": "Many studies investigated factors that influenced saturation flow and startup lost time at a signalized intersection, but the impact of new distractions, such as electronic devices and in-vehicle entertainment systems, remained less investigated. This study aimed to characterize technology's influence on driver behavior at intersections and the impact of distractions on startup lost time through a field test conducted at three intersections in Texas. This study showed that technology-induced distractions from the prevalent use of cell phones created an impact on startup lost time and saturation flow, which remained critical to properly determine the phase and cycle lengths. ##### Keywords: Distraction; Intersection; Saturation Flow; Start Up Lost Time; Technology. Alam Boni, J., Kyung Hyun, K., & Mattingly, S.P. Characterizing Technology's Influence on Distractive Behavior at Signalized Intersections. Impact Assessment of Driver Distraction by Cellphone on Start-up Lost-time and Average Saturation Headway at Signalized Intersections Based on Vehicle Position in the Queue. https://doi.org/10.1016/j.trc.2020.102741 **Go to original source...**. https://doi.org/10.1016/j.trf.2019.03.021 **Go to original source...**.",
+      "created_at": "2026-03-18T21:41:31.877359Z",
+      "evidence_id": "evidence_e886009b2442",
+      "relevance": 0.37937838,
+      "source": {
+        "access_date": "2026-03-18T21:41:31.877350Z",
+        "additional": {
+          "plan_id": "plan_daae02ae4e80",
+          "query": "Analyze the role of technological over-saturation in the crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Many studies investigated factors that influenced saturation flow and startup lost time at a signalized intersection, but the impact of new distractions, such as electronic devices and in-vehicle entertainment systems, remained less investigated. This study aimed to characterize technology's influence on driver behavior at intersections and the impact of distractions on startup lost time through a field test conducted at three intersections in Texas. This study showed that technology-induced distractions from the prevalent use of cell phones created an impact on startup lost time and saturation flow, which remained critical to properly determine the phase and cycle lengths. ##### Keywords: Distraction; Intersection; Saturation Flow; Start Up Lost Time; Technology. Alam Boni, J., Kyung Hyun, K., & Mattingly, S.P. Characterizing Technology's Influence on Distractive Behavior at Signalized Intersections. Impact Assessment of Driver Distraction by Cellphone on Start-up Lost-time and Average Saturation Headway at Signalized Intersections Based on Vehicle Position in the Queue. https://doi.org/10.1016/j.trc.2020.102741 **Go to original source...**. https://doi.org/10.1016/j.trf.2019.03.021 **Go to original source...**.",
+            "raw_content": null,
+            "score": 0.37937838,
+            "title": "Characterizing Technology's Influence on Distractive Behavior at ...",
+            "url": "https://tots.upol.cz/artkey/tot-202203-0001_characterizing-technology-s-influence-on-distractive-behavior-at-signalized-intersections.php"
+          },
+          "source_name": "tots.upol.cz",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_d2c44c84fddf",
+          "task_action": "search",
+          "task_id": "task_432ce80c71ad"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Many studies investigated factors that influenced saturation flow and startup lost time at a signalized intersection, but the impact of new distractions, such as electronic devices and in-vehicle entertainment systems, remained less investigated. This study aimed to characterize technology's influence on driver behavior at intersections and the impact of distractions on startup lost time through a field test conducted at three intersections in Texas. This study showed that technology-induced distractions from the prevalent use of cell phones created an impact on startup lost time and saturation flow, which remained critical to properly determine the phase and cycle lengths. ##### Keywords: Distraction; Intersection; Saturation Flow; Start Up Lost Time; Technology. Alam Boni, J., Kyung Hyun, K., & Mattingly, S.P. Characterizing Technology's Influence on Distractive Behavior at Signalized Intersections. Impact Assessment of Driver Distraction by Cellphone on Start-up Lost-time and Average Saturation Headway at Signalized Intersections Based on Vehicle Position in the Queue. https://doi.org/10.1016/j.trc.2020.102741 **Go to original source...**. https://doi.org/10.1016/j.trf.2019.03.021 **Go to original source...**.",
+        "source_type": "web_search",
+        "title": "Characterizing Technology's Influence on Distractive Behavior at ...",
+        "url": "https://tots.upol.cz/artkey/tot-202203-0001_characterizing-technology-s-influence-on-distractive-behavior-at-signalized-intersections.php"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d2c44c84fddf",
+        "plan_daae02ae4e80"
+      ],
+      "task_id": "task_432ce80c71ad"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_dotcom_probe_004/20260318T214137Z_what-were-the-main-causes-of-the-dot-com_experiment_d3d65b78487f/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_dotcom_probe_004/20260318T214137Z_what-were-the-main-causes-of-the-dot-com_experiment_d3d65b78487f/experiment.json"
+    ],
+    "completed_at": "2026-03-18T21:41:37.945839Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_d3d65b78487f",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.45454545454545453,
+      "groundedness": 1.0,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 11.0,
+      "number_of_supported_claims": 3.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-dot-com",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-18T21:41:30.340744Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the dot-com crash?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-18T21:41:30.340744Z",
+    "goal": "What were the main causes of the dot-com crash?",
+    "parent_plan_id": null,
+    "plan_id": "plan_daae02ae4e80",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Define the scope and timeline of the dot-com crash",
+        "expected_output": "A clear understanding of the time period and key events surrounding the crash",
+        "priority": 1,
+        "step_id": "step_1284c27cb31c",
+        "success_criteria": "Identify relevant historical dates and major players",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_1284c27cb31c"
+        ],
+        "description": "Research the economic factors leading to the crash",
+        "expected_output": "A list of key economic indicators and trends that contributed to the crash",
+        "priority": 2,
+        "step_id": "step_1eca43da42bc",
+        "success_criteria": "Find at least 3 significant economic factors",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_1eca43da42bc"
+        ],
+        "description": "Analyze the role of technological over-saturation in the crash",
+        "expected_output": "Insights into how the rapid growth of internet companies led to market saturation and subsequent collapse",
+        "priority": 3,
+        "step_id": "step_d2c44c84fddf",
+        "success_criteria": "Identify at least 2 specific examples of companies that contributed to the over-saturation",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_d2c44c84fddf"
+        ],
+        "description": "Examine the impact of regulatory failures on the crash",
+        "expected_output": "A summary of how inadequate regulation allowed for reckless business practices and ultimately contributed to the crash",
+        "priority": 4,
+        "step_id": "step_fceaab6be969",
+        "success_criteria": "Find at least 1 significant example of regulatory failure",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_c99e5d10669e",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (contributed, crisis, regulatory).",
+        "supporting_ids_checked": [
+          "evidence_05823dae1f29",
+          "evidence_07da6e3c9c05"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_c2564969dacf",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (bubble, businesses, com, dot, market, stock).",
+        "supporting_ids_checked": [
+          "evidence_92d621da9de3",
+          "evidence_d18875cf987c"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_6778c42e7e13",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (artificially, boom, interest, low, market, rates, signals, unsustainable).",
+        "supporting_ids_checked": [
+          "evidence_63e9db708080"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-18T21:41:37.945839Z",
+    "decision_id": "decision_634d37d6a566",
+    "summary": "supported=3, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

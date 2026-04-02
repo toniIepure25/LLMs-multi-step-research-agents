@@ -1,0 +1,718 @@
+{
+  "created_at": "2026-03-19T19:08:15.125094Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_a14e6b6a62c7",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Multiple sources confirm speculation as cause.",
+        "supporting_evidence_ids": [
+          "evidence_711fa69b8af3",
+          "evidence_75bd0a2ace65"
+        ],
+        "text": "Speculation in dotcom or internet-based businesses from 1995 to 2000 caused the dotcom bubble."
+      },
+      {
+        "claim_id": "claim_9773f83970fc",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Single source confirms overvaluation as cause.",
+        "supporting_evidence_ids": [
+          "evidence_719b32b35668"
+        ],
+        "text": "Overvaluation of tech companies contributed to the dot-com crash."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-19T19:08:15.123986Z",
+    "decision_id": "decision_ecb842d5dbc1",
+    "information_gaps": [
+      "Mechanisms behind the dot-com bubble's growth",
+      "Broader economic consequences of the crash"
+    ],
+    "plan_id": "plan_f3efe9d02497",
+    "synthesis": "The dot-com crash was caused by speculation in internet-based businesses."
+  },
+  "evidence": [
+    {
+      "confidence": 0.9999132,
+      "content": "The dot-com bubble, spanning from the late 1990s to the early 2000s, marked a time of unprecedented growth and speculation within the technology",
+      "created_at": "2026-03-19T19:08:06.303498Z",
+      "evidence_id": "evidence_886bb0e73beb",
+      "relevance": 0.9999132,
+      "source": {
+        "access_date": "2026-03-19T19:08:06.303484Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Analyze the role of speculation and hype in the dot-com bubble",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The dot-com bubble, spanning from the late 1990s to the early 2000s, marked a time of unprecedented growth and speculation within the technology",
+            "raw_content": null,
+            "score": 0.9999132,
+            "title": "From Hype to Bust: Investigating the Underlying Factors of ...",
+            "url": "https://medium.com/@cjwunk/from-hype-to-bust-investigating-the-underlying-factors-of-the-dot-com-bubble-and-developing-b8ae925ece4f"
+          },
+          "source_name": "medium.com",
+          "step_description": "Analyze the role of speculation and hype in the dot-com bubble",
+          "step_id": "step_3790c08e8a70",
+          "task_action": "search",
+          "task_id": "task_63bff679bb96"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot-com bubble, spanning from the late 1990s to the early 2000s, marked a time of unprecedented growth and speculation within the technology",
+        "source_type": "web_search",
+        "title": "From Hype to Bust: Investigating the Underlying Factors of ...",
+        "url": "https://medium.com/@cjwunk/from-hype-to-bust-investigating-the-underlying-factors-of-the-dot-com-bubble-and-developing-b8ae925ece4f"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3790c08e8a70",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_63bff679bb96"
+    },
+    {
+      "confidence": 0.99948466,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-19T19:08:06.303520Z",
+      "evidence_id": "evidence_711fa69b8af3",
+      "relevance": 0.99948466,
+      "source": {
+        "access_date": "2026-03-19T19:08:06.303515Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Analyze the role of speculation and hype in the dot-com bubble",
+          "rank": 2,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.99948466,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Analyze the role of speculation and hype in the dot-com bubble",
+          "step_id": "step_3790c08e8a70",
+          "task_action": "search",
+          "task_id": "task_63bff679bb96"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3790c08e8a70",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_63bff679bb96"
+    },
+    {
+      "confidence": 0.9988927,
+      "content": "The Dot-com bubble of the late 1990s and early 2000s was a speculative economic bubble created by excessive optimism towards Internet companies and their stocks. The stock was listed at $28 on its first morning of active trading and soared to $58.25 on the same day, pushing the company\u2019s market capitalization to upwards of $2.5 billion and causing Netscape to rise to even greater levels of fame. Because of this, investors now had more capital which allowed them to make more speculative investments in Dot-com companies. The success of Netscape\u2019s IPO also inspired this new wave of entrepreneurs and investors to take their companies public, and investors rushed to fund them. This change in interest rates caused increased levels of stock market volatility for internet-companies as investors disagreed on whether or not these companies would be significantly impacted by higher borrowing costs. The NASDAQ\u2019s value tanked and a majority of investors were no longer funding internet-companies.",
+      "created_at": "2026-03-19T19:08:06.303536Z",
+      "evidence_id": "evidence_0cf3e0b0ae61",
+      "relevance": 0.9988927,
+      "source": {
+        "access_date": "2026-03-19T19:08:06.303531Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Analyze the role of speculation and hype in the dot-com bubble",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The Dot-com bubble of the late 1990s and early 2000s was a speculative economic bubble created by excessive optimism towards Internet companies and their stocks. The stock was listed at $28 on its first morning of active trading and soared to $58.25 on the same day, pushing the company\u2019s market capitalization to upwards of $2.5 billion and causing Netscape to rise to even greater levels of fame. Because of this, investors now had more capital which allowed them to make more speculative investments in Dot-com companies. The success of Netscape\u2019s IPO also inspired this new wave of entrepreneurs and investors to take their companies public, and investors rushed to fund them. This change in interest rates caused increased levels of stock market volatility for internet-companies as investors disagreed on whether or not these companies would be significantly impacted by higher borrowing costs. The NASDAQ\u2019s value tanked and a majority of investors were no longer funding internet-companies.",
+            "raw_content": null,
+            "score": 0.9988927,
+            "title": "The Dot-Com Bubble Explained",
+            "url": "https://streetfins.com/the-dot-com-bubble-explained/"
+          },
+          "source_name": "streetfins.com",
+          "step_description": "Analyze the role of speculation and hype in the dot-com bubble",
+          "step_id": "step_3790c08e8a70",
+          "task_action": "search",
+          "task_id": "task_63bff679bb96"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Dot-com bubble of the late 1990s and early 2000s was a speculative economic bubble created by excessive optimism towards Internet companies and their stocks. The stock was listed at $28 on its first morning of active trading and soared to $58.25 on the same day, pushing the company\u2019s market capitalization to upwards of $2.5 billion and causing Netscape to rise to even greater levels of fame. Because of this, investors now had more capital which allowed them to make more speculative investments in Dot-com companies. The success of Netscape\u2019s IPO also inspired this new wave of entrepreneurs and investors to take their companies public, and investors rushed to fund them. This change in interest rates caused increased levels of stock market volatility for internet-companies as investors disagreed on whether or not these companies would be significantly impacted by higher borrowing costs. The NASDAQ\u2019s value tanked and a majority of investors were no longer funding internet-companies.",
+        "source_type": "web_search",
+        "title": "The Dot-Com Bubble Explained",
+        "url": "https://streetfins.com/the-dot-com-bubble-explained/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3790c08e8a70",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_63bff679bb96"
+    },
+    {
+      "confidence": 0.9982039,
+      "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+      "created_at": "2026-03-19T19:08:02.999291Z",
+      "evidence_id": "evidence_aa37794a0d9b",
+      "relevance": 0.9982039,
+      "source": {
+        "access_date": "2026-03-19T19:08:02.999279Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+            "raw_content": null,
+            "score": 0.9982039,
+            "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+            "url": "https://www.britannica.com/money/dot-com-bubble"
+          },
+          "source_name": "britannica.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_712ed681f50f",
+          "task_action": "search",
+          "task_id": "task_c24e18634c4a"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+        "source_type": "web_search",
+        "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+        "url": "https://www.britannica.com/money/dot-com-bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_712ed681f50f",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_c24e18634c4a"
+    },
+    {
+      "confidence": 0.99736834,
+      "content": "The crash was caused by a number of factors, including overvaluation of tech companies, lack of regulation in the tech industry, and the burst of the housing",
+      "created_at": "2026-03-19T19:08:09.132235Z",
+      "evidence_id": "evidence_719b32b35668",
+      "relevance": 0.99736834,
+      "source": {
+        "access_date": "2026-03-19T19:08:09.132228Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Examine the impact of regulatory failures on the crash about What were the main causes of the dot-com crash?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The crash was caused by a number of factors, including overvaluation of tech companies, lack of regulation in the tech industry, and the burst of the housing",
+            "raw_content": null,
+            "score": 0.99736834,
+            "title": "The Dot Com Crash: Causes and Consequences - Eccuity",
+            "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+          },
+          "source_name": "eccuity.com",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_6d7c9d912119",
+          "task_action": "search",
+          "task_id": "task_879895af245c"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The crash was caused by a number of factors, including overvaluation of tech companies, lack of regulation in the tech industry, and the burst of the housing",
+        "source_type": "web_search",
+        "title": "The Dot Com Crash: Causes and Consequences - Eccuity",
+        "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_6d7c9d912119",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_879895af245c"
+    },
+    {
+      "confidence": 0.9951703,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-19T19:08:02.999255Z",
+      "evidence_id": "evidence_75bd0a2ace65",
+      "relevance": 0.9951703,
+      "source": {
+        "access_date": "2026-03-19T19:08:02.999235Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.9951703,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_712ed681f50f",
+          "task_action": "search",
+          "task_id": "task_c24e18634c4a"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_712ed681f50f",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_c24e18634c4a"
+    },
+    {
+      "confidence": 0.99108386,
+      "content": "The dot-com bubble (or dot-com boom) was a stock market bubble that developed during the late 1990s and peaked on Friday, March 10, 2000.",
+      "created_at": "2026-03-19T19:08:02.999311Z",
+      "evidence_id": "evidence_1eb3751aca93",
+      "relevance": 0.99108386,
+      "source": {
+        "access_date": "2026-03-19T19:08:02.999306Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The dot-com bubble (or dot-com boom) was a stock market bubble that developed during the late 1990s and peaked on Friday, March 10, 2000.",
+            "raw_content": null,
+            "score": 0.99108386,
+            "title": "Dot-com bubble - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_712ed681f50f",
+          "task_action": "search",
+          "task_id": "task_c24e18634c4a"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot-com bubble (or dot-com boom) was a stock market bubble that developed during the late 1990s and peaked on Friday, March 10, 2000.",
+        "source_type": "web_search",
+        "title": "Dot-com bubble - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_712ed681f50f",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_c24e18634c4a"
+    },
+    {
+      "confidence": 0.9883128,
+      "content": "Dotcom Bubble:max_bytes(150000):strip_icc()/dotcom-bubble.asp-FINAL-97b80a4f3ae44b38bef25defa02127a5.png). Dotcom Bubble:max_bytes(150000):strip_icc()/dotcom-bubble.asp-FINAL-97b80a4f3ae44b38bef25defa02127a5.png). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of speculative or fad-based investing, the abundance of venture capital funding for start-ups, and the failure of dotcoms to turn a profit. While companies like Intel, Cisco, and Oracle drove growth in tech, upstart dotcom companies sparked the stock market surge starting in 1995. The 2000 stock market crash was a direct result of the bursting of the dotcom bubble. couple managing finance and investment online, analyzing stock market trades with mobile app on smartphone:max_bytes(150000):strip_icc()/Primary-Image-how-to-trade-forex-7499569-44467e75edf24375a03f63fe6f791310.jpg). A large tilted cargo ship with containers falling near water and cranes in the background:max_bytes(150000):strip_icc()/GettyImages-72516549-f5898b8281d04ccea20e10e45e983748.jpg). Man Hand With Digital Tablet Analyzing Stock Market Growth:max_bytes(150000):strip_icc()/GettyImages-1160038649-cc7bcdfea9cc4b08973d14a2da8e34db.jpg). An investor uses a calculator to determine how much profit they will realize if they sell a portion of shares they hold in their account.:max_bytes(150000):strip_icc()/125183558-5bfc2b8c46e0fb00517be02c.jpg). New York Stock Exchange:max_bytes(150000):strip_icc()/investing8-5bfc2b8d46e0fb005144dbe3.jpg).",
+      "created_at": "2026-03-19T19:08:09.132209Z",
+      "evidence_id": "evidence_2a40dde2f1a6",
+      "relevance": 0.9883128,
+      "source": {
+        "access_date": "2026-03-19T19:08:09.132190Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Examine the impact of regulatory failures on the crash about What were the main causes of the dot-com crash?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Dotcom Bubble:max_bytes(150000):strip_icc()/dotcom-bubble.asp-FINAL-97b80a4f3ae44b38bef25defa02127a5.png). Dotcom Bubble:max_bytes(150000):strip_icc()/dotcom-bubble.asp-FINAL-97b80a4f3ae44b38bef25defa02127a5.png). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of speculative or fad-based investing, the abundance of venture capital funding for start-ups, and the failure of dotcoms to turn a profit. While companies like Intel, Cisco, and Oracle drove growth in tech, upstart dotcom companies sparked the stock market surge starting in 1995. The 2000 stock market crash was a direct result of the bursting of the dotcom bubble. couple managing finance and investment online, analyzing stock market trades with mobile app on smartphone:max_bytes(150000):strip_icc()/Primary-Image-how-to-trade-forex-7499569-44467e75edf24375a03f63fe6f791310.jpg). A large tilted cargo ship with containers falling near water and cranes in the background:max_bytes(150000):strip_icc()/GettyImages-72516549-f5898b8281d04ccea20e10e45e983748.jpg). Man Hand With Digital Tablet Analyzing Stock Market Growth:max_bytes(150000):strip_icc()/GettyImages-1160038649-cc7bcdfea9cc4b08973d14a2da8e34db.jpg). An investor uses a calculator to determine how much profit they will realize if they sell a portion of shares they hold in their account.:max_bytes(150000):strip_icc()/125183558-5bfc2b8c46e0fb00517be02c.jpg). New York Stock Exchange:max_bytes(150000):strip_icc()/investing8-5bfc2b8d46e0fb005144dbe3.jpg).",
+            "raw_content": null,
+            "score": 0.9883128,
+            "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+            "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_6d7c9d912119",
+          "task_action": "search",
+          "task_id": "task_879895af245c"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Dotcom Bubble:max_bytes(150000):strip_icc()/dotcom-bubble.asp-FINAL-97b80a4f3ae44b38bef25defa02127a5.png). Dotcom Bubble:max_bytes(150000):strip_icc()/dotcom-bubble.asp-FINAL-97b80a4f3ae44b38bef25defa02127a5.png). The dotcom bubble, also known as the Internet bubble, grew out of a combination of the presence of speculative or fad-based investing, the abundance of venture capital funding for start-ups, and the failure of dotcoms to turn a profit. While companies like Intel, Cisco, and Oracle drove growth in tech, upstart dotcom companies sparked the stock market surge starting in 1995. The 2000 stock market crash was a direct result of the bursting of the dotcom bubble. couple managing finance and investment online, analyzing stock market trades with mobile app on smartphone:max_bytes(150000):strip_icc()/Primary-Image-how-to-trade-forex-7499569-44467e75edf24375a03f63fe6f791310.jpg). A large tilted cargo ship with containers falling near water and cranes in the background:max_bytes(150000):strip_icc()/GettyImages-72516549-f5898b8281d04ccea20e10e45e983748.jpg). Man Hand With Digital Tablet Analyzing Stock Market Growth:max_bytes(150000):strip_icc()/GettyImages-1160038649-cc7bcdfea9cc4b08973d14a2da8e34db.jpg). An investor uses a calculator to determine how much profit they will realize if they sell a portion of shares they hold in their account.:max_bytes(150000):strip_icc()/125183558-5bfc2b8c46e0fb00517be02c.jpg). New York Stock Exchange:max_bytes(150000):strip_icc()/investing8-5bfc2b8d46e0fb005144dbe3.jpg).",
+        "source_type": "web_search",
+        "title": "Understanding the Dotcom Bubble: Causes, Impact, and Lessons",
+        "url": "https://www.investopedia.com/terms/d/dotcom-bubble.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_6d7c9d912119",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_879895af245c"
+    },
+    {
+      "confidence": 0.9868787,
+      "content": "The impact of the Dot-Com Bubble Burst refers to the economic fallout that followed the rapid rise and collapse of internet-based companies in the late",
+      "created_at": "2026-03-19T19:08:09.132256Z",
+      "evidence_id": "evidence_e5f63e12363e",
+      "relevance": 0.9868787,
+      "source": {
+        "access_date": "2026-03-19T19:08:09.132249Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Examine the impact of regulatory failures on the crash about What were the main causes of the dot-com crash?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The impact of the Dot-Com Bubble Burst refers to the economic fallout that followed the rapid rise and collapse of internet-based companies in the late",
+            "raw_content": null,
+            "score": 0.9868787,
+            "title": "Impact of the Dot-Com Bubble Burst - LinkedIn",
+            "url": "https://www.linkedin.com/top-content/finance/financial-crisis-case-studies/impact-of-the-dot-com-bubble-burst/"
+          },
+          "source_name": "linkedin.com",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_6d7c9d912119",
+          "task_action": "search",
+          "task_id": "task_879895af245c"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The impact of the Dot-Com Bubble Burst refers to the economic fallout that followed the rapid rise and collapse of internet-based companies in the late",
+        "source_type": "web_search",
+        "title": "Impact of the Dot-Com Bubble Burst - LinkedIn",
+        "url": "https://www.linkedin.com/top-content/finance/financial-crisis-case-studies/impact-of-the-dot-com-bubble-burst/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_6d7c9d912119",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_879895af245c"
+    },
+    {
+      "confidence": 0.53531766,
+      "content": "The dot com crash also had broader economic consequences, as the decline in tech stocks led to a decline in consumer confidence and spending.",
+      "created_at": "2026-03-19T19:08:05.112963Z",
+      "evidence_id": "evidence_298bfcef3466",
+      "relevance": 0.53531766,
+      "source": {
+        "access_date": "2026-03-19T19:08:05.112950Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Research the economic factors leading up to the crash about What were the main causes of the dot-com crash?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The dot com crash also had broader economic consequences, as the decline in tech stocks led to a decline in consumer confidence and spending.",
+            "raw_content": null,
+            "score": 0.53531766,
+            "title": "The Dot Com Crash: Causes and Consequences - Eccuity",
+            "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+          },
+          "source_name": "eccuity.com",
+          "step_description": "Research the economic factors leading up to the crash",
+          "step_id": "step_487c166dc5f2",
+          "task_action": "search",
+          "task_id": "task_6b8fa513fdcd"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot com crash also had broader economic consequences, as the decline in tech stocks led to a decline in consumer confidence and spending.",
+        "source_type": "web_search",
+        "title": "The Dot Com Crash: Causes and Consequences - Eccuity",
+        "url": "https://www.eccuity.com/blog/the-dot-com-crash-causes-and-consequences"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_487c166dc5f2",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_6b8fa513fdcd"
+    },
+    {
+      "confidence": 0.42491361,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-19T19:08:05.112982Z",
+      "evidence_id": "evidence_c32b5da1fb18",
+      "relevance": 0.42491361,
+      "source": {
+        "access_date": "2026-03-19T19:08:05.112978Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Research the economic factors leading up to the crash about What were the main causes of the dot-com crash?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.42491361,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Research the economic factors leading up to the crash",
+          "step_id": "step_487c166dc5f2",
+          "task_action": "search",
+          "task_id": "task_6b8fa513fdcd"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_487c166dc5f2",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_6b8fa513fdcd"
+    },
+    {
+      "confidence": 0.36452922,
+      "content": "Many dot-com companies ran out of capital and went through liquidation. Supporting industries, such as advertising and shipping, scaled back their operations",
+      "created_at": "2026-03-19T19:08:05.112997Z",
+      "evidence_id": "evidence_570c9eab14db",
+      "relevance": 0.36452922,
+      "source": {
+        "access_date": "2026-03-19T19:08:05.112993Z",
+        "additional": {
+          "plan_id": "plan_f3efe9d02497",
+          "query": "Research the economic factors leading up to the crash about What were the main causes of the dot-com crash?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Many dot-com companies ran out of capital and went through liquidation. Supporting industries, such as advertising and shipping, scaled back their operations",
+            "raw_content": null,
+            "score": 0.36452922,
+            "title": "Dot-com bubble - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Research the economic factors leading up to the crash",
+          "step_id": "step_487c166dc5f2",
+          "task_action": "search",
+          "task_id": "task_6b8fa513fdcd"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Many dot-com companies ran out of capital and went through liquidation. Supporting industries, such as advertising and shipping, scaled back their operations",
+        "source_type": "web_search",
+        "title": "Dot-com bubble - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_487c166dc5f2",
+        "plan_f3efe9d02497"
+      ],
+      "task_id": "task_6b8fa513fdcd"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_tier1_eval_set_002/dot_com_crash/20260319T190815Z_what-were-the-main-causes-of-the-dot-com_experiment_ec1213952bf0/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_tier1_eval_set_002/dot_com_crash/20260319T190815Z_what-were-the-main-causes-of-the-dot-com_experiment_ec1213952bf0/experiment.json"
+    ],
+    "completed_at": "2026-03-19T19:08:15.124391Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_ec1213952bf0",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.25,
+      "groundedness": 1.0,
+      "number_of_claims": 2.0,
+      "number_of_evidence_items": 12.0,
+      "number_of_supported_claims": 2.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-dot-com",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-19T19:08:01.669874Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the dot-com crash?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-19T19:08:01.669874Z",
+    "goal": "What were the main causes of the dot-com crash?",
+    "parent_plan_id": null,
+    "plan_id": "plan_f3efe9d02497",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Define the scope and timeline of the dot-com crash",
+        "expected_output": "A clear understanding of the time period and key events surrounding the crash",
+        "priority": 1,
+        "step_id": "step_712ed681f50f",
+        "success_criteria": "Identify relevant historical dates and major players",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_712ed681f50f"
+        ],
+        "description": "Research the economic factors leading up to the crash",
+        "expected_output": "A list of key economic indicators and trends that contributed to the crash",
+        "priority": 2,
+        "step_id": "step_487c166dc5f2",
+        "success_criteria": "Find at least 3 significant economic factors",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_487c166dc5f2"
+        ],
+        "description": "Analyze the role of speculation and hype in the dot-com bubble",
+        "expected_output": "Insights into how speculation and hype fueled the bubble and its eventual collapse",
+        "priority": 3,
+        "step_id": "step_3790c08e8a70",
+        "success_criteria": "Identify at least 2 notable examples of companies that exemplified this phenomenon",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_3790c08e8a70"
+        ],
+        "description": "Examine the impact of regulatory failures on the crash",
+        "expected_output": "A summary of key regulatory shortcomings that contributed to the crash",
+        "priority": 4,
+        "step_id": "step_6d7c9d912119",
+        "success_criteria": "Find at least 1 significant instance of regulatory failure",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_a14e6b6a62c7",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (1995, 2000, based, bubble, businesses, caused, dotcom, internet, speculation).",
+        "supporting_ids_checked": [
+          "evidence_711fa69b8af3",
+          "evidence_75bd0a2ace65"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_9773f83970fc",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (companies, crash, overvaluation, tech).",
+        "supporting_ids_checked": [
+          "evidence_719b32b35668"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-19T19:08:15.124391Z",
+    "decision_id": "decision_ecb842d5dbc1",
+    "summary": "supported=2, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

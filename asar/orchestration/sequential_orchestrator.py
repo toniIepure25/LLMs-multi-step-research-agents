@@ -5,10 +5,18 @@ Minimal sequential v0 orchestrator.
 from __future__ import annotations
 
 import json
+import re
 from collections.abc import Awaitable, Callable
 from typing import Any
 
-from asar.common import ASARSettings, IDPrefix, generate_id, generate_trace_id, get_logger, setup_logging
+from asar.common import (
+    ASARSettings,
+    IDPrefix,
+    generate_id,
+    generate_trace_id,
+    get_logger,
+    setup_logging,
+)
 from asar.core.errors import MemoryStoreError, OrchestrationError
 from asar.core.protocols import (
     DeliberationProtocol,
@@ -24,6 +32,65 @@ from schemas.experiment_record import ExperimentRecord
 from schemas.research_output import ResearchOutput
 from schemas.research_plan import PlanStep, ResearchPlan
 from schemas.task_packet import TaskPacket
+
+_TOKEN_PATTERN = re.compile(r"[a-z0-9]+")
+_STOPWORDS = frozenset(
+    {
+        "a",
+        "an",
+        "and",
+        "as",
+        "at",
+        "by",
+        "for",
+        "from",
+        "how",
+        "in",
+        "into",
+        "is",
+        "it",
+        "its",
+        "main",
+        "of",
+        "on",
+        "the",
+        "their",
+        "these",
+        "this",
+        "to",
+        "were",
+        "what",
+        "which",
+        "with",
+    }
+)
+_GENERIC_QUERY_TERMS = frozenset(
+    {
+        "analyze",
+        "bubble",
+        "bubbles",
+        "cause",
+        "causes",
+        "crash",
+        "crashes",
+        "crisis",
+        "crises",
+        "depression",
+        "examine",
+        "factor",
+        "factors",
+        "impact",
+        "impacts",
+        "lead",
+        "leading",
+        "major",
+        "reason",
+        "reasons",
+        "research",
+        "role",
+        "search",
+    }
+)
 
 
 class SequentialOrchestrator:
@@ -116,7 +183,10 @@ class SequentialOrchestrator:
         collected_evidence: list[EvidenceItem] = []
         for step in plan.steps:
             task = self._build_task_packet(plan=plan, step=step, constraints=constraints)
-            logger.info("Executing plan step", extra={"step_id": step.step_id, "task_id": task.task_id})
+            logger.info(
+                "Executing plan step",
+                extra={"step_id": step.step_id, "task_id": task.task_id},
+            )
 
             step_result = await self._invoke_result_stage(
                 stage="execution",
@@ -167,7 +237,10 @@ class SequentialOrchestrator:
             stage="verification",
             trace_id=trace_id,
             callback=lambda: self._verify(decision, evidence_for_downstream),
-            details={"decision_id": decision.decision_id, "evidence_count": len(evidence_for_downstream)},
+            details={
+                "decision_id": decision.decision_id,
+                "evidence_count": len(evidence_for_downstream),
+            },
         )
         if verification_result.is_error:
             return verification_result
@@ -412,7 +485,7 @@ class SequentialOrchestrator:
             plan_id=plan.plan_id,
             step_id=step.step_id,
             action="search",
-            query=step.description,
+            query=_build_search_query(goal=plan.goal, step_description=step.description),
             context=json.dumps(
                 {
                     "goal": plan.goal,
@@ -450,3 +523,26 @@ class SequentialOrchestrator:
                 "tags": tags,
             }
         )
+
+
+def _build_search_query(*, goal: str, step_description: str) -> str:
+    goal_anchor_terms = _anchor_terms(goal)
+    if not goal_anchor_terms:
+        return step_description
+
+    step_anchor_terms = _anchor_terms(step_description)
+    if goal_anchor_terms & step_anchor_terms:
+        return step_description
+
+    # Preserve the original goal's topic anchors when a plan step becomes too generic.
+    return f"{step_description} about {goal}"
+
+
+def _anchor_terms(text: str) -> set[str]:
+    normalized = text.lower().replace("dot-com", "dotcom").replace("dot com", "dotcom")
+    normalized = normalized.replace("-", " ")
+    return {
+        token
+        for token in _TOKEN_PATTERN.findall(normalized)
+        if token not in _STOPWORDS and token not in _GENERIC_QUERY_TERMS and len(token) > 1
+    }

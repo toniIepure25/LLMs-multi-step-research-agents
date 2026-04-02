@@ -5,7 +5,16 @@ This is the single source of truth for project context. All other docs reference
 For how to *work* in this repo, see [AGENTS.md](AGENTS.md).
 For a quick orientation, see [README.md](README.md).
 
-Current implementation target: the frozen v0 sequential vertical slice defined in [docs/architecture/v0-canonical-architecture.md](docs/architecture/v0-canonical-architecture.md). Broader capabilities described here remain roadmap items until later phases.
+Current architecture status:
+- Frozen historical v0 baseline: [experiments/notes/v0_tier1_eval_set_004.md](experiments/notes/v0_tier1_eval_set_004.md)
+- Active experimental v1-minimal baseline: [experiments/notes/v1_tier1_eval_set_004.md](experiments/notes/v1_tier1_eval_set_004.md)
+- Exploratory v1.1 branch: grounded selection / support attribution, not promoted after focused live probing: [experiments/notes/v1_1_2008_probe_001.md](experiments/notes/v1_1_2008_probe_001.md), [experiments/notes/v1_1_2008_probe_002.md](experiments/notes/v1_1_2008_probe_002.md)
+- Exploratory v1.2 branch: deterministic mechanism bundling, not promoted after focused live probing: [experiments/notes/v1_2_2008_probe_002.md](experiments/notes/v1_2_2008_probe_002.md), [experiments/notes/v1_2_great_depression_probe_001.md](experiments/notes/v1_2_great_depression_probe_001.md), [experiments/notes/v1_2_dotcom_probe_001.md](experiments/notes/v1_2_dotcom_probe_001.md)
+- Exploratory v1.3 branch: evidence-grounded mechanism sketching, not promoted after the focused live 2008 probe: [experiments/notes/v1_3_2008_probe_001.md](experiments/notes/v1_3_2008_probe_001.md)
+- Exploratory v1.4 branch: slot-grounded mechanism drafting, not promoted after the focused live 2008 probe: [experiments/notes/v1_4_2008_probe_001.md](experiments/notes/v1_4_2008_probe_001.md)
+- Future work should begin with a new consciously scoped architecture-design step; v1.1 through v1.4 are now design evidence, not the default implementation queue
+
+The frozen v0 sequential vertical slice is defined in [docs/architecture/v0-canonical-architecture.md](docs/architecture/v0-canonical-architecture.md). The implemented v1-minimal transition is summarized in [docs/architecture/v1-minimal-architecture.md](docs/architecture/v1-minimal-architecture.md). The exploratory v1.1 outcome and freeze status are summarized in [docs/architecture/v1_1-grounded-selection-architecture.md](docs/architecture/v1_1-grounded-selection-architecture.md) and [tasks/handoff/2026-03-21_v1_1_exploratory_freeze.md](tasks/handoff/2026-03-21_v1_1_exploratory_freeze.md). The exploratory v1.2 outcome and freeze status are summarized in [docs/architecture/v1_2-mechanism-bundling-architecture.md](docs/architecture/v1_2-mechanism-bundling-architecture.md) and [tasks/handoff/2026-03-25_v1_2_exploratory_freeze.md](tasks/handoff/2026-03-25_v1_2_exploratory_freeze.md). The exploratory v1.3 outcome and freeze status are summarized in [docs/architecture/v1_3-mechanism-sketching-architecture.md](docs/architecture/v1_3-mechanism-sketching-architecture.md) and [tasks/handoff/2026-03-26_v1_3_exploratory_freeze.md](tasks/handoff/2026-03-26_v1_3_exploratory_freeze.md). The exploratory v1.4 outcome and freeze status are summarized in [docs/architecture/v1_4-slot-grounded-drafting-architecture.md](docs/architecture/v1_4-slot-grounded-drafting-architecture.md) and [tasks/handoff/2026-03-31_v1_4_exploratory_freeze.md](tasks/handoff/2026-03-31_v1_4_exploratory_freeze.md).
 
 ---
 
@@ -410,7 +419,7 @@ When analyzing a specific run's failures, classify each error by FM-ID, trace it
 Repository structure, documentation, typed schemas, protocol definitions, experiment infrastructure.
 
 ### Phase 1 — Minimal End-to-End Pipeline `[v0]`
-The frozen implementation target is one sequential end-to-end vertical slice. See [v0-canonical-architecture.md](docs/architecture/v0-canonical-architecture.md) for exact scope and success criteria.
+The frozen implementation target is one sequential end-to-end vertical slice. v0 tuning is complete for now and [v0_tier1_eval_set_004](experiments/notes/v0_tier1_eval_set_004.md) is the official live reference baseline. See [v0-canonical-architecture.md](docs/architecture/v0-canonical-architecture.md) for exact scope and success criteria.
 
 - `SimplePlanner` (`planning`) — single LLM call, goal → `ResearchPlan` with sequential `PlanStep`s
 - `WebSearchExecutor` (`execution`) — one search API call per `TaskPacket` → `list[EvidenceItem]`
@@ -424,7 +433,22 @@ The frozen implementation target is one sequential end-to-end vertical slice. Se
 
 Supported development/runtime baseline for this phase: Python 3.11+. Any validation observed under Python 3.10.x is non-canonical.
 
-### Phase 2 — Grounding, Re-planning & Enhanced Verification `[v1]`
+### Phase 1.5 — Minimal Claim Selection Architecture `[v1-minimal]`
+- Keep planning, execution, memory, verification, and evaluation intact
+- Split current deliberation into two steps:
+  - candidate claim generation
+  - support-aware claim selection
+- Introduce one new architectural capability only: selection/ranking after generation
+- Selector priorities:
+  - stronger support
+  - higher question relevance
+  - better non-duplication
+  - sufficient specificity
+- Do not add grounding, re-planning, parallelism, debate, or advanced memory in this step
+
+See [docs/architecture/v1-minimal-architecture.md](docs/architecture/v1-minimal-architecture.md) and [tasks/v1_minimal_plan.md](tasks/v1_minimal_plan.md).
+
+### Phase 2 — Grounding, Re-planning & Enhanced Verification
 - Evidence normalization and `CitationRecord` generation (`grounding`)
 - Knowledge graph (`grounding`)
 - LLM-based verification — "does this evidence support this claim?" (`verification`)
@@ -432,7 +456,7 @@ Supported development/runtime baseline for this phase: Python 3.11+. Any validat
 - Memory compression and eviction (`memory`)
 - Embedding-based retrieval (`memory`)
 
-### Phase 3 — Deliberation & Parallel Execution `[v1]`
+### Phase 3 — Deliberation & Parallel Execution
 - Multi-perspective synthesis: advocate/critic/red-team (`deliberation`)
 - Conflict detection and preservation (`deliberation`)
 - Parallel executor dispatch with scheduling (`execution`, `orchestration`)

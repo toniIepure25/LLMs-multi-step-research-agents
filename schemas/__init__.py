@@ -5,14 +5,15 @@ All data flowing between architectural layers MUST use these schemas.
 Do not create parallel type systems in individual modules.
 """
 
-from schemas.research_plan import ResearchPlan, PlanStep
-from schemas.task_packet import TaskPacket, TaskStatus
-from schemas.evidence_item import EvidenceItem, SourceMetadata
+from schemas.candidate_claim_set import CandidateClaim, CandidateClaimSet
 from schemas.citation_record import CitationRecord
-from schemas.decision_packet import DecisionPacket, Claim, EpistemicStatus
-from schemas.verification_result import VerificationResult, ClaimVerification, ClaimVerdict
-from schemas.research_output import ResearchOutput
+from schemas.decision_packet import Claim, DecisionPacket, EpistemicStatus
+from schemas.evidence_item import EvidenceItem, SourceMetadata
 from schemas.experiment_record import ExperimentRecord
+from schemas.research_output import ResearchOutput
+from schemas.research_plan import PlanStep, ResearchPlan
+from schemas.task_packet import TaskPacket, TaskStatus
+from schemas.verification_result import ClaimVerdict, ClaimVerification, VerificationResult
 
 __all__ = [
     "ResearchPlan",
@@ -22,6 +23,8 @@ __all__ = [
     "EvidenceItem",
     "SourceMetadata",
     "CitationRecord",
+    "CandidateClaim",
+    "CandidateClaimSet",
     "DecisionPacket",
     "Claim",
     "EpistemicStatus",

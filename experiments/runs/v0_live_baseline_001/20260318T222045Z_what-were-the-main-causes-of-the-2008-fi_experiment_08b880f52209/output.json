@@ -1,0 +1,523 @@
+{
+  "created_at": "2026-03-18T22:20:45.628429Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_1534cd32600b",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The pooling and repackaging of loans into securities can reduce bank liquidity.",
+        "supporting_evidence_ids": [
+          "evidence_2cd79d03e260"
+        ],
+        "text": "Securitization provided an additional funding source but also eliminated assets from banks' balance sheets, contributing to the crisis."
+      },
+      {
+        "claim_id": "claim_fb9718dee28f",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The deregulated OTC derivatives market allowed for unchecked risk-taking.",
+        "supporting_evidence_ids": [
+          "evidence_dbc6b3084902"
+        ],
+        "text": "Deregulation of the OTC derivatives market led to a lack of oversight, enabling institutions like LTCM to engage in high-risk activities."
+      },
+      {
+        "claim_id": "claim_eb934b5f0eb8",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Regulatory failures allowed for unchecked risk-taking.",
+        "supporting_evidence_ids": [
+          "evidence_3bd3abdc0dd1"
+        ],
+        "text": "Failures in financial regulation and supervision, along with corporate governance and risk management failures, contributed to the crisis."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-18T22:20:45.627374Z",
+    "decision_id": "decision_f9215f5979cb",
+    "information_gaps": [
+      "Specific mechanisms by which securitization contributed to the crisis",
+      "Direct evidence of deregulation's impact on the crisis"
+    ],
+    "plan_id": "plan_903424457104",
+    "synthesis": "The 2008 financial crisis was primarily caused by securitization and deregulation."
+  },
+  "evidence": [
+    {
+      "confidence": 0.9990527,
+      "content": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+      "created_at": "2026-03-18T22:20:39.350865Z",
+      "evidence_id": "evidence_2cd79d03e260",
+      "relevance": 0.9990527,
+      "source": {
+        "access_date": "2026-03-18T22:20:39.350847Z",
+        "additional": {
+          "plan_id": "plan_903424457104",
+          "query": "Examine the impact of securitization on the financial system",
+          "rank": 1,
+          "raw_payload": {
+            "content": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+            "raw_content": null,
+            "score": 0.9990527,
+            "title": "The Role of Securitization in Bank Liquidity and Financial Stability",
+            "url": "https://www.nyujlb.org/single-post/the-role-of-securitization-in-bank-liquidity-and-financial-stability"
+          },
+          "source_name": "nyujlb.org",
+          "step_description": "Examine the impact of securitization on the financial system",
+          "step_id": "step_0abb6ceb6bfc",
+          "task_action": "search",
+          "task_id": "task_143bb06d2783"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+        "source_type": "web_search",
+        "title": "The Role of Securitization in Bank Liquidity and Financial Stability",
+        "url": "https://www.nyujlb.org/single-post/the-role-of-securitization-in-bank-liquidity-and-financial-stability"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_0abb6ceb6bfc",
+        "plan_903424457104"
+      ],
+      "task_id": "task_143bb06d2783"
+    },
+    {
+      "confidence": 0.7265231,
+      "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+      "created_at": "2026-03-18T22:20:37.807843Z",
+      "evidence_id": "evidence_dbc6b3084902",
+      "relevance": 0.7265231,
+      "source": {
+        "access_date": "2026-03-18T22:20:37.807838Z",
+        "additional": {
+          "plan_id": "plan_903424457104",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+            "raw_content": null,
+            "score": 0.7265231,
+            "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+            "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+          },
+          "source_name": "journals.law.harvard.edu",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_d40f3c277650",
+          "task_action": "search",
+          "task_id": "task_fa9d5dee58c4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+        "source_type": "web_search",
+        "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+        "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d40f3c277650",
+        "plan_903424457104"
+      ],
+      "task_id": "task_fa9d5dee58c4"
+    },
+    {
+      "confidence": 0.69870013,
+      "content": "*   [Newsletters](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#). *   [Newsletters](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#). *   [March 2008: Bear Stearns](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-march-2008-bear-stearns-collapses). *   [September 2008: Lehman Brothers](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-september-2008-lehman-brothers-declares-bankruptcy). *   [FAQs](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-what-is-a-mortgage-backed-security). Faced with the bursting of the dot-com bubble, a series of corporate accounting scandals, and the [September 11 terrorist attacks](https://www.investopedia.com/financial-edge/0911/how-september-11-affected-the-u.s.-stock-market.aspx), the Federal Reserve lowered the [federal funds rate](https://www.investopedia.com/terms/f/federalfundsrate.asp) from 6.5% in May 2000 to 1% in June 2003. During the housing bubble, the banks sold these loans to the big Wall Street banks, which re-packaged and marketed them as low-risk financial instruments such as mortgage-backed securities and [collateralized debt obligations](https://www.investopedia.com/terms/c/cdo.asp) (CDOs). The Federal Reserve and other [central banks](https://www.investopedia.com/terms/c/centralbank.asp) would take coordinated action to provide billions of dollars in loans to the global credit markets in the coming months. The package [included many measures](https://www.investopedia.com/articles/economics/08/government-financial-bailout.asp#bank-rescue-of-2008-or-the-great-recession), such as a huge government purchase of \"toxic assets,\" an enormous investment in bank stock shares, and financial lifelines for Fannie Mae and Freddie Mac. It appeared that bankers were being rewarded for recklessly tanking the economy. [Newsletter Sign Up](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#).",
+      "created_at": "2026-03-18T22:20:35.256458Z",
+      "evidence_id": "evidence_2f3350fc00bb",
+      "relevance": 0.69870013,
+      "source": {
+        "access_date": "2026-03-18T22:20:35.256438Z",
+        "additional": {
+          "plan_id": "plan_903424457104",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 1,
+          "raw_payload": {
+            "content": "*   [Newsletters](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#). *   [Newsletters](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#). *   [March 2008: Bear Stearns](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-march-2008-bear-stearns-collapses). *   [September 2008: Lehman Brothers](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-september-2008-lehman-brothers-declares-bankruptcy). *   [FAQs](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-what-is-a-mortgage-backed-security). Faced with the bursting of the dot-com bubble, a series of corporate accounting scandals, and the [September 11 terrorist attacks](https://www.investopedia.com/financial-edge/0911/how-september-11-affected-the-u.s.-stock-market.aspx), the Federal Reserve lowered the [federal funds rate](https://www.investopedia.com/terms/f/federalfundsrate.asp) from 6.5% in May 2000 to 1% in June 2003. During the housing bubble, the banks sold these loans to the big Wall Street banks, which re-packaged and marketed them as low-risk financial instruments such as mortgage-backed securities and [collateralized debt obligations](https://www.investopedia.com/terms/c/cdo.asp) (CDOs). The Federal Reserve and other [central banks](https://www.investopedia.com/terms/c/centralbank.asp) would take coordinated action to provide billions of dollars in loans to the global credit markets in the coming months. The package [included many measures](https://www.investopedia.com/articles/economics/08/government-financial-bailout.asp#bank-rescue-of-2008-or-the-great-recession), such as a huge government purchase of \"toxic assets,\" an enormous investment in bank stock shares, and financial lifelines for Fannie Mae and Freddie Mac. It appeared that bankers were being rewarded for recklessly tanking the economy. [Newsletter Sign Up](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#).",
+            "raw_content": null,
+            "score": 0.69870013,
+            "title": "The 2008 Financial Crisis Explained",
+            "url": "https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_e1825cc187cb",
+          "task_action": "search",
+          "task_id": "task_ef474c49dfc4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "*   [Newsletters](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#). *   [Newsletters](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#). *   [March 2008: Bear Stearns](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-march-2008-bear-stearns-collapses). *   [September 2008: Lehman Brothers](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-september-2008-lehman-brothers-declares-bankruptcy). *   [FAQs](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#toc-what-is-a-mortgage-backed-security). Faced with the bursting of the dot-com bubble, a series of corporate accounting scandals, and the [September 11 terrorist attacks](https://www.investopedia.com/financial-edge/0911/how-september-11-affected-the-u.s.-stock-market.aspx), the Federal Reserve lowered the [federal funds rate](https://www.investopedia.com/terms/f/federalfundsrate.asp) from 6.5% in May 2000 to 1% in June 2003. During the housing bubble, the banks sold these loans to the big Wall Street banks, which re-packaged and marketed them as low-risk financial instruments such as mortgage-backed securities and [collateralized debt obligations](https://www.investopedia.com/terms/c/cdo.asp) (CDOs). The Federal Reserve and other [central banks](https://www.investopedia.com/terms/c/centralbank.asp) would take coordinated action to provide billions of dollars in loans to the global credit markets in the coming months. The package [included many measures](https://www.investopedia.com/articles/economics/08/government-financial-bailout.asp#bank-rescue-of-2008-or-the-great-recession), such as a huge government purchase of \"toxic assets,\" an enormous investment in bank stock shares, and financial lifelines for Fannie Mae and Freddie Mac. It appeared that bankers were being rewarded for recklessly tanking the economy. [Newsletter Sign Up](https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp#).",
+        "source_type": "web_search",
+        "title": "The 2008 Financial Crisis Explained",
+        "url": "https://www.investopedia.com/articles/economics/09/financial-crisis-review.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e1825cc187cb",
+        "plan_903424457104"
+      ],
+      "task_id": "task_ef474c49dfc4"
+    },
+    {
+      "confidence": 0.6765563,
+      "content": "Thursday, February 7, 2008: US Federal Reserve boss  Ben Bernanke adds his voice to concerns about monoline insurers,  saying he is closely monitoring developments \"given the adverse effects that problems of financial guarantors can have on financial markets and the economy.\" The Bank of England cuts interest rates by a quarter of one percent to 5.25%. China's central bank cut interest rates by more than a full percentage point on Wednesday, its largest rate reduction since the Asian financial crisis a decade ago and the latest sign of worries in Beijing about the slowing of the Chinese economy. Sweden also announces Friday an 8.3 billion kronor ($1.01 billion) stimulus package, a day after its central bank delivered its biggest rate cut in 16 years 20. Wednesday 17 December 2008 : Expectations increased Wednesday that central banks in Japan and China would cut interest rates again after the  Federal Reserve  lowered its benchmark rate by more than expected and declared that it would try to pull the American economy out of recession by pumping money into the system.",
+      "created_at": "2026-03-18T22:20:35.256494Z",
+      "evidence_id": "evidence_877d7f520fca",
+      "relevance": 0.6765563,
+      "source": {
+        "access_date": "2026-03-18T22:20:35.256482Z",
+        "additional": {
+          "plan_id": "plan_903424457104",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Thursday, February 7, 2008: US Federal Reserve boss  Ben Bernanke adds his voice to concerns about monoline insurers,  saying he is closely monitoring developments \"given the adverse effects that problems of financial guarantors can have on financial markets and the economy.\" The Bank of England cuts interest rates by a quarter of one percent to 5.25%. China's central bank cut interest rates by more than a full percentage point on Wednesday, its largest rate reduction since the Asian financial crisis a decade ago and the latest sign of worries in Beijing about the slowing of the Chinese economy. Sweden also announces Friday an 8.3 billion kronor ($1.01 billion) stimulus package, a day after its central bank delivered its biggest rate cut in 16 years 20. Wednesday 17 December 2008 : Expectations increased Wednesday that central banks in Japan and China would cut interest rates again after the  Federal Reserve  lowered its benchmark rate by more than expected and declared that it would try to pull the American economy out of recession by pumping money into the system.",
+            "raw_content": null,
+            "score": 0.6765563,
+            "title": "The Global Economic & Financial Crisis: A Timeline",
+            "url": "https://lauder.wharton.upenn.edu/wp-content/uploads/2015/06/Chronology_Economic_Financial_Crisis.pdf"
+          },
+          "source_name": "lauder.wharton.upenn.edu",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_e1825cc187cb",
+          "task_action": "search",
+          "task_id": "task_ef474c49dfc4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Thursday, February 7, 2008: US Federal Reserve boss  Ben Bernanke adds his voice to concerns about monoline insurers,  saying he is closely monitoring developments \"given the adverse effects that problems of financial guarantors can have on financial markets and the economy.\" The Bank of England cuts interest rates by a quarter of one percent to 5.25%. China's central bank cut interest rates by more than a full percentage point on Wednesday, its largest rate reduction since the Asian financial crisis a decade ago and the latest sign of worries in Beijing about the slowing of the Chinese economy. Sweden also announces Friday an 8.3 billion kronor ($1.01 billion) stimulus package, a day after its central bank delivered its biggest rate cut in 16 years 20. Wednesday 17 December 2008 : Expectations increased Wednesday that central banks in Japan and China would cut interest rates again after the  Federal Reserve  lowered its benchmark rate by more than expected and declared that it would try to pull the American economy out of recession by pumping money into the system.",
+        "source_type": "web_search",
+        "title": "The Global Economic & Financial Crisis: A Timeline",
+        "url": "https://lauder.wharton.upenn.edu/wp-content/uploads/2015/06/Chronology_Economic_Financial_Crisis.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e1825cc187cb",
+        "plan_903424457104"
+      ],
+      "task_id": "task_ef474c49dfc4"
+    },
+    {
+      "confidence": 0.657033,
+      "content": "The FCIC quite rightly concluded that failures in financial regulation and supervision along with failures of corporate governance and risk management at major financial firms were prime causes of the financial crisis that engulfed this country in 2007 and 2008 26 .\u201d As per the report issued by the FCIC documents, \u201cDecades of deregulation and failure to regulate newly emerging financial markets, firms, and products led to a financial system that was extremely fragile and vulnerable to a full-blown crisis when the U.S. housing bubble collapsed.\u201d As per their investigation they also found that the large banks, depository institutions spent a lot of effort, time and money to persuade the policy makers to relax these reluguations.",
+      "created_at": "2026-03-18T22:20:37.807822Z",
+      "evidence_id": "evidence_3bd3abdc0dd1",
+      "relevance": 0.657033,
+      "source": {
+        "access_date": "2026-03-18T22:20:37.807804Z",
+        "additional": {
+          "plan_id": "plan_903424457104",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The FCIC quite rightly concluded that failures in financial regulation and supervision along with failures of corporate governance and risk management at major financial firms were prime causes of the financial crisis that engulfed this country in 2007 and 2008 26 .\u201d As per the report issued by the FCIC documents, \u201cDecades of deregulation and failure to regulate newly emerging financial markets, firms, and products led to a financial system that was extremely fragile and vulnerable to a full-blown crisis when the U.S. housing bubble collapsed.\u201d As per their investigation they also found that the large banks, depository institutions spent a lot of effort, time and money to persuade the policy makers to relax these reluguations.",
+            "raw_content": null,
+            "score": 0.657033,
+            "title": "[PDF] Financial Engineering and Deregulation: The biggest causes of ...",
+            "url": "https://www.saintpeters.edu/wp-content/uploads/blogs.dir/270/files/2022/12/Suneha-Bamboli-Financial-Engineering-and-Deregulation-The-Biggest-Causes-of-Financial-Crises.pdf"
+          },
+          "source_name": "saintpeters.edu",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_d40f3c277650",
+          "task_action": "search",
+          "task_id": "task_fa9d5dee58c4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The FCIC quite rightly concluded that failures in financial regulation and supervision along with failures of corporate governance and risk management at major financial firms were prime causes of the financial crisis that engulfed this country in 2007 and 2008 26 .\u201d As per the report issued by the FCIC documents, \u201cDecades of deregulation and failure to regulate newly emerging financial markets, firms, and products led to a financial system that was extremely fragile and vulnerable to a full-blown crisis when the U.S. housing bubble collapsed.\u201d As per their investigation they also found that the large banks, depository institutions spent a lot of effort, time and money to persuade the policy makers to relax these reluguations.",
+        "source_type": "web_search",
+        "title": "[PDF] Financial Engineering and Deregulation: The biggest causes of ...",
+        "url": "https://www.saintpeters.edu/wp-content/uploads/blogs.dir/270/files/2022/12/Suneha-Bamboli-Financial-Engineering-and-Deregulation-The-Biggest-Causes-of-Financial-Crises.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d40f3c277650",
+        "plan_903424457104"
+      ],
+      "task_id": "task_fa9d5dee58c4"
+    },
+    {
+      "confidence": 0.6010557,
+      "content": "A liquidity crisis spread to global institutions by mid-2007 and climaxed with the bankruptcy of Lehman Brothers in September 2008, which triggered a stock",
+      "created_at": "2026-03-18T22:20:35.256528Z",
+      "evidence_id": "evidence_661264f6c2a2",
+      "relevance": 0.6010557,
+      "source": {
+        "access_date": "2026-03-18T22:20:35.256523Z",
+        "additional": {
+          "plan_id": "plan_903424457104",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 3,
+          "raw_payload": {
+            "content": "A liquidity crisis spread to global institutions by mid-2007 and climaxed with the bankruptcy of Lehman Brothers in September 2008, which triggered a stock",
+            "raw_content": null,
+            "score": 0.6010557,
+            "title": "2008 financial crisis",
+            "url": "https://en.wikipedia.org/wiki/2008_financial_crisis"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_e1825cc187cb",
+          "task_action": "search",
+          "task_id": "task_ef474c49dfc4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A liquidity crisis spread to global institutions by mid-2007 and climaxed with the bankruptcy of Lehman Brothers in September 2008, which triggered a stock",
+        "source_type": "web_search",
+        "title": "2008 financial crisis",
+        "url": "https://en.wikipedia.org/wiki/2008_financial_crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e1825cc187cb",
+        "plan_903424457104"
+      ],
+      "task_id": "task_ef474c49dfc4"
+    },
+    {
+      "confidence": 0.585789,
+      "content": "This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+      "created_at": "2026-03-18T22:20:37.807862Z",
+      "evidence_id": "evidence_380c0e0e56ce",
+      "relevance": 0.585789,
+      "source": {
+        "access_date": "2026-03-18T22:20:37.807853Z",
+        "additional": {
+          "plan_id": "plan_903424457104",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+            "raw_content": null,
+            "score": 0.585789,
+            "title": "Did Deregulation Cause the Financial Crisis? - Mercatus Center",
+            "url": "https://www.mercatus.org/research/data-visualizations/did-deregulation-cause-financial-crisis"
+          },
+          "source_name": "mercatus.org",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_d40f3c277650",
+          "task_action": "search",
+          "task_id": "task_fa9d5dee58c4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+        "source_type": "web_search",
+        "title": "Did Deregulation Cause the Financial Crisis? - Mercatus Center",
+        "url": "https://www.mercatus.org/research/data-visualizations/did-deregulation-cause-financial-crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d40f3c277650",
+        "plan_903424457104"
+      ],
+      "task_id": "task_fa9d5dee58c4"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260318T222045Z_what-were-the-main-causes-of-the-2008-fi_experiment_08b880f52209/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260318T222045Z_what-were-the-main-causes-of-the-2008-fi_experiment_08b880f52209/experiment.json"
+    ],
+    "completed_at": "2026-03-18T22:20:45.627884Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_08b880f52209",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.42857142857142855,
+      "groundedness": 1.0,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 7.0,
+      "number_of_supported_claims": 3.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-2008-fi",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-18T22:20:33.670888Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the 2008 financial crisis?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-18T22:20:33.670888Z",
+    "goal": "What were the main causes of the 2008 financial crisis?",
+    "parent_plan_id": null,
+    "plan_id": "plan_903424457104",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Search for key events leading up to the 2008 financial crisis",
+        "expected_output": "List of significant events, e.g., subprime mortgage bubble bursting",
+        "priority": 1,
+        "step_id": "step_e1825cc187cb",
+        "success_criteria": "Identification of at least three critical events",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_e1825cc187cb"
+        ],
+        "description": "Analyze the role of deregulation in the lead-up to the crisis",
+        "expected_output": "Summary of relevant laws and regulations repealed or weakened",
+        "priority": 2,
+        "step_id": "step_d40f3c277650",
+        "success_criteria": "Clear explanation of how deregulation contributed to the crisis",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_d40f3c277650"
+        ],
+        "description": "Examine the impact of securitization on the financial system",
+        "expected_output": "Description of how securitized assets spread risk throughout the system",
+        "priority": 3,
+        "step_id": "step_0abb6ceb6bfc",
+        "success_criteria": "Understanding of how securitization exacerbated the crisis",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_1534cd32600b",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (additional, assets, balance, banks, funding, securitization, sheets, source).",
+        "supporting_ids_checked": [
+          "evidence_2cd79d03e260"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_fb9718dee28f",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (deregulation, derivatives, lack, ltcm, market, otc, risk).",
+        "supporting_ids_checked": [
+          "evidence_dbc6b3084902"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_eb934b5f0eb8",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (along, corporate, crisis, failures, financial, governance, management, regulation, risk, supervision).",
+        "supporting_ids_checked": [
+          "evidence_3bd3abdc0dd1"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-18T22:20:45.627884Z",
+    "decision_id": "decision_f9215f5979cb",
+    "summary": "supported=3, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

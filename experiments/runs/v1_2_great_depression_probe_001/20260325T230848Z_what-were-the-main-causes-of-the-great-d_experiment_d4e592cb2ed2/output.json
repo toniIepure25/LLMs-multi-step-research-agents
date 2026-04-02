@@ -1,0 +1,735 @@
+{
+  "created_at": "2026-03-25T23:08:48.056014Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_e2f1c664b041",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Triggered by stock market crash.",
+        "supporting_evidence_ids": [
+          "evidence_d6377a95c956"
+        ],
+        "text": "The stock market crash of 1929 contributed to the Great Depression."
+      },
+      {
+        "claim_id": "claim_1691cdcef695",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Triggered by protectionism and trade collapse.",
+        "supporting_evidence_ids": [
+          "evidence_b6544ad06f86"
+        ],
+        "text": "Protectionism and the collapse of world trade contributed to the Great Depression."
+      },
+      {
+        "claim_id": "claim_0ad012679afc",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Triggered by Wall Street Crash.",
+        "supporting_evidence_ids": [
+          "evidence_d6377a95c956"
+        ],
+        "text": "The Wall Street Crash of 1929 led to bank losses, failures, and a collapse in the money supply."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-25T23:08:48.055098Z",
+    "decision_id": "decision_c947881c1bd2",
+    "information_gaps": [
+      "Specific mechanisms of the Great Depression",
+      "Other contributing factors"
+    ],
+    "plan_id": "plan_a7f1da4ffec9",
+    "synthesis": "The Great Depression was caused by a combination of factors."
+  },
+  "evidence": [
+    {
+      "confidence": 0.99974483,
+      "content": "History. The fall of the Australian economy and the subsequent suffering of many Australians was primarily due to the Wall Street stock market crash of 1929",
+      "created_at": "2026-03-25T23:06:27.151192Z",
+      "evidence_id": "evidence_257b189e5ed0",
+      "relevance": 0.99974483,
+      "source": {
+        "access_date": "2026-03-25T23:06:27.151188Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "History. The fall of the Australian economy and the subsequent suffering of many Australians was primarily due to the Wall Street stock market crash of 1929",
+            "raw_content": null,
+            "score": 0.99974483,
+            "title": "Great Depression (1929-1939)",
+            "url": "https://www.pictureipswich.com.au/nodes/view/2546"
+          },
+          "source_name": "pictureipswich.com.au",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_68818cba3c45",
+          "task_action": "search",
+          "task_id": "task_726be86fea24"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "History. The fall of the Australian economy and the subsequent suffering of many Australians was primarily due to the Wall Street stock market crash of 1929",
+        "source_type": "web_search",
+        "title": "Great Depression (1929-1939)",
+        "url": "https://www.pictureipswich.com.au/nodes/view/2546"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_68818cba3c45",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_726be86fea24"
+    },
+    {
+      "confidence": 0.99939764,
+      "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+      "created_at": "2026-03-25T23:06:36.195417Z",
+      "evidence_id": "evidence_59a35970d2ea",
+      "relevance": 0.99939764,
+      "source": {
+        "access_date": "2026-03-25T23:06:36.195413Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+            "raw_content": null,
+            "score": 0.99939764,
+            "title": "5 Causes of the Great Depression - History.com",
+            "url": "https://www.history.com/articles/great-depression-causes"
+          },
+          "source_name": "history.com",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_bf38de60555e",
+          "task_action": "search",
+          "task_id": "task_877a87707405"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+        "source_type": "web_search",
+        "title": "5 Causes of the Great Depression - History.com",
+        "url": "https://www.history.com/articles/great-depression-causes"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bf38de60555e",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_877a87707405"
+    },
+    {
+      "confidence": 0.99899954,
+      "content": "The Great Depression was a global economic crisis that may have been triggered by political decisions including war reparations post-World War I, protectionism.",
+      "created_at": "2026-03-25T23:06:30.801356Z",
+      "evidence_id": "evidence_b6544ad06f86",
+      "relevance": 0.99899954,
+      "source": {
+        "access_date": "2026-03-25T23:06:30.801342Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social). about What were the main causes of the Great Depression?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The Great Depression was a global economic crisis that may have been triggered by political decisions including war reparations post-World War I, protectionism.",
+            "raw_content": null,
+            "score": 0.99899954,
+            "title": "Political Causes of the Great Depression - ThoughtCo",
+            "url": "https://www.thoughtco.com/great-depression-causes-3367841"
+          },
+          "source_name": "thoughtco.com",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_3f71d4670e15",
+          "task_action": "search",
+          "task_id": "task_247826529c54"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Great Depression was a global economic crisis that may have been triggered by political decisions including war reparations post-World War I, protectionism.",
+        "source_type": "web_search",
+        "title": "Political Causes of the Great Depression - ThoughtCo",
+        "url": "https://www.thoughtco.com/great-depression-causes-3367841"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3f71d4670e15",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_247826529c54"
+    },
+    {
+      "confidence": 0.99818975,
+      "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+      "created_at": "2026-03-25T23:06:36.195399Z",
+      "evidence_id": "evidence_7823484f4086",
+      "relevance": 0.99818975,
+      "source": {
+        "access_date": "2026-03-25T23:06:36.195384Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+            "raw_content": null,
+            "score": 0.99818975,
+            "title": "Causes of the Great Depression - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_bf38de60555e",
+          "task_action": "search",
+          "task_id": "task_877a87707405"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+        "source_type": "web_search",
+        "title": "Causes of the Great Depression - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bf38de60555e",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_877a87707405"
+    },
+    {
+      "confidence": 0.99776566,
+      "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+      "created_at": "2026-03-25T23:06:33.308773Z",
+      "evidence_id": "evidence_e0f12250ec50",
+      "relevance": 0.99776566,
+      "source": {
+        "access_date": "2026-03-25T23:06:33.308766Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+            "raw_content": null,
+            "score": 0.99776566,
+            "title": "Causes of the Great Depression - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_e88dba299add",
+          "task_action": "search",
+          "task_id": "task_d0db1de1a924"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+        "source_type": "web_search",
+        "title": "Causes of the Great Depression - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e88dba299add",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_d0db1de1a924"
+    },
+    {
+      "confidence": 0.9970421,
+      "content": "The causes of the Great Depression include stock market crashes, bank failures, reduced consumer spending, and a devastating drought.",
+      "created_at": "2026-03-25T23:06:30.801389Z",
+      "evidence_id": "evidence_fdce21dedbe7",
+      "relevance": 0.9970421,
+      "source": {
+        "access_date": "2026-03-25T23:06:30.801380Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social). about What were the main causes of the Great Depression?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The causes of the Great Depression include stock market crashes, bank failures, reduced consumer spending, and a devastating drought.",
+            "raw_content": null,
+            "score": 0.9970421,
+            "title": "Top 5 Causes of the Great Depression - ThoughtCo",
+            "url": "https://www.thoughtco.com/causes-of-the-great-depression-104686"
+          },
+          "source_name": "thoughtco.com",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_3f71d4670e15",
+          "task_action": "search",
+          "task_id": "task_247826529c54"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The causes of the Great Depression include stock market crashes, bank failures, reduced consumer spending, and a devastating drought.",
+        "source_type": "web_search",
+        "title": "Top 5 Causes of the Great Depression - ThoughtCo",
+        "url": "https://www.thoughtco.com/causes-of-the-great-depression-104686"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3f71d4670e15",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_247826529c54"
+    },
+    {
+      "confidence": 0.9969722,
+      "content": "Business Cycles and the Great Depression Depressions (or recessions) occur when there is not enough demand for all the goods and services that an economy pro-duces. The Great Depression may have originated in a fall in total demand, but its length and sever-ity resulted primarily from the unwillingness of the Federal Reserve System to prevent bank failures and to maintain a large enough money supply. The depression was particularly severe in the United States because the Federal Reserve System was obligated to follow the rules of the gold standard. Furthermore, the central banking system (in the United States, the Federal Reserve System) should create new money for the national government to borrow and spend. Foreign depositors quickly began making withdrawals from United States banks, fearing that the United States, too, would \u201cclose the gold window.\u201d Most of the actions of the American Federal Reserve System from 1931 to 1933 can be traced to its adherence to the rules of the gold standard.",
+      "created_at": "2026-03-25T23:06:33.308746Z",
+      "evidence_id": "evidence_2b7a7c54fc82",
+      "relevance": 0.9969722,
+      "source": {
+        "access_date": "2026-03-25T23:06:33.308732Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Business Cycles and the Great Depression Depressions (or recessions) occur when there is not enough demand for all the goods and services that an economy pro-duces. The Great Depression may have originated in a fall in total demand, but its length and sever-ity resulted primarily from the unwillingness of the Federal Reserve System to prevent bank failures and to maintain a large enough money supply. The depression was particularly severe in the United States because the Federal Reserve System was obligated to follow the rules of the gold standard. Furthermore, the central banking system (in the United States, the Federal Reserve System) should create new money for the national government to borrow and spend. Foreign depositors quickly began making withdrawals from United States banks, fearing that the United States, too, would \u201cclose the gold window.\u201d Most of the actions of the American Federal Reserve System from 1931 to 1933 can be traced to its adherence to the rules of the gold standard.",
+            "raw_content": null,
+            "score": 0.9969722,
+            "title": "[PDF] What Caused the Great Depression? - Social Studies",
+            "url": "https://www.socialstudies.org/system/files/publications/articles/se_710270.pdf"
+          },
+          "source_name": "socialstudies.org",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_e88dba299add",
+          "task_action": "search",
+          "task_id": "task_d0db1de1a924"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Business Cycles and the Great Depression Depressions (or recessions) occur when there is not enough demand for all the goods and services that an economy pro-duces. The Great Depression may have originated in a fall in total demand, but its length and sever-ity resulted primarily from the unwillingness of the Federal Reserve System to prevent bank failures and to maintain a large enough money supply. The depression was particularly severe in the United States because the Federal Reserve System was obligated to follow the rules of the gold standard. Furthermore, the central banking system (in the United States, the Federal Reserve System) should create new money for the national government to borrow and spend. Foreign depositors quickly began making withdrawals from United States banks, fearing that the United States, too, would \u201cclose the gold window.\u201d Most of the actions of the American Federal Reserve System from 1931 to 1933 can be traced to its adherence to the rules of the gold standard.",
+        "source_type": "web_search",
+        "title": "[PDF] What Caused the Great Depression? - Social Studies",
+        "url": "https://www.socialstudies.org/system/files/publications/articles/se_710270.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e88dba299add",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_d0db1de1a924"
+    },
+    {
+      "confidence": 0.99648935,
+      "content": "At the beginning of the 1930s, the collapse of the stock market led to a severe economic depression that lasted through most of the decade.",
+      "created_at": "2026-03-25T23:06:27.151173Z",
+      "evidence_id": "evidence_34bef4d6b15b",
+      "relevance": 0.99648935,
+      "source": {
+        "access_date": "2026-03-25T23:06:27.151158Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "At the beginning of the 1930s, the collapse of the stock market led to a severe economic depression that lasted through most of the decade.",
+            "raw_content": null,
+            "score": 0.99648935,
+            "title": "1929: The Great Depression",
+            "url": "https://www.youtube.com/watch?v=jRw6R3W7ZPs"
+          },
+          "source_name": "youtube.com",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_68818cba3c45",
+          "task_action": "search",
+          "task_id": "task_726be86fea24"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "At the beginning of the 1930s, the collapse of the stock market led to a severe economic depression that lasted through most of the decade.",
+        "source_type": "web_search",
+        "title": "1929: The Great Depression",
+        "url": "https://www.youtube.com/watch?v=jRw6R3W7ZPs"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_68818cba3c45",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_726be86fea24"
+    },
+    {
+      "confidence": 0.9964342,
+      "content": "This paper will concentrate on the most obvious ones which are organized under the following headings: 1) the economic impact of the Great War; 2) the economic and geo-political dislocation caused by the war particularly in Central and South Eastern Europe; 3) the collapse of the gold standard; 4) the global financial imbalances and the German war reparations; 5) the U.S. stock market bubble and the stock market crash of 1929 and 6) lack of global financial leadership and the application of mistaken economic policies. All these geo-political changes along with the shrinkage of Germany\u2019s borders caused major economic dislocation and political instability in the continent, they also created a huge power vacuum in Central Europe and they imposed huge strains on the international monetary system, as these new countries were in need of financing, in need of export markets and financial assistance to rebuild their war-torn economies.",
+      "created_at": "2026-03-25T23:06:33.308791Z",
+      "evidence_id": "evidence_8b13d500c648",
+      "relevance": 0.9964342,
+      "source": {
+        "access_date": "2026-03-25T23:06:33.308786Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "This paper will concentrate on the most obvious ones which are organized under the following headings: 1) the economic impact of the Great War; 2) the economic and geo-political dislocation caused by the war particularly in Central and South Eastern Europe; 3) the collapse of the gold standard; 4) the global financial imbalances and the German war reparations; 5) the U.S. stock market bubble and the stock market crash of 1929 and 6) lack of global financial leadership and the application of mistaken economic policies. All these geo-political changes along with the shrinkage of Germany\u2019s borders caused major economic dislocation and political instability in the continent, they also created a huge power vacuum in Central Europe and they imposed huge strains on the international monetary system, as these new countries were in need of financing, in need of export markets and financial assistance to rebuild their war-torn economies.",
+            "raw_content": null,
+            "score": 0.9964342,
+            "title": "[PDF] The Causes of the Great Depression: A Retrospective",
+            "url": "https://canbekeconomics.com/research-papers/The_Great_Depression_and_Europe.pdf"
+          },
+          "source_name": "canbekeconomics.com",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_e88dba299add",
+          "task_action": "search",
+          "task_id": "task_d0db1de1a924"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This paper will concentrate on the most obvious ones which are organized under the following headings: 1) the economic impact of the Great War; 2) the economic and geo-political dislocation caused by the war particularly in Central and South Eastern Europe; 3) the collapse of the gold standard; 4) the global financial imbalances and the German war reparations; 5) the U.S. stock market bubble and the stock market crash of 1929 and 6) lack of global financial leadership and the application of mistaken economic policies. All these geo-political changes along with the shrinkage of Germany\u2019s borders caused major economic dislocation and political instability in the continent, they also created a huge power vacuum in Central Europe and they imposed huge strains on the international monetary system, as these new countries were in need of financing, in need of export markets and financial assistance to rebuild their war-torn economies.",
+        "source_type": "web_search",
+        "title": "[PDF] The Causes of the Great Depression: A Retrospective",
+        "url": "https://canbekeconomics.com/research-papers/The_Great_Depression_and_Europe.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_e88dba299add",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_d0db1de1a924"
+    },
+    {
+      "confidence": 0.99583375,
+      "content": "The trigger was the Wall Street Crash of 1929, which led to bank losses, bank failures and a collapse in the money supply and normal economic confidence. The main causes were bank closures, fall in the money supply, a collapse in confidence, tariffs reducing trade, the gold standard and a failure of policy response. But, the real problem is the catastrophic losses and collapse in confidence caused people to fear that their bank savings might be at risk. Many agree, that it was this failure of the banking system which was the most powerful cause of economic depression. Also, a collapse in share prices might not have caused the great depression if bank failures had been avoided. How did the contraction in bank lending that followed the 2008 financial crisis and recession compare with the decline in bank loans after the stock market crash in 1929 and the Great Depression of the 1930s?",
+      "created_at": "2026-03-25T23:06:36.195431Z",
+      "evidence_id": "evidence_d6377a95c956",
+      "relevance": 0.99583375,
+      "source": {
+        "access_date": "2026-03-25T23:06:36.195426Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The trigger was the Wall Street Crash of 1929, which led to bank losses, bank failures and a collapse in the money supply and normal economic confidence. The main causes were bank closures, fall in the money supply, a collapse in confidence, tariffs reducing trade, the gold standard and a failure of policy response. But, the real problem is the catastrophic losses and collapse in confidence caused people to fear that their bank savings might be at risk. Many agree, that it was this failure of the banking system which was the most powerful cause of economic depression. Also, a collapse in share prices might not have caused the great depression if bank failures had been avoided. How did the contraction in bank lending that followed the 2008 financial crisis and recession compare with the decline in bank loans after the stock market crash in 1929 and the Great Depression of the 1930s?",
+            "raw_content": null,
+            "score": 0.99583375,
+            "title": "Causes of the Great Depression - Economics Help",
+            "url": "https://www.economicshelp.org/blog/218588/economics/causes-of-the-great-depression/"
+          },
+          "source_name": "economicshelp.org",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_bf38de60555e",
+          "task_action": "search",
+          "task_id": "task_877a87707405"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The trigger was the Wall Street Crash of 1929, which led to bank losses, bank failures and a collapse in the money supply and normal economic confidence. The main causes were bank closures, fall in the money supply, a collapse in confidence, tariffs reducing trade, the gold standard and a failure of policy response. But, the real problem is the catastrophic losses and collapse in confidence caused people to fear that their bank savings might be at risk. Many agree, that it was this failure of the banking system which was the most powerful cause of economic depression. Also, a collapse in share prices might not have caused the great depression if bank failures had been avoided. How did the contraction in bank lending that followed the 2008 financial crisis and recession compare with the decline in bank loans after the stock market crash in 1929 and the Great Depression of the 1930s?",
+        "source_type": "web_search",
+        "title": "Causes of the Great Depression - Economics Help",
+        "url": "https://www.economicshelp.org/blog/218588/economics/causes-of-the-great-depression/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bf38de60555e",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_877a87707405"
+    },
+    {
+      "confidence": 0.98975134,
+      "content": "Document #1 Context: The Causes of the Great Depression identification of the * Caused ... in the lecture notes is examinable with the following exceptions: 1.",
+      "created_at": "2026-03-25T23:06:30.801413Z",
+      "evidence_id": "evidence_05a272193d65",
+      "relevance": 0.98975134,
+      "source": {
+        "access_date": "2026-03-25T23:06:30.801406Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social). about What were the main causes of the Great Depression?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Document #1 Context: The Causes of the Great Depression identification of the * Caused ... in the lecture notes is examinable with the following exceptions: 1.",
+            "raw_content": null,
+            "score": 0.98975134,
+            "title": "Understanding the Causes of the Great Depression: Annotated",
+            "url": "https://www.coursesidekick.com/economics/21016161"
+          },
+          "source_name": "coursesidekick.com",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_3f71d4670e15",
+          "task_action": "search",
+          "task_id": "task_247826529c54"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Document #1 Context: The Causes of the Great Depression identification of the * Caused ... in the lecture notes is examinable with the following exceptions: 1.",
+        "source_type": "web_search",
+        "title": "Understanding the Causes of the Great Depression: Annotated",
+        "url": "https://www.coursesidekick.com/economics/21016161"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3f71d4670e15",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_247826529c54"
+    },
+    {
+      "confidence": 0.9834705,
+      "content": "1929: The biggest economic crisis of the 20th century brought an abrupt end to the euphoria of the Roaring Twenties. Driven from their land,",
+      "created_at": "2026-03-25T23:06:27.151207Z",
+      "evidence_id": "evidence_427580fa9e72",
+      "relevance": 0.9834705,
+      "source": {
+        "access_date": "2026-03-25T23:06:27.151202Z",
+        "additional": {
+          "plan_id": "plan_a7f1da4ffec9",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "1929: The biggest economic crisis of the 20th century brought an abrupt end to the euphoria of the Roaring Twenties. Driven from their land,",
+            "raw_content": null,
+            "score": 0.9834705,
+            "title": "The Great Depression of 1929: When the Dream Collapsed ...",
+            "url": "https://www.youtube.com/watch?v=KRQDfe8Mh2A"
+          },
+          "source_name": "youtube.com",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_68818cba3c45",
+          "task_action": "search",
+          "task_id": "task_726be86fea24"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "1929: The biggest economic crisis of the 20th century brought an abrupt end to the euphoria of the Roaring Twenties. Driven from their land,",
+        "source_type": "web_search",
+        "title": "The Great Depression of 1929: When the Dream Collapsed ...",
+        "url": "https://www.youtube.com/watch?v=KRQDfe8Mh2A"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_68818cba3c45",
+        "plan_a7f1da4ffec9"
+      ],
+      "task_id": "task_726be86fea24"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_2_great_depression_probe_001/20260325T230848Z_what-were-the-main-causes-of-the-great-d_experiment_d4e592cb2ed2/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_2_great_depression_probe_001/20260325T230848Z_what-were-the-main-causes-of-the-great-d_experiment_d4e592cb2ed2/experiment.json"
+    ],
+    "completed_at": "2026-03-25T23:08:48.055480Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_d4e592cb2ed2",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.16666666666666666,
+      "groundedness": 1.0,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 12.0,
+      "number_of_supported_claims": 3.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-great-d",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-25T23:06:22.180501Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the Great Depression?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-25T23:06:22.180501Z",
+    "goal": "What were the main causes of the Great Depression?",
+    "parent_plan_id": null,
+    "plan_id": "plan_a7f1da4ffec9",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+        "expected_output": "A collection of relevant articles, books, or government reports that provide insight into the causes of the Great Depression.",
+        "priority": 1,
+        "step_id": "step_68818cba3c45",
+        "success_criteria": "Identification of at least 5 key events or factors mentioned in multiple sources as contributing to the Great Depression.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_68818cba3c45"
+        ],
+        "description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+        "expected_output": "A list of categorized causes with a brief description of each.",
+        "priority": 2,
+        "step_id": "step_3f71d4670e15",
+        "success_criteria": "Presence of at least 3 distinct categories with a minimum of 2 causes per category.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_3f71d4670e15"
+        ],
+        "description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+        "expected_output": "A set of relevant academic sources that provide in-depth analysis or empirical evidence related to the causes of the Great Depression.",
+        "priority": 3,
+        "step_id": "step_e88dba299add",
+        "success_criteria": "Identification of at least 3 studies that support or contradict the categorized causes from step 2.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_e88dba299add"
+        ],
+        "description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+        "expected_output": "A concise summary of the most widely accepted causes, along with any notable disagreements or debates in the field.",
+        "priority": 4,
+        "step_id": "step_bf38de60555e",
+        "success_criteria": "Presence of a clear and well-supported conclusion that addresses the goal.",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_e2f1c664b041",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (1929, crash, depression, great, market, stock).",
+        "supporting_ids_checked": [
+          "evidence_d6377a95c956"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_1691cdcef695",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (depression, great, protectionism, world).",
+        "supporting_ids_checked": [
+          "evidence_b6544ad06f86"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_0ad012679afc",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (1929, bank, collapse, crash, failures, led, losses, money, street, supply, wall).",
+        "supporting_ids_checked": [
+          "evidence_d6377a95c956"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-25T23:08:48.055480Z",
+    "decision_id": "decision_c947881c1bd2",
+    "summary": "supported=3, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

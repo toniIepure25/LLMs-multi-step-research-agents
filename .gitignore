@@ -35,3 +35,4 @@ experiments/runs/*/cache/
 
 # Logs
 *.log
+.secrets

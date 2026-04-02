@@ -1,0 +1,523 @@
+{
+  "created_at": "2026-03-25T23:21:13.564420Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_5d61f49cfade",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Fed Reserve Bank conclusion",
+        "supporting_evidence_ids": [
+          "evidence_3504cb5654fa"
+        ],
+        "text": "OTC derivatives contributed to the 2008 financial crisis."
+      },
+      {
+        "claim_id": "claim_92d1889b4dc4",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "UK government statement",
+        "supporting_evidence_ids": [
+          "evidence_f7cd6a5e035f"
+        ],
+        "text": "Subprime lending contributed to the 2008 financial crisis."
+      },
+      {
+        "claim_id": "claim_952163de6435",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Systematic review conclusion",
+        "supporting_evidence_ids": [
+          "evidence_8d16fa65222a"
+        ],
+        "text": "Bank failures and banking panics contributed to the 2008 financial crisis."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-25T23:21:13.562765Z",
+    "decision_id": "decision_e76ead0dcaeb",
+    "information_gaps": [
+      "Causes of the crisis in other countries",
+      "Role of government policies in exacerbating the crisis"
+    ],
+    "plan_id": "plan_0d04fe7bba25",
+    "synthesis": "The 2008 financial crisis was caused by a combination of factors."
+  },
+  "evidence": [
+    {
+      "confidence": 0.9997565,
+      "content": "This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+      "created_at": "2026-03-25T23:18:59.127426Z",
+      "evidence_id": "evidence_37f287f4dd39",
+      "relevance": 0.9997565,
+      "source": {
+        "access_date": "2026-03-25T23:18:59.127417Z",
+        "additional": {
+          "plan_id": "plan_0d04fe7bba25",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+            "raw_content": null,
+            "score": 0.9997565,
+            "title": "Did Deregulation Cause the Financial Crisis? - Mercatus Center",
+            "url": "https://www.mercatus.org/research/data-visualizations/did-deregulation-cause-financial-crisis"
+          },
+          "source_name": "mercatus.org",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_add442b99338",
+          "task_action": "search",
+          "task_id": "task_548f6ba0eac4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+        "source_type": "web_search",
+        "title": "Did Deregulation Cause the Financial Crisis? - Mercatus Center",
+        "url": "https://www.mercatus.org/research/data-visualizations/did-deregulation-cause-financial-crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_add442b99338",
+        "plan_0d04fe7bba25"
+      ],
+      "task_id": "task_548f6ba0eac4"
+    },
+    {
+      "confidence": 0.9996947,
+      "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+      "created_at": "2026-03-25T23:18:59.127396Z",
+      "evidence_id": "evidence_3504cb5654fa",
+      "relevance": 0.9996947,
+      "source": {
+        "access_date": "2026-03-25T23:18:59.127376Z",
+        "additional": {
+          "plan_id": "plan_0d04fe7bba25",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+            "raw_content": null,
+            "score": 0.9996947,
+            "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+            "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+          },
+          "source_name": "journals.law.harvard.edu",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_add442b99338",
+          "task_action": "search",
+          "task_id": "task_548f6ba0eac4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+        "source_type": "web_search",
+        "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+        "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_add442b99338",
+        "plan_0d04fe7bba25"
+      ],
+      "task_id": "task_548f6ba0eac4"
+    },
+    {
+      "confidence": 0.99966466,
+      "content": "Many popular and academic commentators identify deregulation as a cause of the 2007-08 financial crisis. Some argue that the Gramm-Leach-Bliley Act of 1999",
+      "created_at": "2026-03-25T23:18:59.127450Z",
+      "evidence_id": "evidence_c100e51d8de0",
+      "relevance": 0.99966466,
+      "source": {
+        "access_date": "2026-03-25T23:18:59.127443Z",
+        "additional": {
+          "plan_id": "plan_0d04fe7bba25",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Many popular and academic commentators identify deregulation as a cause of the 2007-08 financial crisis. Some argue that the Gramm-Leach-Bliley Act of 1999",
+            "raw_content": null,
+            "score": 0.99966466,
+            "title": "Deregulation and the Subprime Crisis | Paul G. Mahoney - UVA Law",
+            "url": "https://www.law.virginia.edu/scholarship/publication/paul-g-mahoney/515271"
+          },
+          "source_name": "law.virginia.edu",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_add442b99338",
+          "task_action": "search",
+          "task_id": "task_548f6ba0eac4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Many popular and academic commentators identify deregulation as a cause of the 2007-08 financial crisis. Some argue that the Gramm-Leach-Bliley Act of 1999",
+        "source_type": "web_search",
+        "title": "Deregulation and the Subprime Crisis | Paul G. Mahoney - UVA Law",
+        "url": "https://www.law.virginia.edu/scholarship/publication/paul-g-mahoney/515271"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_add442b99338",
+        "plan_0d04fe7bba25"
+      ],
+      "task_id": "task_548f6ba0eac4"
+    },
+    {
+      "confidence": 0.99906737,
+      "content": "Key events of the crisis \u00b7 The crisis in the United States deepened in January 2008 as Bank of America agreed to purchase Countrywide Financial, once the",
+      "created_at": "2026-03-25T23:18:56.997733Z",
+      "evidence_id": "evidence_efb4747674ad",
+      "relevance": 0.99906737,
+      "source": {
+        "access_date": "2026-03-25T23:18:56.997717Z",
+        "additional": {
+          "plan_id": "plan_0d04fe7bba25",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 1,
+          "raw_payload": {
+            "content": "Key events of the crisis \u00b7 The crisis in the United States deepened in January 2008 as Bank of America agreed to purchase Countrywide Financial, once the",
+            "raw_content": null,
+            "score": 0.99906737,
+            "title": "Financial crisis of 2007\u201308 | Definition, Causes, Effects, & Facts",
+            "url": "https://www.britannica.com/money/financial-crisis-of-2007-2008/Key-events-of-the-crisis"
+          },
+          "source_name": "britannica.com",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_74f37ab63d10",
+          "task_action": "search",
+          "task_id": "task_7dba09812c05"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Key events of the crisis \u00b7 The crisis in the United States deepened in January 2008 as Bank of America agreed to purchase Countrywide Financial, once the",
+        "source_type": "web_search",
+        "title": "Financial crisis of 2007\u201308 | Definition, Causes, Effects, & Facts",
+        "url": "https://www.britannica.com/money/financial-crisis-of-2007-2008/Key-events-of-the-crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_74f37ab63d10",
+        "plan_0d04fe7bba25"
+      ],
+      "task_id": "task_7dba09812c05"
+    },
+    {
+      "confidence": 0.9975274,
+      "content": "June 5, 2008 - The Federal Reserve Board announces approval of Bank of America's acquisition of Countrywide Financial Corporation in an all-stock transaction worth approximately $4 billion . September 16, 2008 - The Federal Reserve Board authorizes the Federal Reserve Bank of New York to lend up to $85 billion to American International Group (AIG) under Section 13(3) of the Federal Reserve Act. September 17, 2008 - The SEC announces a temporary emergency ban on short selling in the stocks of all companies in the financial sector. February 25, 2009 - The Federal Reserve Board, Federal Deposit Insurance Corporation, Office of the Comptroller of the Currency and Office of Thrift Supervision announce that they will conduct economic assessments or \"stress tests\" of U.S. bank holding companies with assets exceeding $100 billion, to estimate the range of possible future losses.",
+      "created_at": "2026-03-25T23:18:56.997755Z",
+      "evidence_id": "evidence_cd564b1312f6",
+      "relevance": 0.9975274,
+      "source": {
+        "access_date": "2026-03-25T23:18:56.997750Z",
+        "additional": {
+          "plan_id": "plan_0d04fe7bba25",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 2,
+          "raw_payload": {
+            "content": "June 5, 2008 - The Federal Reserve Board announces approval of Bank of America's acquisition of Countrywide Financial Corporation in an all-stock transaction worth approximately $4 billion . September 16, 2008 - The Federal Reserve Board authorizes the Federal Reserve Bank of New York to lend up to $85 billion to American International Group (AIG) under Section 13(3) of the Federal Reserve Act. September 17, 2008 - The SEC announces a temporary emergency ban on short selling in the stocks of all companies in the financial sector. February 25, 2009 - The Federal Reserve Board, Federal Deposit Insurance Corporation, Office of the Comptroller of the Currency and Office of Thrift Supervision announce that they will conduct economic assessments or \"stress tests\" of U.S. bank holding companies with assets exceeding $100 billion, to estimate the range of possible future losses.",
+            "raw_content": null,
+            "score": 0.9975274,
+            "title": "Financial Crisis and Recovery: Financial Crisis Timeline",
+            "url": "https://libraryguides.law.pace.edu/financialcrisis"
+          },
+          "source_name": "libraryguides.law.pace.edu",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_74f37ab63d10",
+          "task_action": "search",
+          "task_id": "task_7dba09812c05"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "June 5, 2008 - The Federal Reserve Board announces approval of Bank of America's acquisition of Countrywide Financial Corporation in an all-stock transaction worth approximately $4 billion . September 16, 2008 - The Federal Reserve Board authorizes the Federal Reserve Bank of New York to lend up to $85 billion to American International Group (AIG) under Section 13(3) of the Federal Reserve Act. September 17, 2008 - The SEC announces a temporary emergency ban on short selling in the stocks of all companies in the financial sector. February 25, 2009 - The Federal Reserve Board, Federal Deposit Insurance Corporation, Office of the Comptroller of the Currency and Office of Thrift Supervision announce that they will conduct economic assessments or \"stress tests\" of U.S. bank holding companies with assets exceeding $100 billion, to estimate the range of possible future losses.",
+        "source_type": "web_search",
+        "title": "Financial Crisis and Recovery: Financial Crisis Timeline",
+        "url": "https://libraryguides.law.pace.edu/financialcrisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_74f37ab63d10",
+        "plan_0d04fe7bba25"
+      ],
+      "task_id": "task_7dba09812c05"
+    },
+    {
+      "confidence": 0.9920002,
+      "content": "**Before the crisis, banks were issuing mortgages to subprime borrowers. | **13 October 2008** | The UK government bails out the Royal Bank of Scotland, Lloyds-TSB and HBOS by taking large ownership stakes in them and guaranteeing their assets. One source of capital for the United States, the UK, Spain and Ireland was money flowing from the likes of China (Turner, 2009; Financial Crisis Inquiry Commission, 2011). This large increase in mortgage debt was only possible because banks substantially lowered their lending standards (Mian and Sufi, 2014; Turner, 2014; Quinn and Turner, 2020). Indeed, the legacy of extraordinary monetary policy may well play a part in the next banking crisis (Quinn and Turner, 2020). In the housing boom that preceded the global financial crisis, governments were entranced by the economic growth that banks were stimulating, the tax revenue that they were generating, and the role that they played in helping lower-income groups access the housing market (Financial Crisis Inquiry Commission, 2011; Turner, 2014; Quinn and Turner, 2020).",
+      "created_at": "2026-03-25T23:18:56.997775Z",
+      "evidence_id": "evidence_f7cd6a5e035f",
+      "relevance": 0.9920002,
+      "source": {
+        "access_date": "2026-03-25T23:18:56.997770Z",
+        "additional": {
+          "plan_id": "plan_0d04fe7bba25",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 3,
+          "raw_payload": {
+            "content": "**Before the crisis, banks were issuing mortgages to subprime borrowers. | **13 October 2008** | The UK government bails out the Royal Bank of Scotland, Lloyds-TSB and HBOS by taking large ownership stakes in them and guaranteeing their assets. One source of capital for the United States, the UK, Spain and Ireland was money flowing from the likes of China (Turner, 2009; Financial Crisis Inquiry Commission, 2011). This large increase in mortgage debt was only possible because banks substantially lowered their lending standards (Mian and Sufi, 2014; Turner, 2014; Quinn and Turner, 2020). Indeed, the legacy of extraordinary monetary policy may well play a part in the next banking crisis (Quinn and Turner, 2020). In the housing boom that preceded the global financial crisis, governments were entranced by the economic growth that banks were stimulating, the tax revenue that they were generating, and the role that they played in helping lower-income groups access the housing market (Financial Crisis Inquiry Commission, 2011; Turner, 2014; Quinn and Turner, 2020).",
+            "raw_content": null,
+            "score": 0.9920002,
+            "title": "Why did the global financial crisis of 2007-09 happen?",
+            "url": "https://www.economicsobservatory.com/why-did-the-global-financial-crisis-of-2007-09-happen"
+          },
+          "source_name": "economicsobservatory.com",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_74f37ab63d10",
+          "task_action": "search",
+          "task_id": "task_7dba09812c05"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "**Before the crisis, banks were issuing mortgages to subprime borrowers. | **13 October 2008** | The UK government bails out the Royal Bank of Scotland, Lloyds-TSB and HBOS by taking large ownership stakes in them and guaranteeing their assets. One source of capital for the United States, the UK, Spain and Ireland was money flowing from the likes of China (Turner, 2009; Financial Crisis Inquiry Commission, 2011). This large increase in mortgage debt was only possible because banks substantially lowered their lending standards (Mian and Sufi, 2014; Turner, 2014; Quinn and Turner, 2020). Indeed, the legacy of extraordinary monetary policy may well play a part in the next banking crisis (Quinn and Turner, 2020). In the housing boom that preceded the global financial crisis, governments were entranced by the economic growth that banks were stimulating, the tax revenue that they were generating, and the role that they played in helping lower-income groups access the housing market (Financial Crisis Inquiry Commission, 2011; Turner, 2014; Quinn and Turner, 2020).",
+        "source_type": "web_search",
+        "title": "Why did the global financial crisis of 2007-09 happen?",
+        "url": "https://www.economicsobservatory.com/why-did-the-global-financial-crisis-of-2007-09-happen"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_74f37ab63d10",
+        "plan_0d04fe7bba25"
+      ],
+      "task_id": "task_7dba09812c05"
+    },
+    {
+      "confidence": 0.56920683,
+      "content": "# Securitization, bank behaviour and financial stability: A systematic review of the recent empirical literature\u2606. We systematically review the recent empirical literature to investigate whether and how securitization influences bank behaviour and its implication on financial stability. We find that, in the years preceding the 2007\u20132009 financial crisis, banks with higher credit and market risk were more likely to securitize assets. We contribute to the literature by reviewing the recent empirical evidence in a systematic manner to provide a detailed analysis of the findings of the literature about the implications of securitization on bank behaviour and financial stability. By providing a systematic review of the empirical evidence on how securitization may affect bank behaviour and financial stability, we also aim to contribute by informing policy debate. In this paper we systematically reviewed the recently developed empirical literature investigating the determinants of securitization, the ex-post effects of securitization on bank risk, the effects of securitization on bank lending behaviour and securitization's implication on financial stability.",
+      "created_at": "2026-03-25T23:19:00.669802Z",
+      "evidence_id": "evidence_8d16fa65222a",
+      "relevance": 0.56920683,
+      "source": {
+        "access_date": "2026-03-25T23:19:00.669780Z",
+        "additional": {
+          "plan_id": "plan_0d04fe7bba25",
+          "query": "Examine the impact of securitization on the financial system",
+          "rank": 1,
+          "raw_payload": {
+            "content": "# Securitization, bank behaviour and financial stability: A systematic review of the recent empirical literature\u2606. We systematically review the recent empirical literature to investigate whether and how securitization influences bank behaviour and its implication on financial stability. We find that, in the years preceding the 2007\u20132009 financial crisis, banks with higher credit and market risk were more likely to securitize assets. We contribute to the literature by reviewing the recent empirical evidence in a systematic manner to provide a detailed analysis of the findings of the literature about the implications of securitization on bank behaviour and financial stability. By providing a systematic review of the empirical evidence on how securitization may affect bank behaviour and financial stability, we also aim to contribute by informing policy debate. In this paper we systematically reviewed the recently developed empirical literature investigating the determinants of securitization, the ex-post effects of securitization on bank risk, the effects of securitization on bank lending behaviour and securitization's implication on financial stability.",
+            "raw_content": null,
+            "score": 0.56920683,
+            "title": "Securitization, bank behaviour and financial stability",
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S1057521918301339"
+          },
+          "source_name": "sciencedirect.com",
+          "step_description": "Examine the impact of securitization on the financial system",
+          "step_id": "step_839cdcf5b090",
+          "task_action": "search",
+          "task_id": "task_1e0c56990723"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "# Securitization, bank behaviour and financial stability: A systematic review of the recent empirical literature\u2606. We systematically review the recent empirical literature to investigate whether and how securitization influences bank behaviour and its implication on financial stability. We find that, in the years preceding the 2007\u20132009 financial crisis, banks with higher credit and market risk were more likely to securitize assets. We contribute to the literature by reviewing the recent empirical evidence in a systematic manner to provide a detailed analysis of the findings of the literature about the implications of securitization on bank behaviour and financial stability. By providing a systematic review of the empirical evidence on how securitization may affect bank behaviour and financial stability, we also aim to contribute by informing policy debate. In this paper we systematically reviewed the recently developed empirical literature investigating the determinants of securitization, the ex-post effects of securitization on bank risk, the effects of securitization on bank lending behaviour and securitization's implication on financial stability.",
+        "source_type": "web_search",
+        "title": "Securitization, bank behaviour and financial stability",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1057521918301339"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_839cdcf5b090",
+        "plan_0d04fe7bba25"
+      ],
+      "task_id": "task_1e0c56990723"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260325T232113Z_what-were-the-main-causes-of-the-2008-fi_experiment_098b1b7c269b/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260325T232113Z_what-were-the-main-causes-of-the-2008-fi_experiment_098b1b7c269b/experiment.json"
+    ],
+    "completed_at": "2026-03-25T23:21:13.563528Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_098b1b7c269b",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.42857142857142855,
+      "groundedness": 1.0,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 7.0,
+      "number_of_supported_claims": 3.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-2008-fi",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-25T23:18:55.540306Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the 2008 financial crisis?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-25T23:18:55.540306Z",
+    "goal": "What were the main causes of the 2008 financial crisis?",
+    "parent_plan_id": null,
+    "plan_id": "plan_0d04fe7bba25",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Search for key events leading up to the 2008 financial crisis",
+        "expected_output": "List of significant events, e.g., subprime mortgage bubble bursting",
+        "priority": 1,
+        "step_id": "step_74f37ab63d10",
+        "success_criteria": "Identification of at least three critical events",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_74f37ab63d10"
+        ],
+        "description": "Analyze the role of deregulation in the lead-up to the crisis",
+        "expected_output": "Summary of relevant laws and regulations repealed or weakened",
+        "priority": 2,
+        "step_id": "step_add442b99338",
+        "success_criteria": "Clear explanation of how deregulation contributed to the crisis",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_add442b99338"
+        ],
+        "description": "Examine the impact of securitization on the financial system",
+        "expected_output": "Description of how securitized assets spread risk throughout the system",
+        "priority": 3,
+        "step_id": "step_839cdcf5b090",
+        "success_criteria": "Understanding of how securitization exacerbated the crisis",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_5d61f49cfade",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (2008, crisis, derivatives, financial, otc).",
+        "supporting_ids_checked": [
+          "evidence_3504cb5654fa"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_92d1889b4dc4",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (2008, crisis, financial, lending, subprime).",
+        "supporting_ids_checked": [
+          "evidence_f7cd6a5e035f"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_952163de6435",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (bank, crisis, financial).",
+        "supporting_ids_checked": [
+          "evidence_8d16fa65222a"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-25T23:21:13.563528Z",
+    "decision_id": "decision_e76ead0dcaeb",
+    "summary": "supported=3, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

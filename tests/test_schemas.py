@@ -5,17 +5,19 @@ Verifies that all schemas can be instantiated with minimal valid data
 and that validation rejects invalid data.
 """
 
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta, timezone
 
 import pytest
-from schemas.research_plan import ResearchPlan, PlanStep, StepDependencyType
-from schemas.task_packet import TaskPacket, TaskStatus
-from schemas.evidence_item import EvidenceItem, SourceMetadata, SourceType
+
+from schemas.candidate_claim_set import CandidateClaim, CandidateClaimSet
 from schemas.citation_record import CitationRecord, CitationStrength
-from schemas.decision_packet import DecisionPacket, Claim, EpistemicStatus
+from schemas.decision_packet import Claim, DecisionPacket, EpistemicStatus
+from schemas.evidence_item import EvidenceItem, SourceMetadata, SourceType
 from schemas.experiment_record import ExperimentRecord
-from schemas.verification_result import VerificationResult, ClaimVerification, ClaimVerdict
 from schemas.research_output import ResearchOutput
+from schemas.research_plan import PlanStep, ResearchPlan
+from schemas.task_packet import TaskPacket, TaskStatus
+from schemas.verification_result import ClaimVerdict, ClaimVerification, VerificationResult
 
 
 class TestResearchPlan:
@@ -110,6 +112,33 @@ class TestDecisionPacket:
         assert len(decision.claims) == 1
 
 
+class TestCandidateClaimSet:
+    def test_minimal_candidate_claim_set(self):
+        candidate = CandidateClaim(
+            candidate_claim_id="candidate_claim_1",
+            source_claim_index=1,
+            text="Securitization contributed to the 2008 financial crisis.",
+            epistemic_status=EpistemicStatus.MODERATE_CONFIDENCE,
+            supporting_evidence_ids=["e1"],
+        )
+        candidate_set = CandidateClaimSet(
+            candidate_set_id="candidate_set_1",
+            plan_id="p1",
+            claims=[candidate],
+        )
+        assert len(candidate_set.claims) == 1
+        assert candidate_set.created_at.tzinfo == UTC
+
+    def test_candidate_claim_requires_supporting_evidence(self):
+        with pytest.raises(Exception):
+            CandidateClaim(
+                candidate_claim_id="candidate_claim_1",
+                source_claim_index=1,
+                text="Unsupported claim text.",
+                supporting_evidence_ids=[],
+            )
+
+
 class TestExperimentRecord:
     def test_minimal_experiment(self):
         exp = ExperimentRecord(
@@ -144,7 +173,7 @@ class TestExperimentRecord:
             ),
         )
         assert exp.started_at is not None
-        assert exp.started_at.tzinfo == timezone.utc
+        assert exp.started_at.tzinfo == UTC
         assert exp.started_at.hour == 10
 
 
@@ -301,20 +330,19 @@ class TestProtocolImports:
     def test_protocol_types_importable(self):
         from asar.core.protocols import (
             PlannerProtocol,
-            ExecutorProtocol,
-            MemoryProtocol,
-            GroundingProtocol,
-            DeliberationProtocol,
             VerificationProtocol,
-            EvaluationProtocol,
         )
         # All protocols are runtime_checkable
         assert hasattr(PlannerProtocol, "__protocol_attrs__") or callable(PlannerProtocol)
         assert hasattr(VerificationProtocol, "__protocol_attrs__") or callable(VerificationProtocol)
 
     def test_verification_protocol_signature(self):
-        """VerificationProtocol.verify must take DecisionPacket + list[EvidenceItem] and return VerificationResult."""
+        """
+        VerificationProtocol.verify must take DecisionPacket + list[EvidenceItem]
+        and return VerificationResult.
+        """
         import inspect
+
         from asar.core.protocols import VerificationProtocol
         sig = inspect.signature(VerificationProtocol.verify)
         params = list(sig.parameters.keys())
@@ -328,7 +356,8 @@ class TestProtocolImports:
         import schemas
         expected = [
             "ResearchPlan", "PlanStep", "TaskPacket", "EvidenceItem",
-            "SourceMetadata", "DecisionPacket", "Claim", "EpistemicStatus",
+            "SourceMetadata", "CandidateClaim", "CandidateClaimSet",
+            "DecisionPacket", "Claim", "EpistemicStatus",
             "VerificationResult", "ClaimVerification", "ClaimVerdict",
             "ResearchOutput", "ExperimentRecord",
         ]
@@ -343,4 +372,4 @@ class TestProtocolImports:
             success_criteria="Found",
         )
         plan = ResearchPlan(plan_id="p1", goal="test", steps=[step])
-        assert plan.created_at.tzinfo == timezone.utc
+        assert plan.created_at.tzinfo == UTC

@@ -11,15 +11,23 @@ import pytest
 
 from asar.common import load_settings, setup_logging
 from asar.core.errors import ExecutionError, SearchClientError
-from asar.core.search import SearchRequest, SearchResponse, SearchResultItem
+from asar.core.search import (
+    SearchRequest,
+    SearchResponse,
+    SearchResultItem,
+)
 from asar.execution import WebSearchExecutor
 from schemas.task_packet import TaskPacket
-
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
 
 
-def _task(max_results: int | None = None) -> TaskPacket:
+def _task(
+    max_results: int | None = None,
+    *,
+    query: str = "battery storage costs 2024",
+    context: str = "Focus on recent comparative evidence.",
+) -> TaskPacket:
     constraints = {}
     if max_results is not None:
         constraints["max_results"] = max_results
@@ -28,8 +36,8 @@ def _task(max_results: int | None = None) -> TaskPacket:
         plan_id="plan_123",
         step_id="step_123",
         action="search",
-        query="battery storage costs 2024",
-        context="Focus on recent comparative evidence.",
+        query=query,
+        context=context,
         constraints=constraints,
     )
 
@@ -96,6 +104,31 @@ async def test_web_search_executor_provider_failure_returns_typed_failure() -> N
     assert result.error.code == "execution_provider_failure"
     assert result.error.retryable is True
     assert result.error.details["trace_id"].startswith("trace_")
+    assert "search_error_details" not in result.error.details
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_preserves_search_provider_details() -> None:
+    settings = load_settings(CONFIG_DIR)
+
+    class BrokenSearchClient:
+        async def search(self, request: SearchRequest) -> SearchResponse:
+            raise SearchClientError(
+                "provider unavailable",
+                retryable=False,
+                details={"status": 401, "hint": "Check TAVILY_API_KEY"},
+            )
+
+    executor = WebSearchExecutor(BrokenSearchClient(), settings)
+
+    result = await executor.execute_result(_task())
+
+    assert result.is_error
+    assert result.error is not None
+    assert result.error.details["search_error_details"] == {
+        "status": 401,
+        "hint": "Check TAVILY_API_KEY",
+    }
 
 
 @pytest.mark.asyncio
@@ -188,7 +221,13 @@ async def test_web_search_executor_uses_utc_timestamps_and_schema_valid_items() 
     settings = load_settings(CONFIG_DIR)
     client = StubSearchClient(
         SearchResponse(
-            results=[SearchResultItem(url="https://example.com/utc", snippet="Timestamp check", rank=1)]
+            results=[
+                SearchResultItem(
+                    url="https://example.com/utc",
+                    snippet="Timestamp check",
+                    rank=1,
+                )
+            ]
         )
     )
     executor = WebSearchExecutor(client, settings)
@@ -219,6 +258,280 @@ async def test_web_search_executor_applies_top_k_consistently() -> None:
 
     assert len(evidence) == 2
     assert client.requests[0].top_k == 2
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_uses_tighter_default_top_k_for_v0() -> None:
+    settings = load_settings(CONFIG_DIR)
+    client = StubSearchClient(
+        SearchResponse(
+            results=[
+                SearchResultItem(url="https://example.com/1", snippet="First", rank=1),
+                SearchResultItem(url="https://example.com/2", snippet="Second", rank=2),
+                SearchResultItem(url="https://example.com/3", snippet="Third", rank=3),
+                SearchResultItem(url="https://example.com/4", snippet="Fourth", rank=4),
+                SearchResultItem(url="https://example.com/5", snippet="Fifth", rank=5),
+            ]
+        )
+    )
+    executor = WebSearchExecutor(client, settings)
+
+    evidence = await executor.execute(_task())
+
+    assert len(evidence) == 3
+    assert [item.content for item in evidence] == ["First", "Second", "Third"]
+    assert client.requests[0].top_k == 3
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_skips_duplicate_urls_before_normalizing() -> None:
+    settings = load_settings(CONFIG_DIR)
+    client = StubSearchClient(
+        SearchResponse(
+            results=[
+                SearchResultItem(url="https://example.com/report", snippet="Primary", rank=1),
+                SearchResultItem(url="https://example.com/report/", snippet="Duplicate", rank=2),
+                SearchResultItem(url="https://example.com/other", snippet="Secondary", rank=3),
+                SearchResultItem(url="https://example.com/third", snippet="Tertiary", rank=4),
+            ]
+        )
+    )
+    executor = WebSearchExecutor(client, settings)
+
+    evidence = await executor.execute(_task())
+
+    assert len(evidence) == 3
+    assert [item.content for item in evidence] == ["Primary", "Secondary", "Tertiary"]
+    assert [item.source.additional["rank"] for item in evidence] == [1, 3, 4]
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_filters_clearly_off_topic_results_using_query_and_goal() -> None:
+    settings = load_settings(CONFIG_DIR)
+    client = StubSearchClient(
+        SearchResponse(
+            results=[
+                SearchResultItem(
+                    url="https://example.com/dotcom-bubble",
+                    title="Dotcom Bubble Overview",
+                    snippet="Speculation in dotcom companies inflated the bubble before the crash.",
+                    rank=1,
+                ),
+                SearchResultItem(
+                    url="https://example.com/car-crash",
+                    title="Car crash fatalities rise",
+                    snippet="Traffic safety officials responded to a major highway crash.",
+                    rank=2,
+                ),
+                SearchResultItem(
+                    url="https://example.com/dotcom-valuations",
+                    title="Dot-com valuations became unsustainable",
+                    snippet="Unsustainable valuations helped trigger the dot-com crash.",
+                    rank=3,
+                ),
+                SearchResultItem(
+                    url="https://example.com/tech-oversupply",
+                    title="Technology oversupply after the dot-com boom",
+                    snippet="Excessive tech investment worsened the dotcom crash.",
+                    rank=4,
+                ),
+            ]
+        )
+    )
+    executor = WebSearchExecutor(client, settings)
+
+    evidence = await executor.execute(
+        _task(
+            query="Research the economic factors leading to the crash",
+            context=(
+                '{"goal":"What were the main causes of the dot-com crash?",'
+                '"expected_output":"causes","success_criteria":"causal answer"}'
+            ),
+        )
+    )
+
+    assert [item.source.title for item in evidence] == [
+        "Dotcom Bubble Overview",
+        "Dot-com valuations became unsustainable",
+        "Technology oversupply after the dot-com boom",
+    ]
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_filters_incident_noise_for_step_specific_crash_query() -> None:
+    settings = load_settings(CONFIG_DIR)
+    client = StubSearchClient(
+        SearchResponse(
+            results=[
+                SearchResultItem(
+                    url="https://example.com/car-crash",
+                    title="Car crash fatalities rise with new vehicle trends",
+                    snippet="Traffic safety officials studied vehicle crash patterns on highways.",
+                    rank=1,
+                ),
+                SearchResultItem(
+                    url="https://example.com/dotcom-tech",
+                    title="Dot-com overinvestment created a technology glut",
+                    snippet="Overinvestment in internet infrastructure worsened the dot-com bust.",
+                    rank=2,
+                ),
+                SearchResultItem(
+                    url="https://example.com/dotcom-bubble",
+                    title="Dot-com tech bubble valuations became unsustainable",
+                    snippet=(
+                        "Dot-com technology stock valuations became detached from "
+                        "fundamentals."
+                    ),
+                    rank=3,
+                ),
+            ]
+        )
+    )
+    executor = WebSearchExecutor(client, settings)
+
+    evidence = await executor.execute(
+        _task(
+            query="Analyze the role of technological over-saturation in the crash",
+            context='{"goal":"What were the main causes of the dot-com crash?"}',
+        )
+    )
+
+    assert [item.source.title for item in evidence] == [
+        "Dot-com overinvestment created a technology glut",
+        "Dot-com tech bubble valuations became unsustainable",
+    ]
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_filters_wrong_domain_technology_results_when_goal_anchors_exist(
+) -> None:
+    settings = load_settings(CONFIG_DIR)
+    client = StubSearchClient(
+        SearchResponse(
+            results=[
+                SearchResultItem(
+                    url="https://example.com/distracted-driving",
+                    title=(
+                        "Characterizing technology's influence on distractive "
+                        "behavior at intersections"
+                    ),
+                    snippet=(
+                        "Researchers measured how technology affects distractive "
+                        "behavior in traffic settings."
+                    ),
+                    rank=1,
+                ),
+                SearchResultItem(
+                    url="https://example.com/dotcom-tech",
+                    title="Dot-com overinvestment created a technology glut",
+                    snippet="Overinvestment in internet infrastructure worsened the dot-com bust.",
+                    rank=2,
+                ),
+                SearchResultItem(
+                    url="https://example.com/dotcom-bubble",
+                    title="Dot-com tech bubble valuations became unsustainable",
+                    snippet=(
+                        "Dot-com technology stock valuations became detached from "
+                        "fundamentals."
+                    ),
+                    rank=3,
+                ),
+            ]
+        )
+    )
+    executor = WebSearchExecutor(client, settings)
+
+    evidence = await executor.execute(
+        _task(
+            query=(
+                "Analyze the role of technological over-saturation in the crash "
+                "about What were the main causes of the dot-com crash?"
+            ),
+            context='{"goal":"What were the main causes of the dot-com crash?"}',
+        )
+    )
+
+    assert [item.source.title for item in evidence] == [
+        "Dot-com overinvestment created a technology glut",
+        "Dot-com tech bubble valuations became unsustainable",
+    ]
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_keeps_valid_broad_crash_results_when_relevant() -> None:
+    settings = load_settings(CONFIG_DIR)
+    client = StubSearchClient(
+        SearchResponse(
+            results=[
+                SearchResultItem(
+                    url="https://example.com/1929-crash",
+                    title="Stock market crash of 1929",
+                    snippet="The 1929 stock market crash helped trigger the Great Depression.",
+                    rank=1,
+                ),
+                SearchResultItem(
+                    url="https://example.com/great-depression",
+                    title="Great Depression timeline",
+                    snippet="Key events surrounding the 1929 crash and early depression years.",
+                    rank=2,
+                ),
+                SearchResultItem(
+                    url="https://example.com/car-crash",
+                    title="Car crash statistics in 1929",
+                    snippet="Road traffic collision reporting from the late 1920s.",
+                    rank=3,
+                ),
+            ]
+        )
+    )
+    executor = WebSearchExecutor(client, settings)
+
+    evidence = await executor.execute(
+        _task(
+            query="Search for key crash events in 1929",
+            context='{"goal":"What were the main causes of the Great Depression?"}',
+        )
+    )
+
+    assert {item.source.title for item in evidence} == {
+        "Stock market crash of 1929",
+        "Great Depression timeline",
+    }
+
+
+@pytest.mark.asyncio
+async def test_web_search_executor_falls_back_to_best_available_results_when_overlap_is_sparse(
+) -> None:
+    settings = load_settings(CONFIG_DIR)
+    client = StubSearchClient(
+        SearchResponse(
+            results=[
+                SearchResultItem(
+                    url="https://example.com/deregulation",
+                    title="Deregulation debates",
+                    snippet="A summary of deregulation arguments.",
+                    rank=1,
+                ),
+                SearchResultItem(
+                    url="https://example.com/policy",
+                    title="Policy archive",
+                    snippet="Historical policy notes and commentary.",
+                    rank=2,
+                ),
+            ]
+        )
+    )
+    executor = WebSearchExecutor(client, settings)
+
+    evidence = await executor.execute(
+        _task(
+            query="Analyze the role of deregulation in the lead-up to the crisis",
+            context='{"goal":"What were the main causes of the 2008 financial crisis?"}',
+        )
+    )
+
+    assert len(evidence) == 2
+    assert evidence[0].source.title == "Deregulation debates"
 
 
 @pytest.mark.asyncio

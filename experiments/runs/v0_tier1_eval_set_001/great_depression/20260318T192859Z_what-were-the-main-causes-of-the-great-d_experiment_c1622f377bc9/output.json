@@ -1,0 +1,1055 @@
+{
+  "created_at": "2026-03-18T19:28:59.126891Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_f3550d1ef113",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The evidence suggests that a combination of factors contributed to the Great Depression.",
+        "supporting_evidence_ids": [
+          "evidence_37a4cda421be"
+        ],
+        "text": "A perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history."
+      },
+      {
+        "claim_id": "claim_022d81993e92",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The evidence suggests that a fall in total demand was not the sole cause of the Great Depression.",
+        "supporting_evidence_ids": [
+          "evidence_7c515f285a2d"
+        ],
+        "text": "A fall in total demand may have originated the Great Depression, but its length and severity resulted primarily from other causes."
+      },
+      {
+        "claim_id": "claim_b18fa3ce13a0",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The evidence suggests that monetary and fiscal policies were not effective in addressing the Great Depression.",
+        "supporting_evidence_ids": [
+          "evidence_f38e377f5e09"
+        ],
+        "text": "Monetary and fiscal policies were ineffective in addressing the economic downturn."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-18T19:28:59.125927Z",
+    "decision_id": "decision_c6072350ced4",
+    "information_gaps": [
+      "Specific causes of the Great Depression",
+      "Long-term effects of the Great Depression"
+    ],
+    "plan_id": "plan_622d565b4477",
+    "synthesis": "The Great Depression was caused by a combination of factors."
+  },
+  "evidence": [
+    {
+      "confidence": 0.99991775,
+      "content": "This collection of Ben Bernanke's scholarly articles on the economics of the Depression was originally published in 2000. ... causes were at work",
+      "created_at": "2026-03-18T19:28:49.450531Z",
+      "evidence_id": "evidence_f38e377f5e09",
+      "relevance": 0.99991775,
+      "source": {
+        "access_date": "2026-03-18T19:28:49.450498Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "This collection of Ben Bernanke's scholarly articles on the economics of the Depression was originally published in 2000. ... causes were at work",
+            "raw_content": null,
+            "score": 0.99991775,
+            "title": "Causes of the Great Depression \u2013 Alex J. Pollock - Law & Liberty",
+            "url": "https://lawliberty.org/book-review/causes-of-the-great-depression/"
+          },
+          "source_name": "lawliberty.org",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_dfc859fa2a2a",
+          "task_action": "search",
+          "task_id": "task_687b9938de58"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This collection of Ben Bernanke's scholarly articles on the economics of the Depression was originally published in 2000. ... causes were at work",
+        "source_type": "web_search",
+        "title": "Causes of the Great Depression \u2013 Alex J. Pollock - Law & Liberty",
+        "url": "https://lawliberty.org/book-review/causes-of-the-great-depression/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_dfc859fa2a2a",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_687b9938de58"
+    },
+    {
+      "confidence": 0.9997198,
+      "content": "This article examines where consensus does and does not exist among American economic historians by analyzing the results of a questionnaire mailed to 178.",
+      "created_at": "2026-03-18T19:28:51.900386Z",
+      "evidence_id": "evidence_dae202d4b041",
+      "relevance": 0.9997198,
+      "source": {
+        "access_date": "2026-03-18T19:28:51.900365Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "This article examines where consensus does and does not exist among American economic historians by analyzing the results of a questionnaire mailed to 178.",
+            "raw_content": null,
+            "score": 0.9997198,
+            "title": "[PDF] Where Is There Consensus Among American Economic Historians ...",
+            "url": "https://www.employees.csbsju.edu/jolson/econ315/whaples2123771.pdf"
+          },
+          "source_name": "employees.csbsju.edu",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_864be6700a32",
+          "task_action": "search",
+          "task_id": "task_f216b386cc27"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This article examines where consensus does and does not exist among American economic historians by analyzing the results of a questionnaire mailed to 178.",
+        "source_type": "web_search",
+        "title": "[PDF] Where Is There Consensus Among American Economic Historians ...",
+        "url": "https://www.employees.csbsju.edu/jolson/econ315/whaples2123771.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_864be6700a32",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_f216b386cc27"
+    },
+    {
+      "confidence": 0.9995523,
+      "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+      "created_at": "2026-03-18T19:28:51.900414Z",
+      "evidence_id": "evidence_37a4cda421be",
+      "relevance": 0.9995523,
+      "source": {
+        "access_date": "2026-03-18T19:28:51.900408Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+            "raw_content": null,
+            "score": 0.9995523,
+            "title": "5 Causes of the Great Depression - History.com",
+            "url": "https://www.history.com/articles/great-depression-causes"
+          },
+          "source_name": "history.com",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_864be6700a32",
+          "task_action": "search",
+          "task_id": "task_f216b386cc27"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+        "source_type": "web_search",
+        "title": "5 Causes of the Great Depression - History.com",
+        "url": "https://www.history.com/articles/great-depression-causes"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_864be6700a32",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_f216b386cc27"
+    },
+    {
+      "confidence": 0.9984988,
+      "content": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+      "created_at": "2026-03-18T19:28:51.900437Z",
+      "evidence_id": "evidence_e4b11bfa5abb",
+      "relevance": 0.9984988,
+      "source": {
+        "access_date": "2026-03-18T19:28:51.900430Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+            "raw_content": null,
+            "score": 0.9984988,
+            "title": "The Great Depression: Overview, Causes, and Effects - Investopedia",
+            "url": "https://www.investopedia.com/terms/g/great_depression.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_864be6700a32",
+          "task_action": "search",
+          "task_id": "task_f216b386cc27"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+        "source_type": "web_search",
+        "title": "The Great Depression: Overview, Causes, and Effects - Investopedia",
+        "url": "https://www.investopedia.com/terms/g/great_depression.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_864be6700a32",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_f216b386cc27"
+    },
+    {
+      "confidence": 0.9982993,
+      "content": "Research. The series is intended to provide wider circulation within policy making and academic circles for selected papers and speeches by scholars and others.",
+      "created_at": "2026-03-18T19:28:49.450560Z",
+      "evidence_id": "evidence_d56841bae4c8",
+      "relevance": 0.9982993,
+      "source": {
+        "access_date": "2026-03-18T19:28:49.450553Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Research. The series is intended to provide wider circulation within policy making and academic circles for selected papers and speeches by scholars and others.",
+            "raw_content": null,
+            "score": 0.9982993,
+            "title": "[PDF] The Great Depression of the1930s - American Enterprise Institute",
+            "url": "https://www.aei.org/wp-content/uploads/2023/07/AEIReprint118.pdf?x97961"
+          },
+          "source_name": "aei.org",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_dfc859fa2a2a",
+          "task_action": "search",
+          "task_id": "task_687b9938de58"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Research. The series is intended to provide wider circulation within policy making and academic circles for selected papers and speeches by scholars and others.",
+        "source_type": "web_search",
+        "title": "[PDF] The Great Depression of the1930s - American Enterprise Institute",
+        "url": "https://www.aei.org/wp-content/uploads/2023/07/AEIReprint118.pdf?x97961"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_dfc859fa2a2a",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_687b9938de58"
+    },
+    {
+      "confidence": 0.9982039,
+      "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+      "created_at": "2026-03-18T19:28:51.900458Z",
+      "evidence_id": "evidence_f2102c4c2eac",
+      "relevance": 0.9982039,
+      "source": {
+        "access_date": "2026-03-18T19:28:51.900452Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 4,
+          "raw_payload": {
+            "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+            "raw_content": null,
+            "score": 0.9982039,
+            "title": "Causes of the Great Depression - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_864be6700a32",
+          "task_action": "search",
+          "task_id": "task_f216b386cc27"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+        "source_type": "web_search",
+        "title": "Causes of the Great Depression - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_864be6700a32",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_f216b386cc27"
+    },
+    {
+      "confidence": 0.9967269,
+      "content": "Lasting almost 10 years (from late 1929 until about 1939) and affecting nearly every country in the world, it was marked by steep declines in industrial production and in prices (deflation), mass unemployment, banking panics, and sharp increases in rates of poverty and homelessness. In the United States, where the effects of the depression were generally worst, between 1929 and 1933 industrial production fell nearly 47 percent, gross domestic product (GDP) declined by 30 percent, and unemployment reached more than 20 percent. **The gold standard.** Whatever its effects on the money supply in the United States, the gold standard unquestionably played a role in the spread of the Great Depression from the United States to other countries. Accordingly, foreign central banks attempted to counteract the trade imbalance by raising their interest rates, which had the effect of reducing output and prices and increasing unemployment in their countries.",
+      "created_at": "2026-03-18T19:28:49.450578Z",
+      "evidence_id": "evidence_c5c9caab1f79",
+      "relevance": 0.9967269,
+      "source": {
+        "access_date": "2026-03-18T19:28:49.450572Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Lasting almost 10 years (from late 1929 until about 1939) and affecting nearly every country in the world, it was marked by steep declines in industrial production and in prices (deflation), mass unemployment, banking panics, and sharp increases in rates of poverty and homelessness. In the United States, where the effects of the depression were generally worst, between 1929 and 1933 industrial production fell nearly 47 percent, gross domestic product (GDP) declined by 30 percent, and unemployment reached more than 20 percent. **The gold standard.** Whatever its effects on the money supply in the United States, the gold standard unquestionably played a role in the spread of the Great Depression from the United States to other countries. Accordingly, foreign central banks attempted to counteract the trade imbalance by raising their interest rates, which had the effect of reducing output and prices and increasing unemployment in their countries.",
+            "raw_content": null,
+            "score": 0.9967269,
+            "title": "Causes of the Great Depression | Britannica",
+            "url": "https://www.britannica.com/story/causes-of-the-great-depression"
+          },
+          "source_name": "britannica.com",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_dfc859fa2a2a",
+          "task_action": "search",
+          "task_id": "task_687b9938de58"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Lasting almost 10 years (from late 1929 until about 1939) and affecting nearly every country in the world, it was marked by steep declines in industrial production and in prices (deflation), mass unemployment, banking panics, and sharp increases in rates of poverty and homelessness. In the United States, where the effects of the depression were generally worst, between 1929 and 1933 industrial production fell nearly 47 percent, gross domestic product (GDP) declined by 30 percent, and unemployment reached more than 20 percent. **The gold standard.** Whatever its effects on the money supply in the United States, the gold standard unquestionably played a role in the spread of the Great Depression from the United States to other countries. Accordingly, foreign central banks attempted to counteract the trade imbalance by raising their interest rates, which had the effect of reducing output and prices and increasing unemployment in their countries.",
+        "source_type": "web_search",
+        "title": "Causes of the Great Depression | Britannica",
+        "url": "https://www.britannica.com/story/causes-of-the-great-depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_dfc859fa2a2a",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_687b9938de58"
+    },
+    {
+      "confidence": 0.9960238,
+      "content": "Understanding the Causes of the Great Depression. In this module on the Great Depression, you learned about some of the primary reasons that the U.S. economy",
+      "created_at": "2026-03-18T19:28:51.900480Z",
+      "evidence_id": "evidence_80def8556783",
+      "relevance": 0.9960238,
+      "source": {
+        "access_date": "2026-03-18T19:28:51.900473Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 5,
+          "raw_payload": {
+            "content": "Understanding the Causes of the Great Depression. In this module on the Great Depression, you learned about some of the primary reasons that the U.S. economy",
+            "raw_content": null,
+            "score": 0.9960238,
+            "title": "Understanding the Causes of the Great Depression - Lumen Learning",
+            "url": "https://courses.lumenlearning.com/wm-ushistory2/chapter/causes-of-the-great-depression/"
+          },
+          "source_name": "courses.lumenlearning.com",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_864be6700a32",
+          "task_action": "search",
+          "task_id": "task_f216b386cc27"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Understanding the Causes of the Great Depression. In this module on the Great Depression, you learned about some of the primary reasons that the U.S. economy",
+        "source_type": "web_search",
+        "title": "Understanding the Causes of the Great Depression - Lumen Learning",
+        "url": "https://courses.lumenlearning.com/wm-ushistory2/chapter/causes-of-the-great-depression/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_864be6700a32",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_f216b386cc27"
+    },
+    {
+      "confidence": 0.9956346,
+      "content": "Business Cycles and the Great Depression Depressions (or recessions) occur when there is not enough demand for all the goods and services that an economy pro-duces. The Great Depression may have originated in a fall in total demand, but its length and sever-ity resulted primarily from the unwillingness of the Federal Reserve System to prevent bank failures and to maintain a large enough money supply. The depression was particularly severe in the United States because the Federal Reserve System was obligated to follow the rules of the gold standard. Furthermore, the central banking system (in the United States, the Federal Reserve System) should create new money for the national government to borrow and spend. Foreign depositors quickly began making withdrawals from United States banks, fearing that the United States, too, would \u201cclose the gold window.\u201d Most of the actions of the American Federal Reserve System from 1931 to 1933 can be traced to its adherence to the rules of the gold standard.",
+      "created_at": "2026-03-18T19:28:49.450603Z",
+      "evidence_id": "evidence_7c515f285a2d",
+      "relevance": 0.9956346,
+      "source": {
+        "access_date": "2026-03-18T19:28:49.450595Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 4,
+          "raw_payload": {
+            "content": "Business Cycles and the Great Depression Depressions (or recessions) occur when there is not enough demand for all the goods and services that an economy pro-duces. The Great Depression may have originated in a fall in total demand, but its length and sever-ity resulted primarily from the unwillingness of the Federal Reserve System to prevent bank failures and to maintain a large enough money supply. The depression was particularly severe in the United States because the Federal Reserve System was obligated to follow the rules of the gold standard. Furthermore, the central banking system (in the United States, the Federal Reserve System) should create new money for the national government to borrow and spend. Foreign depositors quickly began making withdrawals from United States banks, fearing that the United States, too, would \u201cclose the gold window.\u201d Most of the actions of the American Federal Reserve System from 1931 to 1933 can be traced to its adherence to the rules of the gold standard.",
+            "raw_content": null,
+            "score": 0.9956346,
+            "title": "[PDF] What Caused the Great Depression? - Social Studies",
+            "url": "https://www.socialstudies.org/system/files/publications/articles/se_710270.pdf"
+          },
+          "source_name": "socialstudies.org",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_dfc859fa2a2a",
+          "task_action": "search",
+          "task_id": "task_687b9938de58"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Business Cycles and the Great Depression Depressions (or recessions) occur when there is not enough demand for all the goods and services that an economy pro-duces. The Great Depression may have originated in a fall in total demand, but its length and sever-ity resulted primarily from the unwillingness of the Federal Reserve System to prevent bank failures and to maintain a large enough money supply. The depression was particularly severe in the United States because the Federal Reserve System was obligated to follow the rules of the gold standard. Furthermore, the central banking system (in the United States, the Federal Reserve System) should create new money for the national government to borrow and spend. Foreign depositors quickly began making withdrawals from United States banks, fearing that the United States, too, would \u201cclose the gold window.\u201d Most of the actions of the American Federal Reserve System from 1931 to 1933 can be traced to its adherence to the rules of the gold standard.",
+        "source_type": "web_search",
+        "title": "[PDF] What Caused the Great Depression? - Social Studies",
+        "url": "https://www.socialstudies.org/system/files/publications/articles/se_710270.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_dfc859fa2a2a",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_687b9938de58"
+    },
+    {
+      "confidence": 0.9950563,
+      "content": "This paper provides a comparative analysis of the Great Depression (1929-1933) and the Great Financial Crisis (2007-2009) by contrasting the",
+      "created_at": "2026-03-18T19:28:49.450649Z",
+      "evidence_id": "evidence_bd42fb132fef",
+      "relevance": 0.9950563,
+      "source": {
+        "access_date": "2026-03-18T19:28:49.450615Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 5,
+          "raw_payload": {
+            "content": "This paper provides a comparative analysis of the Great Depression (1929-1933) and the Great Financial Crisis (2007-2009) by contrasting the",
+            "raw_content": null,
+            "score": 0.9950563,
+            "title": "The Great Depression(s) of 1929-1933 and 2007-2009? Parallels ...",
+            "url": "https://www.researchgate.net/publication/314506282_The_Great_Depressions_of_1929-1933_and_2007-2009_Parallels_Differences_and_Policy_Lessons"
+          },
+          "source_name": "researchgate.net",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_dfc859fa2a2a",
+          "task_action": "search",
+          "task_id": "task_687b9938de58"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This paper provides a comparative analysis of the Great Depression (1929-1933) and the Great Financial Crisis (2007-2009) by contrasting the",
+        "source_type": "web_search",
+        "title": "The Great Depression(s) of 1929-1933 and 2007-2009? Parallels ...",
+        "url": "https://www.researchgate.net/publication/314506282_The_Great_Depressions_of_1929-1933_and_2007-2009_Parallels_Differences_and_Policy_Lessons"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_dfc859fa2a2a",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_687b9938de58"
+    },
+    {
+      "confidence": 0.6636041,
+      "content": "* America from the Great Depression to World War II, Photographs. * American from the Great Depression to World War II. * American Life Histories, Manuscripts from the Federal Writers' Project 1936-1940. The Life Histories Collection is part of the U.S. Work Progress Administration Federal Writers' Project and Historical Records Survey. The Forgotten People Between 1935 and 1943, Lange and other top-caliber photographers hired by Roy Stryker of the Resettlement Administration produced what was to become the world's best-known photographic survey, the Farm Security Administration (FSA) collection. * History of the FBI the New Deal 1933 - Late 1930's. * Labor Unions During the Great Depression and the New Deal. * [Other Voices from the Depression, \"Harlan Working Under the Gun\" by John Dos Passos, published in The New Republic [December 2, 1931]](https://socialwelfare.library.vcu.edu/eras/great-depression/harlan-working-gun/). * Voices from the Thirties -Life Histories Manuscripts 1936-1940from the Federal Writers' Project. * Works Progress Administration: Voices from the Thirties American Life Histories, 1936-1940.",
+      "created_at": "2026-03-18T19:28:43.476789Z",
+      "evidence_id": "evidence_9e5c81e303a4",
+      "relevance": 0.6636041,
+      "source": {
+        "access_date": "2026-03-18T19:28:43.476771Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "* America from the Great Depression to World War II, Photographs. * American from the Great Depression to World War II. * American Life Histories, Manuscripts from the Federal Writers' Project 1936-1940. The Life Histories Collection is part of the U.S. Work Progress Administration Federal Writers' Project and Historical Records Survey. The Forgotten People Between 1935 and 1943, Lange and other top-caliber photographers hired by Roy Stryker of the Resettlement Administration produced what was to become the world's best-known photographic survey, the Farm Security Administration (FSA) collection. * History of the FBI the New Deal 1933 - Late 1930's. * Labor Unions During the Great Depression and the New Deal. * [Other Voices from the Depression, \"Harlan Working Under the Gun\" by John Dos Passos, published in The New Republic [December 2, 1931]](https://socialwelfare.library.vcu.edu/eras/great-depression/harlan-working-gun/). * Voices from the Thirties -Life Histories Manuscripts 1936-1940from the Federal Writers' Project. * Works Progress Administration: Voices from the Thirties American Life Histories, 1936-1940.",
+            "raw_content": null,
+            "score": 0.6636041,
+            "title": "Great Depression 1929-1939 - Primary Resources",
+            "url": "https://libguides.southernct.edu/ushistoryprimary/greatdepression"
+          },
+          "source_name": "libguides.southernct.edu",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_bbd1c3f3dfa3",
+          "task_action": "search",
+          "task_id": "task_18f97eaa40f1"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "* America from the Great Depression to World War II, Photographs. * American from the Great Depression to World War II. * American Life Histories, Manuscripts from the Federal Writers' Project 1936-1940. The Life Histories Collection is part of the U.S. Work Progress Administration Federal Writers' Project and Historical Records Survey. The Forgotten People Between 1935 and 1943, Lange and other top-caliber photographers hired by Roy Stryker of the Resettlement Administration produced what was to become the world's best-known photographic survey, the Farm Security Administration (FSA) collection. * History of the FBI the New Deal 1933 - Late 1930's. * Labor Unions During the Great Depression and the New Deal. * [Other Voices from the Depression, \"Harlan Working Under the Gun\" by John Dos Passos, published in The New Republic [December 2, 1931]](https://socialwelfare.library.vcu.edu/eras/great-depression/harlan-working-gun/). * Voices from the Thirties -Life Histories Manuscripts 1936-1940from the Federal Writers' Project. * Works Progress Administration: Voices from the Thirties American Life Histories, 1936-1940.",
+        "source_type": "web_search",
+        "title": "Great Depression 1929-1939 - Primary Resources",
+        "url": "https://libguides.southernct.edu/ushistoryprimary/greatdepression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bbd1c3f3dfa3",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_18f97eaa40f1"
+    },
+    {
+      "confidence": 0.6222074,
+      "content": "# Kingwood - Primary Sources. ## Great Depression Era. This is a selected bibliography of primary source collections pertaining to the Great Depression Era\u00a0available online. There may also be secondary sources included in these collections and it is up to the student to evaluate if the item qualifies as a primary or secondary source. * American Life Histories: Manuscripts from the Federal Writers' Project, 1936 to 1940: Library of Congress. Transcriptions of interviews of people who participated in the Dust Bowl Migration, as well as photographs, articles and more from California State University, Bakersfield. * The Great Depression Interviews: Washington University. Videoed interviews, accompanied by transcripts, of individuals who lived through the Great Depression. * The Great Depression Primary Source Sets: Library of Congress. Primary source documents from the Library of Congress covering the Great Depression and the New Deal. Digital collection of the National Archives, covering the Great Depression and WWII. Tags: american history, history, LSC-Kingwood, Primary Sources, texas history.",
+      "created_at": "2026-03-18T19:28:43.476826Z",
+      "evidence_id": "evidence_47a59bc1f350",
+      "relevance": 0.6222074,
+      "source": {
+        "access_date": "2026-03-18T19:28:43.476819Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "# Kingwood - Primary Sources. ## Great Depression Era. This is a selected bibliography of primary source collections pertaining to the Great Depression Era\u00a0available online. There may also be secondary sources included in these collections and it is up to the student to evaluate if the item qualifies as a primary or secondary source. * American Life Histories: Manuscripts from the Federal Writers' Project, 1936 to 1940: Library of Congress. Transcriptions of interviews of people who participated in the Dust Bowl Migration, as well as photographs, articles and more from California State University, Bakersfield. * The Great Depression Interviews: Washington University. Videoed interviews, accompanied by transcripts, of individuals who lived through the Great Depression. * The Great Depression Primary Source Sets: Library of Congress. Primary source documents from the Library of Congress covering the Great Depression and the New Deal. Digital collection of the National Archives, covering the Great Depression and WWII. Tags: american history, history, LSC-Kingwood, Primary Sources, texas history.",
+            "raw_content": null,
+            "score": 0.6222074,
+            "title": "Kingwood - Primary Sources: Great Depression Era - Guides",
+            "url": "https://kwlibguides.lonestar.edu/PrimarySources-History/depressionera"
+          },
+          "source_name": "kwlibguides.lonestar.edu",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_bbd1c3f3dfa3",
+          "task_action": "search",
+          "task_id": "task_18f97eaa40f1"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "# Kingwood - Primary Sources. ## Great Depression Era. This is a selected bibliography of primary source collections pertaining to the Great Depression Era\u00a0available online. There may also be secondary sources included in these collections and it is up to the student to evaluate if the item qualifies as a primary or secondary source. * American Life Histories: Manuscripts from the Federal Writers' Project, 1936 to 1940: Library of Congress. Transcriptions of interviews of people who participated in the Dust Bowl Migration, as well as photographs, articles and more from California State University, Bakersfield. * The Great Depression Interviews: Washington University. Videoed interviews, accompanied by transcripts, of individuals who lived through the Great Depression. * The Great Depression Primary Source Sets: Library of Congress. Primary source documents from the Library of Congress covering the Great Depression and the New Deal. Digital collection of the National Archives, covering the Great Depression and WWII. Tags: american history, history, LSC-Kingwood, Primary Sources, texas history.",
+        "source_type": "web_search",
+        "title": "Kingwood - Primary Sources: Great Depression Era - Guides",
+        "url": "https://kwlibguides.lonestar.edu/PrimarySources-History/depressionera"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bbd1c3f3dfa3",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_18f97eaa40f1"
+    },
+    {
+      "confidence": 0.59655124,
+      "content": "The Great Depression, a profound economic downturn lasting from 1929 to the late 1930s, saw widespread unemployment, poverty, and economic instability in",
+      "created_at": "2026-03-18T19:28:43.476844Z",
+      "evidence_id": "evidence_10f9e6de990a",
+      "relevance": 0.59655124,
+      "source": {
+        "access_date": "2026-03-18T19:28:43.476838Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The Great Depression, a profound economic downturn lasting from 1929 to the late 1930s, saw widespread unemployment, poverty, and economic instability in",
+            "raw_content": null,
+            "score": 0.59655124,
+            "title": "Great Depression & New Deal - Primary Sources: America (U.S.A. ...",
+            "url": "https://libguides.fau.edu/primary-sources-america/great-depression"
+          },
+          "source_name": "libguides.fau.edu",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_bbd1c3f3dfa3",
+          "task_action": "search",
+          "task_id": "task_18f97eaa40f1"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Great Depression, a profound economic downturn lasting from 1929 to the late 1930s, saw widespread unemployment, poverty, and economic instability in",
+        "source_type": "web_search",
+        "title": "Great Depression & New Deal - Primary Sources: America (U.S.A. ...",
+        "url": "https://libguides.fau.edu/primary-sources-america/great-depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bbd1c3f3dfa3",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_18f97eaa40f1"
+    },
+    {
+      "confidence": 0.56258565,
+      "content": "The widespread prosperity of the 1920s ended abruptly with the stock market crash in October 1929 and the great economic depression that followed. At the depths of the depression, over one-quarter of the American workforce was out of work. Although the economic depression continued throughout the New Deal era, the darkest hours of despair seemed to have passed. (Totalitarian regimes in the Soviet Union and Italy predated the depression.) These regimes pushed the world ever-closer to war in the 1930s. When world war finally broke out in both Europe and Asia, the United States tried to avoid being drawn into the conflict. When Japan attacked the U.S. Naval base at Pearl Harbor, Hawaii, on December 7, 1941, the United States found itself in the war it had sought to avoid for more than two years. Mobilizing the economy for world war finally cured the depression. World War Two affected the world and the United States profoundly; it continues to influence us even today.",
+      "created_at": "2026-03-18T19:28:43.476857Z",
+      "evidence_id": "evidence_99ff5c7edd6b",
+      "relevance": 0.56258565,
+      "source": {
+        "access_date": "2026-03-18T19:28:43.476852Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 4,
+          "raw_payload": {
+            "content": "The widespread prosperity of the 1920s ended abruptly with the stock market crash in October 1929 and the great economic depression that followed. At the depths of the depression, over one-quarter of the American workforce was out of work. Although the economic depression continued throughout the New Deal era, the darkest hours of despair seemed to have passed. (Totalitarian regimes in the Soviet Union and Italy predated the depression.) These regimes pushed the world ever-closer to war in the 1930s. When world war finally broke out in both Europe and Asia, the United States tried to avoid being drawn into the conflict. When Japan attacked the U.S. Naval base at Pearl Harbor, Hawaii, on December 7, 1941, the United States found itself in the war it had sought to avoid for more than two years. Mobilizing the economy for world war finally cured the depression. World War Two affected the world and the United States profoundly; it continues to influence us even today.",
+            "raw_content": null,
+            "score": 0.56258565,
+            "title": "Overview | Great Depression and World War II, 1929 to 1945",
+            "url": "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/overview/"
+          },
+          "source_name": "loc.gov",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_bbd1c3f3dfa3",
+          "task_action": "search",
+          "task_id": "task_18f97eaa40f1"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The widespread prosperity of the 1920s ended abruptly with the stock market crash in October 1929 and the great economic depression that followed. At the depths of the depression, over one-quarter of the American workforce was out of work. Although the economic depression continued throughout the New Deal era, the darkest hours of despair seemed to have passed. (Totalitarian regimes in the Soviet Union and Italy predated the depression.) These regimes pushed the world ever-closer to war in the 1930s. When world war finally broke out in both Europe and Asia, the United States tried to avoid being drawn into the conflict. When Japan attacked the U.S. Naval base at Pearl Harbor, Hawaii, on December 7, 1941, the United States found itself in the war it had sought to avoid for more than two years. Mobilizing the economy for world war finally cured the depression. World War Two affected the world and the United States profoundly; it continues to influence us even today.",
+        "source_type": "web_search",
+        "title": "Overview | Great Depression and World War II, 1929 to 1945",
+        "url": "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/great-depression-and-world-war-ii-1929-1945/overview/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bbd1c3f3dfa3",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_18f97eaa40f1"
+    },
+    {
+      "confidence": 0.5112048,
+      "content": "Primary Sources: The Great Depression and the 1930s: Economics. Contents \u00b7 General \u00b7 Stock Market & the Crash \u00b7 Prohibition \u00b7 New Deal",
+      "created_at": "2026-03-18T19:28:43.476874Z",
+      "evidence_id": "evidence_4d3f46038bf3",
+      "relevance": 0.5112048,
+      "source": {
+        "access_date": "2026-03-18T19:28:43.476866Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 5,
+          "raw_payload": {
+            "content": "Primary Sources: The Great Depression and the 1930s: Economics. Contents \u00b7 General \u00b7 Stock Market & the Crash \u00b7 Prohibition \u00b7 New Deal",
+            "raw_content": null,
+            "score": 0.5112048,
+            "title": "Primary Sources: The Great Depression and the 1930s: Economics",
+            "url": "https://cnu.libguides.com/psthegreatdepression/econ"
+          },
+          "source_name": "cnu.libguides.com",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_bbd1c3f3dfa3",
+          "task_action": "search",
+          "task_id": "task_18f97eaa40f1"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Primary Sources: The Great Depression and the 1930s: Economics. Contents \u00b7 General \u00b7 Stock Market & the Crash \u00b7 Prohibition \u00b7 New Deal",
+        "source_type": "web_search",
+        "title": "Primary Sources: The Great Depression and the 1930s: Economics",
+        "url": "https://cnu.libguides.com/psthegreatdepression/econ"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_bbd1c3f3dfa3",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_18f97eaa40f1"
+    },
+    {
+      "confidence": 0.027358351,
+      "content": "In this Section we set out general categories of personal data we may collect and the purpose for using your personal data, including the",
+      "created_at": "2026-03-18T19:28:46.656485Z",
+      "evidence_id": "evidence_fa682b219b7f",
+      "relevance": 0.027358351,
+      "source": {
+        "access_date": "2026-03-18T19:28:46.656470Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "rank": 1,
+          "raw_payload": {
+            "content": "In this Section we set out general categories of personal data we may collect and the purpose for using your personal data, including the",
+            "raw_content": null,
+            "score": 0.027358351,
+            "title": "economic-support-specialist-1-00161586 | Job Details tab",
+            "url": "https://www.governmentjobs.com/careers/dhsgeorgia/jobs/2972588/economic-support-specialist-1-00161586?pagetype=jobOpportunitiesJobs"
+          },
+          "source_name": "governmentjobs.com",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_372ab84f480f",
+          "task_action": "search",
+          "task_id": "task_4d2a5ce93613"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "In this Section we set out general categories of personal data we may collect and the purpose for using your personal data, including the",
+        "source_type": "web_search",
+        "title": "economic-support-specialist-1-00161586 | Job Details tab",
+        "url": "https://www.governmentjobs.com/careers/dhsgeorgia/jobs/2972588/economic-support-specialist-1-00161586?pagetype=jobOpportunitiesJobs"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_372ab84f480f",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_4d2a5ce93613"
+    },
+    {
+      "confidence": 0.023529684,
+      "content": "1 | P a g e Student Handbook Updated January 2026 2 | P a g e 5 University & Handbook Overview Accreditations & Authorizations Mission Statement 6 Commitment to Diversity Purpose of Student Handbook GENERAL INFORMATION 8 Calendars 10 Student Identification Student Assistance & Grievance Procedure 11 Change of Address Smoking Campus Quiet Hours Check Cashing 12 Health Service Student Medical Needs 14 Campus Map UNIVERSITY SUPPORT SERVICES 16 Financial Aid 17 Career Services 18 Registrar\u2019s Office 19 Advising Resource Center 20 Testing Center 21 Counseling Center 22 Student Success Department 23 Library 24 Barnes & Noble 25 Restaurants & Meal Plans UNOH Meal Plans Student Commons Food Court 26 Racers Caf\u00e9 The Pit Stop 27 Lock Sixteen Steak House Student Foodbank 28 Property Management Department STUDENT ACTIVITIES 30 Student Activities 31 Racers Station Indoor Athletic Complex Student Organizations 32 Local Activities 33 UNOH Alumni Table of Contents 3 | P a g e COMMUNICATION & TECHNOLOGY 35 Important University Phone Numbers 36 MyUNOH Portal Racer Alerts 37 University Delays & Cancellations 38 Computer Labs Wireless Internet Access 39 Media Consent User Account Information CONDUCT COMPLIANCE POLICIES 41 Title IX Amnesty Policy 42 Equal Educational Opportunity & Anti-Harassment Policy 44 Anti-Hazing Prevention & Awareness Policy EMERGENCY ACTION PLAN \u2013 Policies & Procedures 49 Emergency Phone Numbers 50 Emergency Activation Chart 51 Emergency Evacuation Plan Evacuation Procedures 52 Command Posts Evacuation Drills 53 Public Address System Emergency Call Boxes 54 Campus Violence Procedures Active Shooter Policy 55 ALICE 57 Bomb Threat Procedures 58 Campus Power Loss Hazardous Materials Emergencies Shelter-In Place 59 Fuel Spills Fire Evacuation Plan 67 Tornado Procedures 72 Outdoor Athletic Fields Severe Weather Policy 76 Athletic Emergency Action Plans 89 Building Coordinators 90 Building Addresses for 9-1-1 91 Emergency Maps Rally Point Map 92 Evacuation Map 93 Emergency Call Box \u2013 Blue Light Locations HOUSING POLICIES 95 Housing Housing Requirements Official Contact 4 | P a g",
+      "created_at": "2026-03-18T19:28:46.656506Z",
+      "evidence_id": "evidence_ae53c0bde032",
+      "relevance": 0.023529684,
+      "source": {
+        "access_date": "2026-03-18T19:28:46.656500Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "rank": 2,
+          "raw_payload": {
+            "content": "1 | P a g e Student Handbook Updated January 2026 2 | P a g e 5 University & Handbook Overview Accreditations & Authorizations Mission Statement 6 Commitment to Diversity Purpose of Student Handbook GENERAL INFORMATION 8 Calendars 10 Student Identification Student Assistance & Grievance Procedure 11 Change of Address Smoking Campus Quiet Hours Check Cashing 12 Health Service Student Medical Needs 14 Campus Map UNIVERSITY SUPPORT SERVICES 16 Financial Aid 17 Career Services 18 Registrar\u2019s Office 19 Advising Resource Center 20 Testing Center 21 Counseling Center 22 Student Success Department 23 Library 24 Barnes & Noble 25 Restaurants & Meal Plans UNOH Meal Plans Student Commons Food Court 26 Racers Caf\u00e9 The Pit Stop 27 Lock Sixteen Steak House Student Foodbank 28 Property Management Department STUDENT ACTIVITIES 30 Student Activities 31 Racers Station Indoor Athletic Complex Student Organizations 32 Local Activities 33 UNOH Alumni Table of Contents 3 | P a g e COMMUNICATION & TECHNOLOGY 35 Important University Phone Numbers 36 MyUNOH Portal Racer Alerts 37 University Delays & Cancellations 38 Computer Labs Wireless Internet Access 39 Media Consent User Account Information CONDUCT COMPLIANCE POLICIES 41 Title IX Amnesty Policy 42 Equal Educational Opportunity & Anti-Harassment Policy 44 Anti-Hazing Prevention & Awareness Policy EMERGENCY ACTION PLAN \u2013 Policies & Procedures 49 Emergency Phone Numbers 50 Emergency Activation Chart 51 Emergency Evacuation Plan Evacuation Procedures 52 Command Posts Evacuation Drills 53 Public Address System Emergency Call Boxes 54 Campus Violence Procedures Active Shooter Policy 55 ALICE 57 Bomb Threat Procedures 58 Campus Power Loss Hazardous Materials Emergencies Shelter-In Place 59 Fuel Spills Fire Evacuation Plan 67 Tornado Procedures 72 Outdoor Athletic Fields Severe Weather Policy 76 Athletic Emergency Action Plans 89 Building Coordinators 90 Building Addresses for 9-1-1 91 Emergency Maps Rally Point Map 92 Evacuation Map 93 Emergency Call Box \u2013 Blue Light Locations HOUSING POLICIES 95 Housing Housing Requirements Official Contact 4 | P a g",
+            "raw_content": null,
+            "score": 0.023529684,
+            "title": "[PDF] Student Handbook - University of Northwestern Ohio",
+            "url": "https://www.unoh.edu/files/housing/student_handbook.pdf"
+          },
+          "source_name": "unoh.edu",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_372ab84f480f",
+          "task_action": "search",
+          "task_id": "task_4d2a5ce93613"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "1 | P a g e Student Handbook Updated January 2026 2 | P a g e 5 University & Handbook Overview Accreditations & Authorizations Mission Statement 6 Commitment to Diversity Purpose of Student Handbook GENERAL INFORMATION 8 Calendars 10 Student Identification Student Assistance & Grievance Procedure 11 Change of Address Smoking Campus Quiet Hours Check Cashing 12 Health Service Student Medical Needs 14 Campus Map UNIVERSITY SUPPORT SERVICES 16 Financial Aid 17 Career Services 18 Registrar\u2019s Office 19 Advising Resource Center 20 Testing Center 21 Counseling Center 22 Student Success Department 23 Library 24 Barnes & Noble 25 Restaurants & Meal Plans UNOH Meal Plans Student Commons Food Court 26 Racers Caf\u00e9 The Pit Stop 27 Lock Sixteen Steak House Student Foodbank 28 Property Management Department STUDENT ACTIVITIES 30 Student Activities 31 Racers Station Indoor Athletic Complex Student Organizations 32 Local Activities 33 UNOH Alumni Table of Contents 3 | P a g e COMMUNICATION & TECHNOLOGY 35 Important University Phone Numbers 36 MyUNOH Portal Racer Alerts 37 University Delays & Cancellations 38 Computer Labs Wireless Internet Access 39 Media Consent User Account Information CONDUCT COMPLIANCE POLICIES 41 Title IX Amnesty Policy 42 Equal Educational Opportunity & Anti-Harassment Policy 44 Anti-Hazing Prevention & Awareness Policy EMERGENCY ACTION PLAN \u2013 Policies & Procedures 49 Emergency Phone Numbers 50 Emergency Activation Chart 51 Emergency Evacuation Plan Evacuation Procedures 52 Command Posts Evacuation Drills 53 Public Address System Emergency Call Boxes 54 Campus Violence Procedures Active Shooter Policy 55 ALICE 57 Bomb Threat Procedures 58 Campus Power Loss Hazardous Materials Emergencies Shelter-In Place 59 Fuel Spills Fire Evacuation Plan 67 Tornado Procedures 72 Outdoor Athletic Fields Severe Weather Policy 76 Athletic Emergency Action Plans 89 Building Coordinators 90 Building Addresses for 9-1-1 91 Emergency Maps Rally Point Map 92 Evacuation Map 93 Emergency Call Box \u2013 Blue Light Locations HOUSING POLICIES 95 Housing Housing Requirements Official Contact 4 | P a g",
+        "source_type": "web_search",
+        "title": "[PDF] Student Handbook - University of Northwestern Ohio",
+        "url": "https://www.unoh.edu/files/housing/student_handbook.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_372ab84f480f",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_4d2a5ce93613"
+    },
+    {
+      "confidence": 0.017457593,
+      "content": "Any use of analytics or engagement technologies that process personal data, including tools that analyze user behavior or associate usage with identifiers, are implemented solely as a data processor or service provider in these scenarios, and such data is not used by NEOGOV for its own commercial purposes. By using our services, you acknowledge and agree that: (a) AI-generated content or responses may not always be accurate, complete, or free from errors, biases, or offensive material; (b) you should exercise your own judgment and discretion when relying on any AI-generated output and conduct independent verification where appropriate, especially for critical decisions; (c) you will not use our AI features to generate, upload, or transmit any content that is illegal, harmful, defamatory, infringing upon intellectual property rights, or violates any applicable laws or our these Terms of Use; and (d) any information or data you input into our AI features may be processed and used by us (and our third-party AI service providers) to provide, maintain, and improve the AI functionalities, subject to our Privacy Policy.",
+      "created_at": "2026-03-18T19:28:46.656538Z",
+      "evidence_id": "evidence_55d9bbd38796",
+      "relevance": 0.017457593,
+      "source": {
+        "access_date": "2026-03-18T19:28:46.656532Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Any use of analytics or engagement technologies that process personal data, including tools that analyze user behavior or associate usage with identifiers, are implemented solely as a data processor or service provider in these scenarios, and such data is not used by NEOGOV for its own commercial purposes. By using our services, you acknowledge and agree that: (a) AI-generated content or responses may not always be accurate, complete, or free from errors, biases, or offensive material; (b) you should exercise your own judgment and discretion when relying on any AI-generated output and conduct independent verification where appropriate, especially for critical decisions; (c) you will not use our AI features to generate, upload, or transmit any content that is illegal, harmful, defamatory, infringing upon intellectual property rights, or violates any applicable laws or our these Terms of Use; and (d) any information or data you input into our AI features may be processed and used by us (and our third-party AI service providers) to provide, maintain, and improve the AI functionalities, subject to our Privacy Policy.",
+            "raw_content": null,
+            "score": 0.017457593,
+            "title": "Job Opportunities | Sorted by Posting Date descending | Chatham ...",
+            "url": "https://jobs.chathamcounty.org/"
+          },
+          "source_name": "jobs.chathamcounty.org",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_372ab84f480f",
+          "task_action": "search",
+          "task_id": "task_4d2a5ce93613"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Any use of analytics or engagement technologies that process personal data, including tools that analyze user behavior or associate usage with identifiers, are implemented solely as a data processor or service provider in these scenarios, and such data is not used by NEOGOV for its own commercial purposes. By using our services, you acknowledge and agree that: (a) AI-generated content or responses may not always be accurate, complete, or free from errors, biases, or offensive material; (b) you should exercise your own judgment and discretion when relying on any AI-generated output and conduct independent verification where appropriate, especially for critical decisions; (c) you will not use our AI features to generate, upload, or transmit any content that is illegal, harmful, defamatory, infringing upon intellectual property rights, or violates any applicable laws or our these Terms of Use; and (d) any information or data you input into our AI features may be processed and used by us (and our third-party AI service providers) to provide, maintain, and improve the AI functionalities, subject to our Privacy Policy.",
+        "source_type": "web_search",
+        "title": "Job Opportunities | Sorted by Posting Date descending | Chatham ...",
+        "url": "https://jobs.chathamcounty.org/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_372ab84f480f",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_4d2a5ce93613"
+    },
+    {
+      "confidence": 0.010819515,
+      "content": "## Ask the Libraries. Live chat with an expert or send an email if we\u2019re offline. ## Contact Us. ### Today's Reference Desk Hours. # UVM Libraries. # Homepage. UVM Libraries is a home for research and innovation at the University of Vermont. We offer resources to support research, instruction in information literacy, support for new technologies and more. ## Search. ## Visit Our Libraries. ### Dana Health Sciences Library. ### David W. ### Silver Special Collections Library. ## Dive into research. Here are a few library resources that are always popular! Get started with your coursework, research projects, and more. ## Put your data on the map. We have geographic information systems (GIS) experts who can equip you with the tools and tricks you need for mapping your data.",
+      "created_at": "2026-03-18T19:28:46.656557Z",
+      "evidence_id": "evidence_b05aafe49970",
+      "relevance": 0.010819515,
+      "source": {
+        "access_date": "2026-03-18T19:28:46.656547Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "rank": 4,
+          "raw_payload": {
+            "content": "## Ask the Libraries. Live chat with an expert or send an email if we\u2019re offline. ## Contact Us. ### Today's Reference Desk Hours. # UVM Libraries. # Homepage. UVM Libraries is a home for research and innovation at the University of Vermont. We offer resources to support research, instruction in information literacy, support for new technologies and more. ## Search. ## Visit Our Libraries. ### Dana Health Sciences Library. ### David W. ### Silver Special Collections Library. ## Dive into research. Here are a few library resources that are always popular! Get started with your coursework, research projects, and more. ## Put your data on the map. We have geographic information systems (GIS) experts who can equip you with the tools and tricks you need for mapping your data.",
+            "raw_content": null,
+            "score": 0.010819515,
+            "title": "UVM Libraries - The University of Vermont",
+            "url": "https://libraries.uvm.edu/"
+          },
+          "source_name": "libraries.uvm.edu",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_372ab84f480f",
+          "task_action": "search",
+          "task_id": "task_4d2a5ce93613"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "## Ask the Libraries. Live chat with an expert or send an email if we\u2019re offline. ## Contact Us. ### Today's Reference Desk Hours. # UVM Libraries. # Homepage. UVM Libraries is a home for research and innovation at the University of Vermont. We offer resources to support research, instruction in information literacy, support for new technologies and more. ## Search. ## Visit Our Libraries. ### Dana Health Sciences Library. ### David W. ### Silver Special Collections Library. ## Dive into research. Here are a few library resources that are always popular! Get started with your coursework, research projects, and more. ## Put your data on the map. We have geographic information systems (GIS) experts who can equip you with the tools and tricks you need for mapping your data.",
+        "source_type": "web_search",
+        "title": "UVM Libraries - The University of Vermont",
+        "url": "https://libraries.uvm.edu/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_372ab84f480f",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_4d2a5ce93613"
+    },
+    {
+      "confidence": 0.0099297175,
+      "content": "Learn about the Explorer Challenge 2.0, formerly known as the Strategic Innovation Fund, from the Office of Research and Innovation at Marquette University.",
+      "created_at": "2026-03-18T19:28:46.656571Z",
+      "evidence_id": "evidence_20d24257d7ce",
+      "relevance": 0.0099297175,
+      "source": {
+        "access_date": "2026-03-18T19:28:46.656566Z",
+        "additional": {
+          "plan_id": "plan_622d565b4477",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "rank": 5,
+          "raw_payload": {
+            "content": "Learn about the Explorer Challenge 2.0, formerly known as the Strategic Innovation Fund, from the Office of Research and Innovation at Marquette University.",
+            "raw_content": null,
+            "score": 0.0099297175,
+            "title": "The Explorer Challenge // Research and Innovation // Marquette ...",
+            "url": "https://www.marquette.edu/innovation/the-explorer-challenge.php"
+          },
+          "source_name": "marquette.edu",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_372ab84f480f",
+          "task_action": "search",
+          "task_id": "task_4d2a5ce93613"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Learn about the Explorer Challenge 2.0, formerly known as the Strategic Innovation Fund, from the Office of Research and Innovation at Marquette University.",
+        "source_type": "web_search",
+        "title": "The Explorer Challenge // Research and Innovation // Marquette ...",
+        "url": "https://www.marquette.edu/innovation/the-explorer-challenge.php"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_372ab84f480f",
+        "plan_622d565b4477"
+      ],
+      "task_id": "task_4d2a5ce93613"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_tier1_eval_set_001/great_depression/20260318T192859Z_what-were-the-main-causes-of-the-great-d_experiment_c1622f377bc9/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_tier1_eval_set_001/great_depression/20260318T192859Z_what-were-the-main-causes-of-the-great-d_experiment_c1622f377bc9/experiment.json"
+    ],
+    "completed_at": "2026-03-18T19:28:59.126321Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_c1622f377bc9",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.15,
+      "groundedness": 0.6666666666666666,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 20.0,
+      "number_of_supported_claims": 2.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-great-d",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-18T19:28:39.986698Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the Great Depression?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-18T19:28:39.986698Z",
+    "goal": "What were the main causes of the Great Depression?",
+    "parent_plan_id": null,
+    "plan_id": "plan_622d565b4477",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+        "expected_output": "A collection of relevant articles, books, or government reports that provide insight into the causes of the Great Depression.",
+        "priority": 1,
+        "step_id": "step_bbd1c3f3dfa3",
+        "success_criteria": "Identification of at least 5 key events or factors mentioned in multiple sources as contributing to the Great Depression.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_bbd1c3f3dfa3"
+        ],
+        "description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+        "expected_output": "A list of categorized causes with a brief description of each.",
+        "priority": 2,
+        "step_id": "step_372ab84f480f",
+        "success_criteria": "Presence of at least 3 distinct categories with a minimum of 2 causes per category.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_372ab84f480f"
+        ],
+        "description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+        "expected_output": "A set of relevant academic sources that provide in-depth analysis or empirical evidence related to the causes of the Great Depression.",
+        "priority": 3,
+        "step_id": "step_dfc859fa2a2a",
+        "success_criteria": "Identification of at least 3 studies that support or contradict the categorized causes from step 2.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_dfc859fa2a2a"
+        ],
+        "description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+        "expected_output": "A concise summary of the most widely accepted causes, along with any notable disagreements or debates in the field.",
+        "priority": 4,
+        "step_id": "step_864be6700a32",
+        "success_criteria": "Presence of a clear and well-supported conclusion that addresses the goal.",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_f3550d1ef113",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (downturn, economic, factors, history, led, perfect, s, start, storm, u, unlucky, worst).",
+        "supporting_ids_checked": [
+          "evidence_37a4cda421be"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_022d81993e92",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (but, demand, depression, fall, great, have, its, length, may, originated, primarily, resulted, total).",
+        "supporting_ids_checked": [
+          "evidence_7c515f285a2d"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_b18fa3ce13a0",
+        "contradicting_ids_checked": [],
+        "reasoning": "Referenced evidence did not meet the lexical support threshold. Strongest overlap was 0 informative tokens.",
+        "supporting_ids_checked": [
+          "evidence_f38e377f5e09"
+        ],
+        "verdict": "insufficient"
+      }
+    ],
+    "created_at": "2026-03-18T19:28:59.126321Z",
+    "decision_id": "decision_c6072350ced4",
+    "summary": "supported=2, unsupported=0, insufficient=1, contradicted=0"
+  }
+}

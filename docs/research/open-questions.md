@@ -31,6 +31,6 @@ Questions that need answers before or during implementation. Tagged with phase a
 
 ## Practical
 
-- **OQ-P1** [Phase 1] `common`: Initial live v0 provider choice is OpenAI for LLM + Brave Search for web search. Fallback strategy remains open for later phases.
+- **OQ-P1** [Phase 1] `common`: Initial live v0 provider choice is an OpenAI-compatible remote inference endpoint for LLM + Tavily for web search. Fallback strategy remains open for later phases.
 - **OQ-P2** [Phase 1] `common`: How should API keys be managed? Environment variables? Secrets manager?
 - **OQ-P3** [Phase 2] `execution`: Rate limiting / cost management for tool calls?

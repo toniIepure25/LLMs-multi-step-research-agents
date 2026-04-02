@@ -1,0 +1,735 @@
+{
+  "created_at": "2026-03-18T20:30:34.122713Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_84c441631221",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The crisis highlighted the need for better regulatory tools, which was a contributing factor to the crash.",
+        "supporting_evidence_ids": [
+          "evidence_32d8a2b2792f"
+        ],
+        "text": "Regulatory shortcomings exposed by the crisis included a lack of tools for supervisors to manage the financial system."
+      },
+      {
+        "claim_id": "claim_242cdcb9874a",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The rapid increase in equity valuations of internet-based tech companies was driven by speculation, which ultimately led to the bubble bursting.",
+        "supporting_evidence_ids": [
+          "evidence_d89519c6005d"
+        ],
+        "text": "Speculation in dot-com businesses caused a stock market bubble that led to the crash."
+      },
+      {
+        "claim_id": "claim_280a9b2e11bf",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "The history of regulatory failures in addressing financial crises suggests that such shortcomings can contribute to crashes.",
+        "supporting_evidence_ids": [
+          "evidence_af29382eafc5"
+        ],
+        "text": "Regulatory failures contributed to the crash by failing to stop or exacerbate financial crises."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-18T20:30:34.121619Z",
+    "decision_id": "decision_5c761dfe4c31",
+    "information_gaps": [
+      "Mechanisms by which speculation in dot-com businesses led to the crash",
+      "Specific regulatory tools or policies that could have prevented the crash"
+    ],
+    "plan_id": "plan_6a85d351afb0",
+    "synthesis": "Regulatory failures and speculation in dot-com businesses contributed to the crash."
+  },
+  "evidence": [
+    {
+      "confidence": 0.99985456,
+      "content": "This dissertation investigates how regulatory failures contributed to the 2007\u20132008 global financial crisis, focusing on structural",
+      "created_at": "2026-03-18T20:30:27.874196Z",
+      "evidence_id": "evidence_e0ffb912f531",
+      "relevance": 0.99985456,
+      "source": {
+        "access_date": "2026-03-18T20:30:27.874176Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Examine the impact of regulatory failures on the crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "This dissertation investigates how regulatory failures contributed to the 2007\u20132008 global financial crisis, focusing on structural",
+            "raw_content": null,
+            "score": 0.99985456,
+            "title": "(PDF) How Regulatory Failures Led to the 2007- 2008 Financial Crisis",
+            "url": "https://www.researchgate.net/publication/398417304_How_Regulatory_Failures_Led_to_the_2007-_2008_Financial_Crisis_-_Assessing_Post-_Crisis_reforms_and_the_Lessons_Learned_on_Systemic_Risk_Management"
+          },
+          "source_name": "researchgate.net",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_12ef565f62a5",
+          "task_action": "search",
+          "task_id": "task_bf6c3c310e62"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "This dissertation investigates how regulatory failures contributed to the 2007\u20132008 global financial crisis, focusing on structural",
+        "source_type": "web_search",
+        "title": "(PDF) How Regulatory Failures Led to the 2007- 2008 Financial Crisis",
+        "url": "https://www.researchgate.net/publication/398417304_How_Regulatory_Failures_Led_to_the_2007-_2008_Financial_Crisis_-_Assessing_Post-_Crisis_reforms_and_the_Lessons_Learned_on_Systemic_Risk_Management"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_12ef565f62a5",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_bf6c3c310e62"
+    },
+    {
+      "confidence": 0.99941623,
+      "content": "Time again, government regulators have either failed to stop financial crises or have exacerbated them. Examples are too numerous to discuss",
+      "created_at": "2026-03-18T20:30:27.874222Z",
+      "evidence_id": "evidence_af29382eafc5",
+      "relevance": 0.99941623,
+      "source": {
+        "access_date": "2026-03-18T20:30:27.874215Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Examine the impact of regulatory failures on the crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Time again, government regulators have either failed to stop financial crises or have exacerbated them. Examples are too numerous to discuss",
+            "raw_content": null,
+            "score": 0.99941623,
+            "title": "11.2: The Great Depression as Regulatory Failure",
+            "url": "https://biz.libretexts.org/Bookshelves/Finance/Book%3A_Finance_Banking_and_Money/11%3A_The_Economics_of_Financial_Regulation/11.02%3A_The_Great_Depression_as_Regulatory_Failure"
+          },
+          "source_name": "biz.libretexts.org",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_12ef565f62a5",
+          "task_action": "search",
+          "task_id": "task_bf6c3c310e62"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Time again, government regulators have either failed to stop financial crises or have exacerbated them. Examples are too numerous to discuss",
+        "source_type": "web_search",
+        "title": "11.2: The Great Depression as Regulatory Failure",
+        "url": "https://biz.libretexts.org/Bookshelves/Finance/Book%3A_Finance_Banking_and_Money/11%3A_The_Economics_of_Financial_Regulation/11.02%3A_The_Great_Depression_as_Regulatory_Failure"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_12ef565f62a5",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_bf6c3c310e62"
+    },
+    {
+      "confidence": 0.9992505,
+      "content": "One of the many regulatory shortcomings that the crisis exposed was the lack of tools that supervisors had to manage the financial system. All they could do",
+      "created_at": "2026-03-18T20:30:27.874250Z",
+      "evidence_id": "evidence_32d8a2b2792f",
+      "relevance": 0.9992505,
+      "source": {
+        "access_date": "2026-03-18T20:30:27.874235Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Examine the impact of regulatory failures on the crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "One of the many regulatory shortcomings that the crisis exposed was the lack of tools that supervisors had to manage the financial system. All they could do",
+            "raw_content": null,
+            "score": 0.9992505,
+            "title": "Regulatory Failure - Examples - Understanding Regulation",
+            "url": "https://www.regulation.org.uk/ob-regulatory_failure-examples.html"
+          },
+          "source_name": "regulation.org.uk",
+          "step_description": "Examine the impact of regulatory failures on the crash",
+          "step_id": "step_12ef565f62a5",
+          "task_action": "search",
+          "task_id": "task_bf6c3c310e62"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "One of the many regulatory shortcomings that the crisis exposed was the lack of tools that supervisors had to manage the financial system. All they could do",
+        "source_type": "web_search",
+        "title": "Regulatory Failure - Examples - Understanding Regulation",
+        "url": "https://www.regulation.org.uk/ob-regulatory_failure-examples.html"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_12ef565f62a5",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_bf6c3c310e62"
+    },
+    {
+      "confidence": 0.96267307,
+      "content": "The U.S. has a car crash problem, including rising fatality rates, and the problem is especially noticeable when U.S. crash statistics are",
+      "created_at": "2026-03-18T20:30:25.686751Z",
+      "evidence_id": "evidence_da33ffa1da08",
+      "relevance": 0.96267307,
+      "source": {
+        "access_date": "2026-03-18T20:30:25.686727Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Analyze the role of technological over-saturation in the crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The U.S. has a car crash problem, including rising fatality rates, and the problem is especially noticeable when U.S. crash statistics are",
+            "raw_content": null,
+            "score": 0.96267307,
+            "title": "Emerging Technologies Pose Solutions as Car Crash Fatalities Rise",
+            "url": "https://www.eetimes.com/emerging-technologies-pose-solutions-as-car-crash-fatalities-rise/"
+          },
+          "source_name": "eetimes.com",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_18b9a4859f35",
+          "task_action": "search",
+          "task_id": "task_805bf9cf3b1e"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The U.S. has a car crash problem, including rising fatality rates, and the problem is especially noticeable when U.S. crash statistics are",
+        "source_type": "web_search",
+        "title": "Emerging Technologies Pose Solutions as Car Crash Fatalities Rise",
+        "url": "https://www.eetimes.com/emerging-technologies-pose-solutions-as-car-crash-fatalities-rise/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_18b9a4859f35",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_805bf9cf3b1e"
+    },
+    {
+      "confidence": 0.50168514,
+      "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+      "created_at": "2026-03-18T20:30:22.073764Z",
+      "evidence_id": "evidence_0c8bfb6d4e26",
+      "relevance": 0.50168514,
+      "source": {
+        "access_date": "2026-03-18T20:30:22.073741Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+            "raw_content": null,
+            "score": 0.50168514,
+            "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+            "url": "https://www.britannica.com/money/dot-com-bubble"
+          },
+          "source_name": "britannica.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_3c791c23ebea",
+          "task_action": "search",
+          "task_id": "task_64d3defd8dda"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The dot-com boom of 1995\u20132000 (and ultimate bust in 2001\u20132002) was a period of large, rapid, and ultimately unsustainable increases in the stock market\u2014specifically in the valuation of shares in Internet service and technology companies, then commonly referred to as \u201cdot-com\u201d companies, including fledgling businesses, or \u201cstart-ups,\u201d with little or no record of profitability or with unrealistic business models. During the dot-com bubble, the technology-dominated Nasdaq Composite index (a representation of the total value of the outstanding shares of companies listed on the Nasdaq stock exchange) rose nearly sevenfold from 743 to 5,048, reflecting the early enthusiasm of investors in dot-com enterprises and the willingness of venture capitalists to finance the initial public offerings (IPOs) of Internet start-ups, many of whose share prices then skyrocketed. As do all financial bubbles, the dot-com bubble finally burst.",
+        "source_type": "web_search",
+        "title": "Dot-com Bubble & Bust | Definition, History, & Facts | Britannica Money",
+        "url": "https://www.britannica.com/money/dot-com-bubble"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3c791c23ebea",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_64d3defd8dda"
+    },
+    {
+      "confidence": 0.47913864,
+      "content": "An economic crash is the result of movements in the balance of supply and demand. If there is a bubble, which is expanded to become bigger and",
+      "created_at": "2026-03-18T20:30:23.797368Z",
+      "evidence_id": "evidence_8be47ea028cd",
+      "relevance": 0.47913864,
+      "source": {
+        "access_date": "2026-03-18T20:30:23.797350Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Research the economic factors leading to the crash",
+          "rank": 1,
+          "raw_payload": {
+            "content": "An economic crash is the result of movements in the balance of supply and demand. If there is a bubble, which is expanded to become bigger and",
+            "raw_content": null,
+            "score": 0.47913864,
+            "title": "What causes an economic crash when the economy seems ... - Quora",
+            "url": "https://www.quora.com/What-causes-an-economic-crash-when-the-economy-seems-to-be-doing-very-good"
+          },
+          "source_name": "quora.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_d242491568bc",
+          "task_action": "search",
+          "task_id": "task_8838aa9d2953"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "An economic crash is the result of movements in the balance of supply and demand. If there is a bubble, which is expanded to become bigger and",
+        "source_type": "web_search",
+        "title": "What causes an economic crash when the economy seems ... - Quora",
+        "url": "https://www.quora.com/What-causes-an-economic-crash-when-the-economy-seems-to-be-doing-very-good"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d242491568bc",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_8838aa9d2953"
+    },
+    {
+      "confidence": 0.40098447,
+      "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+      "created_at": "2026-03-18T20:30:22.073809Z",
+      "evidence_id": "evidence_d89519c6005d",
+      "relevance": 0.40098447,
+      "source": {
+        "access_date": "2026-03-18T20:30:22.073791Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+            "raw_content": null,
+            "score": 0.40098447,
+            "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+            "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+          },
+          "source_name": "corporatefinanceinstitute.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_3c791c23ebea",
+          "task_action": "search",
+          "task_id": "task_64d3defd8dda"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "A stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble is a stock market bubble that was caused by speculation in dotcom or internet-based businesses from 1995 to 2000. The dotcom bubble\u2019s origins can be traced to the launch of the World Wide Web in 1989, the subsequent establishment of internet and tech-based start-up companies during the 1990s, and rising momentum as the decade came to its end. The bursting of the bubble caused market panic through massive sell-offs of dotcom company stocks, driving their values further down, and by 2002, investor losses were estimated at around $5 trillion. Most tech and internet companies that held IPOs during the dotcom era were highly overvalued due to increasing demand and a lack of solid valuation models. Money pouring into tech and internet company start-ups by venture capitalists and other investors was one of the major causes of the dotcom bubble.",
+        "source_type": "web_search",
+        "title": "Dotcom Bubble - Overview, Characteristics, Causes",
+        "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/dotcom-bubble/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3c791c23ebea",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_64d3defd8dda"
+    },
+    {
+      "confidence": 0.37937838,
+      "content": "Many studies investigated factors that influenced saturation flow and startup lost time at a signalized intersection, but the impact of new distractions, such as electronic devices and in-vehicle entertainment systems, remained less investigated. This study aimed to characterize technology's influence on driver behavior at intersections and the impact of distractions on startup lost time through a field test conducted at three intersections in Texas. This study showed that technology-induced distractions from the prevalent use of cell phones created an impact on startup lost time and saturation flow, which remained critical to properly determine the phase and cycle lengths. ##### Keywords: Distraction; Intersection; Saturation Flow; Start Up Lost Time; Technology. Alam Boni, J., Kyung Hyun, K., & Mattingly, S.P. Characterizing Technology's Influence on Distractive Behavior at Signalized Intersections. Impact Assessment of Driver Distraction by Cellphone on Start-up Lost-time and Average Saturation Headway at Signalized Intersections Based on Vehicle Position in the Queue. https://doi.org/10.1016/j.trc.2020.102741 **Go to original source...**. https://doi.org/10.1016/j.trf.2019.03.021 **Go to original source...**.",
+      "created_at": "2026-03-18T20:30:25.686789Z",
+      "evidence_id": "evidence_4f7dac1ea386",
+      "relevance": 0.37937838,
+      "source": {
+        "access_date": "2026-03-18T20:30:25.686780Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Analyze the role of technological over-saturation in the crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Many studies investigated factors that influenced saturation flow and startup lost time at a signalized intersection, but the impact of new distractions, such as electronic devices and in-vehicle entertainment systems, remained less investigated. This study aimed to characterize technology's influence on driver behavior at intersections and the impact of distractions on startup lost time through a field test conducted at three intersections in Texas. This study showed that technology-induced distractions from the prevalent use of cell phones created an impact on startup lost time and saturation flow, which remained critical to properly determine the phase and cycle lengths. ##### Keywords: Distraction; Intersection; Saturation Flow; Start Up Lost Time; Technology. Alam Boni, J., Kyung Hyun, K., & Mattingly, S.P. Characterizing Technology's Influence on Distractive Behavior at Signalized Intersections. Impact Assessment of Driver Distraction by Cellphone on Start-up Lost-time and Average Saturation Headway at Signalized Intersections Based on Vehicle Position in the Queue. https://doi.org/10.1016/j.trc.2020.102741 **Go to original source...**. https://doi.org/10.1016/j.trf.2019.03.021 **Go to original source...**.",
+            "raw_content": null,
+            "score": 0.37937838,
+            "title": "Characterizing Technology's Influence on Distractive Behavior at ...",
+            "url": "https://tots.upol.cz/artkey/tot-202203-0001_characterizing-technology-s-influence-on-distractive-behavior-at-signalized-intersections.php"
+          },
+          "source_name": "tots.upol.cz",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_18b9a4859f35",
+          "task_action": "search",
+          "task_id": "task_805bf9cf3b1e"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Many studies investigated factors that influenced saturation flow and startup lost time at a signalized intersection, but the impact of new distractions, such as electronic devices and in-vehicle entertainment systems, remained less investigated. This study aimed to characterize technology's influence on driver behavior at intersections and the impact of distractions on startup lost time through a field test conducted at three intersections in Texas. This study showed that technology-induced distractions from the prevalent use of cell phones created an impact on startup lost time and saturation flow, which remained critical to properly determine the phase and cycle lengths. ##### Keywords: Distraction; Intersection; Saturation Flow; Start Up Lost Time; Technology. Alam Boni, J., Kyung Hyun, K., & Mattingly, S.P. Characterizing Technology's Influence on Distractive Behavior at Signalized Intersections. Impact Assessment of Driver Distraction by Cellphone on Start-up Lost-time and Average Saturation Headway at Signalized Intersections Based on Vehicle Position in the Queue. https://doi.org/10.1016/j.trc.2020.102741 **Go to original source...**. https://doi.org/10.1016/j.trf.2019.03.021 **Go to original source...**.",
+        "source_type": "web_search",
+        "title": "Characterizing Technology's Influence on Distractive Behavior at ...",
+        "url": "https://tots.upol.cz/artkey/tot-202203-0001_characterizing-technology-s-influence-on-distractive-behavior-at-signalized-intersections.php"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_18b9a4859f35",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_805bf9cf3b1e"
+    },
+    {
+      "confidence": 0.34415737,
+      "content": "Also known as the internet bubble or the information technology bubble, the dotcom bubble was the unprecedented rise in equity valuations of internet-based tech companies during the bull market of the late 1990s. Thanks mainly to speculation and substantial funding for these new internet start-ups, investments in dot-coms (named as such for the .com online top-level domain [TLD] used by such companies) boosted the NASDAQ Composite Index (COMP) from 751 in January 1995 to a peak of 5,048.62 on March 10, 2000. Indeed, it soon became apparent that the frenzy to profit from this perceived internet boom meant that investors largely ignored the traditional fundamentals of these new tech companies, such as the price-to-earnings (P/E) ratio, the debt-to-equity (D/E) ratio or the amount of free cash flow. Here is a PBS documentary which interviews brokers and CEO\u2019s of Dotcom companies at the time of the bubble.",
+      "created_at": "2026-03-18T20:30:22.073832Z",
+      "evidence_id": "evidence_52918caf5907",
+      "relevance": 0.34415737,
+      "source": {
+        "access_date": "2026-03-18T20:30:22.073827Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Define the scope and timeline of the dot-com crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Also known as the internet bubble or the information technology bubble, the dotcom bubble was the unprecedented rise in equity valuations of internet-based tech companies during the bull market of the late 1990s. Thanks mainly to speculation and substantial funding for these new internet start-ups, investments in dot-coms (named as such for the .com online top-level domain [TLD] used by such companies) boosted the NASDAQ Composite Index (COMP) from 751 in January 1995 to a peak of 5,048.62 on March 10, 2000. Indeed, it soon became apparent that the frenzy to profit from this perceived internet boom meant that investors largely ignored the traditional fundamentals of these new tech companies, such as the price-to-earnings (P/E) ratio, the debt-to-equity (D/E) ratio or the amount of free cash flow. Here is a PBS documentary which interviews brokers and CEO\u2019s of Dotcom companies at the time of the bubble.",
+            "raw_content": null,
+            "score": 0.34415737,
+            "title": "The Dotcom Bubble Burst (2000) - International Banker",
+            "url": "https://internationalbanker.com/history-of-financial-crises/the-dotcom-bubble-burst-2000/"
+          },
+          "source_name": "internationalbanker.com",
+          "step_description": "Define the scope and timeline of the dot-com crash",
+          "step_id": "step_3c791c23ebea",
+          "task_action": "search",
+          "task_id": "task_64d3defd8dda"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Also known as the internet bubble or the information technology bubble, the dotcom bubble was the unprecedented rise in equity valuations of internet-based tech companies during the bull market of the late 1990s. Thanks mainly to speculation and substantial funding for these new internet start-ups, investments in dot-coms (named as such for the .com online top-level domain [TLD] used by such companies) boosted the NASDAQ Composite Index (COMP) from 751 in January 1995 to a peak of 5,048.62 on March 10, 2000. Indeed, it soon became apparent that the frenzy to profit from this perceived internet boom meant that investors largely ignored the traditional fundamentals of these new tech companies, such as the price-to-earnings (P/E) ratio, the debt-to-equity (D/E) ratio or the amount of free cash flow. Here is a PBS documentary which interviews brokers and CEO\u2019s of Dotcom companies at the time of the bubble.",
+        "source_type": "web_search",
+        "title": "The Dotcom Bubble Burst (2000) - International Banker",
+        "url": "https://internationalbanker.com/history-of-financial-crises/the-dotcom-bubble-burst-2000/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3c791c23ebea",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_64d3defd8dda"
+    },
+    {
+      "confidence": 0.33672404,
+      "content": "The stock market crash of 1929 was the worst economic event in world history. The stock market crash of 1929\u2014considered the worst economic event in world history\u2014began on \"Black Thursday,\" October 24, 1929, with skittish investors trading a record 12.9 million shares. The market fell another 12 percent the next day, \u201cBlack Tuesday.\u201d While the crisis send shock waves across the financial world, there were numerous signs that a stock market crash was coming. In August 1929 \u2013 just weeks before the stock market crashed \u2013 the Federal Reserve Bank of New York raised the interest rate from 5 percent to 6 percent. Public panic in the days after the stock market crash led to hordes of people rushing to banks to withdraw their funds in a number of \u201cbank runs,\u201d and investors were unable to withdraw their money because bank officials had invested the money in the market.",
+      "created_at": "2026-03-18T20:30:23.797393Z",
+      "evidence_id": "evidence_e58b012f9091",
+      "relevance": 0.33672404,
+      "source": {
+        "access_date": "2026-03-18T20:30:23.797386Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Research the economic factors leading to the crash",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The stock market crash of 1929 was the worst economic event in world history. The stock market crash of 1929\u2014considered the worst economic event in world history\u2014began on \"Black Thursday,\" October 24, 1929, with skittish investors trading a record 12.9 million shares. The market fell another 12 percent the next day, \u201cBlack Tuesday.\u201d While the crisis send shock waves across the financial world, there were numerous signs that a stock market crash was coming. In August 1929 \u2013 just weeks before the stock market crashed \u2013 the Federal Reserve Bank of New York raised the interest rate from 5 percent to 6 percent. Public panic in the days after the stock market crash led to hordes of people rushing to banks to withdraw their funds in a number of \u201cbank runs,\u201d and investors were unable to withdraw their money because bank officials had invested the money in the market.",
+            "raw_content": null,
+            "score": 0.33672404,
+            "title": "What Caused the Stock Market Crash of 1929? - History.com",
+            "url": "https://www.history.com/articles/what-caused-the-stock-market-crash-of-1929"
+          },
+          "source_name": "history.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_d242491568bc",
+          "task_action": "search",
+          "task_id": "task_8838aa9d2953"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The stock market crash of 1929 was the worst economic event in world history. The stock market crash of 1929\u2014considered the worst economic event in world history\u2014began on \"Black Thursday,\" October 24, 1929, with skittish investors trading a record 12.9 million shares. The market fell another 12 percent the next day, \u201cBlack Tuesday.\u201d While the crisis send shock waves across the financial world, there were numerous signs that a stock market crash was coming. In August 1929 \u2013 just weeks before the stock market crashed \u2013 the Federal Reserve Bank of New York raised the interest rate from 5 percent to 6 percent. Public panic in the days after the stock market crash led to hordes of people rushing to banks to withdraw their funds in a number of \u201cbank runs,\u201d and investors were unable to withdraw their money because bank officials had invested the money in the market.",
+        "source_type": "web_search",
+        "title": "What Caused the Stock Market Crash of 1929? - History.com",
+        "url": "https://www.history.com/articles/what-caused-the-stock-market-crash-of-1929"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d242491568bc",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_8838aa9d2953"
+    },
+    {
+      "confidence": 0.30660018,
+      "content": "## Dozen Diamonds. ## Dozen Diamonds. By   Dozen Diamonds   /  September 29, 2025. It represents a sudden, sharp decline in stock prices across a broad segment of the market, often resulting in massive losses in paper wealth. For instance, investors who diversified portfolios during previous market crashes, like in 2008 or 2020, were able to reduce losses and recover faster once markets rebounded. * Strategies to prepare, protect, and even leverage volatile markets. Over-speculation, rampant margin buying, and a lack of financial regulation led to the infamous \u201cBlack Tuesday,\u201d where the Dow Jones Industrial Average fell nearly 12% in a single day. ##### 4.1 Speculative Bubbles. Options, inverse ETFs, and other hedging instruments can help protect portfolios during market downturns. No one can predict exact timing, but warning signs like overvaluation, bubbles, or economic stress often precede crashes. Instead, focus on strong companies and long-term goals. * A **correction** is a decline of around 10% from recent highs.",
+      "created_at": "2026-03-18T20:30:23.797418Z",
+      "evidence_id": "evidence_0bd3a4cd9db7",
+      "relevance": 0.30660018,
+      "source": {
+        "access_date": "2026-03-18T20:30:23.797414Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Research the economic factors leading to the crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "## Dozen Diamonds. ## Dozen Diamonds. By   Dozen Diamonds   /  September 29, 2025. It represents a sudden, sharp decline in stock prices across a broad segment of the market, often resulting in massive losses in paper wealth. For instance, investors who diversified portfolios during previous market crashes, like in 2008 or 2020, were able to reduce losses and recover faster once markets rebounded. * Strategies to prepare, protect, and even leverage volatile markets. Over-speculation, rampant margin buying, and a lack of financial regulation led to the infamous \u201cBlack Tuesday,\u201d where the Dow Jones Industrial Average fell nearly 12% in a single day. ##### 4.1 Speculative Bubbles. Options, inverse ETFs, and other hedging instruments can help protect portfolios during market downturns. No one can predict exact timing, but warning signs like overvaluation, bubbles, or economic stress often precede crashes. Instead, focus on strong companies and long-term goals. * A **correction** is a decline of around 10% from recent highs.",
+            "raw_content": null,
+            "score": 0.30660018,
+            "title": "Stock Market Crash: Causes, Impacts & How to Prepare",
+            "url": "https://www.dozendiamonds.com/stock-market-crash/"
+          },
+          "source_name": "dozendiamonds.com",
+          "step_description": "Research the economic factors leading to the crash",
+          "step_id": "step_d242491568bc",
+          "task_action": "search",
+          "task_id": "task_8838aa9d2953"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "## Dozen Diamonds. ## Dozen Diamonds. By   Dozen Diamonds   /  September 29, 2025. It represents a sudden, sharp decline in stock prices across a broad segment of the market, often resulting in massive losses in paper wealth. For instance, investors who diversified portfolios during previous market crashes, like in 2008 or 2020, were able to reduce losses and recover faster once markets rebounded. * Strategies to prepare, protect, and even leverage volatile markets. Over-speculation, rampant margin buying, and a lack of financial regulation led to the infamous \u201cBlack Tuesday,\u201d where the Dow Jones Industrial Average fell nearly 12% in a single day. ##### 4.1 Speculative Bubbles. Options, inverse ETFs, and other hedging instruments can help protect portfolios during market downturns. No one can predict exact timing, but warning signs like overvaluation, bubbles, or economic stress often precede crashes. Instead, focus on strong companies and long-term goals. * A **correction** is a decline of around 10% from recent highs.",
+        "source_type": "web_search",
+        "title": "Stock Market Crash: Causes, Impacts & How to Prepare",
+        "url": "https://www.dozendiamonds.com/stock-market-crash/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_d242491568bc",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_8838aa9d2953"
+    },
+    {
+      "confidence": 0.0570714,
+      "content": "New tools and digital systems are helping experts uncover causation, timing, and liability with greater speed and accuracy than ever before. Today's accident",
+      "created_at": "2026-03-18T20:30:25.686819Z",
+      "evidence_id": "evidence_2b24f9c82557",
+      "relevance": 0.0570714,
+      "source": {
+        "access_date": "2026-03-18T20:30:25.686806Z",
+        "additional": {
+          "plan_id": "plan_6a85d351afb0",
+          "query": "Analyze the role of technological over-saturation in the crash",
+          "rank": 3,
+          "raw_payload": {
+            "content": "New tools and digital systems are helping experts uncover causation, timing, and liability with greater speed and accuracy than ever before. Today's accident",
+            "raw_content": null,
+            "score": 0.0570714,
+            "title": "How Technological Advancements are Reshaping Accident ...",
+            "url": "https://evidencesolutions.com/accident-reconstruction-articles/how-technological-advancements-are-reshaping-accident-reconstruction"
+          },
+          "source_name": "evidencesolutions.com",
+          "step_description": "Analyze the role of technological over-saturation in the crash",
+          "step_id": "step_18b9a4859f35",
+          "task_action": "search",
+          "task_id": "task_805bf9cf3b1e"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "New tools and digital systems are helping experts uncover causation, timing, and liability with greater speed and accuracy than ever before. Today's accident",
+        "source_type": "web_search",
+        "title": "How Technological Advancements are Reshaping Accident ...",
+        "url": "https://evidencesolutions.com/accident-reconstruction-articles/how-technological-advancements-are-reshaping-accident-reconstruction"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_18b9a4859f35",
+        "plan_6a85d351afb0"
+      ],
+      "task_id": "task_805bf9cf3b1e"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_tier1_eval_set_002/dot_com_crash/20260318T203034Z_what-were-the-main-causes-of-the-dot-com_experiment_563fd9b10b4a/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_tier1_eval_set_002/dot_com_crash/20260318T203034Z_what-were-the-main-causes-of-the-dot-com_experiment_563fd9b10b4a/experiment.json"
+    ],
+    "completed_at": "2026-03-18T20:30:34.122078Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_563fd9b10b4a",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.25,
+      "groundedness": 1.0,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 12.0,
+      "number_of_supported_claims": 3.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-dot-com",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-18T20:30:20.769858Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the dot-com crash?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-18T20:30:20.769858Z",
+    "goal": "What were the main causes of the dot-com crash?",
+    "parent_plan_id": null,
+    "plan_id": "plan_6a85d351afb0",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Define the scope and timeline of the dot-com crash",
+        "expected_output": "A clear understanding of the time period and key events surrounding the crash",
+        "priority": 1,
+        "step_id": "step_3c791c23ebea",
+        "success_criteria": "Identify relevant historical dates and major players",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_3c791c23ebea"
+        ],
+        "description": "Research the economic factors leading to the crash",
+        "expected_output": "A list of key economic indicators and trends that contributed to the crash",
+        "priority": 2,
+        "step_id": "step_d242491568bc",
+        "success_criteria": "Find at least 3 significant economic factors",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_d242491568bc"
+        ],
+        "description": "Analyze the role of technological over-saturation in the crash",
+        "expected_output": "Insights into how the rapid growth of internet companies led to market saturation and subsequent collapse",
+        "priority": 3,
+        "step_id": "step_18b9a4859f35",
+        "success_criteria": "Identify at least 2 specific examples of companies that contributed to the over-saturation",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_18b9a4859f35"
+        ],
+        "description": "Examine the impact of regulatory failures on the crash",
+        "expected_output": "A summary of how inadequate regulation allowed for reckless business practices and ultimately contributed to the crash",
+        "priority": 4,
+        "step_id": "step_12ef565f62a5",
+        "success_criteria": "Find at least 1 significant example of regulatory failure",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_84c441631221",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (crisis, exposed, financial, lack, manage, regulatory, shortcomings, supervisors, system, tools).",
+        "supporting_ids_checked": [
+          "evidence_32d8a2b2792f"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_242cdcb9874a",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (bubble, businesses, caused, market, speculation, stock).",
+        "supporting_ids_checked": [
+          "evidence_d89519c6005d"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_280a9b2e11bf",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (crises, financial, stop).",
+        "supporting_ids_checked": [
+          "evidence_af29382eafc5"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-18T20:30:34.122078Z",
+    "decision_id": "decision_5c761dfe4c31",
+    "summary": "supported=3, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

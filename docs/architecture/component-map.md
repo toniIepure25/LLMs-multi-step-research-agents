@@ -14,7 +14,7 @@ Where code lives, what it does, and what schemas flow through it.
 | **planning** | `asar/planning/` | Goal → `ResearchPlan` with `PlanStep`s | `PlannerProtocol` |
 | **execution** | `asar/execution/` | `TaskPacket` → `EvidenceItem`(s) — stateless | `ExecutorProtocol` |
 | **memory** | `asar/memory/` | Store, retrieve, compress typed artifacts | `MemoryProtocol` |
-| **deliberation** | `asar/deliberation/` | `EvidenceItem`s → `DecisionPacket` with claims, conflicts | `DeliberationProtocol` |
+| **deliberation** | `asar/deliberation/` | `EvidenceItem`s → candidate claims → deterministic `ClaimSelector` → `DecisionPacket` with claims, conflicts | `DeliberationProtocol` |
 | **grounding** | `asar/grounding/` | `EvidenceItem` → `CitationRecord` + graph triples | `GroundingProtocol` |
 | **verification** | `asar/verification/` | `DecisionPacket` + `list[EvidenceItem]` → `VerificationResult`. v0: deterministic checks. Phase 2: also accepts `list[CitationRecord]`. | `VerificationProtocol` |
 | **evaluation** | `asar/evaluation/` | Benchmarks, metrics → `ExperimentRecord` | `EvaluationProtocol` |
@@ -28,6 +28,7 @@ Where code lives, what it does, and what schemas flow through it.
 | `TaskPacket`, `TaskStatus` | `schemas/task_packet.py` | orchestration | execution |
 | `EvidenceItem`, `SourceMetadata` | `schemas/evidence_item.py` | execution | memory, deliberation, verification |
 | `CitationRecord` | `schemas/citation_record.py` | grounding | verification | Phase 2 — not used in v0 |
+| `CandidateClaimSet`, `CandidateClaim` | `schemas/candidate_claim_set.py` | deliberation (candidate generation) | deliberation (current compatibility shim), future claim selection stage |
 | `DecisionPacket`, `Claim` | `schemas/decision_packet.py` | deliberation | verification |
 | `VerificationResult`, `ClaimVerification` | `schemas/verification_result.py` | verification | orchestration (output) |
 | `ResearchOutput` | `schemas/research_output.py` | orchestration | (disk artifact) |

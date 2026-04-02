@@ -21,7 +21,6 @@ from schemas.decision_packet import Claim, DecisionPacket, EpistemicStatus
 from schemas.evidence_item import EvidenceItem, SourceMetadata, SourceType
 from schemas.research_plan import PlanStep, ResearchPlan, StepDependencyType
 
-
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
 
 
@@ -84,12 +83,20 @@ class RecordingWorkingMemory(WorkingMemory):
 
 
 class StubPlanner:
-    def __init__(self, plan: ResearchPlan | None = None, failure: OperationResult[ResearchPlan] | None = None) -> None:
+    def __init__(
+        self,
+        plan: ResearchPlan | None = None,
+        failure: OperationResult[ResearchPlan] | None = None,
+    ) -> None:
         self.plan_to_return = plan or _plan()
         self.failure = failure
         self.calls: list[tuple[str, dict | None]] = []
 
-    async def plan_result(self, goal: str, constraints: dict | None = None) -> OperationResult[ResearchPlan]:
+    async def plan_result(
+        self,
+        goal: str,
+        constraints: dict | None = None,
+    ) -> OperationResult[ResearchPlan]:
         self.calls.append((goal, constraints))
         if self.failure is not None:
             return self.failure
@@ -100,9 +107,11 @@ class StubExecutor:
     def __init__(self, responses: dict[str, list[EvidenceItem]]) -> None:
         self.responses = responses
         self.calls: list[str] = []
+        self.tasks = []
 
     async def execute(self, task) -> list[EvidenceItem]:
         self.calls.append(task.step_id)
+        self.tasks.append(task)
         return list(self.responses.get(task.step_id, []))
 
 
@@ -110,7 +119,11 @@ class StubSynthesizer:
     def __init__(self) -> None:
         self.calls: list[tuple[list[EvidenceItem], str | None]] = []
 
-    async def deliberate(self, evidence: list[EvidenceItem], context: str | None = None) -> DecisionPacket:
+    async def deliberate(
+        self,
+        evidence: list[EvidenceItem],
+        context: str | None = None,
+    ) -> DecisionPacket:
         self.calls.append((list(evidence), context))
         context_payload = json.loads(context or "{}")
         claims = [
@@ -198,7 +211,9 @@ async def test_sequential_orchestrator_planner_failure_uses_typed_path(tmp_path:
 
 
 @pytest.mark.asyncio
-async def test_sequential_orchestrator_handles_one_empty_execution_step_explicitly(tmp_path: Path) -> None:
+async def test_sequential_orchestrator_handles_one_empty_execution_step_explicitly(
+    tmp_path: Path,
+) -> None:
     settings = load_settings(CONFIG_DIR)
     orchestrator = SequentialOrchestrator(
         planner=StubPlanner(),
@@ -223,7 +238,9 @@ async def test_sequential_orchestrator_handles_one_empty_execution_step_explicit
 
 
 @pytest.mark.asyncio
-async def test_sequential_orchestrator_aggregates_multiple_steps_and_uses_memory(tmp_path: Path) -> None:
+async def test_sequential_orchestrator_aggregates_multiple_steps_and_uses_memory(
+    tmp_path: Path,
+) -> None:
     settings = load_settings(CONFIG_DIR)
     memory = RecordingWorkingMemory()
     executor = StubExecutor(
@@ -254,12 +271,17 @@ async def test_sequential_orchestrator_aggregates_multiple_steps_and_uses_memory
 
 
 @pytest.mark.asyncio
-async def test_sequential_orchestrator_attaches_verification_and_writes_run_artifacts(tmp_path: Path) -> None:
+async def test_sequential_orchestrator_attaches_verification_and_writes_run_artifacts(
+    tmp_path: Path,
+) -> None:
     settings = load_settings(CONFIG_DIR)
     orchestrator = SequentialOrchestrator(
         planner=StubPlanner(),
         executor=StubExecutor(
-            {"step_1": [_evidence("evidence_1", "Battery storage costs fell in 2024.")], "step_2": []}
+            {
+                "step_1": [_evidence("evidence_1", "Battery storage costs fell in 2024.")],
+                "step_2": [],
+            }
         ),
         memory=RecordingWorkingMemory(),
         synthesizer=StubSynthesizer(),
@@ -271,13 +293,19 @@ async def test_sequential_orchestrator_attaches_verification_and_writes_run_arti
     output = await orchestrator.run("Assess battery storage cost trends in 2024")
 
     assert output.verification is not None
-    assert output.verification.decision_id == output.decision.decision_id if output.decision is not None else False
+    assert (
+        output.verification.decision_id == output.decision.decision_id
+        if output.decision is not None
+        else False
+    )
     assert output.experiment is not None
     assert all(Path(path).exists() for path in output.experiment.artifacts)
 
 
 @pytest.mark.asyncio
-async def test_sequential_orchestrator_preserves_step_linkage_for_plan_coverage(tmp_path: Path) -> None:
+async def test_sequential_orchestrator_preserves_step_linkage_for_plan_coverage(
+    tmp_path: Path,
+) -> None:
     settings = load_settings(CONFIG_DIR)
     orchestrator = SequentialOrchestrator(
         planner=StubPlanner(),
@@ -330,7 +358,10 @@ async def test_sequential_orchestrator_can_skip_experiment_recording(tmp_path: P
     orchestrator = SequentialOrchestrator(
         planner=StubPlanner(),
         executor=StubExecutor(
-            {"step_1": [_evidence("evidence_1", "Battery storage costs fell in 2024.")], "step_2": []}
+            {
+                "step_1": [_evidence("evidence_1", "Battery storage costs fell in 2024.")],
+                "step_2": [],
+            }
         ),
         memory=RecordingWorkingMemory(),
         synthesizer=StubSynthesizer(),
@@ -342,3 +373,39 @@ async def test_sequential_orchestrator_can_skip_experiment_recording(tmp_path: P
     output = await orchestrator.run("Assess battery storage cost trends in 2024", record_run=False)
 
     assert output.experiment is None
+
+
+def test_sequential_orchestrator_preserves_goal_anchors_in_broad_step_queries() -> None:
+    settings = load_settings(CONFIG_DIR)
+    plan = ResearchPlan(
+        plan_id="plan_dotcom",
+        goal="What were the main causes of the dot-com crash?",
+        steps=[
+            PlanStep(
+                step_id="step_dotcom",
+                description="Analyze the role of technological over-saturation in the crash",
+                expected_output="Technology-related causes",
+                success_criteria="Technology causes are grounded",
+                dependency_type=StepDependencyType.SEQUENTIAL,
+                depends_on=[],
+                tool_hint="web_search",
+                priority=1,
+            )
+        ],
+    )
+    orchestrator = SequentialOrchestrator(
+        planner=StubPlanner(plan=plan),
+        executor=StubExecutor({}),
+        memory=RecordingWorkingMemory(),
+        synthesizer=StubSynthesizer(),
+        verifier=EvidenceChecker(settings),
+        evaluator=None,
+        settings=settings,
+    )
+
+    task = orchestrator._build_task_packet(plan=plan, step=plan.steps[0], constraints=None)
+
+    assert task.query == (
+        "Analyze the role of technological over-saturation in the crash "
+        "about What were the main causes of the dot-com crash?"
+    )

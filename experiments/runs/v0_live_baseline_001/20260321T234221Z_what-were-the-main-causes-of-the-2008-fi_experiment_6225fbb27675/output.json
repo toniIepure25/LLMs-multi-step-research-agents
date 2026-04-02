@@ -1,0 +1,504 @@
+{
+  "created_at": "2026-03-21T23:42:21.749419Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_a399c9d7eafb",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Securitization mechanism identified.",
+        "supporting_evidence_ids": [
+          "evidence_f446424490ba"
+        ],
+        "text": "Securitization contributed to the 2008 financial crisis."
+      },
+      {
+        "claim_id": "claim_ccaa8177853b",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Evidence explicitly names mechanism.",
+        "supporting_evidence_ids": [
+          "evidence_08932e230d78"
+        ],
+        "text": "Deregulation of the OTC derivatives market contributed to the 2008 financial crisis."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-21T23:42:21.748396Z",
+    "decision_id": "decision_b4f56ec0fca7",
+    "information_gaps": [
+      "Specific mechanisms behind the crisis",
+      "Other potential causes"
+    ],
+    "plan_id": "plan_de6da5c71144",
+    "synthesis": "Securitization and deregulation were key causes."
+  },
+  "evidence": [
+    {
+      "confidence": 0.9990527,
+      "content": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+      "created_at": "2026-03-21T23:42:16.529819Z",
+      "evidence_id": "evidence_f446424490ba",
+      "relevance": 0.9990527,
+      "source": {
+        "access_date": "2026-03-21T23:42:16.529801Z",
+        "additional": {
+          "plan_id": "plan_de6da5c71144",
+          "query": "Examine the impact of securitization on the financial system",
+          "rank": 1,
+          "raw_payload": {
+            "content": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+            "raw_content": null,
+            "score": 0.9990527,
+            "title": "The Role of Securitization in Bank Liquidity and Financial Stability",
+            "url": "https://www.nyujlb.org/single-post/the-role-of-securitization-in-bank-liquidity-and-financial-stability"
+          },
+          "source_name": "nyujlb.org",
+          "step_description": "Examine the impact of securitization on the financial system",
+          "step_id": "step_5f5a56511c98",
+          "task_action": "search",
+          "task_id": "task_2a31787b5983"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+        "source_type": "web_search",
+        "title": "The Role of Securitization in Bank Liquidity and Financial Stability",
+        "url": "https://www.nyujlb.org/single-post/the-role-of-securitization-in-bank-liquidity-and-financial-stability"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_5f5a56511c98",
+        "plan_de6da5c71144"
+      ],
+      "task_id": "task_2a31787b5983"
+    },
+    {
+      "confidence": 0.7440808,
+      "content": "In Dodd-Frank: What it Does and Why it\u2019s Flawed, we used the RegData methodology to estimate that Dodd-Frank will cause a 26 percent increase in financial regulatory restrictions. Deregulation of the financial services sector in the years leading up to the 2008 crisis was\u2014and still is\u2014used to justify Dodd-Frank\u2019s substantial regulatory burdens. Using the Mercatus Center at George Mason University\u2019s RegData, we find that between 1997 and 2008 the number of financial regulatory restrictions in the Code of Federal Regulations (CFR) rose from approximately 40,286 restrictions to 47,494\u2014an increase of 17.9 percent. Neither of these episodes had any relation whatsoever to Gramm-Leach-Bliley or the Commodity Futures Modernization Act. As we show in this analysis, financial regulatory restrictions increased 17.9 percent in the years leading up to the crisis. In Dodd-Frank: What it Does and Why it\u2019s Flawed, we used the RegData methodology to estimate that Dodd-Frank will cause a 26 percent increase in financial regulatory restrictions.",
+      "created_at": "2026-03-21T23:42:15.100247Z",
+      "evidence_id": "evidence_4715fac6adc7",
+      "relevance": 0.7440808,
+      "source": {
+        "access_date": "2026-03-21T23:42:15.100231Z",
+        "additional": {
+          "plan_id": "plan_de6da5c71144",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "In Dodd-Frank: What it Does and Why it\u2019s Flawed, we used the RegData methodology to estimate that Dodd-Frank will cause a 26 percent increase in financial regulatory restrictions. Deregulation of the financial services sector in the years leading up to the 2008 crisis was\u2014and still is\u2014used to justify Dodd-Frank\u2019s substantial regulatory burdens. Using the Mercatus Center at George Mason University\u2019s RegData, we find that between 1997 and 2008 the number of financial regulatory restrictions in the Code of Federal Regulations (CFR) rose from approximately 40,286 restrictions to 47,494\u2014an increase of 17.9 percent. Neither of these episodes had any relation whatsoever to Gramm-Leach-Bliley or the Commodity Futures Modernization Act. As we show in this analysis, financial regulatory restrictions increased 17.9 percent in the years leading up to the crisis. In Dodd-Frank: What it Does and Why it\u2019s Flawed, we used the RegData methodology to estimate that Dodd-Frank will cause a 26 percent increase in financial regulatory restrictions.",
+            "raw_content": null,
+            "score": 0.7440808,
+            "title": "Did Deregulation Cause the Financial Crisis? Examining a Common ...",
+            "url": "https://www.mercatus.org/research/data-visualizations/did-deregulation-cause-financial-crisis-examining-common-justification"
+          },
+          "source_name": "mercatus.org",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_1dad1c6743d9",
+          "task_action": "search",
+          "task_id": "task_60e7d584f940"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "In Dodd-Frank: What it Does and Why it\u2019s Flawed, we used the RegData methodology to estimate that Dodd-Frank will cause a 26 percent increase in financial regulatory restrictions. Deregulation of the financial services sector in the years leading up to the 2008 crisis was\u2014and still is\u2014used to justify Dodd-Frank\u2019s substantial regulatory burdens. Using the Mercatus Center at George Mason University\u2019s RegData, we find that between 1997 and 2008 the number of financial regulatory restrictions in the Code of Federal Regulations (CFR) rose from approximately 40,286 restrictions to 47,494\u2014an increase of 17.9 percent. Neither of these episodes had any relation whatsoever to Gramm-Leach-Bliley or the Commodity Futures Modernization Act. As we show in this analysis, financial regulatory restrictions increased 17.9 percent in the years leading up to the crisis. In Dodd-Frank: What it Does and Why it\u2019s Flawed, we used the RegData methodology to estimate that Dodd-Frank will cause a 26 percent increase in financial regulatory restrictions.",
+        "source_type": "web_search",
+        "title": "Did Deregulation Cause the Financial Crisis? Examining a Common ...",
+        "url": "https://www.mercatus.org/research/data-visualizations/did-deregulation-cause-financial-crisis-examining-common-justification"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1dad1c6743d9",
+        "plan_de6da5c71144"
+      ],
+      "task_id": "task_60e7d584f940"
+    },
+    {
+      "confidence": 0.734139,
+      "content": "1985\u2013) * Savings and loan crisis (1986\u20131995) * Black Monday \"Black Monday (1987)\") (1987) * Friday the 13th mini-crash (1989) * Early 1990s recession + 1990\u20131991; Australia + United States * 1990 oil price shock * Rhode Island banking crisis (1990\u20131992) * 1991 Indian economic crisis * 1990s United States boom (1991\u20132001) * 1990s India economic boom * Hyperinflation in Zimbabwe (1991\u2013present) * Black Wednesday (1992) * 1994 bond market crisis * 1994 Papua New Guinea financial crisis * Dot-com bubble + 1995\u20132004; Stock market downturn of 2002 * 1997 Asian financial crisis + October 27, 1997, mini-crash * Early 2000s recession + 2001; 9/11 stock market crash * 2000s commodities boom (2000\u20132014) * United States housing bubble (2002\u20132006) * Canadian property bubble (2002\u2013) * 2003 Myanmar banking crisis * 2000s energy crisis (2003\u20132008) * North Dakota oil boom (2006\u20132015) * Uranium bubble of 2007 * Great Recession + 2007\u20132009; Australia and New Zealand + Bangladesh, India, Malaysia, Pakistan, and Sri Lanka + British West Indies + Canada + South Africa + United Kingdom + United States * 2008 financial crisis + September + October + November + December + 2009 + Subprime mortgage crisis + 2000s U.S. housing market correction + U.S. bear market of 2007\u20132009 + 2007\u20132010 U.S. bank failures * Corporate debt bubble (2008\u2013) * Blue Monday Crash 2009 * 2010 flash crash * Malaysia Tiger Cub expansion (2010s) * Australian property bubble (2010\u2013) * August 2011 stock markets fall + Black Monday \"Black Monday (2011)\") * 2011 Bangladesh share market scam * Cryptocurrency bubble (2011\u2013) * Puerto Rican government-debt crisis (2014\u20132022) * 2015\u20132016 stock market selloff * Brexit stock market crash (2016) * 2017 Sri Lankan fuel crisis * Ghana banking crisis (2017\u20132018) * Sri Lankan economic crisis \"Sri Lankan economic crisis (2019\u20132024)\") (2019\u20132024) * COVID-19 recession + 2020\u20132022; 2020 stock market crash + financial market impact + sectoral impacts + shortages + Canada + India",
+      "created_at": "2026-03-21T23:42:12.887827Z",
+      "evidence_id": "evidence_0a7b45ac7c4d",
+      "relevance": 0.734139,
+      "source": {
+        "access_date": "2026-03-21T23:42:12.887820Z",
+        "additional": {
+          "plan_id": "plan_de6da5c71144",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 1,
+          "raw_payload": {
+            "content": "1985\u2013) * Savings and loan crisis (1986\u20131995) * Black Monday \"Black Monday (1987)\") (1987) * Friday the 13th mini-crash (1989) * Early 1990s recession + 1990\u20131991; Australia + United States * 1990 oil price shock * Rhode Island banking crisis (1990\u20131992) * 1991 Indian economic crisis * 1990s United States boom (1991\u20132001) * 1990s India economic boom * Hyperinflation in Zimbabwe (1991\u2013present) * Black Wednesday (1992) * 1994 bond market crisis * 1994 Papua New Guinea financial crisis * Dot-com bubble + 1995\u20132004; Stock market downturn of 2002 * 1997 Asian financial crisis + October 27, 1997, mini-crash * Early 2000s recession + 2001; 9/11 stock market crash * 2000s commodities boom (2000\u20132014) * United States housing bubble (2002\u20132006) * Canadian property bubble (2002\u2013) * 2003 Myanmar banking crisis * 2000s energy crisis (2003\u20132008) * North Dakota oil boom (2006\u20132015) * Uranium bubble of 2007 * Great Recession + 2007\u20132009; Australia and New Zealand + Bangladesh, India, Malaysia, Pakistan, and Sri Lanka + British West Indies + Canada + South Africa + United Kingdom + United States * 2008 financial crisis + September + October + November + December + 2009 + Subprime mortgage crisis + 2000s U.S. housing market correction + U.S. bear market of 2007\u20132009 + 2007\u20132010 U.S. bank failures * Corporate debt bubble (2008\u2013) * Blue Monday Crash 2009 * 2010 flash crash * Malaysia Tiger Cub expansion (2010s) * Australian property bubble (2010\u2013) * August 2011 stock markets fall + Black Monday \"Black Monday (2011)\") * 2011 Bangladesh share market scam * Cryptocurrency bubble (2011\u2013) * Puerto Rican government-debt crisis (2014\u20132022) * 2015\u20132016 stock market selloff * Brexit stock market crash (2016) * 2017 Sri Lankan fuel crisis * Ghana banking crisis (2017\u20132018) * Sri Lankan economic crisis \"Sri Lankan economic crisis (2019\u20132024)\") (2019\u20132024) * COVID-19 recession + 2020\u20132022; 2020 stock market crash + financial market impact + sectoral impacts + shortages + Canada + India",
+            "raw_content": null,
+            "score": 0.734139,
+            "title": "2008 financial crisis - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/2008_financial_crisis"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_c9c7a66537b3",
+          "task_action": "search",
+          "task_id": "task_0d1e8b441ef4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "1985\u2013) * Savings and loan crisis (1986\u20131995) * Black Monday \"Black Monday (1987)\") (1987) * Friday the 13th mini-crash (1989) * Early 1990s recession + 1990\u20131991; Australia + United States * 1990 oil price shock * Rhode Island banking crisis (1990\u20131992) * 1991 Indian economic crisis * 1990s United States boom (1991\u20132001) * 1990s India economic boom * Hyperinflation in Zimbabwe (1991\u2013present) * Black Wednesday (1992) * 1994 bond market crisis * 1994 Papua New Guinea financial crisis * Dot-com bubble + 1995\u20132004; Stock market downturn of 2002 * 1997 Asian financial crisis + October 27, 1997, mini-crash * Early 2000s recession + 2001; 9/11 stock market crash * 2000s commodities boom (2000\u20132014) * United States housing bubble (2002\u20132006) * Canadian property bubble (2002\u2013) * 2003 Myanmar banking crisis * 2000s energy crisis (2003\u20132008) * North Dakota oil boom (2006\u20132015) * Uranium bubble of 2007 * Great Recession + 2007\u20132009; Australia and New Zealand + Bangladesh, India, Malaysia, Pakistan, and Sri Lanka + British West Indies + Canada + South Africa + United Kingdom + United States * 2008 financial crisis + September + October + November + December + 2009 + Subprime mortgage crisis + 2000s U.S. housing market correction + U.S. bear market of 2007\u20132009 + 2007\u20132010 U.S. bank failures * Corporate debt bubble (2008\u2013) * Blue Monday Crash 2009 * 2010 flash crash * Malaysia Tiger Cub expansion (2010s) * Australian property bubble (2010\u2013) * August 2011 stock markets fall + Black Monday \"Black Monday (2011)\") * 2011 Bangladesh share market scam * Cryptocurrency bubble (2011\u2013) * Puerto Rican government-debt crisis (2014\u20132022) * 2015\u20132016 stock market selloff * Brexit stock market crash (2016) * 2017 Sri Lankan fuel crisis * Ghana banking crisis (2017\u20132018) * Sri Lankan economic crisis \"Sri Lankan economic crisis (2019\u20132024)\") (2019\u20132024) * COVID-19 recession + 2020\u20132022; 2020 stock market crash + financial market impact + sectoral impacts + shortages + Canada + India",
+        "source_type": "web_search",
+        "title": "2008 financial crisis - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/2008_financial_crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_c9c7a66537b3",
+        "plan_de6da5c71144"
+      ],
+      "task_id": "task_0d1e8b441ef4"
+    },
+    {
+      "confidence": 0.68318754,
+      "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+      "created_at": "2026-03-21T23:42:15.100279Z",
+      "evidence_id": "evidence_08932e230d78",
+      "relevance": 0.68318754,
+      "source": {
+        "access_date": "2026-03-21T23:42:15.100271Z",
+        "additional": {
+          "plan_id": "plan_de6da5c71144",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+            "raw_content": null,
+            "score": 0.68318754,
+            "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+            "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+          },
+          "source_name": "journals.law.harvard.edu",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_1dad1c6743d9",
+          "task_action": "search",
+          "task_id": "task_60e7d584f940"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+        "source_type": "web_search",
+        "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+        "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1dad1c6743d9",
+        "plan_de6da5c71144"
+      ],
+      "task_id": "task_60e7d584f940"
+    },
+    {
+      "confidence": 0.680136,
+      "content": "Key events of the crisis \u00b7 The crisis in the United States deepened in January 2008 as Bank of America agreed to purchase Countrywide Financial, once the",
+      "created_at": "2026-03-21T23:42:12.887799Z",
+      "evidence_id": "evidence_51059289ba89",
+      "relevance": 0.680136,
+      "source": {
+        "access_date": "2026-03-21T23:42:12.887782Z",
+        "additional": {
+          "plan_id": "plan_de6da5c71144",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Key events of the crisis \u00b7 The crisis in the United States deepened in January 2008 as Bank of America agreed to purchase Countrywide Financial, once the",
+            "raw_content": null,
+            "score": 0.680136,
+            "title": "Financial crisis of 2007\u201308 | Definition, Causes, Effects, & Facts",
+            "url": "https://www.britannica.com/money/financial-crisis-of-2007-2008/Key-events-of-the-crisis"
+          },
+          "source_name": "britannica.com",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_c9c7a66537b3",
+          "task_action": "search",
+          "task_id": "task_0d1e8b441ef4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Key events of the crisis \u00b7 The crisis in the United States deepened in January 2008 as Bank of America agreed to purchase Countrywide Financial, once the",
+        "source_type": "web_search",
+        "title": "Financial crisis of 2007\u201308 | Definition, Causes, Effects, & Facts",
+        "url": "https://www.britannica.com/money/financial-crisis-of-2007-2008/Key-events-of-the-crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_c9c7a66537b3",
+        "plan_de6da5c71144"
+      ],
+      "task_id": "task_0d1e8b441ef4"
+    },
+    {
+      "confidence": 0.67243975,
+      "content": "RegData identifies regulatory restrictions by counting the number of restrictive words and phrases\u2014such as may not, must, shall, prohibited, and required\u2014in the Code of Federal Regulations (CFR). The new data in the expanded analysis reinforce the findings of the previous one: bills that ostensibly deregulated the financial sector, such as the Gramm-Leach-Bliley Act of 1999, the Commodity Futures Modernization Act of 2000, and the Financial Services Regulatory Relief Act of 2006, had little to no effect on the steady growth in financial regulation overall. In fact, RegData shows that between 1997 and 2008, the number of financial regulatory restrictions in the CFR rose from 40,067 to 47,508\u2014an increase of 18.6 percent. Regulatory restrictions in Title 12 of the CFR, which covers banking, increased by 266 percent over that time span, whereas the number of restrictions in Title 17, which regulates commodity futures and securities markets, increased by 228 percent. This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+      "created_at": "2026-03-21T23:42:15.100301Z",
+      "evidence_id": "evidence_82cbe5db06d6",
+      "relevance": 0.67243975,
+      "source": {
+        "access_date": "2026-03-21T23:42:15.100294Z",
+        "additional": {
+          "plan_id": "plan_de6da5c71144",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "RegData identifies regulatory restrictions by counting the number of restrictive words and phrases\u2014such as may not, must, shall, prohibited, and required\u2014in the Code of Federal Regulations (CFR). The new data in the expanded analysis reinforce the findings of the previous one: bills that ostensibly deregulated the financial sector, such as the Gramm-Leach-Bliley Act of 1999, the Commodity Futures Modernization Act of 2000, and the Financial Services Regulatory Relief Act of 2006, had little to no effect on the steady growth in financial regulation overall. In fact, RegData shows that between 1997 and 2008, the number of financial regulatory restrictions in the CFR rose from 40,067 to 47,508\u2014an increase of 18.6 percent. Regulatory restrictions in Title 12 of the CFR, which covers banking, increased by 266 percent over that time span, whereas the number of restrictions in Title 17, which regulates commodity futures and securities markets, increased by 228 percent. This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+            "raw_content": null,
+            "score": 0.67243975,
+            "title": "Did Deregulation Cause the Financial Crisis of 2008? - QuantGov",
+            "url": "https://www.quantgov.org/finance-crisis"
+          },
+          "source_name": "quantgov.org",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_1dad1c6743d9",
+          "task_action": "search",
+          "task_id": "task_60e7d584f940"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "RegData identifies regulatory restrictions by counting the number of restrictive words and phrases\u2014such as may not, must, shall, prohibited, and required\u2014in the Code of Federal Regulations (CFR). The new data in the expanded analysis reinforce the findings of the previous one: bills that ostensibly deregulated the financial sector, such as the Gramm-Leach-Bliley Act of 1999, the Commodity Futures Modernization Act of 2000, and the Financial Services Regulatory Relief Act of 2006, had little to no effect on the steady growth in financial regulation overall. In fact, RegData shows that between 1997 and 2008, the number of financial regulatory restrictions in the CFR rose from 40,067 to 47,508\u2014an increase of 18.6 percent. Regulatory restrictions in Title 12 of the CFR, which covers banking, increased by 266 percent over that time span, whereas the number of restrictions in Title 17, which regulates commodity futures and securities markets, increased by 228 percent. This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+        "source_type": "web_search",
+        "title": "Did Deregulation Cause the Financial Crisis of 2008? - QuantGov",
+        "url": "https://www.quantgov.org/finance-crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_1dad1c6743d9",
+        "plan_de6da5c71144"
+      ],
+      "task_id": "task_60e7d584f940"
+    },
+    {
+      "confidence": 0.51735204,
+      "content": "In the lead up to the GFC, banks and other investors in the United States and abroad borrowed increasing amounts to expand their lending and purchase MBS products. As a result, when house prices began to fall, banks and investors incurred large losses because they had borrowed so much. Some lenders and investors began to incur large losses because many of the houses they repossessed after the borrowers missed repayments could only be sold at prices below the loan balance. Central banks lowered interest rates rapidly to very low levels (often near zero); lent large amounts of money to banks and other institutions with good assets that could not borrow in financial markets; and purchased a substantial amount of financial securities to support dysfunctional markets and to stimulate economic activity once policy interest rates were near zero (known as \u2018quantitative easing\u2019).",
+      "created_at": "2026-03-21T23:42:12.887850Z",
+      "evidence_id": "evidence_77f523b1623d",
+      "relevance": 0.51735204,
+      "source": {
+        "access_date": "2026-03-21T23:42:12.887840Z",
+        "additional": {
+          "plan_id": "plan_de6da5c71144",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 3,
+          "raw_payload": {
+            "content": "In the lead up to the GFC, banks and other investors in the United States and abroad borrowed increasing amounts to expand their lending and purchase MBS products. As a result, when house prices began to fall, banks and investors incurred large losses because they had borrowed so much. Some lenders and investors began to incur large losses because many of the houses they repossessed after the borrowers missed repayments could only be sold at prices below the loan balance. Central banks lowered interest rates rapidly to very low levels (often near zero); lent large amounts of money to banks and other institutions with good assets that could not borrow in financial markets; and purchased a substantial amount of financial securities to support dysfunctional markets and to stimulate economic activity once policy interest rates were near zero (known as \u2018quantitative easing\u2019).",
+            "raw_content": null,
+            "score": 0.51735204,
+            "title": "The Global Financial Crisis | Explainer | Education | RBA",
+            "url": "https://www.rba.gov.au/education/resources/explainers/the-global-financial-crisis.html"
+          },
+          "source_name": "rba.gov.au",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_c9c7a66537b3",
+          "task_action": "search",
+          "task_id": "task_0d1e8b441ef4"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "In the lead up to the GFC, banks and other investors in the United States and abroad borrowed increasing amounts to expand their lending and purchase MBS products. As a result, when house prices began to fall, banks and investors incurred large losses because they had borrowed so much. Some lenders and investors began to incur large losses because many of the houses they repossessed after the borrowers missed repayments could only be sold at prices below the loan balance. Central banks lowered interest rates rapidly to very low levels (often near zero); lent large amounts of money to banks and other institutions with good assets that could not borrow in financial markets; and purchased a substantial amount of financial securities to support dysfunctional markets and to stimulate economic activity once policy interest rates were near zero (known as \u2018quantitative easing\u2019).",
+        "source_type": "web_search",
+        "title": "The Global Financial Crisis | Explainer | Education | RBA",
+        "url": "https://www.rba.gov.au/education/resources/explainers/the-global-financial-crisis.html"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_c9c7a66537b3",
+        "plan_de6da5c71144"
+      ],
+      "task_id": "task_0d1e8b441ef4"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260321T234221Z_what-were-the-main-causes-of-the-2008-fi_experiment_6225fbb27675/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260321T234221Z_what-were-the-main-causes-of-the-2008-fi_experiment_6225fbb27675/experiment.json"
+    ],
+    "completed_at": "2026-03-21T23:42:21.748725Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_6225fbb27675",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.2857142857142857,
+      "groundedness": 0.5,
+      "number_of_claims": 2.0,
+      "number_of_evidence_items": 7.0,
+      "number_of_supported_claims": 1.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-2008-fi",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-21T23:42:11.328120Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the 2008 financial crisis?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-21T23:42:11.328120Z",
+    "goal": "What were the main causes of the 2008 financial crisis?",
+    "parent_plan_id": null,
+    "plan_id": "plan_de6da5c71144",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Search for key events leading up to the 2008 financial crisis",
+        "expected_output": "List of significant events, e.g., subprime mortgage bubble bursting",
+        "priority": 1,
+        "step_id": "step_c9c7a66537b3",
+        "success_criteria": "Identification of at least three critical events",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_c9c7a66537b3"
+        ],
+        "description": "Analyze the role of deregulation in the lead-up to the crisis",
+        "expected_output": "Summary of relevant laws and regulations repealed or weakened",
+        "priority": 2,
+        "step_id": "step_1dad1c6743d9",
+        "success_criteria": "Clear explanation of how deregulation contributed to the crisis",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_1dad1c6743d9"
+        ],
+        "description": "Examine the impact of securitization on the financial system",
+        "expected_output": "Description of how securitized assets spread risk throughout the system",
+        "priority": 3,
+        "step_id": "step_5f5a56511c98",
+        "success_criteria": "Understanding of how securitization exacerbated the crisis",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_a399c9d7eafb",
+        "contradicting_ids_checked": [],
+        "reasoning": "Referenced evidence did not meet the lexical support threshold. Strongest overlap was 1 informative tokens.",
+        "supporting_ids_checked": [
+          "evidence_f446424490ba"
+        ],
+        "verdict": "insufficient"
+      },
+      {
+        "claim_id": "claim_ccaa8177853b",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (2008, crisis, deregulation, derivatives, financial, market, otc).",
+        "supporting_ids_checked": [
+          "evidence_08932e230d78"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-21T23:42:21.748725Z",
+    "decision_id": "decision_b4f56ec0fca7",
+    "summary": "supported=1, unsupported=0, insufficient=1, contradicted=0"
+  }
+}

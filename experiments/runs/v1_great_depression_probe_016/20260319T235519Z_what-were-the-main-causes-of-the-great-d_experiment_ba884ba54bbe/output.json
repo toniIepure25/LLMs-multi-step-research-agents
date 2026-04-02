@@ -1,0 +1,694 @@
+{
+  "created_at": "2026-03-19T23:55:19.335249Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_9f43ce6ed4f6",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Market crash led to economic downturn.",
+        "supporting_evidence_ids": [
+          "evidence_4f00851b7efe"
+        ],
+        "text": "The stock market crash of 1929 contributed to the Great Depression."
+      },
+      {
+        "claim_id": "claim_e7d9246eaf56",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Tariff collapse led to trade decline.",
+        "supporting_evidence_ids": [
+          "evidence_4f00851b7efe"
+        ],
+        "text": "The collapse of world trade due to the Smoot-Hawley Tariff contributed to the Great Depression."
+      },
+      {
+        "claim_id": "claim_1e860cb1d005",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Reparations led to economic instability.",
+        "supporting_evidence_ids": [
+          "evidence_d745190ac934"
+        ],
+        "text": "War reparations post-World War I contributed to the Great Depression."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-19T23:55:19.334486Z",
+    "decision_id": "decision_f951302faee6",
+    "information_gaps": [
+      "Specific mechanisms of the Great Depression"
+    ],
+    "plan_id": "plan_51a627707de3",
+    "synthesis": "The Great Depression was caused by a combination of factors."
+  },
+  "evidence": [
+    {
+      "confidence": 0.99997973,
+      "content": "* America from the Great Depression to World War II, Photographs. * American from the Great Depression to World War II. * American Life Histories, Manuscripts from the Federal Writers' Project 1936-1940. The Life Histories Collection is part of the U.S. Work Progress Administration Federal Writers' Project and Historical Records Survey. The Forgotten People Between 1935 and 1943, Lange and other top-caliber photographers hired by Roy Stryker of the Resettlement Administration produced what was to become the world's best-known photographic survey, the Farm Security Administration (FSA) collection. * History of the FBI the New Deal 1933 - Late 1930's. * Labor Unions During the Great Depression and the New Deal. * [Other Voices from the Depression, \"Harlan Working Under the Gun\" by John Dos Passos, published in The New Republic [December 2, 1931]](https://socialwelfare.library.vcu.edu/eras/great-depression/harlan-working-gun/). * Voices from the Thirties -Life Histories Manuscripts 1936-1940from the Federal Writers' Project. * Works Progress Administration: Voices from the Thirties American Life Histories, 1936-1940.",
+      "created_at": "2026-03-19T23:55:06.153861Z",
+      "evidence_id": "evidence_07ec2ee4514d",
+      "relevance": 0.99997973,
+      "source": {
+        "access_date": "2026-03-19T23:55:06.153844Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "* America from the Great Depression to World War II, Photographs. * American from the Great Depression to World War II. * American Life Histories, Manuscripts from the Federal Writers' Project 1936-1940. The Life Histories Collection is part of the U.S. Work Progress Administration Federal Writers' Project and Historical Records Survey. The Forgotten People Between 1935 and 1943, Lange and other top-caliber photographers hired by Roy Stryker of the Resettlement Administration produced what was to become the world's best-known photographic survey, the Farm Security Administration (FSA) collection. * History of the FBI the New Deal 1933 - Late 1930's. * Labor Unions During the Great Depression and the New Deal. * [Other Voices from the Depression, \"Harlan Working Under the Gun\" by John Dos Passos, published in The New Republic [December 2, 1931]](https://socialwelfare.library.vcu.edu/eras/great-depression/harlan-working-gun/). * Voices from the Thirties -Life Histories Manuscripts 1936-1940from the Federal Writers' Project. * Works Progress Administration: Voices from the Thirties American Life Histories, 1936-1940.",
+            "raw_content": null,
+            "score": 0.99997973,
+            "title": "Great Depression 1929-1939 - Primary Resources",
+            "url": "https://libguides.southernct.edu/ushistoryprimary/greatdepression"
+          },
+          "source_name": "libguides.southernct.edu",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_5ebca7434f1e",
+          "task_action": "search",
+          "task_id": "task_33a252f33944"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "* America from the Great Depression to World War II, Photographs. * American from the Great Depression to World War II. * American Life Histories, Manuscripts from the Federal Writers' Project 1936-1940. The Life Histories Collection is part of the U.S. Work Progress Administration Federal Writers' Project and Historical Records Survey. The Forgotten People Between 1935 and 1943, Lange and other top-caliber photographers hired by Roy Stryker of the Resettlement Administration produced what was to become the world's best-known photographic survey, the Farm Security Administration (FSA) collection. * History of the FBI the New Deal 1933 - Late 1930's. * Labor Unions During the Great Depression and the New Deal. * [Other Voices from the Depression, \"Harlan Working Under the Gun\" by John Dos Passos, published in The New Republic [December 2, 1931]](https://socialwelfare.library.vcu.edu/eras/great-depression/harlan-working-gun/). * Voices from the Thirties -Life Histories Manuscripts 1936-1940from the Federal Writers' Project. * Works Progress Administration: Voices from the Thirties American Life Histories, 1936-1940.",
+        "source_type": "web_search",
+        "title": "Great Depression 1929-1939 - Primary Resources",
+        "url": "https://libguides.southernct.edu/ushistoryprimary/greatdepression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_5ebca7434f1e",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_33a252f33944"
+    },
+    {
+      "confidence": 0.99990976,
+      "content": "The Great Depression, a profound economic downturn lasting from 1929 to the late 1930s, saw widespread unemployment, poverty, and economic instability in",
+      "created_at": "2026-03-19T23:55:06.153883Z",
+      "evidence_id": "evidence_8c7e88eec6c7",
+      "relevance": 0.99990976,
+      "source": {
+        "access_date": "2026-03-19T23:55:06.153877Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The Great Depression, a profound economic downturn lasting from 1929 to the late 1930s, saw widespread unemployment, poverty, and economic instability in",
+            "raw_content": null,
+            "score": 0.99990976,
+            "title": "Great Depression & New Deal - Primary Sources: America (U.S.A. ...",
+            "url": "https://libguides.fau.edu/primary-sources-america/great-depression"
+          },
+          "source_name": "libguides.fau.edu",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_5ebca7434f1e",
+          "task_action": "search",
+          "task_id": "task_33a252f33944"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Great Depression, a profound economic downturn lasting from 1929 to the late 1930s, saw widespread unemployment, poverty, and economic instability in",
+        "source_type": "web_search",
+        "title": "Great Depression & New Deal - Primary Sources: America (U.S.A. ...",
+        "url": "https://libguides.fau.edu/primary-sources-america/great-depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_5ebca7434f1e",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_33a252f33944"
+    },
+    {
+      "confidence": 0.9995159,
+      "content": "# Primary Sources: The Great Depression and the 1930s: Economics. ## Online Sources: Economics. Collection FDR-PPF: Papers as President, President's Personal File, 1933 - 1945. * Petition of the Socialist Party of Tompkins County, New York, Requesting Federal Control of the Banking System, 03/09/1933. \"Women Working, 1800\u20131930 is a digital exploration of women's impact on the economic life of the United States between 1800 and the Great Depression. Working conditions, workplace regulations, home life, costs of living, commerce, recreation, health and hygiene, and social issues are among the issues documented in this online research collection from Harvard University.\". * [Work Relief Act [aka Emergency Relief Appropriation Acts]](https://cnu.idm.oclc.org/login? ## Book Sources: Economics. * The American Economic History Reader   by   John W. * Toward Economic Security   by   United States. * Suggested terms to look for include - diary, diaries, letters, papers, documents, documentary or correspondence.",
+      "created_at": "2026-03-19T23:55:06.153901Z",
+      "evidence_id": "evidence_060905af153e",
+      "relevance": 0.9995159,
+      "source": {
+        "access_date": "2026-03-19T23:55:06.153896Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "# Primary Sources: The Great Depression and the 1930s: Economics. ## Online Sources: Economics. Collection FDR-PPF: Papers as President, President's Personal File, 1933 - 1945. * Petition of the Socialist Party of Tompkins County, New York, Requesting Federal Control of the Banking System, 03/09/1933. \"Women Working, 1800\u20131930 is a digital exploration of women's impact on the economic life of the United States between 1800 and the Great Depression. Working conditions, workplace regulations, home life, costs of living, commerce, recreation, health and hygiene, and social issues are among the issues documented in this online research collection from Harvard University.\". * [Work Relief Act [aka Emergency Relief Appropriation Acts]](https://cnu.idm.oclc.org/login? ## Book Sources: Economics. * The American Economic History Reader   by   John W. * Toward Economic Security   by   United States. * Suggested terms to look for include - diary, diaries, letters, papers, documents, documentary or correspondence.",
+            "raw_content": null,
+            "score": 0.9995159,
+            "title": "Primary Sources: The Great Depression and the 1930s: Economics",
+            "url": "https://cnu.libguides.com/psthegreatdepression/econ"
+          },
+          "source_name": "cnu.libguides.com",
+          "step_description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+          "step_id": "step_5ebca7434f1e",
+          "task_action": "search",
+          "task_id": "task_33a252f33944"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "# Primary Sources: The Great Depression and the 1930s: Economics. ## Online Sources: Economics. Collection FDR-PPF: Papers as President, President's Personal File, 1933 - 1945. * Petition of the Socialist Party of Tompkins County, New York, Requesting Federal Control of the Banking System, 03/09/1933. \"Women Working, 1800\u20131930 is a digital exploration of women's impact on the economic life of the United States between 1800 and the Great Depression. Working conditions, workplace regulations, home life, costs of living, commerce, recreation, health and hygiene, and social issues are among the issues documented in this online research collection from Harvard University.\". * [Work Relief Act [aka Emergency Relief Appropriation Acts]](https://cnu.idm.oclc.org/login? ## Book Sources: Economics. * The American Economic History Reader   by   John W. * Toward Economic Security   by   United States. * Suggested terms to look for include - diary, diaries, letters, papers, documents, documentary or correspondence.",
+        "source_type": "web_search",
+        "title": "Primary Sources: The Great Depression and the 1930s: Economics",
+        "url": "https://cnu.libguides.com/psthegreatdepression/econ"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_5ebca7434f1e",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_33a252f33944"
+    },
+    {
+      "confidence": 0.99893504,
+      "content": "The Great Depression was a global economic crisis that may have been triggered by political decisions including war reparations post-World War I, protectionism.",
+      "created_at": "2026-03-19T23:55:09.060155Z",
+      "evidence_id": "evidence_d745190ac934",
+      "relevance": 0.99893504,
+      "source": {
+        "access_date": "2026-03-19T23:55:09.060138Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social). about What were the main causes of the Great Depression?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The Great Depression was a global economic crisis that may have been triggered by political decisions including war reparations post-World War I, protectionism.",
+            "raw_content": null,
+            "score": 0.99893504,
+            "title": "Political Causes of the Great Depression - ThoughtCo",
+            "url": "https://www.thoughtco.com/great-depression-causes-3367841"
+          },
+          "source_name": "thoughtco.com",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_37d8c6952933",
+          "task_action": "search",
+          "task_id": "task_aae51430d6e2"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Great Depression was a global economic crisis that may have been triggered by political decisions including war reparations post-World War I, protectionism.",
+        "source_type": "web_search",
+        "title": "Political Causes of the Great Depression - ThoughtCo",
+        "url": "https://www.thoughtco.com/great-depression-causes-3367841"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_37d8c6952933",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_aae51430d6e2"
+    },
+    {
+      "confidence": 0.9988927,
+      "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+      "created_at": "2026-03-19T23:55:13.172751Z",
+      "evidence_id": "evidence_e6791af98e79",
+      "relevance": 0.9988927,
+      "source": {
+        "access_date": "2026-03-19T23:55:13.172746Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 1,
+          "raw_payload": {
+            "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+            "raw_content": null,
+            "score": 0.9988927,
+            "title": "5 Causes of the Great Depression - History.com",
+            "url": "https://www.history.com/articles/great-depression-causes"
+          },
+          "source_name": "history.com",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_b3dd7b43effa",
+          "task_action": "search",
+          "task_id": "task_b2bed2f3e0ba"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+        "source_type": "web_search",
+        "title": "5 Causes of the Great Depression - History.com",
+        "url": "https://www.history.com/articles/great-depression-causes"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_b3dd7b43effa",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_b2bed2f3e0ba"
+    },
+    {
+      "confidence": 0.99884856,
+      "content": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+      "created_at": "2026-03-19T23:55:13.172715Z",
+      "evidence_id": "evidence_abb9035585dc",
+      "relevance": 0.99884856,
+      "source": {
+        "access_date": "2026-03-19T23:55:13.172698Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+            "raw_content": null,
+            "score": 0.99884856,
+            "title": "The Great Depression: Overview, Causes, and Effects - Investopedia",
+            "url": "https://www.investopedia.com/terms/g/great_depression.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_b3dd7b43effa",
+          "task_action": "search",
+          "task_id": "task_b2bed2f3e0ba"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+        "source_type": "web_search",
+        "title": "The Great Depression: Overview, Causes, and Effects - Investopedia",
+        "url": "https://www.investopedia.com/terms/g/great_depression.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_b3dd7b43effa",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_b2bed2f3e0ba"
+    },
+    {
+      "confidence": 0.99724233,
+      "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+      "created_at": "2026-03-19T23:55:13.172736Z",
+      "evidence_id": "evidence_55eefaa9146b",
+      "relevance": 0.99724233,
+      "source": {
+        "access_date": "2026-03-19T23:55:13.172730Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+            "raw_content": null,
+            "score": 0.99724233,
+            "title": "Causes of the Great Depression - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+          },
+          "source_name": "en.wikipedia.org",
+          "step_description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+          "step_id": "step_b3dd7b43effa",
+          "task_action": "search",
+          "task_id": "task_b2bed2f3e0ba"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "| | By country or region | | --- | | | | | | --- | --- | | Africa | * African historiography * Egypt + Pyramid construction techniques + Black Egypt Thesis\") [es] * Ethiopia * Morocco + Greater Morocco * Rwanda + Double genocide theory \"Double genocide theory (Rwanda)\") * *Maafa* | | Americas | * Canada + Metropolitan-hinterland thesis + Residential schools + Staples thesis * Indigenous population history | | | | --- | --- | | Latin America | * Argentina + May Revolution / Causes + Revisionist\") [es] * Peru\") + Iquicha Royalism * Colonial Spanish America + *Casta* | | United States | * African-American history + Nadir of American race relations + Neoabolitionism \"Neoabolitionism (race relations)\") + Reconstruction era * Consensus history * Cyclical theory \"Cyclical theory (United States history)\") * Frontier thesis * Political history + Eras * Progressive-era historians | | | Eurasia | * Albania + Dealbanisation * Austria + Habsburg myth * Balhae * Belarus * Bulgaria * Byzantine Empire\") [de] + Early\") [ru] * Croatia * Europe + Ancient\") [ru] + Medieval [ru] + New Age\") [ru] * Georgia + *Aryan Kartli* * Greek + Ages of Man * Iran + 2,500-year celebration * Japan * Korea + Nationalist + Goguryeo controversies * North Macedonia * Philippines + Early settlements * Portugal\") [pt] + Lusotropicalism * Romania + Great Union * Serbia + Kosovo Myth * Sweden + G\u00f6taland theory * Switzerland * Taiwan * Ukraine + Executed Renaissance * Vietnam + *Nam ti\u1ebfn* + Tr\u01b0ng sisters | | | | --- | --- | | Ancient Rome | * Catilinarian conspiracy * Christianization + Constantinian shift * Expansion * Fall of Western Rome * Prosopography * Succession + Byzantine succession + Moscow, third Rome + Ottoman claim + Problem of two emperors | | China | * 5000-year civilization assertion * Archaeology * Wunu",
+        "source_type": "web_search",
+        "title": "Causes of the Great Depression - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Causes_of_the_Great_Depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_b3dd7b43effa",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_b2bed2f3e0ba"
+    },
+    {
+      "confidence": 0.99366105,
+      "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+      "created_at": "2026-03-19T23:55:09.060177Z",
+      "evidence_id": "evidence_14ea2acbd4d8",
+      "relevance": 0.99366105,
+      "source": {
+        "access_date": "2026-03-19T23:55:09.060171Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social). about What were the main causes of the Great Depression?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+            "raw_content": null,
+            "score": 0.99366105,
+            "title": "5 Causes of the Great Depression - History.com",
+            "url": "https://www.history.com/articles/great-depression-causes"
+          },
+          "source_name": "history.com",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_37d8c6952933",
+          "task_action": "search",
+          "task_id": "task_aae51430d6e2"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "By 1929, a perfect storm of unlucky factors led to the start of the worst economic downturn in U.S. history. Things were so bad that of all the days of unemployment experienced by individual American workers in American history, half occurred during the Great Depression, according to University of California, Irvine economics Professor Gary Richardson, who has done extensive research on that period and the subject of downturns in general. \u201cFor something to be as bad as the Great Depression, you really need multiple things going wrong, in the U.S. and around the world,\u201d Richardson says. \u201cThe stock market crash did two things,\u201d explains Mary Eschelbach Hansen, a professor of economics at American University. As Richardson notes, the U.S. economy didn\u2019t again reach full employment until 1940\u2014just in time for World War II to disrupt consumption with rationing needed to ensure that the military had enough resources.",
+        "source_type": "web_search",
+        "title": "5 Causes of the Great Depression - History.com",
+        "url": "https://www.history.com/articles/great-depression-causes"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_37d8c6952933",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_aae51430d6e2"
+    },
+    {
+      "confidence": 0.9884919,
+      "content": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+      "created_at": "2026-03-19T23:55:09.060192Z",
+      "evidence_id": "evidence_2503783bde81",
+      "relevance": 0.9884919,
+      "source": {
+        "access_date": "2026-03-19T23:55:09.060187Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social). about What were the main causes of the Great Depression?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+            "raw_content": null,
+            "score": 0.9884919,
+            "title": "The Great Depression: Overview, Causes, and Effects - Investopedia",
+            "url": "https://www.investopedia.com/terms/g/great_depression.asp"
+          },
+          "source_name": "investopedia.com",
+          "step_description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+          "step_id": "step_37d8c6952933",
+          "task_action": "search",
+          "task_id": "task_aae51430d6e2"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Great Depression was a devastating and prolonged economic recession that followed the crash of the United States stock market in 1929. The Great Depression: The greatest and longest economic recession in modern world history that ran between 1929 and 1941.:max_bytes(150000):strip_icc()/great_depression.asp-Final-8258581e56b6472fb8e1f12c3766187e.jpg). They include the stock market crash of 1929, the gold standard, a drop in lending, tariffs, banking panics, and contractionary monetary policies of the Fed. The stock market crash likely triggered the decade-long economic downturn, but most historians and economists agree that it didn't cause the Great Depression by itself. World War\u00a0II created international trading channels and reversed burdensome price and wage controls, which helped the country recover from the Great Depression. The Great Depression taught economists, lawmakers, and the Fed how to better deal with the various economic circumstances and taught people how to survive in hard times. stock market chart:max_bytes(150000):strip_icc()/GettyImages-496030068-29ec863cca36413ab111277d250fe964.jpg). Stock Market Crash:max_bytes(150000):strip_icc()/Stock-Market-Crash-56a093a93df78cafdaa2dacf.jpg). A digital composite image of stock market data.:max_bytes(150000):strip_icc()/GettyImages-1069345714-fbda50660ce74c26944a2b03d6482473.jpg).",
+        "source_type": "web_search",
+        "title": "The Great Depression: Overview, Causes, and Effects - Investopedia",
+        "url": "https://www.investopedia.com/terms/g/great_depression.asp"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_37d8c6952933",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_aae51430d6e2"
+    },
+    {
+      "confidence": 0.29976124,
+      "content": "## User menu. The Gilder Lehrman Institute of American History. Only one company in ten failed to cut pay, and in 1932, three-quarters of all workers were on part-time schedules, averaging just 60 percent of the normal work week. The divorce rate fell, for the simple reason that many couples could not afford to maintain separate households or pay legal fees. But rates of desertion soared. But many Americans no longer believed the problems could be solved by people acting alone or through voluntary associations. But no groups suffered more from the depression than African Americans and Mexican Americans. The Depression hit Mexican American families especially hard. Mexican Americans faced serious opposition from organized labor, which resented competition from Mexican workers as unemployment rose. The Gilder Lehrman Institute of American History. Learn how the Institute impacts history education through our work guiding teachers, energizing students, and supporting research. ## Footer Menu. \u00a9 **2009\u20132026** The Gilder Lehrman Institute of American History.",
+      "created_at": "2026-03-19T23:55:11.036214Z",
+      "evidence_id": "evidence_f5b767eef0f2",
+      "relevance": 0.29976124,
+      "source": {
+        "access_date": "2026-03-19T23:55:11.036197Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 2,
+          "raw_payload": {
+            "content": "## User menu. The Gilder Lehrman Institute of American History. Only one company in ten failed to cut pay, and in 1932, three-quarters of all workers were on part-time schedules, averaging just 60 percent of the normal work week. The divorce rate fell, for the simple reason that many couples could not afford to maintain separate households or pay legal fees. But rates of desertion soared. But many Americans no longer believed the problems could be solved by people acting alone or through voluntary associations. But no groups suffered more from the depression than African Americans and Mexican Americans. The Depression hit Mexican American families especially hard. Mexican Americans faced serious opposition from organized labor, which resented competition from Mexican workers as unemployment rose. The Gilder Lehrman Institute of American History. Learn how the Institute impacts history education through our work guiding teachers, energizing students, and supporting research. ## Footer Menu. \u00a9 **2009\u20132026** The Gilder Lehrman Institute of American History.",
+            "raw_content": null,
+            "score": 0.29976124,
+            "title": "The Human Toll of the Great Depression",
+            "url": "https://www.gilderlehrman.org/history-resources/essays/human-toll-great-depression"
+          },
+          "source_name": "gilderlehrman.org",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_3b0cd66c9988",
+          "task_action": "search",
+          "task_id": "task_71274fa894dd"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "## User menu. The Gilder Lehrman Institute of American History. Only one company in ten failed to cut pay, and in 1932, three-quarters of all workers were on part-time schedules, averaging just 60 percent of the normal work week. The divorce rate fell, for the simple reason that many couples could not afford to maintain separate households or pay legal fees. But rates of desertion soared. But many Americans no longer believed the problems could be solved by people acting alone or through voluntary associations. But no groups suffered more from the depression than African Americans and Mexican Americans. The Depression hit Mexican American families especially hard. Mexican Americans faced serious opposition from organized labor, which resented competition from Mexican workers as unemployment rose. The Gilder Lehrman Institute of American History. Learn how the Institute impacts history education through our work guiding teachers, energizing students, and supporting research. ## Footer Menu. \u00a9 **2009\u20132026** The Gilder Lehrman Institute of American History.",
+        "source_type": "web_search",
+        "title": "The Human Toll of the Great Depression",
+        "url": "https://www.gilderlehrman.org/history-resources/essays/human-toll-great-depression"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3b0cd66c9988",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_71274fa894dd"
+    },
+    {
+      "confidence": 0.2741004,
+      "content": "Among the suggested causes of the Great Depression are: the stock market crash of 1929; the collapse of world trade due to the Smoot-Hawley Tariff; government",
+      "created_at": "2026-03-19T23:55:11.036235Z",
+      "evidence_id": "evidence_4f00851b7efe",
+      "relevance": 0.2741004,
+      "source": {
+        "access_date": "2026-03-19T23:55:11.036229Z",
+        "additional": {
+          "plan_id": "plan_51a627707de3",
+          "query": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Among the suggested causes of the Great Depression are: the stock market crash of 1929; the collapse of world trade due to the Smoot-Hawley Tariff; government",
+            "raw_content": null,
+            "score": 0.2741004,
+            "title": "What Caused the Great Depression? | St. Louis Fed",
+            "url": "https://www.stlouisfed.org/the-great-depression/curriculum/economic-episodes-in-american-history-part-5"
+          },
+          "source_name": "stlouisfed.org",
+          "step_description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+          "step_id": "step_3b0cd66c9988",
+          "task_action": "search",
+          "task_id": "task_71274fa894dd"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Among the suggested causes of the Great Depression are: the stock market crash of 1929; the collapse of world trade due to the Smoot-Hawley Tariff; government",
+        "source_type": "web_search",
+        "title": "What Caused the Great Depression? | St. Louis Fed",
+        "url": "https://www.stlouisfed.org/the-great-depression/curriculum/economic-episodes-in-american-history-part-5"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_3b0cd66c9988",
+        "plan_51a627707de3"
+      ],
+      "task_id": "task_71274fa894dd"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_great_depression_probe_016/20260319T235519Z_what-were-the-main-causes-of-the-great-d_experiment_ba884ba54bbe/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v1_great_depression_probe_016/20260319T235519Z_what-were-the-main-causes-of-the-great-d_experiment_ba884ba54bbe/experiment.json"
+    ],
+    "completed_at": "2026-03-19T23:55:19.334719Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_ba884ba54bbe",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.18181818181818182,
+      "groundedness": 1.0,
+      "number_of_claims": 3.0,
+      "number_of_evidence_items": 11.0,
+      "number_of_supported_claims": 3.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-great-d",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-19T23:55:04.151172Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the Great Depression?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-19T23:55:04.151172Z",
+    "goal": "What were the main causes of the Great Depression?",
+    "parent_plan_id": null,
+    "plan_id": "plan_51a627707de3",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Search for historical accounts and primary sources from the time period (1929-1939) that describe the economic conditions leading up to the Great Depression.",
+        "expected_output": "A collection of relevant articles, books, or government reports that provide insight into the causes of the Great Depression.",
+        "priority": 1,
+        "step_id": "step_5ebca7434f1e",
+        "success_criteria": "Identification of at least 5 key events or factors mentioned in multiple sources as contributing to the Great Depression.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_5ebca7434f1e"
+        ],
+        "description": "Analyze and categorize the identified causes from step 1 into broad categories (e.g., economic, political, social).",
+        "expected_output": "A list of categorized causes with a brief description of each.",
+        "priority": 2,
+        "step_id": "step_37d8c6952933",
+        "success_criteria": "Presence of at least 3 distinct categories with a minimum of 2 causes per category.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_37d8c6952933"
+        ],
+        "description": "Search for scholarly articles and academic research papers that investigate the Great Depression, focusing on the identified causes from step 2.",
+        "expected_output": "A set of relevant academic sources that provide in-depth analysis or empirical evidence related to the causes of the Great Depression.",
+        "priority": 3,
+        "step_id": "step_3b0cd66c9988",
+        "success_criteria": "Identification of at least 3 studies that support or contradict the categorized causes from step 2.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_3b0cd66c9988"
+        ],
+        "description": "Synthesize the findings from steps 1-3 to identify a consensus among historians and economists on the main causes of the Great Depression.",
+        "expected_output": "A concise summary of the most widely accepted causes, along with any notable disagreements or debates in the field.",
+        "priority": 4,
+        "step_id": "step_b3dd7b43effa",
+        "success_criteria": "Presence of a clear and well-supported conclusion that addresses the goal.",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_9f43ce6ed4f6",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (1929, crash, depression, great, market, stock).",
+        "supporting_ids_checked": [
+          "evidence_4f00851b7efe"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_e7d9246eaf56",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (collapse, depression, due, great, hawley, smoot, tariff, trade, world).",
+        "supporting_ids_checked": [
+          "evidence_4f00851b7efe"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_1e860cb1d005",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (depression, great, i, post, reparations, war, world).",
+        "supporting_ids_checked": [
+          "evidence_d745190ac934"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-19T23:55:19.334719Z",
+    "decision_id": "decision_f951302faee6",
+    "summary": "supported=3, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

@@ -7,14 +7,26 @@ from __future__ import annotations
 import json
 import re
 
-from asar.core.llm import LLMGenerationRequest, LLMGenerationResponse, TokenUsage
+from asar.core.llm import (
+    LLMGenerationRequest,
+    LLMGenerationResponse,
+    TokenUsage,
+)
 from asar.core.search import SearchRequest, SearchResponse, SearchResultItem
 
-
 DEFAULT_DEMO_GOAL = "What were the main causes of the 2008 financial crisis?"
-_DEFAULT_STEP_1 = "Identify the broad structural causes most often named in retrospective analyses of the 2008 financial crisis."
-_DEFAULT_STEP_2 = "Gather evidence about housing leverage, subprime lending, and mortgage securitization before the 2008 financial crisis."
-_DEFAULT_STEP_3 = "Gather evidence about regulation, risk models, and contagion across financial institutions during the 2008 financial crisis."
+_DEFAULT_STEP_1 = (
+    "Identify the broad structural causes most often named in retrospective "
+    "analyses of the 2008 financial crisis."
+)
+_DEFAULT_STEP_2 = (
+    "Gather evidence about housing leverage, subprime lending, and mortgage "
+    "securitization before the 2008 financial crisis."
+)
+_DEFAULT_STEP_3 = (
+    "Gather evidence about regulation, risk models, and contagion across "
+    "financial institutions during the 2008 financial crisis."
+)
 
 
 class DeterministicDemoLLMClient:
@@ -31,10 +43,14 @@ class DeterministicDemoLLMClient:
             claims = [
                 {
                     "text": item["content"],
-                    "supporting_evidence_ids": [item["evidence_id"]],
+                    "supporting_evidence_ids": item["supporting_evidence_ids"],
                     "contradicting_evidence_ids": [],
                     "epistemic_status": "high_confidence",
-                    "reasoning_trace": f"Claim mirrors {item['evidence_id']} for deterministic support checking.",
+                    "reasoning_trace": (
+                        "Claim mirrors "
+                        f"{', '.join(item['supporting_evidence_ids'])} "
+                        "for deterministic support checking."
+                    ),
                 }
                 for item in evidence_payload[:4]
             ]
@@ -83,35 +99,66 @@ def _planner_steps_for_goal(goal: str) -> list[dict[str, str]]:
             {
                 "description": _DEFAULT_STEP_1,
                 "expected_output": "A concise list of the most-cited structural drivers.",
-                "success_criteria": "The list captures the broad causes repeatedly named in retrospectives.",
+                "success_criteria": (
+                    "The list captures the broad causes repeatedly named in "
+                    "retrospectives."
+                ),
             },
             {
                 "description": _DEFAULT_STEP_2,
-                "expected_output": "Evidence notes on mortgage market leverage and securitization.",
-                "success_criteria": "The notes cover leverage, subprime lending, and securitization mechanisms.",
+                "expected_output": (
+                    "Evidence notes on mortgage market leverage and "
+                    "securitization."
+                ),
+                "success_criteria": (
+                    "The notes cover leverage, subprime lending, and "
+                    "securitization mechanisms."
+                ),
             },
             {
                 "description": _DEFAULT_STEP_3,
                 "expected_output": "Evidence notes on regulation, risk models, and contagion.",
-                "success_criteria": "The notes explain how regulation, risk models, and contagion worsened the crisis.",
+                "success_criteria": (
+                    "The notes explain how regulation, risk models, and "
+                    "contagion worsened the crisis."
+                ),
             },
         ]
 
     return [
         {
-            "description": f"Identify the main factors most often cited in explanations of {goal}.",
+            "description": (
+                "Identify the main factors most often cited in explanations "
+                f"of {goal}."
+            ),
             "expected_output": "A short list of the main factors to investigate.",
-            "success_criteria": "The list captures the major explanations relevant to the goal.",
+            "success_criteria": (
+                "The list captures the major explanations relevant to the goal."
+            ),
         },
         {
-            "description": f"Gather evidence about the strongest direct causes or drivers related to {goal}.",
+            "description": (
+                "Gather evidence about the strongest direct causes or drivers "
+                f"related to {goal}."
+            ),
             "expected_output": "Evidence notes on direct causes or drivers.",
-            "success_criteria": "The notes include direct causes or mechanisms linked to the goal.",
+            "success_criteria": (
+                "The notes include direct causes or mechanisms linked to the "
+                "goal."
+            ),
         },
         {
-            "description": f"Gather evidence about amplifying conditions, disagreements, or consequences related to {goal}.",
-            "expected_output": "Evidence notes on amplifying conditions and disagreements.",
-            "success_criteria": "The notes capture important amplifiers, disagreements, or consequences.",
+            "description": (
+                "Gather evidence about amplifying conditions, disagreements, "
+                f"or consequences related to {goal}."
+            ),
+            "expected_output": (
+                "Evidence notes on amplifying conditions and disagreements."
+            ),
+            "success_criteria": (
+                "The notes capture important amplifiers, disagreements, or "
+                "consequences."
+            ),
         },
     ]
 
@@ -123,14 +170,34 @@ def _extract_goal(prompt: str) -> str:
     return match.group(1).strip()
 
 
-def _extract_evidence_payload(prompt: str) -> list[dict[str, str]]:
-    return json.loads(prompt.split("Evidence: ", 1)[1])
+def _extract_evidence_payload(prompt: str) -> list[dict[str, object]]:
+    if "Evidence Bundles: " in prompt:
+        payload = json.loads(prompt.split("Evidence Bundles: ", 1)[1])
+        return [
+            {
+                "content": str(item["content"]),
+                "supporting_evidence_ids": [
+                    str(evidence_id) for evidence_id in item["evidence_ids"]
+                ],
+            }
+            for item in payload
+        ]
+
+    payload = json.loads(prompt.split("Evidence: ", 1)[1])
+    return [
+        {
+            "content": str(item["content"]),
+            "supporting_evidence_ids": [str(item["evidence_id"])],
+        }
+        for item in payload
+    ]
 
 
 def _search_snippet_for_query(query: str) -> str:
     if query == _DEFAULT_STEP_1:
         return (
-            "Retrospective analyses named a housing bubble and excessive leverage as core structural "
+            "Retrospective analyses named a housing bubble and excessive "
+            "leverage as core structural "
             "causes of the 2008 financial crisis."
         )
     if query == _DEFAULT_STEP_2:

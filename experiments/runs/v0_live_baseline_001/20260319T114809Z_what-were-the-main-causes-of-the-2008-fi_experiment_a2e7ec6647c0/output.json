@@ -1,0 +1,586 @@
+{
+  "created_at": "2026-03-19T11:48:09.231989Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_02725d146c59",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Deregulation led to crisis.",
+        "supporting_evidence_ids": [
+          "evidence_b2dc57d1b441"
+        ],
+        "text": "The deregulation of the Financial System contributed to the 2008 financial crisis."
+      },
+      {
+        "claim_id": "claim_11750b5f76ec",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "moderate_confidence",
+        "reasoning_trace": "Securitization fueled crisis.",
+        "supporting_evidence_ids": [
+          "evidence_a83b389ee25e",
+          "evidence_dc88abcd8f7b"
+        ],
+        "text": "The securitization of financial instruments contributed to the 2008 financial crisis."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-03-19T11:48:09.230737Z",
+    "decision_id": "decision_15fbfd30d4a8",
+    "information_gaps": [
+      "specific mechanisms of deregulation's impact",
+      "precise role of securitization"
+    ],
+    "plan_id": "plan_10b409df091b",
+    "synthesis": "Deregulation contributed to the 2008 financial crisis."
+  },
+  "evidence": [
+    {
+      "confidence": 0.9997131,
+      "content": "## Lesson 8: Deregulation and the 2008 Financial Crisis. * Deregulation of the Financial System. - Current value:\u00a0$1.2 Quadrillion\u00a0\u2026 whoa \u2026 or is it\u00a0only $12 Trillion? - In reply to global investment banks asking for more freedom. + Short History of Financial\u00a0Deregulation in the US. - Savings and Loan Deregulation in the 1980s >\u00a0Savings and Loan Crisis. - Banking Deregulation in 1999 > 2008 Crisis. Identify and research a company, government agency or other organization of interest that played a key role in the 2008 Crisis. ## Justin. Justin Holman is CEO of Aftermarket Analytics, where he leads efforts to develop cutting edge sales forecasting and inventory optimization technology for the Automotive Aftermarket. Prior to joining Aftermarket Analytics, Justin managed corporate consulting for the Strategy & Analytics division at MapInfo Corporation, leading major projects for retail clients including The Home Depot, Darden Restaurants, Bridgestone-Firestone, Sainsbury\u2019s and New York & Company.",
+      "created_at": "2026-03-19T11:48:02.168316Z",
+      "evidence_id": "evidence_b2dc57d1b441",
+      "relevance": 0.9997131,
+      "source": {
+        "access_date": "2026-03-19T11:48:02.168300Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 1,
+          "raw_payload": {
+            "content": "## Lesson 8: Deregulation and the 2008 Financial Crisis. * Deregulation of the Financial System. - Current value:\u00a0$1.2 Quadrillion\u00a0\u2026 whoa \u2026 or is it\u00a0only $12 Trillion? - In reply to global investment banks asking for more freedom. + Short History of Financial\u00a0Deregulation in the US. - Savings and Loan Deregulation in the 1980s >\u00a0Savings and Loan Crisis. - Banking Deregulation in 1999 > 2008 Crisis. Identify and research a company, government agency or other organization of interest that played a key role in the 2008 Crisis. ## Justin. Justin Holman is CEO of Aftermarket Analytics, where he leads efforts to develop cutting edge sales forecasting and inventory optimization technology for the Automotive Aftermarket. Prior to joining Aftermarket Analytics, Justin managed corporate consulting for the Strategy & Analytics division at MapInfo Corporation, leading major projects for retail clients including The Home Depot, Darden Restaurants, Bridgestone-Firestone, Sainsbury\u2019s and New York & Company.",
+            "raw_content": null,
+            "score": 0.9997131,
+            "title": "Lesson 8: Deregulation and the 2008 Financial Crisis",
+            "url": "https://www.justinholman.com/2025/10/15/lesson-8-deregulation-and-the-2008-financial-crisis-2/"
+          },
+          "source_name": "justinholman.com",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_b5e3379e3db4",
+          "task_action": "search",
+          "task_id": "task_c74b55eb5351"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "## Lesson 8: Deregulation and the 2008 Financial Crisis. * Deregulation of the Financial System. - Current value:\u00a0$1.2 Quadrillion\u00a0\u2026 whoa \u2026 or is it\u00a0only $12 Trillion? - In reply to global investment banks asking for more freedom. + Short History of Financial\u00a0Deregulation in the US. - Savings and Loan Deregulation in the 1980s >\u00a0Savings and Loan Crisis. - Banking Deregulation in 1999 > 2008 Crisis. Identify and research a company, government agency or other organization of interest that played a key role in the 2008 Crisis. ## Justin. Justin Holman is CEO of Aftermarket Analytics, where he leads efforts to develop cutting edge sales forecasting and inventory optimization technology for the Automotive Aftermarket. Prior to joining Aftermarket Analytics, Justin managed corporate consulting for the Strategy & Analytics division at MapInfo Corporation, leading major projects for retail clients including The Home Depot, Darden Restaurants, Bridgestone-Firestone, Sainsbury\u2019s and New York & Company.",
+        "source_type": "web_search",
+        "title": "Lesson 8: Deregulation and the 2008 Financial Crisis",
+        "url": "https://www.justinholman.com/2025/10/15/lesson-8-deregulation-and-the-2008-financial-crisis-2/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_b5e3379e3db4",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_c74b55eb5351"
+    },
+    {
+      "confidence": 0.99946004,
+      "content": "RegData identifies regulatory restrictions by counting the number of restrictive words and phrases\u2014such as may not, must, shall, prohibited, and required\u2014in the Code of Federal Regulations (CFR). The new data in the expanded analysis reinforce the findings of the previous one: bills that ostensibly deregulated the financial sector, such as the Gramm-Leach-Bliley Act of 1999, the Commodity Futures Modernization Act of 2000, and the Financial Services Regulatory Relief Act of 2006, had little to no effect on the steady growth in financial regulation overall. In fact, RegData shows that between 1997 and 2008, the number of financial regulatory restrictions in the CFR rose from 40,067 to 47,508\u2014an increase of 18.6 percent. Regulatory restrictions in Title 12 of the CFR, which covers banking, increased by 266 percent over that time span, whereas the number of restrictions in Title 17, which regulates commodity futures and securities markets, increased by 228 percent. This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+      "created_at": "2026-03-19T11:48:02.168340Z",
+      "evidence_id": "evidence_5f2d53fe76af",
+      "relevance": 0.99946004,
+      "source": {
+        "access_date": "2026-03-19T11:48:02.168334Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 2,
+          "raw_payload": {
+            "content": "RegData identifies regulatory restrictions by counting the number of restrictive words and phrases\u2014such as may not, must, shall, prohibited, and required\u2014in the Code of Federal Regulations (CFR). The new data in the expanded analysis reinforce the findings of the previous one: bills that ostensibly deregulated the financial sector, such as the Gramm-Leach-Bliley Act of 1999, the Commodity Futures Modernization Act of 2000, and the Financial Services Regulatory Relief Act of 2006, had little to no effect on the steady growth in financial regulation overall. In fact, RegData shows that between 1997 and 2008, the number of financial regulatory restrictions in the CFR rose from 40,067 to 47,508\u2014an increase of 18.6 percent. Regulatory restrictions in Title 12 of the CFR, which covers banking, increased by 266 percent over that time span, whereas the number of restrictions in Title 17, which regulates commodity futures and securities markets, increased by 228 percent. This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+            "raw_content": null,
+            "score": 0.99946004,
+            "title": "Did Deregulation Cause the Financial Crisis of 2008? - QuantGov",
+            "url": "https://www.quantgov.org/finance-crisis"
+          },
+          "source_name": "quantgov.org",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_b5e3379e3db4",
+          "task_action": "search",
+          "task_id": "task_c74b55eb5351"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "RegData identifies regulatory restrictions by counting the number of restrictive words and phrases\u2014such as may not, must, shall, prohibited, and required\u2014in the Code of Federal Regulations (CFR). The new data in the expanded analysis reinforce the findings of the previous one: bills that ostensibly deregulated the financial sector, such as the Gramm-Leach-Bliley Act of 1999, the Commodity Futures Modernization Act of 2000, and the Financial Services Regulatory Relief Act of 2006, had little to no effect on the steady growth in financial regulation overall. In fact, RegData shows that between 1997 and 2008, the number of financial regulatory restrictions in the CFR rose from 40,067 to 47,508\u2014an increase of 18.6 percent. Regulatory restrictions in Title 12 of the CFR, which covers banking, increased by 266 percent over that time span, whereas the number of restrictions in Title 17, which regulates commodity futures and securities markets, increased by 228 percent. This analysis demonstrates that there was no meaningful decrease in regulatory restrictions in the period leading up to the financial crisis.",
+        "source_type": "web_search",
+        "title": "Did Deregulation Cause the Financial Crisis of 2008? - QuantGov",
+        "url": "https://www.quantgov.org/finance-crisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_b5e3379e3db4",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_c74b55eb5351"
+    },
+    {
+      "confidence": 0.9994116,
+      "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+      "created_at": "2026-03-19T11:48:02.168357Z",
+      "evidence_id": "evidence_f328bc15fc70",
+      "relevance": 0.9994116,
+      "source": {
+        "access_date": "2026-03-19T11:48:02.168351Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Analyze the role of deregulation in the lead-up to the crisis about What were the main causes of the 2008 financial crisis?",
+          "rank": 3,
+          "raw_payload": {
+            "content": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+            "raw_content": null,
+            "score": 0.9994116,
+            "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+            "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+          },
+          "source_name": "journals.law.harvard.edu",
+          "step_description": "Analyze the role of deregulation in the lead-up to the crisis",
+          "step_id": "step_b5e3379e3db4",
+          "task_action": "search",
+          "task_id": "task_c74b55eb5351"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Federal Reserve Bank of New York concluded that a failure by LTCM would endanger the financial system and masterminded a rescue by fourteen of LTCM\u2019s OTC derivatives counterparties.30 Despite this clear example of the dangers posed by the deregulated OTC derivatives market, Congress passed the CFTC moratorium a few weeks later in October 1998.31 In December 2000, on the recommendation of federal financial regulators, Congress adopted the Commodity Futures Modernization Act, deregulating the OTC derivatives market by eliminating CFTC jurisdiction over it and preempting state laws on gaming and bucket shops.32 After this deregulation, the OTC derivatives market experienced explo-sive growth, expanding more than sevenfold in the seven and a half years leading up to June 2008, when it reached its peak at $672.6 trillion in no-tional amount.33 The FCIC found that this enormous unregulated market was characterized by \u201cuncontrolled leverage; lack of transparency, capital, and collateral requirements; speculation; interconnections among firms; and concentrations of risk.\u201d34 The FCIC concluded that OTC derivatives played several major roles in the financial crisis.",
+        "source_type": "web_search",
+        "title": "[PDF] Foreword: Deregulation: A Major Cause of the Financial Crisis",
+        "url": "https://journals.law.harvard.edu/lpr/wp-content/uploads/sites/89/2013/05/5.2_1_Born.pdf?utm_source=chatgpt.com"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_b5e3379e3db4",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_c74b55eb5351"
+    },
+    {
+      "confidence": 0.99937373,
+      "content": "2007: Housing crisis deepens. Banks and hedge funds that invested big in subprime mortgages are left with worthless assets as foreclosures rise.",
+      "created_at": "2026-03-19T11:47:59.382101Z",
+      "evidence_id": "evidence_a563339f2a5b",
+      "relevance": 0.99937373,
+      "source": {
+        "access_date": "2026-03-19T11:47:59.382097Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 1,
+          "raw_payload": {
+            "content": "2007: Housing crisis deepens. Banks and hedge funds that invested big in subprime mortgages are left with worthless assets as foreclosures rise.",
+            "raw_content": null,
+            "score": 0.99937373,
+            "title": "Timeline: Key events in financial crisis - USA Today",
+            "url": "https://www.usatoday.com/story/money/business/2013/09/08/chronology-2008-financial-crisis-lehman/2779515/"
+          },
+          "source_name": "usatoday.com",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_86d9619c7ee7",
+          "task_action": "search",
+          "task_id": "task_5af0f2b6b110"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "2007: Housing crisis deepens. Banks and hedge funds that invested big in subprime mortgages are left with worthless assets as foreclosures rise.",
+        "source_type": "web_search",
+        "title": "Timeline: Key events in financial crisis - USA Today",
+        "url": "https://www.usatoday.com/story/money/business/2013/09/08/chronology-2008-financial-crisis-lehman/2779515/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_86d9619c7ee7",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_5af0f2b6b110"
+    },
+    {
+      "confidence": 0.9916196,
+      "content": "October 3, 2008 - President Bush signs the Emergency Economic Stabilization Act of 2008 (Public Law 110-343), which establishes the $700 billion",
+      "created_at": "2026-03-19T11:47:59.382067Z",
+      "evidence_id": "evidence_9933dc894586",
+      "relevance": 0.9916196,
+      "source": {
+        "access_date": "2026-03-19T11:47:59.382051Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 2,
+          "raw_payload": {
+            "content": "October 3, 2008 - President Bush signs the Emergency Economic Stabilization Act of 2008 (Public Law 110-343), which establishes the $700 billion",
+            "raw_content": null,
+            "score": 0.9916196,
+            "title": "Financial Crisis and Recovery: Financial Crisis Timeline",
+            "url": "https://libraryguides.law.pace.edu/financialcrisis"
+          },
+          "source_name": "libraryguides.law.pace.edu",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_86d9619c7ee7",
+          "task_action": "search",
+          "task_id": "task_5af0f2b6b110"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "October 3, 2008 - President Bush signs the Emergency Economic Stabilization Act of 2008 (Public Law 110-343), which establishes the $700 billion",
+        "source_type": "web_search",
+        "title": "Financial Crisis and Recovery: Financial Crisis Timeline",
+        "url": "https://libraryguides.law.pace.edu/financialcrisis"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_86d9619c7ee7",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_5af0f2b6b110"
+    },
+    {
+      "confidence": 0.9914887,
+      "content": "Thursday, February 7, 2008: US Federal Reserve boss  Ben Bernanke adds his voice to concerns about monoline insurers,  saying he is closely monitoring developments \"given the adverse effects that problems of financial guarantors can have on financial markets and the economy.\" The Bank of England cuts interest rates by a quarter of one percent to 5.25%. China's central bank cut interest rates by more than a full percentage point on Wednesday, its largest rate reduction since the Asian financial crisis a decade ago and the latest sign of worries in Beijing about the slowing of the Chinese economy. Sweden also announces Friday an 8.3 billion kronor ($1.01 billion) stimulus package, a day after its central bank delivered its biggest rate cut in 16 years 20. Wednesday 17 December 2008 : Expectations increased Wednesday that central banks in Japan and China would cut interest rates again after the  Federal Reserve  lowered its benchmark rate by more than expected and declared that it would try to pull the American economy out of recession by pumping money into the system.",
+      "created_at": "2026-03-19T11:47:59.382088Z",
+      "evidence_id": "evidence_5c35291fcfd9",
+      "relevance": 0.9914887,
+      "source": {
+        "access_date": "2026-03-19T11:47:59.382080Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Search for key events leading up to the 2008 financial crisis",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Thursday, February 7, 2008: US Federal Reserve boss  Ben Bernanke adds his voice to concerns about monoline insurers,  saying he is closely monitoring developments \"given the adverse effects that problems of financial guarantors can have on financial markets and the economy.\" The Bank of England cuts interest rates by a quarter of one percent to 5.25%. China's central bank cut interest rates by more than a full percentage point on Wednesday, its largest rate reduction since the Asian financial crisis a decade ago and the latest sign of worries in Beijing about the slowing of the Chinese economy. Sweden also announces Friday an 8.3 billion kronor ($1.01 billion) stimulus package, a day after its central bank delivered its biggest rate cut in 16 years 20. Wednesday 17 December 2008 : Expectations increased Wednesday that central banks in Japan and China would cut interest rates again after the  Federal Reserve  lowered its benchmark rate by more than expected and declared that it would try to pull the American economy out of recession by pumping money into the system.",
+            "raw_content": null,
+            "score": 0.9914887,
+            "title": "[PDF] The Global Economic & Financial Crisis: A Timeline",
+            "url": "https://lauder.wharton.upenn.edu/wp-content/uploads/2015/06/Chronology_Economic_Financial_Crisis.pdf"
+          },
+          "source_name": "lauder.wharton.upenn.edu",
+          "step_description": "Search for key events leading up to the 2008 financial crisis",
+          "step_id": "step_86d9619c7ee7",
+          "task_action": "search",
+          "task_id": "task_5af0f2b6b110"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Thursday, February 7, 2008: US Federal Reserve boss  Ben Bernanke adds his voice to concerns about monoline insurers,  saying he is closely monitoring developments \"given the adverse effects that problems of financial guarantors can have on financial markets and the economy.\" The Bank of England cuts interest rates by a quarter of one percent to 5.25%. China's central bank cut interest rates by more than a full percentage point on Wednesday, its largest rate reduction since the Asian financial crisis a decade ago and the latest sign of worries in Beijing about the slowing of the Chinese economy. Sweden also announces Friday an 8.3 billion kronor ($1.01 billion) stimulus package, a day after its central bank delivered its biggest rate cut in 16 years 20. Wednesday 17 December 2008 : Expectations increased Wednesday that central banks in Japan and China would cut interest rates again after the  Federal Reserve  lowered its benchmark rate by more than expected and declared that it would try to pull the American economy out of recession by pumping money into the system.",
+        "source_type": "web_search",
+        "title": "[PDF] The Global Economic & Financial Crisis: A Timeline",
+        "url": "https://lauder.wharton.upenn.edu/wp-content/uploads/2015/06/Chronology_Economic_Financial_Crisis.pdf"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_86d9619c7ee7",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_5af0f2b6b110"
+    },
+    {
+      "confidence": 0.4851368,
+      "content": "The ****securitization of financial instruments****\u00a0is more than just a capital markets innovation\u2014it\u2019s a multifaceted process that bridges the gap between lending institutions and investors seeking income-generating assets. At its foundation, securitization begins with the ****originator****\u2014typically a bank, finance company, or other lending institution\u2014that holds a pool of financial assets such as mortgages, auto loans, student loans, or credit card receivables. For investors, securitized instruments offer opportunities to diversify into different asset classes and credit risk levels through tranches with varied yields and maturities. The ****securitization of financial instruments****\u00a0has undeniably reshaped the global financial landscape, offering a dynamic bridge between lenders and investors while unlocking liquidity, diversifying risk, and enabling more efficient capital deployment. By transforming illiquid assets into marketable securities, securitization has empowered financial institutions to expand credit availability and provided investors with access to new income-generating opportunities. At ****Mortgage Audits Online****, we specialize in uncovering the financial truth behind securitized assets and loan transactions.",
+      "created_at": "2026-03-19T11:48:03.416442Z",
+      "evidence_id": "evidence_a83b389ee25e",
+      "relevance": 0.4851368,
+      "source": {
+        "access_date": "2026-03-19T11:48:03.416433Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Examine the impact of securitization on the financial system",
+          "rank": 1,
+          "raw_payload": {
+            "content": "The ****securitization of financial instruments****\u00a0is more than just a capital markets innovation\u2014it\u2019s a multifaceted process that bridges the gap between lending institutions and investors seeking income-generating assets. At its foundation, securitization begins with the ****originator****\u2014typically a bank, finance company, or other lending institution\u2014that holds a pool of financial assets such as mortgages, auto loans, student loans, or credit card receivables. For investors, securitized instruments offer opportunities to diversify into different asset classes and credit risk levels through tranches with varied yields and maturities. The ****securitization of financial instruments****\u00a0has undeniably reshaped the global financial landscape, offering a dynamic bridge between lenders and investors while unlocking liquidity, diversifying risk, and enabling more efficient capital deployment. By transforming illiquid assets into marketable securities, securitization has empowered financial institutions to expand credit availability and provided investors with access to new income-generating opportunities. At ****Mortgage Audits Online****, we specialize in uncovering the financial truth behind securitized assets and loan transactions.",
+            "raw_content": null,
+            "score": 0.4851368,
+            "title": "Securitization of Financial Instruments: Mechanisms, Benefits, and ...",
+            "url": "https://www.mortgageauditsonline.com/articles/securitization-of-financial-instruments-mechanisms-benefits-and-risks/"
+          },
+          "source_name": "mortgageauditsonline.com",
+          "step_description": "Examine the impact of securitization on the financial system",
+          "step_id": "step_6f143cba32e6",
+          "task_action": "search",
+          "task_id": "task_9dbbba01e490"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The ****securitization of financial instruments****\u00a0is more than just a capital markets innovation\u2014it\u2019s a multifaceted process that bridges the gap between lending institutions and investors seeking income-generating assets. At its foundation, securitization begins with the ****originator****\u2014typically a bank, finance company, or other lending institution\u2014that holds a pool of financial assets such as mortgages, auto loans, student loans, or credit card receivables. For investors, securitized instruments offer opportunities to diversify into different asset classes and credit risk levels through tranches with varied yields and maturities. The ****securitization of financial instruments****\u00a0has undeniably reshaped the global financial landscape, offering a dynamic bridge between lenders and investors while unlocking liquidity, diversifying risk, and enabling more efficient capital deployment. By transforming illiquid assets into marketable securities, securitization has empowered financial institutions to expand credit availability and provided investors with access to new income-generating opportunities. At ****Mortgage Audits Online****, we specialize in uncovering the financial truth behind securitized assets and loan transactions.",
+        "source_type": "web_search",
+        "title": "Securitization of Financial Instruments: Mechanisms, Benefits, and ...",
+        "url": "https://www.mortgageauditsonline.com/articles/securitization-of-financial-instruments-mechanisms-benefits-and-risks/"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_6f143cba32e6",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_9dbbba01e490"
+    },
+    {
+      "confidence": 0.38117403,
+      "content": "Learn about the history of the New York Fed and central banking in the United States through articles, speeches, photos and video. The Federal Reserve Bank of New York works to promote sound and well-functioning financial systems and markets through its provision of industry and payment services, advancement of infrastructure reform in key markets and training and educational support. In a typical securitization, credit market assets, such as home mortgages originated by a bank, are pooled with many similar assets into a security that is sold to investors. | Chart 1 - Growth of the Mortgage-Backed Securities Market Sources: Government National Mortgage Association (GNMA); Federal National Mortgage Association (FNMA); Federal Home Loan Mortgage Corporation (FHLMC). | Securitized Proportion of Mortgage and Consumer Credit MarketsChart 2 - Securitized Proportion of Mortgage and Consumer Credit Markets Source: Board of Governors of the Federal Reserve System, Flow of Funds database.",
+      "created_at": "2026-03-19T11:48:03.416408Z",
+      "evidence_id": "evidence_ed36bac185d4",
+      "relevance": 0.38117403,
+      "source": {
+        "access_date": "2026-03-19T11:48:03.416392Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Examine the impact of securitization on the financial system",
+          "rank": 2,
+          "raw_payload": {
+            "content": "Learn about the history of the New York Fed and central banking in the United States through articles, speeches, photos and video. The Federal Reserve Bank of New York works to promote sound and well-functioning financial systems and markets through its provision of industry and payment services, advancement of infrastructure reform in key markets and training and educational support. In a typical securitization, credit market assets, such as home mortgages originated by a bank, are pooled with many similar assets into a security that is sold to investors. | Chart 1 - Growth of the Mortgage-Backed Securities Market Sources: Government National Mortgage Association (GNMA); Federal National Mortgage Association (FNMA); Federal Home Loan Mortgage Corporation (FHLMC). | Securitized Proportion of Mortgage and Consumer Credit MarketsChart 2 - Securitized Proportion of Mortgage and Consumer Credit Markets Source: Board of Governors of the Federal Reserve System, Flow of Funds database.",
+            "raw_content": null,
+            "score": 0.38117403,
+            "title": "Securitization and the Efficacy of Monetary Policy",
+            "url": "https://www.newyorkfed.org/research/epr/02v08n1/0205estr/0205estr.html"
+          },
+          "source_name": "newyorkfed.org",
+          "step_description": "Examine the impact of securitization on the financial system",
+          "step_id": "step_6f143cba32e6",
+          "task_action": "search",
+          "task_id": "task_9dbbba01e490"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Learn about the history of the New York Fed and central banking in the United States through articles, speeches, photos and video. The Federal Reserve Bank of New York works to promote sound and well-functioning financial systems and markets through its provision of industry and payment services, advancement of infrastructure reform in key markets and training and educational support. In a typical securitization, credit market assets, such as home mortgages originated by a bank, are pooled with many similar assets into a security that is sold to investors. | Chart 1 - Growth of the Mortgage-Backed Securities Market Sources: Government National Mortgage Association (GNMA); Federal National Mortgage Association (FNMA); Federal Home Loan Mortgage Corporation (FHLMC). | Securitized Proportion of Mortgage and Consumer Credit MarketsChart 2 - Securitized Proportion of Mortgage and Consumer Credit Markets Source: Board of Governors of the Federal Reserve System, Flow of Funds database.",
+        "source_type": "web_search",
+        "title": "Securitization and the Efficacy of Monetary Policy",
+        "url": "https://www.newyorkfed.org/research/epr/02v08n1/0205estr/0205estr.html"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_6f143cba32e6",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_9dbbba01e490"
+    },
+    {
+      "confidence": 0.37497434,
+      "content": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+      "created_at": "2026-03-19T11:48:03.416465Z",
+      "evidence_id": "evidence_dc88abcd8f7b",
+      "relevance": 0.37497434,
+      "source": {
+        "access_date": "2026-03-19T11:48:03.416461Z",
+        "additional": {
+          "plan_id": "plan_10b409df091b",
+          "query": "Examine the impact of securitization on the financial system",
+          "rank": 3,
+          "raw_payload": {
+            "content": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+            "raw_content": null,
+            "score": 0.37497434,
+            "title": "The Role of Securitization in Bank Liquidity and Financial Stability",
+            "url": "https://www.nyujlb.org/single-post/the-role-of-securitization-in-bank-liquidity-and-financial-stability"
+          },
+          "source_name": "nyujlb.org",
+          "step_description": "Examine the impact of securitization on the financial system",
+          "step_id": "step_6f143cba32e6",
+          "task_action": "search",
+          "task_id": "task_9dbbba01e490"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Securitization \u2013 the pooling and repackaging&transitionType=StatuteNavigator&needToInjectTerms=False&ppcid=7634df4dd0274e34a9d1bcdef24ca0b8) of loans into securities that are then sold to investors \u2013 provides an additional funding source and potentially eliminates assets from a loan originator's balance sheet. **Incentives for Banks to Securitize Assets**. *Obtaining a Lower Cost of Funds.*Securitization allows banks to transfer the credit risk associated with a pool of assets to a broader group of investors. Unlike traditional lending, where banks may have to hold a certain amount of capital against loans on their balance sheets, securitization allows lenders to reduce their regulatory capital requirements by transferring the assets to an SPV. 4. Credit Rating Failure: Due to a lack of transparency and availability of loan-level information, investors rely heavily on rating agencies to conduct risk assessments of securitization pools.",
+        "source_type": "web_search",
+        "title": "The Role of Securitization in Bank Liquidity and Financial Stability",
+        "url": "https://www.nyujlb.org/single-post/the-role-of-securitization-in-bank-liquidity-and-financial-stability"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_6f143cba32e6",
+        "plan_10b409df091b"
+      ],
+      "task_id": "task_9dbbba01e490"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260319T114809Z_what-were-the-main-causes-of-the-2008-fi_experiment_a2e7ec6647c0/output.json",
+      "/home/tonystark/Desktop/multi-step-agent-research/experiments/runs/v0_live_baseline_001/20260319T114809Z_what-were-the-main-causes-of-the-2008-fi_experiment_a2e7ec6647c0/experiment.json"
+    ],
+    "completed_at": "2026-03-19T11:48:09.231272Z",
+    "config_snapshot": {
+      "config_dir": "/home/tonystark/Desktop/multi-step-agent-research/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 512,
+          "model": "llama3.1:8b",
+          "provider": "openai",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.12.5"
+    },
+    "error": null,
+    "experiment_id": "experiment_a2e7ec6647c0",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.3333333333333333,
+      "groundedness": 1.0,
+      "number_of_claims": 2.0,
+      "number_of_evidence_items": 9.0,
+      "number_of_supported_claims": 2.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-2008-fi",
+    "notes": null,
+    "python_version": "3.11.14",
+    "seed": 42,
+    "started_at": "2026-03-19T11:47:57.963189Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the 2008 financial crisis?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-03-19T11:47:57.963189Z",
+    "goal": "What were the main causes of the 2008 financial crisis?",
+    "parent_plan_id": null,
+    "plan_id": "plan_10b409df091b",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Search for key events leading up to the 2008 financial crisis",
+        "expected_output": "List of significant events, e.g., subprime mortgage bubble bursting",
+        "priority": 1,
+        "step_id": "step_86d9619c7ee7",
+        "success_criteria": "Identification of at least three critical events",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_86d9619c7ee7"
+        ],
+        "description": "Analyze the role of deregulation in the lead-up to the crisis",
+        "expected_output": "Summary of relevant laws and regulations repealed or weakened",
+        "priority": 2,
+        "step_id": "step_b5e3379e3db4",
+        "success_criteria": "Clear explanation of how deregulation contributed to the crisis",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_b5e3379e3db4"
+        ],
+        "description": "Examine the impact of securitization on the financial system",
+        "expected_output": "Description of how securitized assets spread risk throughout the system",
+        "priority": 3,
+        "step_id": "step_6f143cba32e6",
+        "success_criteria": "Understanding of how securitization exacerbated the crisis",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_02725d146c59",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (2008, crisis, deregulation, financial, system).",
+        "supporting_ids_checked": [
+          "evidence_b2dc57d1b441"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_11750b5f76ec",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (financial, instruments, securitization).",
+        "supporting_ids_checked": [
+          "evidence_a83b389ee25e",
+          "evidence_dc88abcd8f7b"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-03-19T11:48:09.231272Z",
+    "decision_id": "decision_15fbfd30d4a8",
+    "summary": "supported=2, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

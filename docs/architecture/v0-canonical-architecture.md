@@ -5,6 +5,14 @@
 
 This document defines the exact scope of the v0 system — the first end-to-end vertical slice. v0 exercises six protocol layers (planning, execution, memory, deliberation, verification, evaluation) plus the orchestration coordinator in their simplest forms. It is the canonical Phase 1 implementation target.
 
+## Status
+
+- v0 is now frozen
+- Frozen historical live baseline: [experiments/notes/v0_tier1_eval_set_004.md](../../experiments/notes/v0_tier1_eval_set_004.md)
+- v0 tuning is considered complete for now
+- Active experimental successor baseline: [experiments/notes/v1_tier1_eval_set_004.md](../../experiments/notes/v1_tier1_eval_set_004.md)
+- The next architectural work should start from the v1-minimal baseline described in [v1-minimal-architecture.md](v1-minimal-architecture.md)
+
 ## Frozen Decisions
 
 These decisions are frozen for v0 and should be treated as the single source of truth for Phase 1 foundations:

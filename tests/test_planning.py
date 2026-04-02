@@ -211,7 +211,7 @@ async def test_simple_planner_wraps_llm_failures() -> None:
 
     class BrokenLLMClient:
         async def generate(self, request: LLMGenerationRequest) -> LLMGenerationResponse:
-            raise LLMClientError("provider timeout", retryable=True)
+            raise LLMClientError("provider timeout", retryable=True, details={"provider": "test"})
 
     planner = SimplePlanner(BrokenLLMClient(), settings)
 
@@ -221,3 +221,4 @@ async def test_simple_planner_wraps_llm_failures() -> None:
     assert result.error is not None
     assert result.error.code == "planner_llm_error"
     assert result.error.retryable is True
+    assert result.error.details["llm_error_details"] == {"provider": "test"}

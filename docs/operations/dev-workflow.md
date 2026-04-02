@@ -45,9 +45,12 @@ The demo runs the real frozen v0 pipeline with deterministic local mock clients 
 ### Running the live v0 demo path
 ```bash
 export OPENAI_API_KEY=...
-export BRAVE_SEARCH_API_KEY=...
 export ASAR_MODEL_PROVIDER=openai
-export ASAR_MODEL_MODEL=gpt-5.2
+export ASAR_MODEL_MODEL="llama3.3:70b"
+export ASAR_OPENAI_BASE_URL="https://inference.ccrolabs.com/v1"
+
+export TAVILY_API_KEY=...
+export ASAR_SEARCH_PROVIDER=tavily
 
 uv run python -m asar.demo \
   "What were the main causes of the 2008 financial crisis?" \
@@ -55,16 +58,13 @@ uv run python -m asar.demo \
 ```
 
 Current live adapter choices are intentionally minimal:
-- OpenAI for the LLM boundary
-- Brave Search for the search boundary
+- OpenAI-compatible remote inference endpoint for the LLM boundary
+- Tavily for the search boundary
 
 Optional live settings:
 
 ```bash
-export ASAR_SEARCH_PROVIDER=brave
-export ASAR_OPENAI_BASE_URL=...
-export ASAR_BRAVE_SEARCH_COUNTRY=US
-export ASAR_BRAVE_SEARCH_LANG=en
+export ASAR_SEARCH_PROVIDER=tavily
 ```
 
 If credentials are missing, the command fails clearly and instructively. The default demo mode remains `mock`.
@@ -100,7 +100,9 @@ All config lives in [`config/`](../../config/) as TOML files. Environment-specif
 
 ```
 ASAR_MODEL_PROVIDER=openai
-ASAR_MODEL_MODEL=gpt-5.2
+ASAR_MODEL_MODEL=llama3.3:70b
+ASAR_OPENAI_BASE_URL=https://inference.ccrolabs.com/v1
+ASAR_SEARCH_PROVIDER=tavily
 ASAR_LOG_LEVEL=debug
 ```
 

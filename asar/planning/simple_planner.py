@@ -81,15 +81,18 @@ class SimplePlanner:
         try:
             response = await self._llm_client.generate(request)
         except Exception as exc:
+            error_details = {
+                "goal": normalized_goal,
+                "trace_id": trace_id,
+                "error": str(exc),
+            }
+            if isinstance(exc, LLMClientError) and exc.details:
+                error_details["llm_error_details"] = exc.details
             return OperationResult.fail(
                 "planner_llm_error",
                 "Planner LLM call failed",
                 retryable=isinstance(exc, LLMClientError),
-                details={
-                    "goal": normalized_goal,
-                    "trace_id": trace_id,
-                    "error": str(exc),
-                },
+                details=error_details,
             )
 
         try:
