@@ -1,12 +1,109 @@
 # ASAR — Agentic Structured Autonomous Researcher
 
-Project Name: Agentic Structured Autonomous Researcher
-Team name:
-Team Members: Iepure Antoniu, Mogovan Jonathan, Mosnegutu Adrian, Mititean Christian, Mititean Adrian
+## Project Information
 
-A neuro-symbolic multi-step research agent. The architecture is broader, but the implemented and now frozen baseline is a v0 sequential vertical slice: one goal, one planner, one web/search executor, in-memory working memory, single-pass synthesis, deterministic verification, experiment logging, and a typed `ResearchOutput`.
+- **Project name:** ASAR — Agentic Structured Autonomous Researcher
+- **Team name:** `Prompt Goblins`
+- **Team members:** `Iepure Antoniu`, `Mogovan Jonathan`, `Mosnegutu Adrian`, `Mititean Christian`, `Mititean Adrian`
+
+## Milestone 2
+
+### 1. Dataset Selection
+
+- **Selected dataset:** `BeIR/scifact`
+- **Why this dataset:** it is useful for retrieval and grounding evaluation, it is small enough to integrate cleanly, it is easy to normalize into chunked documents, and its total download size is safely under the 2GB constraint.
+- **Observed download size:** about `2.8 MB`
+
+### 2. Chunking Strategy
+
+- **Chunking approach:** document-aware chunking, not naive fixed-size only
+- **Order of chunking:** heading/section split first, then paragraph grouping, then sentence fallback for oversized text, with overlap preserved
+- **Default chunking configuration:**
+  - target size: `450` tokens
+  - max size: `650` tokens
+  - overlap: `80` tokens
+  - minimum chunk size: `120` tokens
+- **Metadata preserved per chunk:** `doc_id`, `chunk_id`, `title`, `section`, `source_type`, `dataset_name`, `source_url/path`, `tags`, `trust_label`, token count, character count
+
+### 3. Vector Database Choice
+
+- **Chosen vector database:** `Qdrant`
+- **Why Qdrant:** it has a simple local setup, stores metadata well, supports semantic search cleanly, and is a better first production-oriented fit for this repo than introducing a heavier database dependency.
+
+### 4. Model Choices
+
+- **Production embedding model:** `BAAI/bge-small-en-v1.5` through FastEmbed
+- **Deterministic fallback model:** hashing embedder
+- **Why two options:** FastEmbed is the intended real semantic backend, while the hashing embedder gives us a deterministic local fallback for smoke tests and constrained environments.
+
+### 5. RAG Strategies
+
+- **Implemented retrieval strategy:** hybrid retrieval
+- **Components used:**
+  - dense semantic retrieval from Qdrant
+  - lexical retrieval with BM25
+  - reciprocal-rank fusion for combining results
+- **Why this strategy:** it is stronger than dense-only retrieval in a clean first pass, while still staying simple enough to integrate without redesigning the application.
+
+### 6. Architecture / Integration Summary
+
+- The application keeps its existing typed flow:
+  - `planning -> execution -> memory -> deliberation -> verification -> evaluation`
+- The RAG subsystem is integrated inside the current execution/search boundary, not as a disconnected demo.
+- Retrieved corpus chunks are normalized back into the app's existing `EvidenceItem` format, so the rest of the pipeline remains intact.
+
+### 7. Assignment Documents
+
+- **Technical design document:** [rag_dataset_chunking_vector_db_strategy.md](docs/rag_dataset_chunking_vector_db_strategy.md)
+- **Async progress document:** [llm_assignment_progress.md](docs/llm_assignment_progress.md)
 
 ---
+
+### Short Project Description
+
+ASAR is a modular research and evidence-grounding application built around a
+typed multi-step pipeline:
+
+`planning -> execution -> memory -> deliberation -> verification -> evaluation`
+
+The repo now also includes a first real corpus-backed RAG subsystem that fits
+the existing architecture instead of bypassing it. The RAG path adds:
+
+- dataset selection and download
+- document normalization
+- document-aware chunking
+- vector indexing in Qdrant
+- hybrid retrieval
+- normalization of retrieved chunks back into the existing `EvidenceItem` flow
+
+### Architecture At A Glance
+
+- **Planner:** decomposes a question into typed retrieval steps
+- **Execution layer:** retrieves evidence from web search or a local indexed corpus
+- **Memory:** stores typed evidence artifacts
+- **Deliberation:** synthesizes evidence into candidate claims / decisions
+- **Verification:** checks claim support deterministically against evidence
+- **Evaluation:** logs metrics and experiment artifacts
+
+### RAG Decisions Implemented
+
+- **Dataset selected:** `BeIR/scifact`
+- **Why:** small, useful for retrieval/grounding, easy to normalize, under the 2GB limit
+- **Chunking strategy:** section-aware -> paragraph-aware -> token-bounded with overlap
+- **Vector DB:** Qdrant
+- **Embedding models:** production `BAAI/bge-small-en-v1.5` via FastEmbed, deterministic fallback hashing embedder for smoke/CI
+- **Retrieval strategy:** hybrid dense + BM25 with reciprocal-rank fusion
+
+### Architecture Summary
+
+- **Planning:** converts the user question into typed retrieval steps
+- **Execution:** retrieves evidence from web search or the local RAG corpus
+- **Memory:** stores typed evidence artifacts
+- **Deliberation:** synthesizes evidence into claims and decisions
+- **Verification:** checks whether final claims are supported by retrieved evidence
+- **Evaluation:** logs metrics and experiment artifacts
+
+A neuro-symbolic multi-step research agent. The architecture is broader, but the implemented and now frozen baseline is a v0 sequential vertical slice: one goal, one planner, one web/search executor, in-memory working memory, single-pass synthesis, deterministic verification, experiment logging, and a typed `ResearchOutput`.
 
 ## Read This First
 
@@ -181,6 +278,45 @@ export ASAR_SEARCH_PROVIDER=tavily
 ```
 
 The live LLM path uses the existing OpenAI-compatible adapter against the custom base URL above. If credentials are missing or the configured provider/base URL is unsupported, the live path fails clearly with an explanatory message and leaves the deterministic mock mode available via `--mode mock`.
+
+## Corpus-Backed RAG Backend
+
+The execution layer now also has an optional corpus-backed RAG backend. It does
+not change the pipeline shape: the corpus retriever still normalizes retrieved
+chunks into the existing `EvidenceItem` flow through `WebSearchExecutor`.
+
+Bootstrap the first local corpus:
+
+```bash
+uv run python -m asar.execution.rag.bootstrap \
+  --dataset scifact \
+  --corpus-root data/corpora
+```
+
+For local smoke tests or constrained environments, the bootstrap also supports a
+deterministic hashing embedder:
+
+```bash
+uv run python -m asar.execution.rag.bootstrap \
+  --dataset scifact \
+  --corpus-root data/corpora \
+  --embed-backend hashing \
+  --hash-dimension 256
+```
+
+Then point the live search provider at the indexed corpus:
+
+```bash
+export ASAR_SEARCH_PROVIDER=corpus
+export ASAR_CORPUS_ROOT=data/corpora
+export ASAR_CORPUS_DATASET=scifact
+export ASAR_RAG_EMBED_BACKEND=fastembed
+export ASAR_RAG_EMBED_MODEL=BAAI/bge-small-en-v1.5
+```
+
+See [rag_dataset_chunking_vector_db_strategy.md](docs/rag_dataset_chunking_vector_db_strategy.md)
+for the dataset choice, chunking policy, vector DB decision, and current
+limitations.
 
 See [docs/operations/dev-workflow.md](docs/operations/dev-workflow.md) for the full development guide.
 
