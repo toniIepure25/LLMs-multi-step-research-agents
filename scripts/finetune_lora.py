@@ -66,6 +66,24 @@ def main(argv: list[str] | None = None) -> int:
         default=None,
         help="Path to an existing LoRA adapter to continue training from. If set, no fresh LoRA is attached.",
     )
+    parser.add_argument(
+        "--lora-targets",
+        default="q_proj,k_proj,v_proj,o_proj",
+        help=(
+            "Comma-separated LoRA target_modules. Default = attention only. "
+            "Include MLP for higher capacity, e.g. "
+            "`q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj`."
+        ),
+    )
+    parser.add_argument(
+        "--assistant-only-loss",
+        action="store_true",
+        help=(
+            "Mask non-assistant tokens so the loss only counts assistant-turn "
+            "tokens. Recommended for chat-format SFT — makes the loss signal "
+            "reflect what the model actually has to generate."
+        ),
+    )
     args = parser.parse_args(argv)
 
     try:
@@ -110,13 +128,20 @@ def main(argv: list[str] | None = None) -> int:
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    def to_text(example: dict) -> dict:
-        text = tokenizer.apply_chat_template(
-            example["messages"], tokenize=False, add_generation_prompt=False
-        )
-        return {"text": text}
+    # When assistant_only_loss is enabled we feed the conversational format
+    # (a `messages` column) to TRL directly; the trainer applies the chat
+    # template itself and masks non-assistant tokens. Otherwise we pre-render
+    # to a plain `text` column — the legacy behavior used by v1 / v2 adapters.
+    if args.assistant_only_loss:
+        hf_dataset = Dataset.from_list(rows)
+    else:
+        def to_text(example: dict) -> dict:
+            text = tokenizer.apply_chat_template(
+                example["messages"], tokenize=False, add_generation_prompt=False
+            )
+            return {"text": text}
 
-    hf_dataset = Dataset.from_list(rows).map(to_text, remove_columns=["messages"])
+        hf_dataset = Dataset.from_list(rows).map(to_text, remove_columns=["messages"])
 
     torch_dtype = torch.float32 if device == "cpu" else torch.float32  # MPS prefers float32 for stability
     model = AutoModelForCausalLM.from_pretrained(
@@ -132,16 +157,17 @@ def main(argv: list[str] | None = None) -> int:
         model = PeftModel.from_pretrained(model, args.resume_adapter, is_trainable=True)
     model.to(device)
 
+    lora_target_modules = [t.strip() for t in args.lora_targets.split(",") if t.strip()]
     lora_config = LoraConfig(
         r=args.lora_r,
         lora_alpha=args.lora_alpha,
         lora_dropout=args.lora_dropout,
         bias="none",
         task_type="CAUSAL_LM",
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+        target_modules=lora_target_modules,
     )
 
-    training_args = SFTConfig(
+    sft_config_kwargs: dict = dict(
         output_dir=str(Path(args.output) / "checkpoints"),
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch_size,
@@ -157,10 +183,15 @@ def main(argv: list[str] | None = None) -> int:
         lr_scheduler_type="cosine",
         warmup_steps=10,
         remove_unused_columns=False,
-        dataset_text_field="text",
         max_length=args.max_seq_len,
         packing=False,
     )
+    if args.assistant_only_loss:
+        sft_config_kwargs["assistant_only_loss"] = True
+    else:
+        sft_config_kwargs["dataset_text_field"] = "text"
+
+    training_args = SFTConfig(**sft_config_kwargs)
 
     trainer = SFTTrainer(
         model=model,
@@ -187,11 +218,12 @@ def main(argv: list[str] | None = None) -> int:
         "grad_accum": args.grad_accum,
         "learning_rate": args.learning_rate,
         "max_seq_len": args.max_seq_len,
+        "assistant_only_loss": args.assistant_only_loss,
         "lora": {
             "r": args.lora_r,
             "alpha": args.lora_alpha,
             "dropout": args.lora_dropout,
-            "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+            "target_modules": lora_target_modules,
         },
         "examples": len(rows),
         "device": device,
