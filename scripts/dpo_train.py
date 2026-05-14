@@ -81,9 +81,8 @@ def main(argv: list[str] | None = None) -> int:
         from transformers import (  # type: ignore
             AutoModelForCausalLM,
             AutoTokenizer,
-            TrainingArguments,
         )
-        from trl import DPOTrainer  # type: ignore
+        from trl import DPOConfig, DPOTrainer  # type: ignore
     except ImportError as exc:  # pragma: no cover
         raise SystemExit(
             "Local LLM extras are not installed. Run `uv sync --extra local-llm`.\n"
@@ -142,7 +141,7 @@ def main(argv: list[str] | None = None) -> int:
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
     )
 
-    training_args = TrainingArguments(
+    training_args = DPOConfig(
         output_dir=str(Path(args.output) / "checkpoints"),
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch_size,
@@ -155,9 +154,11 @@ def main(argv: list[str] | None = None) -> int:
         bf16=False,
         fp16=False,
         optim="adamw_torch",
-        warmup_ratio=0.03,
         lr_scheduler_type="cosine",
+        warmup_steps=10,
         remove_unused_columns=False,
+        beta=args.beta,
+        max_length=args.max_seq_len,
     )
 
     trainer = DPOTrainer(
@@ -165,11 +166,8 @@ def main(argv: list[str] | None = None) -> int:
         ref_model=None,  # DPOTrainer will use the frozen LoRA-disabled base as reference.
         args=training_args,
         train_dataset=hf_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         peft_config=None if args.sft_adapter else lora_config,
-        beta=args.beta,
-        max_length=args.max_seq_len,
-        max_prompt_length=args.max_prompt_len,
     )
 
     print("[dpo] starting training...")

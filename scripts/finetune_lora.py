@@ -61,6 +61,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--device", default="auto")
     parser.add_argument("--limit", type=int, default=None, help="Cap on number of train examples.")
     parser.add_argument("--logging-steps", type=int, default=10)
+    parser.add_argument(
+        "--resume-adapter",
+        default=None,
+        help="Path to an existing LoRA adapter to continue training from. If set, no fresh LoRA is attached.",
+    )
     args = parser.parse_args(argv)
 
     try:
@@ -70,9 +75,8 @@ def main(argv: list[str] | None = None) -> int:
         from transformers import (  # type: ignore
             AutoModelForCausalLM,
             AutoTokenizer,
-            TrainingArguments,
         )
-        from trl import SFTTrainer  # type: ignore
+        from trl import SFTConfig, SFTTrainer  # type: ignore
     except ImportError as exc:  # pragma: no cover
         raise SystemExit(
             "Local LLM extras are not installed. Run `uv sync --extra local-llm`.\n"
@@ -120,6 +124,12 @@ def main(argv: list[str] | None = None) -> int:
         torch_dtype=torch_dtype,
         low_cpu_mem_usage=True,
     )
+
+    if args.resume_adapter:
+        from peft import PeftModel  # type: ignore
+
+        print(f"[finetune] resuming from adapter {args.resume_adapter}")
+        model = PeftModel.from_pretrained(model, args.resume_adapter, is_trainable=True)
     model.to(device)
 
     lora_config = LoraConfig(
@@ -131,7 +141,7 @@ def main(argv: list[str] | None = None) -> int:
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
     )
 
-    training_args = TrainingArguments(
+    training_args = SFTConfig(
         output_dir=str(Path(args.output) / "checkpoints"),
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.batch_size,
@@ -144,20 +154,20 @@ def main(argv: list[str] | None = None) -> int:
         bf16=False,
         fp16=False,
         optim="adamw_torch",
-        warmup_ratio=0.03,
         lr_scheduler_type="cosine",
+        warmup_steps=10,
         remove_unused_columns=False,
+        dataset_text_field="text",
+        max_length=args.max_seq_len,
+        packing=False,
     )
 
     trainer = SFTTrainer(
         model=model,
         args=training_args,
         train_dataset=hf_dataset,
-        peft_config=lora_config,
-        tokenizer=tokenizer,
-        dataset_text_field="text",
-        max_seq_length=args.max_seq_len,
-        packing=False,
+        peft_config=None if args.resume_adapter else lora_config,
+        processing_class=tokenizer,
     )
 
     print("[finetune] starting training...")
@@ -170,6 +180,7 @@ def main(argv: list[str] | None = None) -> int:
 
     metadata = {
         "base_model": args.base_model,
+        "resume_adapter": args.resume_adapter,
         "dataset": str(dataset_path),
         "epochs": args.epochs,
         "batch_size": args.batch_size,

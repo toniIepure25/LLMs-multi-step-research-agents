@@ -49,9 +49,13 @@ def build_demo_orchestrator(
 
     # Allow overriding the search backend independently of the demo mode
     # (e.g. to exercise the RAG corpus path with a deterministic LLM).
-    override_provider = os.environ.get("ASAR_SEARCH_PROVIDER", "").strip().lower()
-    if override_provider and override_provider not in {"demo", "mock"}:
-        search_client = build_live_search_client()
+    # Only applies in mock mode — live mode already built a live search client
+    # above, and rebuilding it here would create a second qdrant client and
+    # deadlock on the on-disk lock file.
+    if mode == "mock":
+        override_provider = os.environ.get("ASAR_SEARCH_PROVIDER", "").strip().lower()
+        if override_provider and override_provider not in {"demo", "mock"}:
+            search_client = build_live_search_client()
 
     return SequentialOrchestrator(
         planner=SimplePlanner(llm_client, settings),

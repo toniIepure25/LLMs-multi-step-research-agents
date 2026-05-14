@@ -1,0 +1,85 @@
+{
+  "pre_report": {
+    "blocked": false,
+    "max_toxicity": 0.0,
+    "max_injection": 0.0,
+    "backend": "keyword",
+    "verdict_count": 1,
+    "unsafe_count": 0,
+    "verdicts": [
+      {
+        "text_kind": "goal",
+        "text_id": "goal",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      }
+    ]
+  },
+  "post_report": {
+    "blocked": false,
+    "max_toxicity": 0.0,
+    "max_injection": 0.0,
+    "backend": "keyword",
+    "verdict_count": 6,
+    "unsafe_count": 0,
+    "verdicts": [
+      {
+        "text_kind": "goal",
+        "text_id": "goal",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_8172ccec2c38",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_61a9ca41b605",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_9bf55a6b0749",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_c61090ea41f1",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_ecb5cc51659f",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      }
+    ]
+  }
+}

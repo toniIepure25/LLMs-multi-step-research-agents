@@ -28,13 +28,15 @@ If a grader runs the **Verify** command for any row, they should see the
 | Field        | Value                                                                                            |
 |--------------|--------------------------------------------------------------------------------------------------|
 | Base model   | `Qwen/Qwen2.5-0.5B-Instruct` (open weights)                                                       |
-| Method       | LoRA SFT (r=8, α=16, q/k/v/o targets) via `trl.SFTTrainer`                                        |
+| Method       | LoRA SFT (r=8, α=16, q/k/v/o targets) via `trl.SFTTrainer` (TRL 1.x)                               |
 | Dataset      | [asar/finetune/dataset.py](../asar/finetune/dataset.py) — SciFact → chat-format Q&A               |
-| CLI (build)  | `uv run python -m asar.finetune.cli_build_dataset --prepare --limit 1500`                         |
-| CLI (train)  | `uv run python scripts/finetune_lora.py --dataset data/sft/scifact_qa.jsonl`                      |
+| CLI (build)  | `uv run python -m asar.finetune.cli_build_dataset --output data/sft/scifact_qa.jsonl --limit 500` |
+| CLI (train)  | `uv run python scripts/finetune_lora.py --dataset data/sft/scifact_qa.jsonl --device mps`         |
 | Tests        | `tests/test_local_llm.py` — 4 tests (SFT dataset, LocalSLMClient)                                  |
-| Expected     | `Wrote 1500 examples to data/sft/scifact_qa.jsonl`                                                 |
-| Status       | ✅ verified (data + trainer); training itself is GPU-friendly and Mac-runnable                     |
+| **Trained?** | **Yes — `models/asar-qwen-0.5b-scifact-lora/` on this laptop, 18 min on MPS**                       |
+| Train loss   | 2.31 → 1.48 (mean final 1.699), token accuracy 0.59 → 0.71                                          |
+| Experiment   | [experiments/runs/2026-05-14_finetune/](../experiments/runs/2026-05-14_finetune/)                  |
+| Status       | ✅ verified end-to-end (dataset + trainer + **real adapter on disk**)                              |
 
 ---
 
@@ -63,12 +65,14 @@ If a grader runs the **Verify** command for any row, they should see the
 | Dataset builder | [asar/finetune/preference_dataset.py](../asar/finetune/preference_dataset.py)                         |
 | Failure modes (rejected) | Fabricated statistics · off-topic confident dismissal · wrong-passage content                |
 | CLI (build)    | `uv run python -m asar.finetune.cli_build_preference --output data/dpo/scifact_pref.jsonl --limit 1000` |
-| Trainer        | [scripts/dpo_train.py](../scripts/dpo_train.py) — `trl.DPOTrainer`, β=0.1, lr=5e-5, LoRA r=8           |
+| Trainer        | [scripts/dpo_train.py](../scripts/dpo_train.py) — `trl.DPOTrainer` (TRL 1.x), β=0.1, lr=5e-5            |
 | Tests          | `tests/test_dpo_dataset.py` — 4 tests (shape, determinism, writer, CLI)                                |
 | Artifact       | [data/dpo/scifact_pref.jsonl](../data/dpo/scifact_pref.jsonl) — **1,000 real preference pairs**         |
-| Verify         | `wc -l data/dpo/scifact_pref.jsonl`                                                                    |
-| Expected       | `1000 data/dpo/scifact_pref.jsonl`                                                                     |
-| Status         | ✅ verified                                                                                            |
+| **Trained?**   | **Yes — `models/asar-qwen-0.5b-scifact-dpo/` on this laptop on top of the SFT adapter (300 pairs, MPS)** |
+| Experiment     | [experiments/runs/2026-05-14_finetune/](../experiments/runs/2026-05-14_finetune/)                       |
+| Verify         | `wc -l data/dpo/scifact_pref.jsonl && ls models/asar-qwen-0.5b-scifact-dpo/`                            |
+| Expected       | `1000 data/dpo/scifact_pref.jsonl` and `adapter_model.safetensors` in the model dir                     |
+| Status         | ✅ verified end-to-end (dataset + trainer + **real DPO adapter on disk**)                                |
 
 ---
 

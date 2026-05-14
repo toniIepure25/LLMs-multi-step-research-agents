@@ -1,0 +1,310 @@
+{
+  "created_at": "2026-05-14T17:37:28.445798Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_772bb6c1e622",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Claim mirrors evidence_211d12c4b4e5 for deterministic support checking.",
+        "supporting_evidence_ids": [
+          "evidence_211d12c4b4e5"
+        ],
+        "text": "Dot-com speculation: Retrospective analyses named a housing bubble and excessive leverage as core structural causes of the 2008 financial..."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-05-14T17:37:28.445578Z",
+    "decision_id": "decision_df955b31127b",
+    "information_gaps": [],
+    "plan_id": "plan_b02311391e51",
+    "synthesis": "Deterministic demo synthesis over the collected evidence."
+  },
+  "evidence": [
+    {
+      "confidence": 0.95,
+      "content": "Retrospective analyses named a housing bubble and excessive leverage as core structural causes of the 2008 financial crisis.",
+      "created_at": "2026-05-14T17:37:28.444853Z",
+      "evidence_id": "evidence_211d12c4b4e5",
+      "relevance": 0.95,
+      "source": {
+        "access_date": "2026-05-14T17:37:28.444850Z",
+        "additional": {
+          "plan_id": "plan_b02311391e51",
+          "query": "Identify the broad structural causes most often named in retrospective analyses of the 2008 financial crisis.",
+          "rank": 1,
+          "raw_payload": {
+            "query": "Identify the broad structural causes most often named in retrospective analyses of the 2008 financial crisis."
+          },
+          "source_name": "ASAR Demo Corpus",
+          "step_description": "Identify the broad structural causes most often named in retrospective analyses of the 2008 financial crisis.",
+          "step_id": "step_dd5d8184c03d",
+          "task_action": "search",
+          "task_id": "task_fa247872a4a2"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Retrospective analyses named a housing bubble and excessive leverage as core structural causes of the 2008 financial crisis.",
+        "source_type": "web_search",
+        "title": "ASAR deterministic demo source",
+        "url": "https://example.com/demo/identify-the-broad-structural-causes-mos"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_dd5d8184c03d",
+        "plan_b02311391e51"
+      ],
+      "task_id": "task_fa247872a4a2"
+    },
+    {
+      "confidence": 0.95,
+      "content": "Reviews linked the crisis to subprime lending, mortgage securitization, and highly leveraged balance sheets before 2008.",
+      "created_at": "2026-05-14T17:37:28.444982Z",
+      "evidence_id": "evidence_06c0a495d615",
+      "relevance": 0.95,
+      "source": {
+        "access_date": "2026-05-14T17:37:28.444980Z",
+        "additional": {
+          "plan_id": "plan_b02311391e51",
+          "query": "Gather evidence about housing leverage, subprime lending, and mortgage securitization before the 2008 financial crisis.",
+          "rank": 1,
+          "raw_payload": {
+            "query": "Gather evidence about housing leverage, subprime lending, and mortgage securitization before the 2008 financial crisis."
+          },
+          "source_name": "ASAR Demo Corpus",
+          "step_description": "Gather evidence about housing leverage, subprime lending, and mortgage securitization before the 2008 financial crisis.",
+          "step_id": "step_8c46039f35e1",
+          "task_action": "search",
+          "task_id": "task_b06d1422268b"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Reviews linked the crisis to subprime lending, mortgage securitization, and highly leveraged balance sheets before 2008.",
+        "source_type": "web_search",
+        "title": "ASAR deterministic demo source",
+        "url": "https://example.com/demo/gather-evidence-about-housing-leverage-s"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_8c46039f35e1",
+        "plan_b02311391e51"
+      ],
+      "task_id": "task_b06d1422268b"
+    },
+    {
+      "confidence": 0.95,
+      "content": "Post-crisis reviews highlighted weak regulation, flawed risk models, and contagion through interconnected financial institutions.",
+      "created_at": "2026-05-14T17:37:28.445085Z",
+      "evidence_id": "evidence_11ef3da68132",
+      "relevance": 0.95,
+      "source": {
+        "access_date": "2026-05-14T17:37:28.445084Z",
+        "additional": {
+          "plan_id": "plan_b02311391e51",
+          "query": "Gather evidence about regulation, risk models, and contagion across financial institutions during the 2008 financial crisis.",
+          "rank": 1,
+          "raw_payload": {
+            "query": "Gather evidence about regulation, risk models, and contagion across financial institutions during the 2008 financial crisis."
+          },
+          "source_name": "ASAR Demo Corpus",
+          "step_description": "Gather evidence about regulation, risk models, and contagion across financial institutions during the 2008 financial crisis.",
+          "step_id": "step_26f8eff8eda1",
+          "task_action": "search",
+          "task_id": "task_a063342df8cf"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Post-crisis reviews highlighted weak regulation, flawed risk models, and contagion through interconnected financial institutions.",
+        "source_type": "web_search",
+        "title": "ASAR deterministic demo source",
+        "url": "https://example.com/demo/gather-evidence-about-regulation-risk-mo"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_26f8eff8eda1",
+        "plan_b02311391e51"
+      ],
+      "task_id": "task_a063342df8cf"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260514T173728Z_what-were-the-main-causes-of-the-2008-fi_experiment_5f6b8f04a4c7/output.json",
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260514T173728Z_what-were-the-main-causes-of-the-2008-fi_experiment_5f6b8f04a4c7/experiment.json"
+    ],
+    "completed_at": "2026-05-14T17:37:28.445627Z",
+    "config_snapshot": {
+      "config_dir": "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "anthropic",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "anthropic",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "anthropic",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "anthropic",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "anthropic",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.13.4"
+    },
+    "error": null,
+    "experiment_id": "experiment_5f6b8f04a4c7",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.3333333333333333,
+      "groundedness": 1.0,
+      "number_of_claims": 1.0,
+      "number_of_evidence_items": 3.0,
+      "number_of_supported_claims": 1.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-were-the-main-causes-of-the-2008-fi",
+    "notes": null,
+    "python_version": "3.11.15",
+    "seed": 42,
+    "started_at": "2026-05-14T17:37:28.444568Z",
+    "status": "completed"
+  },
+  "goal": "What were the main causes of the 2008 financial crisis?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-05-14T17:37:28.444568Z",
+    "goal": "What were the main causes of the 2008 financial crisis?",
+    "parent_plan_id": null,
+    "plan_id": "plan_b02311391e51",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Identify the broad structural causes most often named in retrospective analyses of the 2008 financial crisis.",
+        "expected_output": "A concise list of the most-cited structural drivers.",
+        "priority": 1,
+        "step_id": "step_dd5d8184c03d",
+        "success_criteria": "The list captures the broad causes repeatedly named in retrospectives.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_dd5d8184c03d"
+        ],
+        "description": "Gather evidence about housing leverage, subprime lending, and mortgage securitization before the 2008 financial crisis.",
+        "expected_output": "Evidence notes on mortgage market leverage and securitization.",
+        "priority": 2,
+        "step_id": "step_8c46039f35e1",
+        "success_criteria": "The notes cover leverage, subprime lending, and securitization mechanisms.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_8c46039f35e1"
+        ],
+        "description": "Gather evidence about regulation, risk models, and contagion across financial institutions during the 2008 financial crisis.",
+        "expected_output": "Evidence notes on regulation, risk models, and contagion.",
+        "priority": 3,
+        "step_id": "step_26f8eff8eda1",
+        "success_criteria": "The notes explain how regulation, risk models, and contagion worsened the crisis.",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_772bb6c1e622",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (2008, analyses, bubble, causes, core, excessive, financial, housing, leverage, named, retrospective, structural).",
+        "supporting_ids_checked": [
+          "evidence_211d12c4b4e5"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-05-14T17:37:28.445627Z",
+    "decision_id": "decision_df955b31127b",
+    "summary": "supported=1, unsupported=0, insufficient=0, contradicted=0"
+  }
+}
