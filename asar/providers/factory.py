@@ -16,7 +16,15 @@ from asar.providers.tavily_search import TavilySearchClient
 
 
 def build_live_llm_client(settings: ASARSettings) -> LLMClientProtocol:
-    """Build the configured live LLM client for v0."""
+    """Build the configured live LLM client for v0.
+
+    Supported providers:
+    - ``openai`` (default): OpenAI-compatible HTTP endpoint (e.g. ccrolabs Llama).
+    - ``local``: Local transformers-backed SLM, optionally with a LoRA adapter.
+      Selected by ``ASAR_MODEL_PROVIDER=local``. The base model is taken from
+      ``ASAR_LOCAL_BASE_MODEL`` (default Qwen/Qwen2.5-0.5B-Instruct) and the
+      adapter (optional) from ``ASAR_LOCAL_ADAPTER_PATH``.
+    """
 
     planning_route = settings.models.route_for("planning")
     deliberation_route = settings.models.route_for("deliberation")
@@ -31,10 +39,15 @@ def build_live_llm_client(settings: ASARSettings) -> LLMClientProtocol:
         )
 
     provider = next(iter(llm_providers))
+    if provider == "local":
+        from asar.providers.local_llm import build_local_llm_client
+
+        return build_local_llm_client()
     if provider != "openai":
         raise ConfigurationError(
-            "v0 live mode currently supports only the OpenAI LLM adapter. "
-            "Set ASAR_MODEL_PROVIDER=openai and ASAR_MODEL_MODEL=<model>.",
+            "Live mode supports `openai` (OpenAI-compatible endpoint) or `local` "
+            "(transformers + optional LoRA adapter). "
+            "Set ASAR_MODEL_PROVIDER=openai|local.",
             details={"provider": provider},
         )
 
@@ -83,9 +96,15 @@ def build_live_search_client() -> SearchClientProtocol:
         return TavilySearchClient()
     if provider == "brave":
         return BraveSearchClient()
+    if provider in {"corpus", "rag", "scifact"}:
+        # Local corpus-backed retrieval (SciFact). Honors ASAR_RAG_EMBED_BACKEND
+        # for the embedder choice (hashing | fastembed).
+        from asar.providers.corpus_search import build_corpus_search_client
+
+        return build_corpus_search_client(dataset="scifact")
     raise ConfigurationError(
-        "v0 live mode currently supports Tavily as the canonical search adapter. "
-        "Set ASAR_SEARCH_PROVIDER=tavily.",
+        "Unsupported search provider. Set ASAR_SEARCH_PROVIDER to "
+        "'tavily', 'brave', or 'corpus'.",
         details={"provider": provider},
     )
 

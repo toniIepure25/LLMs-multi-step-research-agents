@@ -36,3 +36,42 @@ experiments/runs/*/cache/
 # Logs
 *.log
 .secrets
+
+# --- Project-specific (not for git) -----------------------------------------
+# Final deliverable bundle (regenerate with the zip command in deliverable/README.md)
+asar_deliverable.zip
+
+# Datasets — large and/or regenerable
+#   - data/corpora/scifact/  is 178 MB, regenerable via:
+#       uv run python -m asar.execution.rag.scifact_loader
+#   - data/dpo/scifact_pref.jsonl is 2.7 MB, regenerable via:
+#       uv run python -m asar.finetune.cli_build_preference ...
+data/
+
+# Internal tooling — slide-deck generator. Not part of the runtime deliverable.
+# Regenerate the .pptx locally with:
+#   uv run python scripts/build_presentation.py
+scripts/build_presentation.py
+
+# Pytest / mypy / ruff caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Temporary demo output
+/tmp/asar-demo/
+
+# Trained adapters & checkpoints — produced by scripts/finetune_lora.py and
+# scripts/dpo_train.py; regenerable, can be hundreds of MB each.
+models/
+*.safetensors
+*.bin
+*.ckpt
+*.pt
+
+# ML experiment trackers / notebook scratch
+wandb/
+.ipynb_checkpoints/
+
+# Stray tool markers
+.codex

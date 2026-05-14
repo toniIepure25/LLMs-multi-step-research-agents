@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import os
 import sys
 from collections.abc import Sequence
 from pathlib import Path
@@ -20,6 +21,7 @@ from asar.memory import WorkingMemory
 from asar.orchestration import SequentialOrchestrator
 from asar.planning import SimplePlanner
 from asar.providers import build_live_llm_client, build_live_search_client
+from asar.safety.pipeline import SafetyAwareRunner
 from asar.verification import EvidenceChecker
 from schemas.research_output import ResearchOutput
 
@@ -45,6 +47,12 @@ def build_demo_orchestrator(
             details={"mode": mode, "supported_modes": ["mock", "live"]},
         )
 
+    # Allow overriding the search backend independently of the demo mode
+    # (e.g. to exercise the RAG corpus path with a deterministic LLM).
+    override_provider = os.environ.get("ASAR_SEARCH_PROVIDER", "").strip().lower()
+    if override_provider and override_provider not in {"demo", "mock"}:
+        search_client = build_live_search_client()
+
     return SequentialOrchestrator(
         planner=SimplePlanner(llm_client, settings),
         executor=WebSearchExecutor(search_client, settings),
@@ -62,15 +70,41 @@ async def run_demo_pipeline(
     config_dir: str | Path = "config",
     output_dir: str | Path | None = None,
     mode: str = "mock",
+    safety_enabled: bool | None = None,
 ) -> ResearchOutput:
-    """Run the real v0 pipeline with mock or live provider clients."""
+    """Run the real v0 pipeline with mock or live provider clients.
+
+    When safety is enabled (default: read ``ASAR_SAFETY_ENABLED``), the run
+    is wrapped in a `SafetyAwareRunner` that performs pre-flight and
+    post-flight checks and writes a ``safety.json`` alongside the
+    experiment artifacts.
+    """
 
     orchestrator = build_demo_orchestrator(
         config_dir=config_dir,
         output_dir=output_dir,
         mode=mode,
     )
-    return await orchestrator.run(goal)
+
+    safety_on = safety_enabled
+    if safety_on is None:
+        safety_on = os.environ.get("ASAR_SAFETY_ENABLED", "").strip().lower() in {"1", "true", "yes", "on"}
+
+    if not safety_on:
+        return await orchestrator.run(goal)
+
+    runner = SafetyAwareRunner(orchestrator=orchestrator)
+    outcome = await runner.run(goal)
+    if outcome.blocked_pre or outcome.output is None:
+        raise ConfigurationError(
+            "Pipeline blocked by pre-flight safety check",
+            details={
+                "reason": outcome.blocked_reason or "unsafe_goal",
+                "max_toxicity": outcome.pre_report.overall_max_toxicity,
+                "max_injection": outcome.pre_report.overall_max_injection,
+            },
+        )
+    return outcome.output
 
 
 def main(argv: Sequence[str] | None = None) -> int:
