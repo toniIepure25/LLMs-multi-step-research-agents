@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   ClockIcon,
   CpuChipIcon,
@@ -9,7 +9,10 @@ import {
   MagnifyingGlassCircleIcon,
   ShieldCheckIcon,
   SparklesIcon,
+  XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { useCallback, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 import type { EvidenceItem, ResearchResponse } from "@/lib/types";
 
@@ -68,6 +71,15 @@ export function ResearchReport({
   const maxRel = relevances.length === 0 ? 0 : Math.max(...relevances);
   const lowRelevance =
     relevances.length > 0 && (meanRel < 0.4 || maxRel < 0.55);
+
+  // ── Citation modal state ─────────────────────────────────────────────────
+  // 1-indexed citation number that's currently open in the modal, or
+  // null when the modal is closed.  Hover tooltips overlapped the
+  // floating command bar and the workspace tabs; a centered modal
+  // sidesteps every stacking edge case.
+  const [openCite, setOpenCite] = useState<number | null>(null);
+  const handleOpenCite = useCallback((n: number) => setOpenCite(n), []);
+  const handleCloseCite = useCallback(() => setOpenCite(null), []);
 
   return (
     <motion.section
@@ -203,7 +215,11 @@ export function ResearchReport({
             )}
 
             <p className="text-[15px] leading-relaxed text-ink-100 md:text-[17px] md:leading-[1.7]">
-              <AnswerText text={answerText} evidence={result.output.evidence} />
+              <AnswerText
+                text={answerText}
+                evidence={result.output.evidence}
+                onOpenCite={handleOpenCite}
+              />
             </p>
 
             {answer?.generated && answer.cited_indices.length > 0 && (
@@ -217,6 +233,7 @@ export function ResearchReport({
                     n={n}
                     ev={result.output.evidence[n - 1]}
                     variant="footer"
+                    onOpen={handleOpenCite}
                   />
                 ))}
                 {answer.elapsed_seconds > 0 && (
@@ -299,6 +316,16 @@ export function ResearchReport({
           </aside>
         </div>
       </div>
+
+      {/* Citation modal — portal-style overlay rendered at the section
+          root so it sits above the report card, the workspace tabs, and
+          the floating command bar.  Closes on Esc, backdrop click, or
+          the explicit close button. */}
+      <CitationModal
+        n={openCite}
+        ev={openCite ? result.output.evidence[openCite - 1] : undefined}
+        onClose={handleCloseCite}
+      />
     </motion.section>
   );
 }
@@ -395,9 +422,11 @@ function SidebarRow({
 function AnswerText({
   text,
   evidence,
+  onOpenCite,
 }: {
   text: string;
   evidence: EvidenceItem[];
+  onOpenCite: (n: number) => void;
 }) {
   const parts = text.split(/(\[\d{1,2}\])/g);
   return (
@@ -412,6 +441,7 @@ function AnswerText({
               n={n}
               ev={evidence[n - 1]}
               variant="inline"
+              onOpen={onOpenCite}
             />
           );
         }
@@ -422,38 +452,138 @@ function AnswerText({
 }
 
 /**
- * Citation chip with hover-card.  Renders [n] as a small chip and, on
- * hover, surfaces a glass tooltip with the source title, the first
- * ~four lines of the cited passage, a relevance score, and a link to
- * the full evidence row.  When the citation index is out of range
- * (e.g. the model emitted [9] but only 3 passages were retrieved) we
- * still render the chip but without a hover-card.
+ * Citation chip.  Click opens the centered citation modal with the
+ * full passage; out-of-range citations (model emits [9] with only 3
+ * passages) gracefully degrade to a no-op chip.
  */
 function CitationChip({
   n,
   ev,
   variant,
+  onOpen,
 }: {
   n: number;
   ev: EvidenceItem | undefined;
   variant: "inline" | "footer";
+  onOpen: (n: number) => void;
 }) {
-  // Footer chips read like a small contact-sheet of cited sources;
-  // inline chips need to hug the surrounding prose more tightly.
   const chipClass =
     variant === "footer"
       ? "inline-flex items-center rounded-md border border-brand-400/30 bg-brand-500/10 px-1.5 py-0.5 font-mono text-[11px] font-semibold text-brand-200 transition hover:border-brand-300/60 hover:bg-brand-500/20 hover:text-brand-100"
       : "mx-0.5 inline-flex items-center rounded-md border border-brand-400/30 bg-brand-500/10 px-1 py-0 align-baseline font-mono text-[11px] font-semibold text-brand-200 transition hover:border-brand-300/60 hover:bg-brand-500/20 hover:text-brand-100";
 
-  // Out-of-range citation: keep the chip clickable, drop the popover.
   if (!ev) {
     return (
-      <a href={`#evidence-${n}`} className={chipClass}>
+      <span className={chipClass} title="Cited passage is out of range">
         [{n}]
-      </a>
+      </span>
     );
   }
 
+  return (
+    <button
+      type="button"
+      onClick={() => onOpen(n)}
+      className={`${chipClass} cursor-pointer`}
+      aria-label={`Open passage ${n}`}
+    >
+      [{n}]
+    </button>
+  );
+}
+
+/**
+ * Centered citation modal.  Renders the full source title and passage
+ * content for a cited passage, plus relevance, evidence_id, and a
+ * "jump to evidence row" link.  Dismissed via Esc, backdrop click, or
+ * the explicit close button.  Locks body scroll while open.
+ */
+function CitationModal({
+  n,
+  ev,
+  onClose,
+}: {
+  n: number | null;
+  ev: EvidenceItem | undefined;
+  onClose: () => void;
+}) {
+  const isOpen = n !== null && ev !== undefined;
+  const [mounted, setMounted] = useState(false);
+
+  // SSR safety: only access document on the client.
+  useEffect(() => setMounted(true), []);
+
+  // Esc-to-close + body-scroll lock.  Listener is only attached while
+  // the modal is mounted so it doesn't interfere with other key flows
+  // (e.g. textarea editing) when closed.
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [isOpen, onClose]);
+
+  if (!mounted) return null;
+
+  // Portal to document.body so the modal escapes any ancestor `transform`
+  // (notably framer-motion's animated parent), which would otherwise turn
+  // `position: fixed` into a *containing-block-relative* position and let
+  // the command bar bleed through above the backdrop.
+  return createPortal(
+    <AnimatePresence>
+      {isOpen && ev && n !== null && (
+        <motion.div
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.18, ease: "easeOut" }}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={`citation-modal-title-${n}`}
+        >
+          {/* Backdrop — deep obsidian + blur so the modal is unambiguously
+              the foreground.  Click anywhere outside the card to close. */}
+          <button
+            type="button"
+            aria-label="Close passage"
+            onClick={onClose}
+            className="absolute inset-0 bg-[#020617]/90 backdrop-blur-md"
+          />
+
+          {/* Modal card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.97, y: 6 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.98, y: 4 }}
+            transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
+            className="relative z-10 w-full max-w-xl overflow-hidden rounded-2xl border border-white/[0.08] bg-[#0a1120] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.85)]"
+          >
+            <CitationModalBody n={n} ev={ev} onClose={onClose} />
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>,
+    document.body,
+  );
+}
+
+function CitationModalBody({
+  n,
+  ev,
+  onClose,
+}: {
+  n: number;
+  ev: EvidenceItem;
+  onClose: () => void;
+}) {
   const relPct = Math.round(ev.relevance * 100);
   const relTone =
     relPct >= 70
@@ -461,58 +591,97 @@ function CitationChip({
       : relPct >= 50
       ? "text-brand-200"
       : "text-accent-amber";
-  const evidenceIdShort =
-    ev.evidence_id.length > 14
-      ? `${ev.evidence_id.slice(0, 12)}…`
-      : ev.evidence_id;
+  const relBar =
+    relPct >= 70
+      ? "from-accent-green to-emerald-400"
+      : relPct >= 50
+      ? "from-brand-500 to-accent-cyan"
+      : "from-accent-amber to-orange-400";
+  const additional = ev.source.additional as Record<string, unknown> | undefined;
+  const docIdRaw = additional?.["doc_id"];
+  const docId =
+    typeof docIdRaw === "string" || typeof docIdRaw === "number"
+      ? String(docIdRaw)
+      : null;
 
   return (
-    <span className="group/cite relative inline-block align-baseline">
-      <a href={`#evidence-${n}`} className={chipClass}>
-        [{n}]
-      </a>
-      {/* The wrapper sits flush against the chip (no `mb-2`) and uses
-          `pb-2` *inside* to create the visible gap.  This keeps the
-          mouse inside the hover group while crossing from chip to card,
-          so the user can actually reach "view full →" without the
-          popover disappearing.  `pointer-events-auto` makes the popover
-          itself hoverable (the chip's own pointer events are unaffected
-          because the wrapper layers them).  Initial translate-y-1 still
-          gives the rise-out-of-chip motion. */}
-      <span
-        role="tooltip"
-        className="pointer-events-none invisible absolute left-1/2 bottom-full z-50 w-[22rem] -translate-x-1/2 translate-y-1 pb-2 opacity-0 transition-all duration-200 group-hover/cite:pointer-events-auto group-hover/cite:visible group-hover/cite:translate-y-0 group-hover/cite:opacity-100"
-      >
+    <>
+      {/* Header ─ minimal: chip + title + close. */}
+      <header className="flex items-start justify-between gap-4 border-b border-white/[0.05] px-6 pt-5 pb-4">
+        <div className="min-w-0">
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center gap-1 rounded-md border border-brand-400/30 bg-brand-500/10 px-1.5 py-0.5 font-mono text-[10.5px] font-semibold text-brand-200">
+              <DocumentTextIcon className="h-3 w-3" />[{n}]
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.18em] text-ink-500">
+              cited source
+            </span>
+          </div>
+          {ev.source.title && (
+            <h3
+              id={`citation-modal-title-${n}`}
+              className="mt-2.5 text-[15px] font-semibold leading-snug text-ink-50"
+            >
+              {ev.source.title}
+            </h3>
+          )}
+        </div>
+        <button
+          type="button"
+          onClick={onClose}
+          className="flex-none rounded-md p-1.5 text-ink-500 transition hover:bg-white/[0.05] hover:text-ink-100"
+          aria-label="Close"
+        >
+          <XMarkIcon className="h-4 w-4" />
+        </button>
+      </header>
+
+      {/* Relevance strip ─ thin bar, label + value on one line. */}
+      <div className="flex items-center gap-3 border-b border-white/[0.05] px-6 py-3">
+        <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-500">
+          Relevance
+        </span>
+        <div className="h-1 flex-1 overflow-hidden rounded-full bg-white/[0.05]">
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: `${relPct}%` }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.08 }}
+            className={`h-full rounded-full bg-gradient-to-r ${relBar}`}
+          />
+        </div>
+        <span className={`font-mono text-[11px] font-semibold ${relTone}`}>
+          {relPct}%
+        </span>
+      </div>
+
+      {/* Body ─ the passage, generously padded and scrollable. */}
+      <div className="max-h-[55vh] overflow-y-auto px-6 py-5">
+        <p className="whitespace-pre-wrap text-[14px] leading-[1.7] text-ink-100">
+          {ev.content}
+        </p>
+      </div>
+
+      {/* Footer ─ source meta + jump link. */}
+      <footer className="flex flex-wrap items-center justify-between gap-3 border-t border-white/[0.05] px-6 py-3 text-[11px]">
+        <span
+          title={ev.evidence_id}
+          className="truncate font-mono text-[10.5px] text-ink-500"
+        >
+          {ev.evidence_id}
+          {docId && (
+            <span className="ml-2 text-ink-600">· S2 CorpusID {docId}</span>
+          )}
+        </span>
         <a
           href={`#evidence-${n}`}
-          className="block rounded-xl border border-white/10 bg-[#0b1220]/95 p-3 text-left shadow-2xl ring-1 ring-black/40 backdrop-blur-xl transition hover:border-brand-400/40"
+          onClick={onClose}
+          className="inline-flex flex-none items-center gap-1 text-[11.5px] font-semibold text-brand-300 transition hover:text-brand-200"
         >
-          <span className="flex items-center justify-between gap-2 border-b border-white/[0.06] pb-2">
-            <span className="flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-ink-500">
-              <DocumentTextIcon className="h-3 w-3 text-brand-300" />
-              passage [{n}]
-            </span>
-            <span
-              className={`font-mono text-[10.5px] font-semibold ${relTone}`}
-            >
-              {relPct}% relevance
-            </span>
-          </span>
-          {ev.source.title && (
-            <span className="mt-2 block line-clamp-2 text-[12px] font-semibold leading-snug text-ink-50">
-              {ev.source.title}
-            </span>
-          )}
-          <span className="mt-1.5 block line-clamp-4 text-[11.5px] leading-relaxed text-ink-300">
-            {ev.content}
-          </span>
-          <span className="mt-2 flex items-center justify-between gap-2 text-[10px] text-ink-500">
-            <span className="font-mono">{evidenceIdShort}</span>
-            <span className="font-semibold text-brand-300">view full →</span>
-          </span>
+          jump to evidence row
+          <span aria-hidden>→</span>
         </a>
-      </span>
-    </span>
+      </footer>
+    </>
   );
 }
 
