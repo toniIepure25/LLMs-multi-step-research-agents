@@ -1,0 +1,24 @@
+{
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "resume_adapter": "models/asar-qwen-0.5b-scifact-lora",
+  "dataset": "data/sft/scifact_qa_1500.jsonl",
+  "epochs": 1.0,
+  "batch_size": 1,
+  "grad_accum": 8,
+  "learning_rate": 5e-05,
+  "max_seq_len": 768,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "examples": 1500,
+  "device": "mps",
+  "seed": 42
+}

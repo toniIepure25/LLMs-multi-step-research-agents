@@ -61,13 +61,15 @@ scripts/build_presentation.py
 # Temporary demo output
 /tmp/asar-demo/
 
-# Trained adapters & checkpoints — produced by scripts/finetune_lora.py and
-# scripts/dpo_train.py; regenerable, can be hundreds of MB each.
-models/
-*.safetensors
-*.bin
-*.ckpt
-*.pt
+# NOTE: trained adapters are intentionally tracked in this repo so reviewers
+# can reproduce the rubric without re-running ~6h of training. They are LoRA
+# adapters (a few tens of MB each), not full model weights.
+# Re-add these lines if you ever want to stop tracking weights:
+#   models/
+#   *.safetensors
+#   *.bin
+#   *.ckpt
+#   *.pt
 
 # ML experiment trackers / notebook scratch
 wandb/

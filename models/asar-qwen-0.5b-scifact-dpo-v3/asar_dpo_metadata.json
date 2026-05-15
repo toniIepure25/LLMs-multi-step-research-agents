@@ -1,0 +1,17 @@
+{
+  "stage": "dpo",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "sft_adapter": "models/asar-qwen-0.5b-scifact-lora-v3",
+  "dataset": "data/dpo/scifact_pref.jsonl",
+  "n_preference_pairs": 1000,
+  "epochs": 1.0,
+  "batch_size": 1,
+  "grad_accum": 8,
+  "learning_rate": 5e-05,
+  "beta": 0.1,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "seed": 42,
+  "device": "mps"
+}
