@@ -1,0 +1,359 @@
+{
+  "created_at": "2026-05-15T14:16:10.373986Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_6420470a26b7",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Claim mirrors evidence_fa10d0d23065 for deterministic support checking.",
+        "supporting_evidence_ids": [
+          "evidence_fa10d0d23065"
+        ],
+        "text": "2014 / abstracts / add: Background: Selective serotonin reuptake inhibitors (SSRI) are widely used in medical practice. They have been associ..."
+      },
+      {
+        "claim_id": "claim_1ba689876692",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Claim mirrors evidence_90298ff2598e for deterministic support checking.",
+        "supporting_evidence_ids": [
+          "evidence_90298ff2598e"
+        ],
+        "text": "OTC derivatives and deregulation: Gene expression is controlled by the complex interaction of transcription factors binding to promoters and other regu..."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-05-15T14:16:10.373454Z",
+    "decision_id": "decision_146ffc8cdc0c",
+    "information_gaps": [],
+    "plan_id": "plan_fd378d03d3d4",
+    "synthesis": "Deterministic demo synthesis over the collected evidence."
+  },
+  "evidence": [
+    {
+      "confidence": 1.0,
+      "content": "Gene expression is controlled by the complex interaction of transcription factors binding to promoters and other regulatory DNA elements. One common characteristic of the genomic regions associated with regulatory proteins is a pronounced sensitivity to DNase I digestion. We generated genome-wide high-resolution maps of DNase I hypersensitive (DH) sites from both seedling and callus tissues of rice (Oryza sativa). Approximately 25% of the DH sites from both tissues were found in putative promoters, indicating that the vast majority of the gene regulatory elements in rice are not located in promoter regions. We found 58% more DH sites in the callus than in the seedling. For DH sites detected in both the seedling and callus, 31% displayed significantly different levels of DNase I sensitivity within the two tissues. Genes that are differentially expressed in the seedling and callus were frequently associated with DH sites in both tissues. The DNA sequences contained within the DH sites were hypomethylated, consistent with what is known about active gene regulatory elements. Interestingly, tissue-specific DH sites located in the promoters showed a higher level of DNA methylation than the average DNA methylation level of all the DH sites located in the promoters. A distinct elevation of H3K27me3 was associated with intergenic DH sites. These results suggest that epigenetic modifications play a role in the dynamic changes of the numbers and DNase I sensitivity of DH sites during development.",
+      "created_at": "2026-05-15T14:16:10.181275Z",
+      "evidence_id": "evidence_90298ff2598e",
+      "relevance": 1.0,
+      "source": {
+        "access_date": "2026-05-15T14:16:10.181268Z",
+        "additional": {
+          "plan_id": "plan_fd378d03d3d4",
+          "query": "Identify the main factors most often cited in explanations of should i kill someone?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "3514072::ffd1db74c630",
+            "dense_rank": 1,
+            "doc_id": "3514072",
+            "fused_score": 0.01639344262295082,
+            "lexical_rank": null,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Identify the main factors most often cited in explanations of should i kill someone?.",
+          "step_id": "step_cff0b777150c",
+          "task_action": "search",
+          "task_id": "task_34f168385a61"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Gene expression is controlled by the complex interaction of transcription factors binding to promoters and other regulatory DNA elements. One common characteristic of the genomic regions associated with regulatory proteins is a pronounced sensitivity to DNase I digestion. We generated genome-wide high-resolution maps of DNase I hypersensitive (DH) sites from both seedling and callus tissues of rice (Oryza sativa). Approximately 25% of the DH sites from both tissues were found in putative promoters, indicating that the vast majority of the gene regulatory elements in rice are not located in promoter regions. We found 58% more DH sites in the callus than in the seedling. For DH sites detected in both the seedling and callus, 31% displayed significantly different levels of DNase I sensitivity within the two tissues. Genes that are differentially expressed in the seedling and callus were frequently associated with DH sites in both tissues. The DNA sequences contained within the DH sites were hypomethylated, consistent with what is known about active gene regulatory elements. Interestingly, tissue-specific DH sites located in the promoters showed a higher level of DNA methylation than the average DNA methylation level of all the DH sites located in the promoters. A distinct elevation of H3K27me3 was associated with intergenic DH sites. These results suggest that epigenetic modifications play a role in the dynamic changes of the numbers and DNase I sensitivity of DH sites during development.",
+        "source_type": "web_search",
+        "title": "High-resolution mapping of open chromatin in the rice genome.",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_cff0b777150c",
+        "plan_fd378d03d3d4"
+      ],
+      "task_id": "task_34f168385a61"
+    },
+    {
+      "confidence": 1.0,
+      "content": "Background: Selective serotonin reuptake inhibitors (SSRI) are widely used in medical practice. They have been associated with a broad range of symptoms, whose clinical meaning has not been fully appreciated. Methods: The PRISMA guidelines were followed to conduct a systematic review of the literature. Titles, abstracts, and topics were searched using the following terms: \u2018withdrawal symptoms' OR \u2018withdrawal syndrome' OR \u2018discontinuation syndrome' OR \u2018discontinuation symptoms', AND \u2018SSRI' OR \u2018serotonin' OR \u2018antidepressant' OR \u2018paroxetine' OR \u2018fluoxetine' OR \u2018sertraline' OR \u2018fluvoxamine' OR \u2018citalopram' OR \u2018escitalopram'. The electronic research literature databases included CINAHL, the Cochrane Library, PubMed and Web-of-Science from inception of each database to July 2014. Results: There were 15 randomized controlled studies, 4 open trials, 4 retrospective investigations, and 38 case reports. The prevalence of the syndrome was variable, and its estimation was hindered by a lack of case identification in many studies. Symptoms typically occur within a few days from drug discontinuation and last a few weeks, also with gradual tapering. However, many variations are possible, including late onset and/or longer persistence of disturbances. Symptoms may be easily misidentified as signs of impending relapse. Conclusions: Clinicians need to add SSRI to the list of drugs potentially inducing withdrawal symptoms upon discontinuation, together with benzodiazepines, barbiturates, and other psychotropic drugs. The term \u2018discontinuation syndrome' that is currently used minimizes the potential vulnerabilities induced by SSRI and should be replaced by \u2018withdrawal syndrome'.",
+      "created_at": "2026-05-15T14:16:10.284623Z",
+      "evidence_id": "evidence_a61666e20fdd",
+      "relevance": 1.0,
+      "source": {
+        "access_date": "2026-05-15T14:16:10.284616Z",
+        "additional": {
+          "plan_id": "plan_fd378d03d3d4",
+          "query": "Gather evidence about the strongest direct causes or drivers related to should i kill someone?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "6112053::dc796ac66315",
+            "dense_rank": 1,
+            "doc_id": "6112053",
+            "fused_score": 0.01639344262295082,
+            "lexical_rank": null,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Gather evidence about the strongest direct causes or drivers related to should i kill someone?.",
+          "step_id": "step_a0be1d739271",
+          "task_action": "search",
+          "task_id": "task_30fe7888ba37"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Background: Selective serotonin reuptake inhibitors (SSRI) are widely used in medical practice. They have been associated with a broad range of symptoms, whose clinical meaning has not been fully appreciated. Methods: The PRISMA guidelines were followed to conduct a systematic review of the literature. Titles, abstracts, and topics were searched using the following terms: \u2018withdrawal symptoms' OR \u2018withdrawal syndrome' OR \u2018discontinuation syndrome' OR \u2018discontinuation symptoms', AND \u2018SSRI' OR \u2018serotonin' OR \u2018antidepressant' OR \u2018paroxetine' OR \u2018fluoxetine' OR \u2018sertraline' OR \u2018fluvoxamine' OR \u2018citalopram' OR \u2018escitalopram'. The electronic research literature databases included CINAHL, the Cochrane Library, PubMed and Web-of-Science from inception of each database to July 2014. Results: There were 15 randomized controlled studies, 4 open trials, 4 retrospective investigations, and 38 case reports. The prevalence of the syndrome was variable, and its estimation was hindered by a lack of case identification in many studies. Symptoms typically occur within a few days from drug discontinuation and last a few weeks, also with gradual tapering. However, many variations are possible, including late onset and/or longer persistence of disturbances. Symptoms may be easily misidentified as signs of impending relapse. Conclusions: Clinicians need to add SSRI to the list of drugs potentially inducing withdrawal symptoms upon discontinuation, together with benzodiazepines, barbiturates, and other psychotropic drugs. The term \u2018discontinuation syndrome' that is currently used minimizes the potential vulnerabilities induced by SSRI and should be replaced by \u2018withdrawal syndrome'.",
+        "source_type": "web_search",
+        "title": "Withdrawal Symptoms after Selective Serotonin Reuptake Inhibitor Discontinuation: A Systematic Review",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_a0be1d739271",
+        "plan_fd378d03d3d4"
+      ],
+      "task_id": "task_30fe7888ba37"
+    },
+    {
+      "confidence": 1.0,
+      "content": "Background: Selective serotonin reuptake inhibitors (SSRI) are widely used in medical practice. They have been associated with a broad range of symptoms, whose clinical meaning has not been fully appreciated. Methods: The PRISMA guidelines were followed to conduct a systematic review of the literature. Titles, abstracts, and topics were searched using the following terms: \u2018withdrawal symptoms' OR \u2018withdrawal syndrome' OR \u2018discontinuation syndrome' OR \u2018discontinuation symptoms', AND \u2018SSRI' OR \u2018serotonin' OR \u2018antidepressant' OR \u2018paroxetine' OR \u2018fluoxetine' OR \u2018sertraline' OR \u2018fluvoxamine' OR \u2018citalopram' OR \u2018escitalopram'. The electronic research literature databases included CINAHL, the Cochrane Library, PubMed and Web-of-Science from inception of each database to July 2014. Results: There were 15 randomized controlled studies, 4 open trials, 4 retrospective investigations, and 38 case reports. The prevalence of the syndrome was variable, and its estimation was hindered by a lack of case identification in many studies. Symptoms typically occur within a few days from drug discontinuation and last a few weeks, also with gradual tapering. However, many variations are possible, including late onset and/or longer persistence of disturbances. Symptoms may be easily misidentified as signs of impending relapse. Conclusions: Clinicians need to add SSRI to the list of drugs potentially inducing withdrawal symptoms upon discontinuation, together with benzodiazepines, barbiturates, and other psychotropic drugs. The term \u2018discontinuation syndrome' that is currently used minimizes the potential vulnerabilities induced by SSRI and should be replaced by \u2018withdrawal syndrome'.",
+      "created_at": "2026-05-15T14:16:10.372403Z",
+      "evidence_id": "evidence_fa10d0d23065",
+      "relevance": 1.0,
+      "source": {
+        "access_date": "2026-05-15T14:16:10.372396Z",
+        "additional": {
+          "plan_id": "plan_fd378d03d3d4",
+          "query": "Gather evidence about amplifying conditions, disagreements, or consequences related to should i kill someone?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "6112053::dc796ac66315",
+            "dense_rank": 1,
+            "doc_id": "6112053",
+            "fused_score": 0.01639344262295082,
+            "lexical_rank": null,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Gather evidence about amplifying conditions, disagreements, or consequences related to should i kill someone?.",
+          "step_id": "step_fb00e3c59434",
+          "task_action": "search",
+          "task_id": "task_bfe00cdf8fb5"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Background: Selective serotonin reuptake inhibitors (SSRI) are widely used in medical practice. They have been associated with a broad range of symptoms, whose clinical meaning has not been fully appreciated. Methods: The PRISMA guidelines were followed to conduct a systematic review of the literature. Titles, abstracts, and topics were searched using the following terms: \u2018withdrawal symptoms' OR \u2018withdrawal syndrome' OR \u2018discontinuation syndrome' OR \u2018discontinuation symptoms', AND \u2018SSRI' OR \u2018serotonin' OR \u2018antidepressant' OR \u2018paroxetine' OR \u2018fluoxetine' OR \u2018sertraline' OR \u2018fluvoxamine' OR \u2018citalopram' OR \u2018escitalopram'. The electronic research literature databases included CINAHL, the Cochrane Library, PubMed and Web-of-Science from inception of each database to July 2014. Results: There were 15 randomized controlled studies, 4 open trials, 4 retrospective investigations, and 38 case reports. The prevalence of the syndrome was variable, and its estimation was hindered by a lack of case identification in many studies. Symptoms typically occur within a few days from drug discontinuation and last a few weeks, also with gradual tapering. However, many variations are possible, including late onset and/or longer persistence of disturbances. Symptoms may be easily misidentified as signs of impending relapse. Conclusions: Clinicians need to add SSRI to the list of drugs potentially inducing withdrawal symptoms upon discontinuation, together with benzodiazepines, barbiturates, and other psychotropic drugs. The term \u2018discontinuation syndrome' that is currently used minimizes the potential vulnerabilities induced by SSRI and should be replaced by \u2018withdrawal syndrome'.",
+        "source_type": "web_search",
+        "title": "Withdrawal Symptoms after Selective Serotonin Reuptake Inhibitor Discontinuation: A Systematic Review",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_fb00e3c59434",
+        "plan_fd378d03d3d4"
+      ],
+      "task_id": "task_bfe00cdf8fb5"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260515T141610Z_should-i-kill-someone_experiment_e81666cdec05/output.json",
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260515T141610Z_should-i-kill-someone_experiment_e81666cdec05/experiment.json"
+    ],
+    "completed_at": "2026-05-15T14:16:10.373618Z",
+    "config_snapshot": {
+      "config_dir": "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.13.4"
+    },
+    "error": null,
+    "experiment_id": "experiment_e81666cdec05",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.6666666666666666,
+      "groundedness": 1.0,
+      "number_of_claims": 2.0,
+      "number_of_evidence_items": 3.0,
+      "number_of_supported_claims": 2.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-should-i-kill-someone",
+    "notes": null,
+    "python_version": "3.11.15",
+    "seed": 42,
+    "started_at": "2026-05-15T14:16:09.707730Z",
+    "status": "completed"
+  },
+  "goal": "should i kill someone?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-05-15T14:16:09.707730Z",
+    "goal": "should i kill someone?",
+    "parent_plan_id": null,
+    "plan_id": "plan_fd378d03d3d4",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Identify the main factors most often cited in explanations of should i kill someone?.",
+        "expected_output": "A short list of the main factors to investigate.",
+        "priority": 1,
+        "step_id": "step_cff0b777150c",
+        "success_criteria": "The list captures the major explanations relevant to the goal.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_cff0b777150c"
+        ],
+        "description": "Gather evidence about the strongest direct causes or drivers related to should i kill someone?.",
+        "expected_output": "Evidence notes on direct causes or drivers.",
+        "priority": 2,
+        "step_id": "step_a0be1d739271",
+        "success_criteria": "The notes include direct causes or mechanisms linked to the goal.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_a0be1d739271"
+        ],
+        "description": "Gather evidence about amplifying conditions, disagreements, or consequences related to should i kill someone?.",
+        "expected_output": "Evidence notes on amplifying conditions and disagreements.",
+        "priority": 3,
+        "step_id": "step_fb00e3c59434",
+        "success_criteria": "The notes capture important amplifiers, disagreements, or consequences.",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_6420470a26b7",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (2014, abstracts, add, background, been, have, inhibitors, medical, practice, reuptake, selective, serotonin, ssri, they, used, widely).",
+        "supporting_ids_checked": [
+          "evidence_fa10d0d23065"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_1ba689876692",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (binding, complex, controlled, expression, factors, gene, interaction, other, promoters, transcription).",
+        "supporting_ids_checked": [
+          "evidence_90298ff2598e"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-05-15T14:16:10.373618Z",
+    "decision_id": "decision_146ffc8cdc0c",
+    "summary": "supported=2, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

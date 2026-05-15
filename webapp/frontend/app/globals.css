@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* Deep obsidian base.  Corner aurora is *atmospheric only* — the
+     opacities are deliberately low so the cards carry the visual weight.
+     A central vertical vignette darkens the middle of the page so the
+     report stays readable on top of the animated neural network. */
+  background:
+    /* central readability vignette — darker in the column where content sits */
+    radial-gradient(40rem 110vh at 50% 50%, rgba(3, 7, 18, 0.55), transparent 70%),
+    /* dim teal corner */
+    radial-gradient(60rem 44rem at 6%  -8%, rgba( 45, 212, 191, 0.07), transparent 65%),
+    /* dim violet corner */
+    radial-gradient(56rem 44rem at 94%  0%, rgba(167, 139, 250, 0.05), transparent 70%),
+    /* very subtle ice-blue floor */
+    radial-gradient(70rem 50rem at 50% 118%, rgba( 56, 189, 248, 0.04), transparent 65%),
+    #030712;
+  background-attachment: fixed;
+  color: theme("colors.ink.100");
+  font-family: theme("fontFamily.sans");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle grid overlay — disabled in favor of the NeuralBackground canvas. */
+body::before {
+  content: none;
+}
+
+/* Slow drifting teal aurora high up the page — barely there. */
+body::after {
+  content: "";
+  position: fixed;
+  top: -10rem;
+  left: 50%;
+  width: 80rem;
+  height: 40rem;
+  margin-left: -40rem;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(60% 50% at 50% 50%, rgba(45, 212, 191, 0.06), transparent 70%);
+  filter: blur(48px);
+  animation: ambient-drift 18s ease-in-out infinite;
+}
+
+@keyframes ambient-drift {
+  0%   { transform: translate3d(0, 0, 0); }
+  50%  { transform: translate3d(0, -16px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+main, header, section { position: relative; z-index: 1; }
+
+/* Selection */
+::selection {
+  background: rgba(94, 234, 212, 0.35);
+  color: theme("colors.ink.50");
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.14);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(94, 234, 212, 0.30); }
+
+/* A reusable surface utility used by every panel.  Same styling as a card. */
+.surface-panel {
+  background-color: rgba(11, 18, 32, 0.82);          /* slightly more opaque obsidian glass */
+  background-image: theme("backgroundImage.panel-gradient");
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(248, 250, 252, 0.04),
+    0 24px 60px -36px rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.surface-inset {
+  background-color: rgba(7, 10, 18, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.10);
+}
+

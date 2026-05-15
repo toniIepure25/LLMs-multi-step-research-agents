@@ -1,0 +1,359 @@
+{
+  "created_at": "2026-05-15T10:22:57.989832Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_b5f2485e2c16",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Claim mirrors evidence_d5aa03b08047 for deterministic support checking.",
+        "supporting_evidence_ids": [
+          "evidence_d5aa03b08047"
+        ],
+        "text": "ais / all / also: Apoptosis is a frequent phenomenon in breast cancer and it can be detected by light microscopy in conventional histop..."
+      },
+      {
+        "claim_id": "claim_e40830bb1841",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Claim mirrors evidence_286ef8d38145 for deterministic support checking.",
+        "supporting_evidence_ids": [
+          "evidence_286ef8d38145"
+        ],
+        "text": "OTC derivatives and deregulation: The tumor microenvironment plays a critical role in cancer progression, but the precise mechanisms by which stromal c..."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-05-15T10:22:57.989368Z",
+    "decision_id": "decision_cb055b7ea2cf",
+    "information_gaps": [],
+    "plan_id": "plan_080e0ba879ee",
+    "synthesis": "Deterministic demo synthesis over the collected evidence."
+  },
+  "evidence": [
+    {
+      "confidence": 0.6135831381733021,
+      "content": "Apoptosis is a frequent phenomenon in breast cancer and it can be detected by light microscopy in conventional histopathological sections or by special staining techniques. The number of apoptotic cells as a percentage of cells present, or the number of apoptotic cells per square millimetre of neoplastic tissue, is usually described as the apoptotic index (AI). In breast cancer, the AI is not related to tumour size, axillary lymph node metastasis or distant metastasis at diagnosis. It is greater in invasive ductal carcinomas than in other histological types. High AI is also related to high histological grade, high nuclear grade, comedo-type necrosis, lack of tubule formation, and dense infiltration of the tumour by lymphocytes. Sex steroid receptor-negative tumours have greater AIs than the sex steroid receptor-positive ones. Aneuploid breast cancers with high S-phase fractions (SPFs) also have high AI values compared with diploid tumours with low SPFs. p53-Positive breast cancers have high AIs, whereas tumours that are Bcl-2 positive have low AIs. The AI shows a strong positive correlation to all direct or indirect indicators of cell proliferation, such as mitotic index and Ki67 immunolabelling. Univariate survival analyses show that a high AI is linked with unfavourable disease outcome in axillary lymph node-negative and -positive breast cancer, but multivariate analyses indicate that AI is not an independent prognostic factor. In conclusion, a high AI is related to malignant cellular features and indicators of invasiveness and cell proliferation in breast cancer.",
+      "created_at": "2026-05-15T10:22:57.942958Z",
+      "evidence_id": "evidence_d5aa03b08047",
+      "relevance": 0.6135831381733021,
+      "source": {
+        "access_date": "2026-05-15T10:22:57.942950Z",
+        "additional": {
+          "plan_id": "plan_080e0ba879ee",
+          "query": "Gather evidence about the strongest direct causes or drivers related to What is known about BRCA1 in breast cancer?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "20839751::85fc436798f0",
+            "dense_rank": 1,
+            "doc_id": "20839751",
+            "fused_score": 0.030679156908665108,
+            "lexical_rank": 10,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Gather evidence about the strongest direct causes or drivers related to What is known about BRCA1 in breast cancer?.",
+          "step_id": "step_10943d7b4031",
+          "task_action": "search",
+          "task_id": "task_0302c3cb058a"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Apoptosis is a frequent phenomenon in breast cancer and it can be detected by light microscopy in conventional histopathological sections or by special staining techniques. The number of apoptotic cells as a percentage of cells present, or the number of apoptotic cells per square millimetre of neoplastic tissue, is usually described as the apoptotic index (AI). In breast cancer, the AI is not related to tumour size, axillary lymph node metastasis or distant metastasis at diagnosis. It is greater in invasive ductal carcinomas than in other histological types. High AI is also related to high histological grade, high nuclear grade, comedo-type necrosis, lack of tubule formation, and dense infiltration of the tumour by lymphocytes. Sex steroid receptor-negative tumours have greater AIs than the sex steroid receptor-positive ones. Aneuploid breast cancers with high S-phase fractions (SPFs) also have high AI values compared with diploid tumours with low SPFs. p53-Positive breast cancers have high AIs, whereas tumours that are Bcl-2 positive have low AIs. The AI shows a strong positive correlation to all direct or indirect indicators of cell proliferation, such as mitotic index and Ki67 immunolabelling. Univariate survival analyses show that a high AI is linked with unfavourable disease outcome in axillary lymph node-negative and -positive breast cancer, but multivariate analyses indicate that AI is not an independent prognostic factor. In conclusion, a high AI is related to malignant cellular features and indicators of invasiveness and cell proliferation in breast cancer.",
+        "source_type": "web_search",
+        "title": "Apoptosis in breast cancer: relationship with other pathological parameters.",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_10943d7b4031",
+        "plan_080e0ba879ee"
+      ],
+      "task_id": "task_0302c3cb058a"
+    },
+    {
+      "confidence": 0.3278688524590164,
+      "content": "The tumor microenvironment plays a critical role in cancer progression, but the precise mechanisms by which stromal cells influence the epithelium are poorly understood. Here we show that p62 levels were reduced in the stroma of several tumors and that its loss in the tumor microenvironment or stromal fibroblasts resulted in increased tumorigenesis of epithelial prostate cancer cells. The mechanism involves the regulation of cellular redox through an mTORC1/c-Myc pathway of stromal glucose and amino acid metabolism, resulting in increased stromal IL-6 production, which is required for tumor promotion in the epithelial compartment. Thus, p62 is an anti-inflammatory tumor suppressor that acts through the modulation of metabolism in the tumor stroma.",
+      "created_at": "2026-05-15T10:22:57.896615Z",
+      "evidence_id": "evidence_286ef8d38145",
+      "relevance": 0.3278688524590164,
+      "source": {
+        "access_date": "2026-05-15T10:22:57.896608Z",
+        "additional": {
+          "plan_id": "plan_080e0ba879ee",
+          "query": "Identify the main factors most often cited in explanations of What is known about BRCA1 in breast cancer?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "26735905::0750e80105a4",
+            "dense_rank": 1,
+            "doc_id": "26735905",
+            "fused_score": 0.01639344262295082,
+            "lexical_rank": null,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Identify the main factors most often cited in explanations of What is known about BRCA1 in breast cancer?.",
+          "step_id": "step_4dc39bf8cce4",
+          "task_action": "search",
+          "task_id": "task_f0b0dde8c21f"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The tumor microenvironment plays a critical role in cancer progression, but the precise mechanisms by which stromal cells influence the epithelium are poorly understood. Here we show that p62 levels were reduced in the stroma of several tumors and that its loss in the tumor microenvironment or stromal fibroblasts resulted in increased tumorigenesis of epithelial prostate cancer cells. The mechanism involves the regulation of cellular redox through an mTORC1/c-Myc pathway of stromal glucose and amino acid metabolism, resulting in increased stromal IL-6 production, which is required for tumor promotion in the epithelial compartment. Thus, p62 is an anti-inflammatory tumor suppressor that acts through the modulation of metabolism in the tumor stroma.",
+        "source_type": "web_search",
+        "title": "Metabolic reprogramming of stromal fibroblasts through p62-mTORC1 signaling promotes inflammation and tumorigenesis.",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_4dc39bf8cce4",
+        "plan_080e0ba879ee"
+      ],
+      "task_id": "task_f0b0dde8c21f"
+    },
+    {
+      "confidence": 0.3278688524590164,
+      "content": "Apoptosis is a frequent phenomenon in breast cancer and it can be detected by light microscopy in conventional histopathological sections or by special staining techniques. The number of apoptotic cells as a percentage of cells present, or the number of apoptotic cells per square millimetre of neoplastic tissue, is usually described as the apoptotic index (AI). In breast cancer, the AI is not related to tumour size, axillary lymph node metastasis or distant metastasis at diagnosis. It is greater in invasive ductal carcinomas than in other histological types. High AI is also related to high histological grade, high nuclear grade, comedo-type necrosis, lack of tubule formation, and dense infiltration of the tumour by lymphocytes. Sex steroid receptor-negative tumours have greater AIs than the sex steroid receptor-positive ones. Aneuploid breast cancers with high S-phase fractions (SPFs) also have high AI values compared with diploid tumours with low SPFs. p53-Positive breast cancers have high AIs, whereas tumours that are Bcl-2 positive have low AIs. The AI shows a strong positive correlation to all direct or indirect indicators of cell proliferation, such as mitotic index and Ki67 immunolabelling. Univariate survival analyses show that a high AI is linked with unfavourable disease outcome in axillary lymph node-negative and -positive breast cancer, but multivariate analyses indicate that AI is not an independent prognostic factor. In conclusion, a high AI is related to malignant cellular features and indicators of invasiveness and cell proliferation in breast cancer.",
+      "created_at": "2026-05-15T10:22:57.988374Z",
+      "evidence_id": "evidence_3a8aceb9f72c",
+      "relevance": 0.3278688524590164,
+      "source": {
+        "access_date": "2026-05-15T10:22:57.988368Z",
+        "additional": {
+          "plan_id": "plan_080e0ba879ee",
+          "query": "Gather evidence about amplifying conditions, disagreements, or consequences related to What is known about BRCA1 in breast cancer?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "20839751::85fc436798f0",
+            "dense_rank": 1,
+            "doc_id": "20839751",
+            "fused_score": 0.01639344262295082,
+            "lexical_rank": null,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Gather evidence about amplifying conditions, disagreements, or consequences related to What is known about BRCA1 in breast cancer?.",
+          "step_id": "step_4025dea24d89",
+          "task_action": "search",
+          "task_id": "task_c9ae71ed7a2e"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Apoptosis is a frequent phenomenon in breast cancer and it can be detected by light microscopy in conventional histopathological sections or by special staining techniques. The number of apoptotic cells as a percentage of cells present, or the number of apoptotic cells per square millimetre of neoplastic tissue, is usually described as the apoptotic index (AI). In breast cancer, the AI is not related to tumour size, axillary lymph node metastasis or distant metastasis at diagnosis. It is greater in invasive ductal carcinomas than in other histological types. High AI is also related to high histological grade, high nuclear grade, comedo-type necrosis, lack of tubule formation, and dense infiltration of the tumour by lymphocytes. Sex steroid receptor-negative tumours have greater AIs than the sex steroid receptor-positive ones. Aneuploid breast cancers with high S-phase fractions (SPFs) also have high AI values compared with diploid tumours with low SPFs. p53-Positive breast cancers have high AIs, whereas tumours that are Bcl-2 positive have low AIs. The AI shows a strong positive correlation to all direct or indirect indicators of cell proliferation, such as mitotic index and Ki67 immunolabelling. Univariate survival analyses show that a high AI is linked with unfavourable disease outcome in axillary lymph node-negative and -positive breast cancer, but multivariate analyses indicate that AI is not an independent prognostic factor. In conclusion, a high AI is related to malignant cellular features and indicators of invasiveness and cell proliferation in breast cancer.",
+        "source_type": "web_search",
+        "title": "Apoptosis in breast cancer: relationship with other pathological parameters.",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_4025dea24d89",
+        "plan_080e0ba879ee"
+      ],
+      "task_id": "task_c9ae71ed7a2e"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260515T102257Z_what-is-known-about-brca1-in-breast-canc_experiment_abaa117a5130/output.json",
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260515T102257Z_what-is-known-about-brca1-in-breast-canc_experiment_abaa117a5130/experiment.json"
+    ],
+    "completed_at": "2026-05-15T10:22:57.989520Z",
+    "config_snapshot": {
+      "config_dir": "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.13.4"
+    },
+    "error": null,
+    "experiment_id": "experiment_abaa117a5130",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.6666666666666666,
+      "groundedness": 1.0,
+      "number_of_claims": 2.0,
+      "number_of_evidence_items": 3.0,
+      "number_of_supported_claims": 2.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-what-is-known-about-brca1-in-breast-canc",
+    "notes": null,
+    "python_version": "3.11.15",
+    "seed": 42,
+    "started_at": "2026-05-15T10:22:57.606584Z",
+    "status": "completed"
+  },
+  "goal": "What is known about BRCA1 in breast cancer?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-05-15T10:22:57.606584Z",
+    "goal": "What is known about BRCA1 in breast cancer?",
+    "parent_plan_id": null,
+    "plan_id": "plan_080e0ba879ee",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Identify the main factors most often cited in explanations of What is known about BRCA1 in breast cancer?.",
+        "expected_output": "A short list of the main factors to investigate.",
+        "priority": 1,
+        "step_id": "step_4dc39bf8cce4",
+        "success_criteria": "The list captures the major explanations relevant to the goal.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_4dc39bf8cce4"
+        ],
+        "description": "Gather evidence about the strongest direct causes or drivers related to What is known about BRCA1 in breast cancer?.",
+        "expected_output": "Evidence notes on direct causes or drivers.",
+        "priority": 2,
+        "step_id": "step_10943d7b4031",
+        "success_criteria": "The notes include direct causes or mechanisms linked to the goal.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_10943d7b4031"
+        ],
+        "description": "Gather evidence about amplifying conditions, disagreements, or consequences related to What is known about BRCA1 in breast cancer?.",
+        "expected_output": "Evidence notes on amplifying conditions and disagreements.",
+        "priority": 3,
+        "step_id": "step_4025dea24d89",
+        "success_criteria": "The notes capture important amplifiers, disagreements, or consequences.",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_b5f2485e2c16",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (ais, all, also, apoptosis, breast, can, cancer, conventional, detected, frequent, light, microscopy, phenomenon).",
+        "supporting_ids_checked": [
+          "evidence_d5aa03b08047"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_e40830bb1841",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (but, c, cancer, critical, mechanisms, microenvironment, plays, precise, progression, role, stromal, tumor, which).",
+        "supporting_ids_checked": [
+          "evidence_286ef8d38145"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-05-15T10:22:57.989520Z",
+    "decision_id": "decision_cb055b7ea2cf",
+    "summary": "supported=2, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

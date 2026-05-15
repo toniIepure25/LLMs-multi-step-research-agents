@@ -1,0 +1,359 @@
+{
+  "created_at": "2026-05-15T13:52:28.488665Z",
+  "decision": {
+    "claims": [
+      {
+        "claim_id": "claim_d66b7353e962",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Claim mirrors evidence_a5994138ee9f for deterministic support checking.",
+        "supporting_evidence_ids": [
+          "evidence_a5994138ee9f"
+        ],
+        "text": "about / anticancer / autophagic: Autophagy is a process in which subcellular membranes undergo dynamic morphological changes that lead to the degradat..."
+      },
+      {
+        "claim_id": "claim_bb1442e1a903",
+        "contradicting_evidence_ids": [],
+        "epistemic_status": "high_confidence",
+        "reasoning_trace": "Claim mirrors evidence_82ba81a71471 for deterministic support checking.",
+        "supporting_evidence_ids": [
+          "evidence_82ba81a71471"
+        ],
+        "text": "all / also / analyse: The Gene Expression Omnibus (GEO, http://www.ncbi.nlm.nih.gov/geo/) is an international public repository for high-th..."
+      }
+    ],
+    "conflicts": [],
+    "created_at": "2026-05-15T13:52:28.488243Z",
+    "decision_id": "decision_612a6f1dc7fd",
+    "information_gaps": [],
+    "plan_id": "plan_2992e2102cb2",
+    "synthesis": "Deterministic demo synthesis over the collected evidence."
+  },
+  "evidence": [
+    {
+      "confidence": 0.6557377049180328,
+      "content": "Autophagy is a process in which subcellular membranes undergo dynamic morphological changes that lead to the degradation of cellular proteins and cytoplasmic organelles. This process is an important cellular response to stress or starvation. Many studies have shed light on the importance of autophagy in cancer, but it is still unclear whether autophagy suppresses tumorigenesis or provides cancer cells with a rescue mechanism under unfavourable conditions. What is the present state of our knowledge about the role of autophagy in cancer development, and in response to therapy? And how can the autophagic process be manipulated to improve anticancer therapeutics?",
+      "created_at": "2026-05-15T13:52:28.487281Z",
+      "evidence_id": "evidence_a5994138ee9f",
+      "relevance": 0.6557377049180328,
+      "source": {
+        "access_date": "2026-05-15T13:52:28.487275Z",
+        "additional": {
+          "plan_id": "plan_2992e2102cb2",
+          "query": "Gather evidence about amplifying conditions, disagreements, or consequences related to How does autophagy contribute to cancer therapy resistance?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "26952804::d6a70332a043",
+            "dense_rank": 1,
+            "doc_id": "26952804",
+            "fused_score": 0.03278688524590164,
+            "lexical_rank": 1,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Gather evidence about amplifying conditions, disagreements, or consequences related to How does autophagy contribute to cancer therapy resistance?.",
+          "step_id": "step_9545a0292795",
+          "task_action": "search",
+          "task_id": "task_99389dbbb523"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Autophagy is a process in which subcellular membranes undergo dynamic morphological changes that lead to the degradation of cellular proteins and cytoplasmic organelles. This process is an important cellular response to stress or starvation. Many studies have shed light on the importance of autophagy in cancer, but it is still unclear whether autophagy suppresses tumorigenesis or provides cancer cells with a rescue mechanism under unfavourable conditions. What is the present state of our knowledge about the role of autophagy in cancer development, and in response to therapy? And how can the autophagic process be manipulated to improve anticancer therapeutics?",
+        "source_type": "web_search",
+        "title": "The role of autophagy in cancer development and response to therapy",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_9545a0292795",
+        "plan_2992e2102cb2"
+      ],
+      "task_id": "task_99389dbbb523"
+    },
+    {
+      "confidence": 0.3278688524590164,
+      "content": "Autophagy is a process in which subcellular membranes undergo dynamic morphological changes that lead to the degradation of cellular proteins and cytoplasmic organelles. This process is an important cellular response to stress or starvation. Many studies have shed light on the importance of autophagy in cancer, but it is still unclear whether autophagy suppresses tumorigenesis or provides cancer cells with a rescue mechanism under unfavourable conditions. What is the present state of our knowledge about the role of autophagy in cancer development, and in response to therapy? And how can the autophagic process be manipulated to improve anticancer therapeutics?",
+      "created_at": "2026-05-15T13:52:28.315544Z",
+      "evidence_id": "evidence_26073b7830e1",
+      "relevance": 0.3278688524590164,
+      "source": {
+        "access_date": "2026-05-15T13:52:28.315530Z",
+        "additional": {
+          "plan_id": "plan_2992e2102cb2",
+          "query": "Identify the main factors most often cited in explanations of How does autophagy contribute to cancer therapy resistance?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "26952804::d6a70332a043",
+            "dense_rank": null,
+            "doc_id": "26952804",
+            "fused_score": 0.01639344262295082,
+            "lexical_rank": 1,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Identify the main factors most often cited in explanations of How does autophagy contribute to cancer therapy resistance?.",
+          "step_id": "step_b20ced14e84b",
+          "task_action": "search",
+          "task_id": "task_5e7e7b3c6051"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "Autophagy is a process in which subcellular membranes undergo dynamic morphological changes that lead to the degradation of cellular proteins and cytoplasmic organelles. This process is an important cellular response to stress or starvation. Many studies have shed light on the importance of autophagy in cancer, but it is still unclear whether autophagy suppresses tumorigenesis or provides cancer cells with a rescue mechanism under unfavourable conditions. What is the present state of our knowledge about the role of autophagy in cancer development, and in response to therapy? And how can the autophagic process be manipulated to improve anticancer therapeutics?",
+        "source_type": "web_search",
+        "title": "The role of autophagy in cancer development and response to therapy",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_b20ced14e84b",
+        "plan_2992e2102cb2"
+      ],
+      "task_id": "task_5e7e7b3c6051"
+    },
+    {
+      "confidence": 0.3278688524590164,
+      "content": "The Gene Expression Omnibus (GEO, http://www.ncbi.nlm.nih.gov/geo/) is an international public repository for high-throughput microarray and next-generation sequence functional genomic data sets submitted by the research community. The resource supports archiving of raw data, processed data and metadata which are indexed, cross-linked and searchable. All data are freely available for download in a variety of formats. GEO also provides several web-based tools and strategies to assist users to query, analyse and visualize data. This article reports current status and recent database developments, including the release of GEO2R, an R-based web application that helps users analyse GEO data.",
+      "created_at": "2026-05-15T13:52:28.410817Z",
+      "evidence_id": "evidence_82ba81a71471",
+      "relevance": 0.3278688524590164,
+      "source": {
+        "access_date": "2026-05-15T13:52:28.410811Z",
+        "additional": {
+          "plan_id": "plan_2992e2102cb2",
+          "query": "Gather evidence about the strongest direct causes or drivers related to How does autophagy contribute to cancer therapy resistance?.",
+          "rank": 1,
+          "raw_payload": {
+            "chunk_id": "15617300::85464fa3fff0",
+            "dense_rank": 1,
+            "doc_id": "15617300",
+            "fused_score": 0.01639344262295082,
+            "lexical_rank": null,
+            "section": "body",
+            "tags": [
+              "scifact",
+              "scientific_claim"
+            ],
+            "trust_label": "peer_reviewed"
+          },
+          "source_name": "corpus:scifact",
+          "step_description": "Gather evidence about the strongest direct causes or drivers related to How does autophagy contribute to cancer therapy resistance?.",
+          "step_id": "step_978dfe1f4784",
+          "task_action": "search",
+          "task_id": "task_a0f5665ac834"
+        },
+        "author": null,
+        "publication_date": null,
+        "raw_snippet": "The Gene Expression Omnibus (GEO, http://www.ncbi.nlm.nih.gov/geo/) is an international public repository for high-throughput microarray and next-generation sequence functional genomic data sets submitted by the research community. The resource supports archiving of raw data, processed data and metadata which are indexed, cross-linked and searchable. All data are freely available for download in a variety of formats. GEO also provides several web-based tools and strategies to assist users to query, analyse and visualize data. This article reports current status and recent database developments, including the release of GEO2R, an R-based web application that helps users analyse GEO data.",
+        "source_type": "web_search",
+        "title": "NCBI GEO: archive for functional genomics data sets\u2014update",
+        "url": "https://huggingface.co/datasets/BeIR/scifact"
+      },
+      "tags": [
+        "search",
+        "evidence",
+        "step_978dfe1f4784",
+        "plan_2992e2102cb2"
+      ],
+      "task_id": "task_a0f5665ac834"
+    }
+  ],
+  "experiment": {
+    "artifacts": [
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260515T135228Z_how-does-autophagy-contribute-to-cancer-_experiment_ae12d5621d48/output.json",
+      "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/experiments/runs/20260515T135228Z_how-does-autophagy-contribute-to-cancer-_experiment_ae12d5621d48/experiment.json"
+    ],
+    "completed_at": "2026-05-15T13:52:28.488343Z",
+    "config_snapshot": {
+      "config_dir": "/Users/adriantrill/Desktop/github/LLMs-multi-step-research-agents/config",
+      "experiments": {
+        "benchmarks": {
+          "data_dir": "experiments/data",
+          "default_tier": 1
+        },
+        "defaults": {
+          "cache_llm_responses": true,
+          "log_level": "debug",
+          "output_dir": "experiments/runs",
+          "seed": 42
+        },
+        "evaluation": {
+          "automated_metrics": [
+            "accuracy",
+            "completeness",
+            "groundedness"
+          ],
+          "human_eval_enabled": false
+        }
+      },
+      "models": {
+        "default": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "deliberation": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.3
+        },
+        "execution": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "planning": {
+          "max_tokens": 4096,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        },
+        "verification": {
+          "max_tokens": 2048,
+          "model": "claude-sonnet-4-6",
+          "provider": "local",
+          "temperature": 0.0
+        }
+      },
+      "pipeline": {
+        "execution": {
+          "max_parallel_tasks": 4,
+          "parallel": false,
+          "timeout_seconds": 120
+        },
+        "layers": {
+          "deliberation": true,
+          "evaluation": true,
+          "execution": true,
+          "grounding": false,
+          "memory": true,
+          "planning": true,
+          "verification": true
+        },
+        "logging": {
+          "level": "info",
+          "log_all_llm_calls": true,
+          "log_schemas": true
+        },
+        "memory": {
+          "compression_enabled": false,
+          "long_term_storage": false,
+          "working_memory_max_items": 50
+        }
+      },
+      "project": {
+        "authors": {},
+        "description": "Agentic Structured Autonomous Researcher",
+        "name": "asar",
+        "phase": "0-bootstrap",
+        "version": "0.1.0"
+      }
+    },
+    "dependency_versions": {
+      "pydantic": "2.13.4"
+    },
+    "error": null,
+    "experiment_id": "experiment_ae12d5621d48",
+    "git_commit": null,
+    "hypothesis": "The frozen v0 ASAR pipeline can produce grounded single-goal research artifacts.",
+    "metrics": {
+      "evidence_utilization": 0.6666666666666666,
+      "groundedness": 1.0,
+      "number_of_claims": 2.0,
+      "number_of_evidence_items": 3.0,
+      "number_of_supported_claims": 2.0,
+      "plan_coverage": 1.0
+    },
+    "name": "asar-v0-how-does-autophagy-contribute-to-cancer-",
+    "notes": null,
+    "python_version": "3.11.15",
+    "seed": 42,
+    "started_at": "2026-05-15T13:52:27.852381Z",
+    "status": "completed"
+  },
+  "goal": "How does autophagy contribute to cancer therapy resistance?",
+  "plan": {
+    "constraints": null,
+    "created_at": "2026-05-15T13:52:27.852381Z",
+    "goal": "How does autophagy contribute to cancer therapy resistance?",
+    "parent_plan_id": null,
+    "plan_id": "plan_2992e2102cb2",
+    "revision": 0,
+    "steps": [
+      {
+        "dependency_type": "sequential",
+        "depends_on": [],
+        "description": "Identify the main factors most often cited in explanations of How does autophagy contribute to cancer therapy resistance?.",
+        "expected_output": "A short list of the main factors to investigate.",
+        "priority": 1,
+        "step_id": "step_b20ced14e84b",
+        "success_criteria": "The list captures the major explanations relevant to the goal.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_b20ced14e84b"
+        ],
+        "description": "Gather evidence about the strongest direct causes or drivers related to How does autophagy contribute to cancer therapy resistance?.",
+        "expected_output": "Evidence notes on direct causes or drivers.",
+        "priority": 2,
+        "step_id": "step_978dfe1f4784",
+        "success_criteria": "The notes include direct causes or mechanisms linked to the goal.",
+        "tool_hint": "web_search"
+      },
+      {
+        "dependency_type": "sequential",
+        "depends_on": [
+          "step_978dfe1f4784"
+        ],
+        "description": "Gather evidence about amplifying conditions, disagreements, or consequences related to How does autophagy contribute to cancer therapy resistance?.",
+        "expected_output": "Evidence notes on amplifying conditions and disagreements.",
+        "priority": 3,
+        "step_id": "step_9545a0292795",
+        "success_criteria": "The notes capture important amplifiers, disagreements, or consequences.",
+        "tool_hint": "web_search"
+      }
+    ]
+  },
+  "verification": {
+    "claim_verdicts": [
+      {
+        "claim_id": "claim_d66b7353e962",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (about, anticancer, autophagic, autophagy, changes, dynamic, lead, membranes, morphological, process, subcellular, undergo, which).",
+        "supporting_ids_checked": [
+          "evidence_a5994138ee9f"
+        ],
+        "verdict": "supported"
+      },
+      {
+        "claim_id": "claim_bb1442e1a903",
+        "contradicting_ids_checked": [],
+        "reasoning": "Claim has weak lexical support from referenced evidence (all, also, analyse, expression, gene, geo, gov, high, http, international, ncbi, nih, nlm, omnibus, public, repository, www).",
+        "supporting_ids_checked": [
+          "evidence_82ba81a71471"
+        ],
+        "verdict": "supported"
+      }
+    ],
+    "created_at": "2026-05-15T13:52:28.488343Z",
+    "decision_id": "decision_612a6f1dc7fd",
+    "summary": "supported=2, unsupported=0, insufficient=0, contradicted=0"
+  }
+}

@@ -20,6 +20,7 @@ Hardware:
 
 from __future__ import annotations
 
+import asyncio
 import os
 from typing import Any
 
@@ -85,7 +86,7 @@ class LocalSLMClient:
             ) from exc
 
         try:
-            output_text, usage = self._generate_sync(request)
+            output_text, usage = await asyncio.to_thread(self._generate_sync, request)
         except Exception as exc:
             raise LLMClientError(
                 "Local SLM generation failed",
@@ -176,9 +177,19 @@ class LocalSLMClient:
         inputs = self._tokenizer(prompt, return_tensors="pt").to(self._device)
         input_token_count = int(inputs["input_ids"].shape[1])
 
+        # Optional per-request: bypass the LoRA adapter and use the base
+        # model's weights only.  Useful for free-form generation when the
+        # adapter was trained on a narrow task (e.g. A/B preference picks)
+        # and we want the base model's general instruction-following.
+        meta = request.metadata or {}
+        disable_adapter = str(meta.get("disable_adapter", "")).lower() in {
+            "1", "true", "yes", "on",
+        }
+
         max_new_tokens = min(self._max_new_tokens_cap, request.max_tokens)
-        with torch.no_grad():
-            generation = self._model.generate(
+
+        def _do_generate() -> Any:
+            return self._model.generate(
                 **inputs,
                 do_sample=request.temperature > 0,
                 temperature=max(request.temperature, 1e-5),
@@ -187,6 +198,13 @@ class LocalSLMClient:
                 pad_token_id=self._tokenizer.pad_token_id,
                 eos_token_id=self._tokenizer.eos_token_id,
             )
+
+        with torch.no_grad():
+            if disable_adapter and hasattr(self._model, "disable_adapter"):
+                with self._model.disable_adapter():
+                    generation = _do_generate()
+            else:
+                generation = _do_generate()
         new_tokens = generation[0, inputs["input_ids"].shape[1] :]
         text = self._tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
         if not text:

@@ -1,0 +1,67 @@
+{
+  "pre_report": {
+    "blocked": false,
+    "max_toxicity": 0.0,
+    "max_injection": 0.0,
+    "backend": "keyword",
+    "verdict_count": 1,
+    "unsafe_count": 0,
+    "verdicts": [
+      {
+        "text_kind": "goal",
+        "text_id": "goal",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      }
+    ]
+  },
+  "post_report": {
+    "blocked": false,
+    "max_toxicity": 0.0,
+    "max_injection": 0.0,
+    "backend": "keyword",
+    "verdict_count": 4,
+    "unsafe_count": 0,
+    "verdicts": [
+      {
+        "text_kind": "goal",
+        "text_id": "goal",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_55ecc4136495",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_2c853d8accee",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      },
+      {
+        "text_kind": "evidence",
+        "text_id": "evidence_a303f2aaaaa3",
+        "is_safe": true,
+        "toxicity_score": 0.0,
+        "injection_score": 0.0,
+        "reasons": [],
+        "backend": "keyword"
+      }
+    ]
+  }
+}

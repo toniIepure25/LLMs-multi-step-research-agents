@@ -61,6 +61,12 @@ class CorpusSearchClient:
                 retryable=False,
             ) from exc
 
+        # RRF fused scores live in a tiny absolute range (≤ ~0.033 with k=60).
+        # We expose them as a 0..1 *relative* relevance gauge per response so
+        # the top hit reads ~100% and the rest scale proportionally.  The raw
+        # fused score is still surfaced in ``raw_payload`` for debugging.
+        max_raw = max((h.score for h in hits), default=0.0)
+
         results: list[SearchResultItem] = []
         for rank, hit in enumerate(hits, start=1):
             chunk = hit.chunk
@@ -71,7 +77,7 @@ class CorpusSearchClient:
                     title=chunk.title or f"{self._dataset_name} document {chunk.doc_id}",
                     publication_date=None,
                     rank=rank,
-                    score=_to_unit_score(hit.score),
+                    score=_to_unit_score(hit.score, max_raw=max_raw),
                     source_name=f"corpus:{self._dataset_name}",
                     raw_payload={
                         "chunk_id": chunk.chunk_id,
@@ -88,14 +94,18 @@ class CorpusSearchClient:
         return SearchResponse(results=results)
 
 
-def _to_unit_score(raw_score: float) -> float:
-    # RRF scores live in roughly (0, 1/60+1/60] = (0, ~0.033]. Map onto a clipped
-    # 0..1 range for SearchResultItem.score (which is bounded that way).
+def _to_unit_score(raw_score: float, *, max_raw: float) -> float:
+    """Map a raw RRF fused score to a 0..1 relevance gauge.
+
+    Strategy: normalize against the maximum fused score in this response so
+    the top hit reads ~1.0 and weaker hits scale proportionally.  A small
+    floor (0.05) keeps zero/near-zero scores visible on the UI gauge.
+    """
     if raw_score <= 0.0:
         return 0.0
-    if raw_score >= 1.0:
-        return 1.0
-    return min(1.0, raw_score * 20.0)
+    if max_raw <= 0.0:
+        return 0.0
+    return min(1.0, max(0.05, raw_score / max_raw))
 
 
 # ---------------------------------------------------------------------------
