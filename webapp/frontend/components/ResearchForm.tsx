@@ -14,11 +14,14 @@ interface ResearchFormProps {
   compact?: boolean;
 }
 
+// Suggestion chips. These are tuned to the SciFact corpus that ships with
+// the demo — each one maps to claims/abstracts with strong coverage so
+// retrieval returns on-topic passages instead of nearest-neighbour drift.
 const EXAMPLES = [
-  "What is known about BRCA1 in breast cancer?",
-  "How does autophagy contribute to cancer therapy resistance?",
-  "Do statins reduce cardiovascular mortality in healthy adults?",
-  "What evidence links gut microbiome to depression?",
+  "Does tamoxifen metabolism affect breast cancer treatment outcomes?",
+  "How does folate deficiency affect homocysteine levels?",
+  "What role does PD-1 blockade play in melanoma treatment?",
+  "Does 4-PBA treatment reduce endoplasmic reticulum stress?",
 ];
 
 export function ResearchForm({ onSubmit, isLoading, compact = false }: ResearchFormProps) {

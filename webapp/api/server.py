@@ -494,8 +494,20 @@ async def research(req: ResearchRequest) -> ResearchResponse:
 
     # Generate a real grounded answer from the retrieved passages using the
     # loaded local model.  Best-effort: never raises out of the helper.
-    evidence_payload = payload.get("evidence") or []
-    answer = await _generate_grounded_answer(goal=goal, evidence_payload=evidence_payload)
+    # Disable via ASAR_DISABLE_GROUNDED_ANSWER=1 if the proxy keeps timing out
+    # during long generation (e.g. CPU inference on a fresh start).
+    if os.environ.get("ASAR_DISABLE_GROUNDED_ANSWER") == "1":
+        answer = GroundedAnswer(
+            text="",
+            cited_indices=[],
+            cited_evidence_ids=[],
+            elapsed_seconds=0.0,
+            generated=False,
+            note="disabled_via_env",
+        )
+    else:
+        evidence_payload = payload.get("evidence") or []
+        answer = await _generate_grounded_answer(goal=goal, evidence_payload=evidence_payload)
 
     # If the model wrote something usable, surface it inside the decision's
     # synthesis field too so downstream consumers (raw JSON viewers, exports)
