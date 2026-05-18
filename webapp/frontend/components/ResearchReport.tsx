@@ -58,19 +58,48 @@ export function ResearchReport({
   const claimCount = decision?.claims.length ?? 0;
 
   // ── Retrieval-quality signal ───────────────────────────────────────────
-  // Quietly inspect the evidence relevance scores.  If the top passages
-  // don't actually match the question well, surface that fact — otherwise
-  // a confidently-cited answer can hide a retrieval miss (e.g. a BRCA1
-  // question answered with colorectal-cancer passages because they were
-  // the closest matches in the local SciFact corpus).
+  // Quietly inspect the evidence relevance scores AND topical overlap.  If
+  // the top passages don't actually match the question well, surface that
+  // fact — otherwise a confidently-cited answer can hide a retrieval miss
+  // (e.g. a "hantavirus" question answered with open-access citation
+  // passages because those were the closest matches in the local
+  // SciFact corpus).
   const relevances = result.output.evidence.map((e) => e.relevance);
   const meanRel =
     relevances.length === 0
       ? 0
       : relevances.reduce((acc, r) => acc + r, 0) / relevances.length;
   const maxRel = relevances.length === 0 ? 0 : Math.max(...relevances);
+
+  // Topical-overlap check: extract the "content" tokens from the question
+  // (length ≥ 4, not stop words) and check how many appear in the
+  // concatenated evidence.  When fused RRF scores look high but the
+  // question topic is missing entirely from the passages, this catches it.
+  const STOP_WORDS = new Set([
+    "what", "is", "are", "the", "a", "an", "of", "and", "or", "to", "in",
+    "on", "for", "with", "about", "from", "by", "as", "at", "be", "this",
+    "that", "it", "how", "why", "when", "where", "which", "do", "does",
+    "did", "can", "could", "should", "would", "known", "tell", "me",
+    "explain", "describe", "give", "into", "than", "then", "have", "has",
+  ]);
+  const queryTokens = Array.from(
+    new Set(
+      result.goal
+        .toLowerCase()
+        .split(/[^a-z0-9]+/)
+        .filter((t) => t.length >= 4 && !STOP_WORDS.has(t)),
+    ),
+  );
+  const evidenceBlob = result.output.evidence
+    .map((e) => (e.content ?? "").toLowerCase())
+    .join(" ");
+  const matchedTokens = queryTokens.filter((t) => evidenceBlob.includes(t));
+  const queryOverlap =
+    queryTokens.length === 0 ? 1.0 : matchedTokens.length / queryTokens.length;
+
   const lowRelevance =
-    relevances.length > 0 && (meanRel < 0.4 || maxRel < 0.55);
+    relevances.length > 0 &&
+    (meanRel < 0.4 || maxRel < 0.55 || queryOverlap < 0.5);
 
   // ── Citation modal state ─────────────────────────────────────────────────
   // 1-indexed citation number that's currently open in the modal, or
@@ -205,6 +234,20 @@ export function ResearchReport({
                     <span className="font-mono text-ink-100">
                       {Math.round(maxRel * 100)}%
                     </span>
+                    , topical overlap{" "}
+                    <span className="font-mono text-ink-100">
+                      {Math.round(queryOverlap * 100)}%
+                    </span>
+                    {queryTokens.length > 0 && matchedTokens.length === 0 && (
+                      <>
+                        {" "}(none of{" "}
+                        <span className="font-mono text-ink-100">
+                          {queryTokens.slice(0, 3).join(", ")}
+                          {queryTokens.length > 3 ? "…" : ""}
+                        </span>
+                        {" "}appears in the retrieved text)
+                      </>
+                    )}
                     . The answer below is faithfully grounded in what was retrieved,
                     but it could be off-topic. Try rephrasing the question, or open the{" "}
                     <span className="font-semibold text-ink-100">Evidence</span> tab to

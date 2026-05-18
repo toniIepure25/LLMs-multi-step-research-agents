@@ -40,6 +40,26 @@ experiments/runs/*/cache/
 # --- Project-specific (not for git) -----------------------------------------
 # Final deliverable bundle (regenerate with the zip command in deliverable/README.md)
 asar_deliverable.zip
+asar_final_submission.zip
+asar_*_submission.zip
+
+# Deliverable workspace — locally generated presentation, PDF, demo runbook,
+# rubric check, experiment artifacts. All regenerable from source
+# (LaTeX + scripts/pdf_to_pptx.py).
+deliverable/
+
+# Experiment outputs — local probe runs, notes, registry, intermediate results.
+# Templates remain tracked (project infrastructure).
+experiments/notes/
+experiments/runs/
+experiments/registry/
+experiments/results/
+
+# Office / Keynote lock files
+~$*
+
+# Stray scratch scripts (not part of the runtime deliverable)
+/search_script.py
 
 # Datasets — large and/or regenerable
 #   - data/corpora/scifact/  is 178 MB, regenerable via:
@@ -48,10 +68,14 @@ asar_deliverable.zip
 #       uv run python -m asar.finetune.cli_build_preference ...
 data/
 
-# Internal tooling — slide-deck generator. Not part of the runtime deliverable.
+# Internal tooling — slide-deck generators. Not part of the runtime deliverable.
 # Regenerate the .pptx locally with:
 #   uv run python scripts/build_presentation.py
+# or, for the academic-structured Beamer deck:
+#   tectonic -o deliverable deliverable/presentation.tex
+#   uv run --with python-pptx python scripts/pdf_to_pptx.py
 scripts/build_presentation.py
+scripts/pdf_to_pptx.py
 
 # Pytest / mypy / ruff caches
 .pytest_cache/

@@ -124,9 +124,37 @@ _TOXIC_PATTERNS = [
 ]
 
 _HARM_INTENT_PATTERNS = [
-    r"\bhow\s+to\s+(?:make|build|synthesize)\s+(?:a\s+)?(?:bomb|gun|weapon|explosive|chemical\s+weapon|nerve\s+agent)\b",
-    r"\bhow\s+(?:can\s+)?i\s+(?:kill|poison|murder)\b",
+    # ── Weapon / drug manufacturing ────────────────────────────────────────
+    # Matches the verb+dangerous-object pair regardless of leading "how to /
+    # how can I / I want to / show me / tell me" framing.  Examples caught:
+    #   "how can we make a bomb"          (the original miss)
+    #   "build a pipe bomb at home"
+    #   "synthesize sarin"
+    #   "cook some meth"
+    r"\b(?:make|build|create|construct|synthesize|assemble|manufacture|"
+    r"cook|brew|3d[-\s]?print)\s+(?:a|an|the|some|my|our|your)?\s*"
+    r"(?:pipe[-\s]?bomb|bomb|ied|grenade|molotov|napalm|landmine|"
+    r"chemical\s+weapon|nerve\s+agent|sarin|ricin|vx\s+gas|"
+    r"gun|firearm|assault\s+rifle|silencer|suppressor|explosive|"
+    r"meth(?:amphetamine)?|cocaine|heroin|fentanyl|crack\s+cocaine|lsd)s?\b",
+    # ── Targeting a person directly ────────────────────────────────────────
+    r"\bhow\s+(?:can\s+|do\s+|could\s+|should\s+|to\s+)?(?:i|we|you|one)?"
+    r"\s*(?:kill|murder|poison|stab|shoot|strangle|behead|assassinate)\s+"
+    r"(?:a|the|some|my|his|her|their|someone|anyone|people|everyone|"
+    r"him|her|them|my\s+\w+)\b",
+    # ── Acquisitive / property crime ───────────────────────────────────────
+    r"\b(?:rob|robbing|burglarize|burgle|hold\s+up)\s+"
+    r"(?:a|the|some|that|this)\s+"
+    r"(?:bank|store|shop|gas\s+station|atm|jewelry\s+store|casino|"
+    r"house|home|business)\b",
+    r"\bcommit\s+(?:a\s+|an\s+)?"
+    r"(?:robbery|burglary|heist|murder|arson|kidnapping|terrorism|"
+    r"terror\s+attack|hate\s+crime|massacre|shooting|stabbing|"
+    r"assault|fraud)\b",
+    # ── Self-harm ──────────────────────────────────────────────────────────
     r"\bsuicide\s+method\b",
+    r"\bhow\s+(?:to|can\s+i|do\s+i)\s+(?:kill\s+myself|commit\s+suicide|"
+    r"end\s+(?:my|it\s+all))\b",
 ]
 
 _INJECTION_PATTERNS = [
